@@ -14,3 +14,24 @@
 Route::get('/', function () {
     return view('welcome');
 });
+
+
+Route::get('/','HomeController@home');
+
+Route::get('/terms','StaticPagesController@terms');
+Route::get('/about','StaticPagesController@about');
+Route::get('/vision','StaticPagesController@vision');
+Route::get('/contact','StaticPagesController@contact');
+Route::get('/scholarships','StaticPagesController@scholarships');
+Route::get('/authors','StaticPagesController@authors');
+Route::get('/partners','StaticPagesController@partners');
+
+Route::get('/archive','ArchiveController@archive');
+
+Route::get('/news','NewsController@news');
+
+Route::get('/events','EventsController@events');
+
+Route::get('/program','ProgramController@program');
+
+Route::get('/apply-for-attendance','FormsController@applyForAttendanceForm');
