@@ -35,3 +35,5 @@ Route::get('/events','EventsController@events');
 Route::get('/program','ProgramController@program');
 
 Route::get('/apply-for-attendance','FormsController@applyForAttendanceForm');
+
+Route::get('/testdb', 'HomeController@testdb');
