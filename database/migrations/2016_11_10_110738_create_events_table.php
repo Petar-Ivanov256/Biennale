@@ -20,6 +20,7 @@ class CreateEventsTable extends Migration
             $table->string('description');
             $table->dateTime('date');
             $table->string('location', 100);
+            $table->binary('picture');
             
             $table->timestamps();
         });
