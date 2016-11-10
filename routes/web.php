@@ -29,11 +29,11 @@ Route::get('/partners','StaticPagesController@partners');
 Route::get('/archive','ArchiveController@archive');
 
 Route::get('/news','NewsController@news');
+Route::get('/news/add', 'NewsController@add');
+Route::post('/news/add', 'NewsController@create');
 
 Route::get('/events','EventsController@events');
 
 Route::get('/program','ProgramController@program');
 
 Route::get('/apply-for-attendance','FormsController@applyForAttendanceForm');
-
-Route::get('/testdb', 'HomeController@testdb');
