@@ -1,1 +1,1 @@
-contakt test
+@include ('pages.Contact')
