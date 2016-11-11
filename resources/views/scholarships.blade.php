@@ -1,1 +1,4 @@
-stipendii test
+@extends('pages.Scholarships')
+@section('content')
+
+@stop

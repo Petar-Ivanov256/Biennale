@@ -1,6 +1,7 @@
 <!doctype html>
 <html>
 <head>
+    <title>Archive</title>
     @include('includes.head')
 </head>
 <body>

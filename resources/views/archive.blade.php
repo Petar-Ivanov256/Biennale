@@ -1,1 +1,1 @@
-archive test
+@extends('pages.Archive')

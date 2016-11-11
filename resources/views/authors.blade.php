@@ -1,1 +1,3 @@
-test avtori
+@extends('pages.Authors')
+@section('content')
+    @stop
