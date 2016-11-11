@@ -1,13 +1,13 @@
 <!doctype html>
 <html>
 <head>
-    <title>Scholarship</title>
+    <title>Events</title>
     @include('includes.head')
 </head>
 <body>
 <div class="container">
 
-    <header class="row">
+    <header>
         @include('includes.header')
     </header>
 

@@ -1,1 +1,1 @@
-events test
+@include('pages.Event')
