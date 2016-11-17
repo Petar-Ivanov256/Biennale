@@ -15,9 +15,6 @@
                 <a href="{{ URL::to('/apply-for-attendance')}}">Форма за участие</a>
             </li>
             <li>
-                <a href="{{ URL::to('/about')}}">За нас</a>
-            </li>
-            <li>
                 <a href="{{ URL::to('/vision')}}">Визия</a>
             </li>
         </ul>
