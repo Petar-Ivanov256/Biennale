@@ -1,1 +1,4 @@
-forma test
+@extends('pages.ApplyForAttendanceForm')
+@section('content')
+
+@stop
