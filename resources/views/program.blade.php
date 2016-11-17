@@ -1,1 +1,4 @@
-programa test
+@extends('pages.Program')
+@section('content')
+
+@stop
