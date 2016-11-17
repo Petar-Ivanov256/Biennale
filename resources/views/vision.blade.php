@@ -1,1 +1,4 @@
-vision test
+@extends('pages.Vision')
+@section('content')
+
+@stop

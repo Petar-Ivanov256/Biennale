@@ -1,1 +1,4 @@
-test about
+@extends('pages.About')
+@section('content')
+
+@stop
