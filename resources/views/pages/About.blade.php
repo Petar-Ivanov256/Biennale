@@ -1,7 +1,7 @@
 <!doctype html>
 <html>
 <head>
-    <title>Scholarship</title>
+    <title>About</title>
     @include('includes.head')
 </head>
 <body>
