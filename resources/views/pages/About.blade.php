@@ -4,21 +4,22 @@
     <title>About</title>
     @include('includes.head')
 </head>
-<body>
-<div class="container">
+<body id="about">
+<div class="container-fluid">
 
     <header class="row">
         @include('includes.header')
     </header>
 
+
+    <!-- main content -->
     <div>
-        <!-- main content -->
-        <div>
-            @yield('content')
-        </div>
+        <br><br>
+        @yield('content')
     </div>
 
-    <footer class="row">
+
+    <footer class="row" id="BladeFooter">
         @include('includes.footer')
     </footer>
 </div>
