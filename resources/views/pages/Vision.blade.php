@@ -2,6 +2,7 @@
 <html>
 <head>
     <title>Vision</title>
+
     @include('includes.head')
 </head>
 <body>
