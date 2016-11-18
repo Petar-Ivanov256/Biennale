@@ -1,9 +1,11 @@
 <!DOCTYPE html>
 <html>
+<head>
+</head>
 <body>
 <hr>
-<footer>
-    <div class="footer-side">
+<footer id="BladeFooter">
+    <div class="col-md-2">
         <ul>
             <li>
                 <a href="{{ URL::to('/program')}}">Програма</a>
@@ -19,7 +21,7 @@
             </li>
         </ul>
     </div>
-    <div class="footer-side">
+    <div class="col-md-3">
         <ul>
             <li>
                 <a href="#">Стипендии за бакалаври</a>
@@ -35,7 +37,7 @@
             </li>
         </ul>
     </div>
-    <div class="footer-side">
+    <div class="col-md-2">
         <ul>
             <li>
                 <a href="#">Изложби</a>
@@ -51,7 +53,7 @@
             </li>
         </ul>
     </div>
-    <div class="footer-side">
+    <div class="col-md-2">
         <ul>
             <li>
                 <a href="{{ URL::to('/about')}}">За нас</a>
@@ -66,8 +68,8 @@
             </li>
         </ul>
     </div>
-    <div class="footer-email-send">
-        <form class="footer-info">
+    <div class="col-md-2">
+        <form>
             <label for="email">Месечен бюлетин</label><br>
             <input type="email" name="email" placeholder="e-mail"><br><br>
             <input type="submit" value="Запиши се">
