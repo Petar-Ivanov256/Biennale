@@ -1,4 +1,8 @@
-@extends('pages.Terms')
-@section('content')
+@extends('layouts.master')
+@section('title')
+    Регламент
+@endsection
 
-@stop
+@section('content')
+    некъв регламент
+@endsection

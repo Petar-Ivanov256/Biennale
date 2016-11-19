@@ -1,4 +1,8 @@
-@extends('pages.Program')
-@section('content')
+@extends('layouts.master')
+@section('title')
+    Програма
+@endsection
 
-@stop
+@section('content')
+    програма няква
+@endsection

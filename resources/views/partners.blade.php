@@ -1,3 +1,8 @@
-@extends('pages.Partners')
+@extends('layouts.master')
+@section('title')
+    Партньори
+@endsection
+
 @section('content')
-    @stop
+    Некви други
+@endsection

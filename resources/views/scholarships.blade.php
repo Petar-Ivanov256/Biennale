@@ -1,4 +1,8 @@
-@extends('pages.Scholarships')
-@section('content')
+@extends('layouts.master')
+@section('title')
+    Стипендии
+@endsection
 
-@stop
+@section('content')
+    Money, money, money
+@endsection

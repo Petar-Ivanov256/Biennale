@@ -1,4 +1,8 @@
-@extends('pages.About')
-@section('content')
+@extends('layouts.master')
+@section('title')
+    За нас
+@endsection
 
-@stop
+@section('content')
+    Некви там
+@endsection

@@ -1,4 +1,8 @@
-@extends('pages.Vision')
-@section('content')
+@extends('layouts.master')
+@section('title')
+    Визия
+@endsection
 
-@stop
+@section('content')
+    Ква е тая визия
+@endsection

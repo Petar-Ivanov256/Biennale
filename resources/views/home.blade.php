@@ -1,4 +1,8 @@
-@extends('pages.HomePage')
-@section('content')
+@extends('layouts.master')
+@section('title')
+    Начало
+@endsection
 
-    @stop
+@section('content')
+    <h1>Καλώς ήλθατε!</h1>
+@endsection

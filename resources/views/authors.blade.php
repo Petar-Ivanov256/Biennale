@@ -1,3 +1,8 @@
-@extends('pages.Authors')
+@extends('layouts.master')
+@section('title')
+    Автори
+@endsection
+
 @section('content')
-    @stop
+    Пак некви там
+@endsection
