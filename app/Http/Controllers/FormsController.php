@@ -13,11 +13,15 @@ use App\Mail\ApplicationFormEmail;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Mail;
 use App\ApplicationForm;
+use App\Technique;
 
 class FormsController extends Controller
 {
     public function applyForAttendanceForm(Request $request){
-        return view('applicationForm');
+        
+        $techniques = Technique::all();
+        
+        return view('applicationForm', ['techniques' => $techniques]);
     }
 
     public function sendEmail(Request $request){

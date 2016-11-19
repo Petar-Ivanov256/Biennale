@@ -44,6 +44,13 @@
           </div>
         </div>
         <div class="form-group">
+            @foreach($techniques as $technique)
+                
+            <label><input type="checkbox" name="technique" /> {{$technique->name}}</label>
+            
+            @endforeach
+        </div>
+        <div class="form-group">
           <label for="dimensions" class="col-lg-2 control-label">Размери (в/ш/д)</label>
           <div class="col-md-4">
               <input type="text" class="form-control" id="dimensions" name="dimensions" placeholder="в / ш / д" value="{{ Request::old('dimensions') }}">
@@ -74,5 +81,9 @@
           </div>
         </div>
     </form>
+    
+    @foreach($techniques as $technique)
+        <div>{{$technique->name}}</div>
+    @endforeach
 </div>
 @endsection
