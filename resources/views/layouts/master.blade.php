@@ -2,7 +2,9 @@
 <html>
 <head>
     @include('includes.head')
-    <title>Biennale</title>
+    <title>
+        Biennale - @yield('title')
+    </title>
 </head>
 <body>
 <div class="container-fluid">
@@ -11,6 +13,10 @@
         @include('includes.header')
     </header>
 
+    <div class="row">
+        @include('includes.notificationBox')
+    </div>
+    
     <div id="main" class="row">
         @yield('content')
     </div>

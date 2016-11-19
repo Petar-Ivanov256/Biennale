@@ -17,7 +17,7 @@ use App\ApplicationForm;
 class FormsController extends Controller
 {
     public function applyForAttendanceForm(Request $request){
-        return view('applyForAttendanceForm');
+        return view('applicationForm');
     }
 
     public function sendEmail(Request $request){
@@ -34,7 +34,7 @@ class FormsController extends Controller
     
     public function sendForm(Request $request) {
         
-        // TODO: validate input
+        $this->validate($request, $this->validationRules());
         
         $form = new ApplicationForm();
         $form->name = $request->input('name');
@@ -51,5 +51,20 @@ class FormsController extends Controller
         $form->save();
         
         return redirect('/');
+    }
+    
+    private function validationRules() {
+        return [
+            'name' => 'required|max:100',
+            'country' => 'required|max:100',
+            'email' => 'required|max:100|email|unique:application_forms',
+            'phoneNumber' => 'required|max:100',
+            'title' => 'required|max:100',
+            'englishTitle' => 'required|max:100',
+            'dimensions' => 'required|max:100',
+            'installationGuide' => 'required|max:300',
+            'year' => 'required|max:4',
+            'synopsis' => 'required|max:100'
+        ];
     }
 }
