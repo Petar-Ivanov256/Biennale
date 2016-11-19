@@ -14,6 +14,10 @@
     <div id="main" class="row">
         @yield('content')
     </div>
+    
+    <div id="application-form" class="row col-md-8 col-md-offset-7">
+        @include('includes.applicationForm')
+    </div>
 
     <footer class="row">
         @include('includes.footer')

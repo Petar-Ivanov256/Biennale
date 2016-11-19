@@ -12,7 +12,7 @@ namespace App\Http\Controllers;
 use App\Mail\ApplicationFormEmail;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Mail;
-
+use App\ApplicationForm;
 
 class FormsController extends Controller
 {
@@ -30,5 +30,26 @@ class FormsController extends Controller
         Mail::to($myEmail)->send(new ApplicationFormEmail($test));
 
         return view('applyForAttendanceForm', ['data'=>$test]);
+    }
+    
+    public function sendForm(Request $request) {
+        
+        // TODO: validate input
+        
+        $form = new ApplicationForm();
+        $form->name = $request->input('name');
+        $form->country = $request->input('country');
+        $form->email = $request->input('email');
+        $form->phoneNumber = $request->input('phoneNumber');
+        $form->title = $request->input('title');
+        $form->englishTitle = $request->input('englishTitle');
+        $form->dimensions = $request->input('dimensions'); 
+        $form->installationGuide = $request->input('installationGuide');
+        $form->year = $request->input('year');
+        $form->synopsis = $request->input('synopsis');
+        
+        $form->save();
+        
+        return redirect('/');
     }
 }
