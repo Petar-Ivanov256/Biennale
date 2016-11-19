@@ -37,3 +37,5 @@ Route::get('/events','EventsController@events');
 Route::get('/program','ProgramController@program');
 
 Route::get('/apply-for-attendance','FormsController@applyForAttendanceForm');
+Route::post('/apply-for-attendance','FormsController@sendEmail');
+Route::get('send-email','FormsController@sendEmail');
