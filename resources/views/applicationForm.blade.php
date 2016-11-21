@@ -6,7 +6,7 @@
 @section('content')
 
 <div class="col-md-8 col-md-offset-2">
-    <form method="POST" action="apply" class="form-horizontal">
+    <form method="POST" action="{{ URL::to('/apply') }}" class="form-horizontal">
         <div class="form-group">
           <label for="name" class="col-lg-2 control-label">Име и фамилия</label>
           <div class="col-md-4">
@@ -46,7 +46,7 @@
         <div class="form-group">
             @foreach($techniques as $technique)
                 
-            <label><input type="checkbox" name="technique" /> {{$technique->name}}</label>
+            <label><input type="checkbox" name="technique[]" value="{{$technique->id}}" /> {{$technique->name}}</label>
             
             @endforeach
         </div>
@@ -81,9 +81,5 @@
           </div>
         </div>
     </form>
-    
-    @foreach($techniques as $technique)
-        <div>{{$technique->name}}</div>
-    @endforeach
 </div>
 @endsection
