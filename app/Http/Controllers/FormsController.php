@@ -54,6 +54,10 @@ class FormsController extends Controller
         
         $form->save();
         
+        foreach ($request->technique as $tech_id) {
+            $form->techniques()->save(Technique::find($tech_id));
+        }
+        
         return redirect('/');
     }
     
