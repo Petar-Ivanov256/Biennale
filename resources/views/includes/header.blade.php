@@ -2,9 +2,10 @@
 <html>
 <meta charset="UTF-8">
 <body>
-<nav class="navbar navbar-default" role="navigation" >
+<nav class="navbar navbar" role="navigation" >
     <div class="container">
-        <div class="navbar-header">
+        <div class="logo col-md-2">&nbsp;</div>
+        <div class="navbar-header col-md-10">
             <div class="collapse navbar-collapse" id="myNavbar">
                 <ul class="nav navbar-nav" id="navBar" >
                     <li class="dropdown"><a  class="Bien" href="{{ URL::to('/')}}">Бианале</a>

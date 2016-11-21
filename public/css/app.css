@@ -7,6 +7,24 @@
 /*Navigation Bar*/
 
 /*Navigation bar position*/
+@media (min-width: 1200px) {
+    .container{
+        width: 1500px;
+    }
+}
+
+body{
+    background-image: url('../img/background_biennale.jpg');
+    background-repeat: repeat;
+}
+
+.logo{
+    background-image: url('../img/logo_biennale.jpg');
+    width:150px;
+    height:65px;
+    background-size: 150px 65px;
+}
+
 #navBar {
     position: relative;
 }
@@ -14,7 +32,6 @@
 #dropdown-content {
     display: none;
     position: absolute;
-    background-color: #f9f9f9;
 }
 
 /* Links inside the dropdown */
