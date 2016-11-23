@@ -1,7 +1,3 @@
-<!DOCTYPE html>
-<html>
-<meta charset="UTF-8">
-<body>
 <nav class="navbar navbar" role="navigation" >
     <div class="container">
         <div class="logo col-md-2">&nbsp;</div>
@@ -61,5 +57,3 @@
         </div>
     </div>
 </nav>
-</body>
-</html>

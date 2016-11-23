@@ -44,11 +44,16 @@
           </div>
         </div>
         <div class="form-group">
-            @foreach($techniques as $technique)
+            <h3>Техника</h2>
+            <ul>
                 
-            <label><input type="checkbox" name="technique[]" value="{{$technique->id}}" /> {{$technique->name}}</label>
+                @foreach($techniques as $technique)
+                
+                <li><label><input type="checkbox" name="technique[]" value="{{$technique->id}}" /> {{$technique->name}}</label></li>
             
-            @endforeach
+                @endforeach
+                
+            </ul>
         </div>
         <div class="form-group">
           <label for="dimensions" class="col-lg-2 control-label">Размери (в/ш/д)</label>

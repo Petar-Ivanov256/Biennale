@@ -24,6 +24,8 @@
     <footer class="row">
         @include('includes.footer')
     </footer>
+    
+    @include('includes.scripts')
 </div>
 </body>
 </html>

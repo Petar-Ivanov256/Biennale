@@ -1,8 +1,3 @@
-<!DOCTYPE html>
-<html>
-<head>
-</head>
-<body>
 <hr>
 <footer id="BladeFooter">
     <div class="col-sm-1" id="Shape1">
@@ -83,5 +78,3 @@
 
     </div>
 </footer>
-</body>
-</html>
