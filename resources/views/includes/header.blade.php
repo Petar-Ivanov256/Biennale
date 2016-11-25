@@ -50,6 +50,14 @@
                     </li>
                 </ul>
                 <ul class="nav navbar-nav navbar-right" id="navBar">
+                    @if(Auth::check())
+                    <li><a href="#">{{ Auth::user()->name }}</a></li>
+                    <li><a href="{{ URL::to('/logout') }}">Изход</a></li>
+                    @else
+                    <li><a href="{{ URL::to('/register') }}">Регистрация</a></li>
+                    <li><a href="{{ URL::to('/signin') }}">Вход</a></li>
+                    @endif
+                    
                     <li><a href="#"><span class="glyphicon glyphicon-search"></span></a></li>
                     <li><a href="#"><span class="glyphicon glyphicon-bullhorn"></span></a></li>
                 </ul>
