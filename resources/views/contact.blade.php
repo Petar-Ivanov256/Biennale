@@ -4,54 +4,41 @@
 @endsection
 
 @section('content')
-    
-    <div>
-        <form id="contact_form" action="#" method="post">
-            <div class="row">
-                <label for="name">Your Name</label><br>
-                <input id="name" class="yourName" name="name" type="text" placeholder="Enter your name">
-            </div>
-            <div class="row">
-                <label for="email">Your E-mail</label><br>
-                <input id="email" class="yourEmail" name="email" type="email" placeholder="Enter your E-mail">
-            </div>
-            <div class="row">
-                <label for="Message">Your Message</label><br>
-                <textarea id="Message" class="yourMassage" name="message" cols="70" rows="10"></textarea><br>
-            </div>
-            <div class="row">
-                <label>Attach File</label><br>
-                <input id="submit_file" type="file" name="file"><br>
-            </div>
-            <div class='container'>
-                <!--TODO validations and snapchats
-                 <label for='scaptcha' >Enter the code above here:</label>
-                <input type='text' name='scaptcha' id='scaptcha' maxlength="10" /><br/>
-                <span id='contactus_scaptcha_errorloc' class='error'></span>
-                <div class='short_explanation'>Can't read the image?
-                 <a href='javascript: refresh_captcha_img();'>Click here to refresh</a>.</div>-->
-            </div>
-            <input id="submit_button" type="submit" value="Send">
-        </form><br>
-        <img src="#" alt="Individual Pictures" id="imageContact"/>
-        <p id="contactFormPeopleOne">
-            - доц. д-р Константин Вълчев - Арт директор<br>
-            - Александра Велева - Координатор<br>
-            - София - Хара Хадзопулу - Координатор
-        </p>
-        <img src="#" alt="Group Picture" id="imageContact"/>
-        <p id="contactFormPeopleTwo">
-            - координатор НБУ</br>
-            - Галин Галин, Анна Балева и Теодор Георгиев - графични
-            дизайнери<br>
-            - координатор сайт<br>
-            - координатор ПР<br>
-            - координатор фотография<br>
-            - Елизар Милев - координатор на биеналето в "Приложно
-            училище Св. Лука"<br>
-            - Калчев - координатор на биеналето в "ИНХОМ - Белослав" и
-            Варна<br>
-        </p>
+    <div id="SideDate">
+        <p>27.09-02.10</p>
     </div>
-
+    <div  class="col-lg-1">
+        <p id="SuzIstoria">Създаваме история</p>
+        <p id="purvoMezdunarodno">Първото международно биенале в България</p>
+    </div>
+    <div class="col-md-8 col-md-offset-8" id="contact">
+        <h2 id="Title2" class="col-md-offset-4" >Контактна Форма</h2>
+        <form method="POST" action="{{ URL::to('/apply') }}" class="form-horizontal"><br><br>
+            <div class="form-group" id="contentContactForm">
+                <div class="col-md-4 col-md-offset-4">
+                    <input type="text" class="form-control" id="name" name="name" placeholder="Име и фамилия*" value="{{ Request::old('name') }}">
+                </div>
+            </div>
+            <div class="form-group" id="contentContactForm">
+                <div class="col-md-4 col-md-offset-4">
+                    <input type="text" class="form-control" id="email" name="email" placeholder="E-mail*" value="{{ Request::old('email') }}">
+                </div>
+            </div>
+            <div class="form-group" id="contentContactForm">
+                <div class="col-md-4 col-md-offset-4">
+                    <input type="text" class="form-control" id="title" name="Title" placeholder="Заглавие*" value="{{ Request::old('englishTitle') }}">
+                </div>
+            </div>
+            <div class="form-group" id="contentContactForm">
+                <div class="col-md-4 col-md-offset-4">
+                    <textarea class="form-control" id="Message" name="Message" cols="25" rows="5" placeholder="Съобщение*"></textarea>
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="col-lg-4 col-lg-offset-7" id="submitButton">
+                    <button type="submit">Изпрати&nbsp;<i class="fa fa-chevron-circle-right" id="fa-fa-chevron-right"></i></button>
+                </div>
+            </div>
+        </form>
+    </div>
 @endsection
