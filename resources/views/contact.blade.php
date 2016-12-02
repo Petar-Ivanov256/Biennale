@@ -5,7 +5,7 @@
 
 @section('content')
     <section>
-    <div id="SideDate" class="container-fluid">
+    <div id="SideDate" class="container">
         <p>27.09-02.10</p>
     </div>
     <div  class="col-lg-1">
@@ -13,7 +13,7 @@
         <p id="purvoMezdunarodno">Първото международно биенале за стъкло в България</p>
     </div>
 
-    <div id="contentInfo" class="container-fluid">
+    <div id="contentInfo" class="container">
         <h1 id="Title1">Контакти</h1><br>
         <div id="contactText">
             <p>
@@ -31,7 +31,7 @@
         </div>
     </div>
 
-    <div class="col-md-6 col-md-offset-6 container-fluid" id="contact">
+    <div class="col-md-6 col-md-offset-6 container" id="contact">
         <h2 id="Title2" class="col-md-offset-4" >Контактна Форма</h2>
         <form method="POST" action="{{ URL::to('/apply') }}" class="form-horizontal"><br><br>
             <div class="form-group" id="contentContactForm">
