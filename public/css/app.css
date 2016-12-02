@@ -290,7 +290,7 @@ button{
     z-index: 43;
 }
 #emailCordinator {
-    font-size: 18px;
+    font-size: 16px;
     font-family: "359Sans";
     color: rgb(240, 77, 63);
     text-align: right;
@@ -298,7 +298,7 @@ button{
 }
 
 #nameForContact{
-    font-size: 20px;
+    font-size: 15px;
     font-family: "DecimaMonoX";
     color: rgb(121, 77, 159);
     font-weight: bold;
@@ -323,19 +323,20 @@ button{
 }
 /*About*/
 section .container p{
-    font-size: 10px;
+    font-size: 15px;
     font-family: "359Sans";
     color: rgb(121, 77, 159);
     font-style: italic;
     position: relative;
-
+    left: 175px;
 }
 section .container h1,h2{
-    font-size: 15px;
+    font-size: 19px;
     font-family: "DecimaMonoX";
     color: rgb(240, 77, 63);
     font-weight: bold;
     text-transform: uppercase;
     position: relative;
-    width: 160px;
+    left: 160px;
+
 }
