@@ -321,3 +321,22 @@ button{
     color: rgb(121, 77, 159);
     font-style: italic;
 }
+/*About*/
+section .container p{
+    font-size: 17px;
+    font-family: "359Sans";
+    color: rgb(121, 77, 159);
+    font-style: italic;
+    position: relative;
+
+}
+section .container h1,h2{
+    font-size: 20px;
+    font-family: "DecimaMonoX";
+    color: rgb(240, 77, 63);
+    font-weight: bold;
+    text-transform: uppercase;
+    position: relative;
+    width: 160px;
+
+}
