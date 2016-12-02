@@ -8,48 +8,48 @@
                         <ul class="dropdown-menu" id="dropdown-content">
 
                             <li>
-                                <a class="Program" href="{{ URL::to('/program')}}">Програма</a>
+                                <a id="subMenu" class="Program" href="{{ URL::to('/program')}}">Програма</a>
                             </li>
                             <li>
-                                <a class="AttendencyForm"href="{{ URL::to('/apply-for-attendance')}}">Форма за участие</a>
+                                <a id="subMenu" class="AttendencyForm"href="{{ URL::to('/apply-for-attendance')}}">Форма за участие</a>
                             </li>
                             <li>
-                                <a class="About" href="{{ URL::to('/about')}}">За нас</a>
+                                <a id="subMenu" class="About" href="{{ URL::to('/about')}}">За нас</a>
                             </li>
                         </ul>
                     </li>
                 </ul>
                 <ul class="nav navbar-nav" id="navBar">
                     <li>
-                        <a class="Schlarships"href="{{ URL::to('/scholarships')}}">Стипендии</a>
+                        <a id="mainMenuComponents" class="Schlarships"href="{{ URL::to('/scholarships')}}">Стипендии</a>
                         <ul class="dropdown-menu" id="dropdown-content">
-                            <li>  <a href="#">Бакалавър</a></li>
-                            <li> <a href="#">Магистър</a></li>
-                            <li> <a href="#">Докторант</a></li>
+                            <li> <a id="subMenu" href="#">Бакалавър</a></li>
+                            <li> <a id="subMenu" href="#">Магистър</a></li>
+                            <li> <a id="subMenu" href="#">Докторант</a></li>
                         </ul>
                     </li>
                 </ul>
                 <ul class="nav navbar-nav" id="navBar">
                     <li>
-                        <a class="Authors"href="{{ URL::to('/authors')}}">Автори</a>
+                        <a id="mainMenuComponents" class="Authors"href="{{ URL::to('/authors')}}">Автори</a>
                     </li>
                     <li>
-                        <a class="Events"href="{{ URL::to('/events')}}">Събития</a>
+                        <a id="mainMenuComponents" class="Events"href="{{ URL::to('/events')}}">Събития</a>
                     </li>
                     <li>
-                        <a class="News"href="{{ URL::to('/news')}}">Новини</a>
+                        <a id="mainMenuComponents" class="News"href="{{ URL::to('/news')}}">Новини</a>
                     </li>
                     <li>
-                        <a class="Partners" href="{{ URL::to('/partners')}}">Партньори</a>
+                        <a id="mainMenuComponents" class="Partners" href="{{ URL::to('/partners')}}">Партньори</a>
                     </li>
                     <li>
-                        <a class="Archives" href="{{ URL::to('/archive')}}">Архиви</a>
+                        <a id="mainMenuComponents" class="Archives" href="{{ URL::to('/archive')}}">Архиви</a>
                     </li>
                     <li>
-                        <a class="Contacts" href="{{ URL::to('/contact')}}">Контакти</a>
+                        <a id="mainMenuComponents" class="Contacts" href="{{ URL::to('/contact')}}">Контакти</a>
                     </li>
                 </ul>
-                <ul class="nav navbar-nav navbar-right" id="navBar">
+                <ul class="nav navbar-nav navbar-right" id="IconsMenuComponents">
                     @if(Auth::check())
                     <li><a href="#">{{ Auth::user()->name }}</a></li>
                     <li><a href="{{ URL::to('/logout') }}">Изход</a></li>
@@ -57,9 +57,10 @@
                     <li><a href="{{ URL::to('/register') }}">Регистрация</a></li>
                     <li><a href="{{ URL::to('/signin') }}">Вход</a></li>
                     @endif
-                    
-                    <li><a href="#"><span class="glyphicon glyphicon-search"></span></a></li>
-                    <li><a href="#"><span class="glyphicon glyphicon-bullhorn"></span></a></li>
+                        <li><a href="#"><i class="fa fa-search" aria-hidden="true"></i></a></li>
+                        <li><a href={{url('https://www.facebook.com/')}}><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                        <li><a href={{url('https://www.instagram.com/')}}><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+                        <li><a href={{url('https://www.pinterest.com/')}}><i class="fa fa-pinterest" aria-hidden="true"></i></a></li>
                 </ul>
             </div>
         </div>

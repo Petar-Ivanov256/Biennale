@@ -5,3 +5,4 @@
 
 <link href="css/bootstrap.min.css" rel="stylesheet">
 <link rel="stylesheet" href="{{ url('') }}./css/app.css" type="text/css"/>
+<link rel="stylesheet" href="{{url('')}}./fontawesome/css/font-awesome.min.css">

@@ -4,6 +4,28 @@
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
  *//*! normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css */
 
+@font-face {
+    font-family:"359Sans";
+    src: url('../fonts/359/359Sans400.otf');
+    src: url('../fonts/359/359Sans400Italic.otf');
+}
+
+@font-face {
+    font-family: "DecimaMonoX";
+    src: url('../fonts/Decima/Decima Mono Light Italic.otf');
+    src: url('../fonts/Decima/Decima Mono Light Italic.woff');
+    src: url('../fonts/Decima/Decima Mono X Bold Italic.woff');
+    src: url('../fonts/Decima/Decima Mono X Bold Italic.otf');
+    src: url('../fonts/Decima/Decima Mono X Bold.otf');
+    src: url('../fonts/Decima/Decima Mono X Bold.woff');
+    src: url('../fonts/Decima/Decima Mono X Italic.otf');
+    src: url('../fonts/Decima/Decima Mono X Italic.woff');
+    src: url('../fonts/Decima/Decima Mono X Light.otf');
+    src: url('../fonts/Decima/Decima Mono X Light.woff');
+    src: url('../fonts/Decima/Decima Mono X.otf');
+    src: url('../fonts/Decima/Decima Mono X.woff');
+}
+
 /*Navigation Bar*/
 
 /*Navigation bar position*/
@@ -39,23 +61,23 @@ body{
     color: black;
     padding: 10px 10px;
     text-decoration: none;
-    display: block;
 }
 
-.Bien:hover {
-    font-weight: bold;
+#myNavbar a:hover{
     text-decoration: underline;
+    color: #0d1217;
+    font-weight: bold;
 }
+
 /* Show the dropdown menu on hover */
 #navBar:hover #dropdown-content{
-    display: inline-flex;
+    display: flex;
 }
 /*Border beneath the navigation bar*/
 #myNavbar{
     border-bottom: 1px solid;
     z-index: 117;
 }
-
 .Bien{
     font-size: 16px;
     font-family: "359Sans";
@@ -64,14 +86,22 @@ body{
     line-height: 2.07;
     text-align: left;
     position: absolute;
-    z-index: 101;
+    z-index: 1000;
 }
-.Contacts {
+
+#mainMenuComponents {
     font-size: 16px;
     font-family: "359Sans";
-    color: rgb(109, 110, 113);
+    color: #6D6E71;
     z-index: 111;
 }
+#IconsMenuComponents a{
+    font-size: 14px;
+    font-family: "359Sans";
+    text-align: justify;
+    color: #6D6E71;
+}
+
 .BG___EN {
     font-size: 16px;
     font-family: "359Sans";
@@ -84,50 +114,9 @@ body{
     top: 58.39px;
     z-index: 110;
 }
-.Archives {
-    font-size: 16px;
-    font-family: "359Sans";
-    color: rgb(109, 110, 113);
-    position: absolute;
-    z-index: 107;
-}
-.Partners {
-    font-size: 16px;
-    font-family: "359Sans";
-    color: rgb(109, 110, 113);
-    position: absolute;
-    z-index: 106;
-}
-.News {
-    font-size: 16px;
-    font-family: "359Sans";
-    color: rgb(109, 110, 113);
-    position: absolute;
-    z-index: 105;
-}
-.Events {
-    font-size: 16px;
-    font-family: "359Sans";
-    color: rgb(109, 110, 113);
-    position: absolute;
-    z-index: 104;
-}
-.Authors {
-    font-size: 16px;
-    font-family: "359Sans";
-    color: rgb(109, 110, 113);
-    position: absolute;
-    z-index: 103;
-}
-.Schlarships {
-    font-size: 16px;
-    font-family: "359Sans";
-    color: rgb(109, 110, 113);
-    position: absolute;
-    z-index: 102;
-}
+
 /*Sub menu*/
-.About {
+#subMenu{
     font-size: 16px;
     font-family: "359Sans";
     color: rgb(109, 110, 113);
@@ -135,24 +124,6 @@ body{
     position: relative;
     line-height: 2.07;
     z-index: 116;
-}
-.AttendencyForm {
-    font-size: 16px;
-    font-family: "359Sans";
-    color: rgb(109, 110, 113);
-    font-style: italic;
-    line-height: 2.07;
-    position: relative;
-    z-index: 115;
-}
-.Program{
-    font-size: 16px;
-    font-family: "359Sans";
-    color: rgb(109, 110, 113);
-    font-style: italic;
-    position: relative;
-    line-height: 2.07;
-    z-index: 114;
 }
 /*FooterCSS*/
 #BladeFooter li{
@@ -181,3 +152,123 @@ body{
     z-index: 36;
 }
 /*HomePageCSS*/
+/*Contact Forms Css*/
+button{
+    font-size: 10px;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    font-family: "DecimaMonoX";
+    color: rgb(121, 77, 159);
+    text-transform: uppercase;
+    text-decoration: none;
+    display: inline-block;
+    line-height: 1.2;
+    text-align: left;
+    -moz-transform: matrix( 1.83520509777935,0,0,1.82609664835602,0,0);
+    -webkit-transform: matrix( 1.83520509777935,0,0,1.82609664835602,0,0);
+    -ms-transform: matrix( 1.83520509777935,0,0,1.82609664835602,0,0);
+    position: relative;
+    z-index: 63;
+}
+#fa-fa-chevron-right{
+    font-size: 15px;
+    color: rgb(121, 77, 159);
+}
+
+#contentContactForm {
+    font-size: 17px;
+    font-family: "359Sans";
+    color: rgba(109, 110, 113, 0.502);
+    font-style: italic;
+}
+
+#contentInfo{
+    text-align: left;
+    position: absolute;
+    box-sizing:content-box;
+    width: 350px;
+    float: left;
+    margin-left: 150px;
+}
+#contact{
+    float: right;
+}
+
+#Title1{
+    font-size: 15px;
+    font-family: "DecimaMonoX";
+    color: rgb(240, 77, 63);
+    font-weight: bold;
+    text-transform: uppercase;
+    line-height: 1.2;
+    -moz-transform: matrix( 1.83520509777935,0,0,1.82609664835602,0,0);
+    -webkit-transform: matrix( 1.83520509777935,0,0,1.82609664835602,0,0);
+    -ms-transform: matrix( 1.83520509777935,0,0,1.82609664835602,0,0);
+    position: relative;
+    left: 180px;
+    top: 10px;
+    width: 350px;
+    height: 13px;
+    z-index: 32;
+}
+#Title2 {
+    font-size: 15px;
+    font-family: "DecimaMonoX";
+    color: rgb(240, 77, 63);
+    font-weight: bold;
+    text-transform: uppercase;
+    line-height: 1.2;
+    -moz-transform: matrix( 1.83520509777935,0,0,1.82609664835602,0,0);
+    -webkit-transform: matrix( 1.83520509777935,0,0,1.82609664835602,0,0);
+    -ms-transform: matrix( 1.83520509777935,0,0,1.82609664835602,0,0);
+    position: relative;
+    left: 155px;
+    top: 10px;
+    width: 350px;
+    height: 13px;
+    z-index: 32;
+}
+#position{
+    text-align: left;
+    width: 50px;
+}
+
+#SideDate{
+    font-size: 2px;
+    font-family: "DecimaMonoX";
+    color: rgba(215, 237, 237, 0.702);
+    font-weight: bold;
+    line-height: 6;
+    text-align: left;
+    -moz-transform: matrix( 0,-14.5878554630068,14.5878554630068,0,0,0);
+    -webkit-transform: matrix( 0,-14.5878554630068,14.5878554630068,0,0,0);
+    -ms-transform: matrix( 0,-14.5878554630068,14.5878554630068,0,0,0);
+    position: absolute;
+    left: 100px;
+    top: 225px;
+    z-index: 11;
+}
+#purvoMezdunarodno {
+    font-size: 15px;
+    font-family: "359 Sans";
+    color: rgba(109, 110, 113, 0.502);
+    font-style: italic;
+    line-height: 1.383;
+    text-align: left;
+    position: absolute;
+    top: 350px;
+    z-index: 10;
+}
+#SuzIstoria {
+    font-size: 15px;
+    font-family: "DecimaMonoX";
+    color: rgb(240, 77, 63);
+    font-weight: bold;
+    text-transform: uppercase;
+    line-height: 1.276;
+    text-align: left;
+    position: relative;
+    top: 300px;
+    z-index: 9;
+}
