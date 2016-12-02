@@ -11,6 +11,15 @@
         <p id="SuzIstoria">Създаваме история</p>
         <p id="purvoMezdunarodno">Първото международно биенале в България</p>
     </div>
+    <div id="contentInfo" class="FirstTable">
+        <h1 id="Title1">Контакти</h1><br>
+        <div>
+            <p>
+                Международно биенале на стъклото<br>
+                София 1000, България<br>
+                ул. Номередно 12<br>
+            </p>
+        </div>
     <div class="col-md-8 col-md-offset-8" id="contact">
         <h2 id="Title2" class="col-md-offset-4" >Контактна Форма</h2>
         <form method="POST" action="{{ URL::to('/apply') }}" class="form-horizontal"><br><br>
