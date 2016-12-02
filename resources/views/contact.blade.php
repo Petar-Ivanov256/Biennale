@@ -4,48 +4,34 @@
 @endsection
 
 @section('content')
-    <div id="SideDate">
+    <section>
+    <div id="SideDate" class="container-fluid">
         <p>27.09-02.10</p>
     </div>
     <div  class="col-lg-1">
         <p id="SuzIstoria">Създаваме история</p>
-        <p id="purvoMezdunarodno">Първото международно биенале в България</p>
+        <p id="purvoMezdunarodno">Първото международно биенале за стъкло в България</p>
     </div>
 
-    <div id="contentInfo" class="FirstTable">
+    <div id="contentInfo" class="container-fluid">
         <h1 id="Title1">Контакти</h1><br>
-        <div>
+        <div id="contactText">
             <p>
                 Международно биенале на стъклото<br>
                 София 1000, България<br>
                 ул. Номередно 12<br>
             </p>
-        </div>
-        <div class="table-responsive">
-            <table class="table">
-                <tbody>
-                <tr>
-                    <td>Александра Велева</td>
-                    <td>alex.kotseva@gmail.com</td>
-                </tr>
-                <tr>
-                    <td>кординатор</td>
-                    <td>+359 887 288 667</td>
-                <tr>
-                <tr>
-                    <td>София-Хара Хадзопулу</td>
-                    <td>sofia.hadzopoulu@gmail.com</td>
-                </tr>
-                <tr>
-                    <td>кординатор</td>
-                    <td>+359 887 288 667</td>
-                <tr>
-                </tbody>
-            </table>
+            <p>
+                <a id="emailCordinator">glassbiennalebg@gmail.com</a>
+            </p>
+            <span id="nameForContact">Александра Велева</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span><a id="emailCordinator">alex.kotseva@gmail.com</a></span>
+            <span id="cordinator">кординатор</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span id="telefonCordinator">+359 887 288 667</span><br>
+            <span id="nameForContact">София-Хара Хадзопулу</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span><a id="emailCordinator">sofia.hadzopoulu@gmail.com</a></span><br>
+            <span id="cordinator">кординатор</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span id="telefonCordinator">+359 887 288 667</span><br>
         </div>
     </div>
 
-    <div class="col-md-8 col-md-offset-8" id="contact">
+    <div class="col-md-6 col-md-offset-6 container-fluid" id="contact">
         <h2 id="Title2" class="col-md-offset-4" >Контактна Форма</h2>
         <form method="POST" action="{{ URL::to('/apply') }}" class="form-horizontal"><br><br>
             <div class="form-group" id="contentContactForm">
@@ -75,5 +61,5 @@
             </div>
         </form>
     </div>
-
+</section>
 @endsection
