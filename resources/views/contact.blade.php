@@ -56,10 +56,13 @@
             </div>
             <div class="form-group">
                 <div class="col-lg-4 col-lg-offset-7" id="submitButton">
-                    <button type="submit">Изпрати&nbsp;<i class="fa fa-chevron-circle-right" id="fa-fa-chevron-right"></i></button>
+                    <button type="submit" class="contactButon">Изпрати&nbsp;<i class="fa fa-chevron-circle-right" id="fa-fa-chevron-right"></i></button>
                 </div>
             </div>
         </form>
     </div>
 </section>
+
+    <!-- TODO Validations for contact Form--->
+
 @endsection

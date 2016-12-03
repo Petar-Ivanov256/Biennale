@@ -153,7 +153,7 @@ body{
 }
 /*HomePageCSS*/
 /*Contact Forms Css*/
-button{
+.contactButon{
     font-size: 10px;
     border: none;
     background-color: transparent;
@@ -322,21 +322,68 @@ button{
     font-style: italic;
 }
 /*About*/
-section .container p{
+
+.textAbout{
     font-size: 15px;
     font-family: "359Sans";
     color: rgb(121, 77, 159);
     font-style: italic;
     position: relative;
-    left: 175px;
+    left: 157px;
+    width: 644px;
+    float: left;
 }
-section .container h1,h2{
+.name1{
     font-size: 19px;
     font-family: "DecimaMonoX";
     color: rgb(240, 77, 63);
     font-weight: bold;
     text-transform: uppercase;
     position: relative;
-    left: 160px;
+    left: 157px;
 
+}
+.name2{
+    font-size: 19px;
+    font-family: "DecimaMonoX";
+    color: rgb(240, 77, 63);
+    font-weight: bold;
+    text-transform: uppercase;
+    position: relative;
+    width: 382px;
+    left: 157px;
+    margin-top: 25px;
+
+
+}
+
+
+.clearfix{
+    overflow: auto;
+}
+.picAbout{
+    background-image: url('../img/picturesFromAbout.jpg');
+    width: 550px;
+    height: 750px;
+    background-size: auto;
+    position: relative;
+    float: right;
+    margin-right: 150px;
+}
+
+.aboutButtons{
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 15px;
+    font-family: "DecimaMonoX";
+    color: rgba(109, 110, 113, 0.502);
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: left;
+    position: relative;
+    left: 143px;
+    z-index: 81;
 }
