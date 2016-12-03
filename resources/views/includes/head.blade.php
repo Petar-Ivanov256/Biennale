@@ -6,5 +6,8 @@
 
 <link rel="stylesheet" href="{{ url('') }}./css/bootstrap.min.css" type="text/css"/>
 
+<script type="text/javascript" src="{{url('')}}./js/bootstrap.min.js"></script>
+<script type="text/javascript" src="{{url('')}}./js/jquery.min.js"></script>
+
 <link rel="stylesheet" href="{{ url('') }}./css/app.css" type="text/css"/>
 <link rel="stylesheet" href="{{url('')}}./fontawesome/css/font-awesome.min.css">
