@@ -24,7 +24,7 @@ class CreateApplicationFormsTable extends Migration
             
             $table->string('title');
             $table->string('englishTitle');
-            // TODO: technique
+            
             $table->string('dimensions');
             $table->string('installationGuide');
             $table->string('year');

@@ -16,9 +16,9 @@ class CreateNewsTable extends Migration {
         Model::unguard();
         Schema::create('news',function(Blueprint $table){
             $table->increments("id");
-            $table->string("title")->nullable();
-            $table->string("content")->nullable();
-            $table->string("photo")->nullable();
+            $table->string("title");
+            $table->string("content");
+            $table->binary("photo")->nullable();
             $table->timestamps();
             $table->softDeletes();
         });

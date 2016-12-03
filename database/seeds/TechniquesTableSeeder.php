@@ -83,9 +83,5 @@ class TechniquesTableSeeder extends Seeder
         $mixedTechnique = new Technique();
         $mixedTechnique->name = 'mixed technique';
         $mixedTechnique->save();
-        
-        $coldWorked = new Technique();
-        $coldWorked->name = 'cold-worked';
-        $coldWorked->save();
     }
 }

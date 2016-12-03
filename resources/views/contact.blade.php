@@ -25,9 +25,9 @@
                 <a id="emailCordinator">glassbiennalebg@gmail.com</a>
             </p>
             <span id="nameForContact">Александра Велева</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span><a id="emailCordinator">alex.kotseva@gmail.com</a></span>
-            <span id="cordinator">кординатор</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span id="telefonCordinator">+359 887 288 667</span><br>
+            <span id="cordinator">координатор</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span id="telefonCordinator">+359 887 288 667</span><br>
             <span id="nameForContact">София-Хара Хадзопулу</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span><a id="emailCordinator">sofia.hadzopoulu@gmail.com</a></span><br>
-            <span id="cordinator">кординатор</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span id="telefonCordinator">+359 887 288 667</span><br>
+            <span id="cordinator">координатор</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span id="telefonCordinator">+359 887 288 667</span><br>
         </div>
     </div>
 

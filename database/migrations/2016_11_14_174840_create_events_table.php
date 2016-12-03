@@ -16,14 +16,14 @@ class CreateEventsTable extends Migration {
         Model::unguard();
         Schema::create('events',function(Blueprint $table){
             $table->increments("id");
-            $table->dateTime("start")->nullable();
+            $table->dateTime("start");
             $table->dateTime("end")->nullable();
-            $table->string("place")->nullable();
+            $table->string("place");
             $table->string("artist")->nullable();
             $table->string("entrance")->nullable();
-            $table->string("title")->nullable();
-            $table->string("description")->nullable();
-            $table->string("photo")->nullable();
+            $table->string("title");
+            $table->string("description");
+            $table->binary("photo")->nullable();
             $table->timestamps();
             $table->softDeletes();
         });
