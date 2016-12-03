@@ -11,6 +11,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
+use App\News;
 
 class NewsController extends Controller
 {
@@ -26,16 +27,12 @@ class NewsController extends Controller
     
     public function create(Request $request) {
         
-        // TODO: validate
+        $article = new News();
+        $article->title = $request->input('title');
+        $article->content = $request->input('content');
+        $article->photo = $request->file('photo');
+        $article->save();
         
-        DB::table('news')->insert([
-            'title' => $request->input('title'),
-            'content' => $request->input('content'),
-            'category' => $request->input('category'),
-            'date' => date("Y-m-d H:i:s"),
-            'user_id' => 1
-        ]);
-        
-        return 'asd';
+        return redirect('/');
     }
 }
