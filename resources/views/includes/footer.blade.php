@@ -1,5 +1,5 @@
 <hr>
-<footer id="BladeFooter">
+<footer id="BladeFooter" class="container">
     <div class="col-sm-1" id="Shape1">
         {!! HTML::image('img/logo.png') !!}
     </div>
