@@ -12,6 +12,7 @@
         <p id="purvoMezdunarodno">Първото международно биенале за стъкло в България</p>
     </div>
     <div class="container">
+        <div class="row">
         <section>
             <div>
                 <h1 class="name1">Нашата визия</h1>
@@ -28,7 +29,7 @@
                 </p>
             </div>
            </section>
-        <div class="picAbout container"></div>
+        <div class="picAbout row"></div>
         <div>
             <section>
                 <h2 class="name2">Екип</h2>
@@ -141,6 +142,7 @@
                     </div>
                 </div>
             </section>
+        </div>
         </div>
     </div>
 @endsection
