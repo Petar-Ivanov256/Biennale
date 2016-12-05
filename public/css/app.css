@@ -390,3 +390,13 @@ body{
     left: 143px;
     z-index: 81;
 }
+/*Partners CSS*/
+#resize{
+   background-image: url('../img/partnersimg/corporatelogo.jpg');
+    width: 100px;
+    height: 50px;
+}
+div .ahover a:hover{
+    background: red;
+}
+
