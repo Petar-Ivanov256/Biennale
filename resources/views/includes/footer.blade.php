@@ -72,7 +72,7 @@
     <div class="col-md-2">
         <form>
             <label for="email" id="Newsletter">Месечен бюлетин</label><br>
-            <input type="email" name="email" placeholder="e-mail" id="e-mail">
+            <input type="email" name="email" placeholder="e-mail" id="e-mail"><br><br>
             <input type="submit" value="Запиши се">
         </form>
 
