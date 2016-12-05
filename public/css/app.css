@@ -330,10 +330,7 @@ body{
     font-family: "359Sans";
     color: rgb(121, 77, 159);
     font-style: italic;
-    position: relative;
-    left: 157px;
-    width: 644px;
-    float: left;
+    margin-left: 157px;
 }
 .name1{
     font-size: 19px;
@@ -341,9 +338,8 @@ body{
     color: rgb(240, 77, 63);
     font-weight: bold;
     text-transform: uppercase;
-    position: relative;
-    left: 157px;
-    width: 176px;
+    margin-left: 157px;
+
 }
 .name2{
     font-size: 19px;
@@ -352,11 +348,7 @@ body{
     font-weight: bold;
     text-transform: uppercase;
     position: relative;
-    width: 382px;
-    left: 157px;
-    margin-top: 25px;
-
-
+    margin-left: 157px;
 }
 
 
@@ -365,12 +357,12 @@ body{
 }
 .picAbout{
     background-image: url('../img/picturesFromAbout.jpg');
+    background-size: auto;
     width: 550px;
     height: 750px;
-    background-size: auto;
-    position: relative;
     float: right;
     margin-right: 150px;
+    position: relative;
 }
 
 .aboutButtons{
@@ -389,14 +381,13 @@ body{
     position: relative;
     left: 143px;
     z-index: 81;
+
 }
 /*Partners CSS*/
-#resize{
-   background-image: url('../img/partnersimg/corporatelogo.jpg');
-    width: 100px;
-    height: 50px;
+.firsttxt p{
+    margin-left: 150px;
 }
-div .ahover a:hover{
-    background: red;
+.partnersName1{
+    margin-left: 150px;
 }
 

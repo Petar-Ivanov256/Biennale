@@ -4,21 +4,25 @@
 @endsection
 
 @section('content')
-    <div class="container-fluid">
+    <div id="SideDate" class="container-fluid">
         <div class="row">
-            <div id="SideDate">
+            <div class="col-sm-4">
                 <p>27.09-02.10</p>
             </div>
-            <div  class="col-lg-1">
-                <p id="SuzIstoria">Създаваме история</p><br><br>
-                <p id="purvoMezdunarodno">Първото международно биенале за стъкло в България</p>
+        </div>
+    </div>
+    <div  class="container-fluid">
+        <div class="row">
+            <div class="col-sm-1">
+                <p id="SuzIstoria">Създаваме<br>история</p>
+                <p id="purvoMezdunarodno">Първото международно<br>биенале за стъкло<br>в България</p>
             </div>
         </div>
     </div>
 
     <div class="container">
-        <div class="row">
-        <div class="col-md-5">
+
+        <div class="col-lg-6 firsttxt">
             <h3 class="partnersName1">Направи дарение</h3>
             <hr>
             <p>
@@ -42,7 +46,7 @@
                 </p>
             </div>
             <div class="col-md-5">
-                <h3 class="partnersName1">Спонсори и партньори</h3>
+                <h3>Спонсори и партньори</h3>
                 <hr>
                 <h4 class="partnersName2">Главни партньори</h4><br>
                 <div class="ahover">

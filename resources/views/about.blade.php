@@ -5,39 +5,44 @@
 
 @section('content')
     <div id="SideDate" class="container-fluid">
-        <p>27.09-02.10</p>
+        <div class="row">
+            <div class="col-xs-3">
+                <p>27.09-02.10</p>
+            </div>
+        </div>
     </div>
-    <div  class="col-lg-1 container-fluid">
-        <p id="SuzIstoria">Създаваме история</p>
-        <p id="purvoMezdunarodno">Първото международно биенале за стъкло в България</p>
+    <div  class="container-fluid">
+        <div class="row">
+            <div class="col-sm-1">
+                <p id="SuzIstoria">Създаваме<br>история</p>
+                <p id="purvoMezdunarodno">Първото международно<br>биенале за стъкло<br>в България</p>
+            </div>
+        </div>
     </div>
     <div class="container">
         <div class="row">
-        <section>
-            <div>
+            <div class="col-lg-12">
+               <div class="col-lg-6">
                 <h1 class="name1">Нашата визия</h1>
                 <p class="textAbout">
-                    Нашата визия е общество, за което изкуството е неразделна част и жизвота и света,<br>
-                    за да спомогне за осъществяването на пъстроцветното бъдеще за идните поколения.<br>
-                    Работейки в тази посока, ние вдъхновяваме авторите по света, творящи в областта на<br>
-                    художествето стъкло, да представят и споделят своите знания. Целта ни е развитие на<br>
-                    изкуството от стъкло в Европа и по-специанлно в изочната част на континента.<br>
-                    Ние припознаваме определени ценности като екзистенциални за достигането на<br>
-                    нашите мисия и визия. Като екип от артисти самите ние сме мотивирани от<br>
-                    следните ценности: уважение,сътрудничество, качество, новаторство, обогатяване на<br>
-                    познанията в областта, вдъхновение и позитивно мислене.<br>
+                    Нашата визия е общество, за което изкуството е неразделна част и жизвота и света,
+                    за да спомогне за осъществяването на пъстроцветното бъдеще за идните поколения.
+                    Работейки в тази посока, ние вдъхновяваме авторите по света, творящи в областта на
+                    художествето стъкло, да представят и споделят своите знания. Целта ни е развитие на
+                    изкуството от стъкло в Европа и по-специанлно в изочната част на континента.
+                    Ние припознаваме определени ценности като екзистенциални за достигането на
+                    нашите мисия и визия. Като екип от артисти самите ние сме мотивирани от
+                    следните ценности: уважение,сътрудничество, качество, новаторство, обогатяване на
+                    познанията в областта, вдъхновение и позитивно мислене.
                 </p>
             </div>
-           </section>
-        <div class="picAbout row"></div>
-        <div>
-            <section>
+                <div class="picAbout col-lg-3"></div>
+        <div class="col-md-2">
                 <h2 class="name2">Екип</h2>
                 <div>
                     <button type="button" class="aboutButtons btn-lg" data-toggle="modal" data-target="#myModal">
                         Арт Директор
                     </button><br>
-
                     <!-- Modal -->
                     <div class="modal fade bs-example-modal-lg" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
                         <div class="modal-dialog modal-lg" role="document">
@@ -55,7 +60,6 @@
                             </div>
                         </div>
                     </div>
-
                     <button type="button" class="aboutButtons btn-lg" data-toggle="modal" data-target="#mycoordinatorModal">
                         Координатори
                     </button><br>
@@ -72,7 +76,6 @@
                                 </div>
                                 <div class="modal-footer">
                                     <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-
                                 </div>
                             </div>
                         </div>
@@ -135,15 +138,14 @@
                                 </div>
                                 <div class="modal-footer">
                                     <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-            </section>
-        </div>
-        </div>
+           </div>
+         </div>
+      </div>
     </div>
 @endsection
 
