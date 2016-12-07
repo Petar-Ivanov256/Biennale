@@ -42,11 +42,7 @@ class Events extends Model {
     }
     
     
-    
-    /**
-     * Set attribute to datetime format
-     * @param $input
-     */
+    /*
     public function setStartAttribute($input)
     {
         if($input != '') {
@@ -56,12 +52,6 @@ class Events extends Model {
         }
     }
 
-    /**
-     * Get attribute from datetime format
-     * @param $input
-     *
-     * @return string
-     */
     public function getStartAttribute($input)
     {
         if($input != '0000-00-00') {
@@ -71,10 +61,6 @@ class Events extends Model {
         }
     }
 
-/**
-     * Set attribute to datetime format
-     * @param $input
-     */
     public function setEndAttribute($input)
     {
         if($input != '') {
@@ -84,12 +70,6 @@ class Events extends Model {
         }
     }
 
-    /**
-     * Get attribute from datetime format
-     * @param $input
-     *
-     * @return string
-     */
     public function getEndAttribute($input)
     {
         if($input != '0000-00-00') {
@@ -98,6 +78,6 @@ class Events extends Model {
             return '';
         }
     }
-
+    */
 
 }

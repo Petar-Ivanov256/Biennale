@@ -5,6 +5,7 @@
     <title>
         Biennale - @yield('title')
     </title>
+    @yield('head')
 </head>
 <body>
 <div class="container-fluid">
@@ -26,6 +27,7 @@
     </footer>
     
     @include('includes.scripts')
+    @yield('foot')
 </div>
 </body>
 </html>
