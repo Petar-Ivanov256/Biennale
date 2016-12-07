@@ -34,6 +34,12 @@
         width: 1500px;
     }
 }
+@media only screen and (max-width: 320px) {
+
+    body { font-size: 10px; }
+    h3{ font-size: 15px; font-weight: bold;}
+
+}
 
 body{
     background-image: url('../img/background_biennale.jpg');
