@@ -5,15 +5,24 @@
 
 @section('content')
     <section>
-    <div id="SideDate" class="container-fluid">
-        <p>27.09-02.10</p>
-    </div>
-    <div  class="col-lg-1">
-        <p id="SuzIstoria">Създаваме история</p>
-        <p id="purvoMezdunarodno">Първото международно биенале за стъкло в България</p>
-    </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3 SideDate">
+                    <p>27.09-02.10</p>
+                </div>
+            </div>
+        </div>
+        <div  class="container">
+            <div class="row">
+                <div class="col-sm-1">
+                    <p id="SuzIstoria">Създаваме<br>история</p>
+                    <p id="purvoMezdunarodno">Първото международно<br>биенале за стъкло<br>в България</p>
+                </div>
+            </div>
+        </div>
 
-    <div id="contentInfo" class="container-fluid">
+
+        <div id="contentInfo" class="container-fluid">
         <h1 id="Title1">Контакти</h1><br>
         <div id="contactText">
             <p>

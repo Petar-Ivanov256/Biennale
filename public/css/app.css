@@ -152,6 +152,45 @@ body{
     z-index: 36;
 }
 /*HomePageCSS*/
+.biennalehome1 img{
+    max-width: 100%;
+    height: auto;
+    position: relative;
+    margin-left: 200px;
+}
+.biennalehome2 img{
+    max-width: 100%;
+    height: auto;
+    position: relative;
+    margin-left: 200px;
+}
+.carousel{
+
+}
+.carousel-inner img {
+    max-width: 100%; /* Set width to 100% */
+    height: auto;
+    margin: auto;
+
+}
+@media (max-width: 600px) {
+    .carousel-caption {
+        display: none; /* Hide the carousel text when the screen is less than 600 pixels wide */
+    }
+}
+.carousel-caption h3 {
+    color: #fff !important;
+}
+
+.homepageOchakvaite {
+    font-size: 65px;
+    font-family: "DecimaMonoX";
+    color: rgb(121, 77, 159);
+    font-weight: bold;
+    text-transform: uppercase;
+    text-decoration: none;
+    text-align: center;
+}
 /*Contact Forms Css*/
 .contactButon{
     font-size: 10px;
@@ -243,28 +282,27 @@ body{
     width: 50px;
 }
 
-#SideDate{
+.SideDate p{
     font-size: 2px;
     font-family: "DecimaMonoX";
     color: rgba(215, 237, 237, 0.702);
     font-weight: bold;
     line-height: 6;
-    text-align: left;
     -moz-transform: matrix( 0,-14.5878554630068,14.5878554630068,0,0,0);
     -webkit-transform: matrix( 0,-14.5878554630068,14.5878554630068,0,0,0);
     -ms-transform: matrix( 0,-14.5878554630068,14.5878554630068,0,0,0);
     position: absolute;
-    left: 100px;
-    top: 225px;
+    left:30px;
+    width: 27px;
+    margin-top: 25px;
     z-index: 11;
 }
 #purvoMezdunarodno {
     font-size: 15px;
-    font-family: "359 Sans";
+    font-family: "359Sans";
     color: rgba(109, 110, 113, 0.502);
     font-style: italic;
     line-height: 1.383;
-    text-align: left;
     position: absolute;
     top: 350px;
     z-index: 10;
@@ -276,7 +314,6 @@ body{
     font-weight: bold;
     text-transform: uppercase;
     line-height: 1.276;
-    text-align: left;
     position: relative;
     top: 300px;
     z-index: 9;
@@ -357,12 +394,13 @@ body{
 }
 .picAbout{
     background-image: url('../img/picturesFromAbout.jpg');
-    background-size: auto;
     width: 550px;
     height: 750px;
-    float: right;
-    margin-right: 150px;
     position: relative;
+    float: right;
+    background-size: contain;
+    background-repeat: no-repeat;
+
 }
 
 .aboutButtons{

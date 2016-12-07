@@ -4,14 +4,14 @@
 @endsection
 
 @section('content')
-    <div id="SideDate" class="container-fluid">
+    <div class="container">
         <div class="row">
-            <div class="col-xs-3">
+            <div class="col-md-3 SideDate">
                 <p>27.09-02.10</p>
             </div>
         </div>
     </div>
-    <div  class="container-fluid">
+    <div  class="container">
         <div class="row">
             <div class="col-sm-1">
                 <p id="SuzIstoria">Създаваме<br>история</p>
@@ -19,6 +19,7 @@
             </div>
         </div>
     </div>
+
     <div class="container">
         <div class="row">
             <div class="col-lg-12">
@@ -36,7 +37,7 @@
                     познанията в областта, вдъхновение и позитивно мислене.
                 </p>
             </div>
-                <div class="picAbout col-lg-3"></div>
+                <div class="picAbout col-md-4"></div>
         <div class="col-md-2">
                 <h2 class="name2">Екип</h2>
                 <div>
