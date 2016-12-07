@@ -22,8 +22,8 @@
 
     <div class="container">
         <div class="row">
-            <div class="col-lg-12">
-               <div class="col-lg-6">
+            <div class="col-xs-12 col-sm-6 col-lg-12">
+               <div class="col-xs-12 col-sm-6 col-lg-6">
                 <h1 class="name1">Нашата визия</h1>
                 <p class="textAbout">
                     Нашата визия е общество, за което изкуството е неразделна част и жизвота и света,
@@ -37,8 +37,8 @@
                     познанията в областта, вдъхновение и позитивно мислене.
                 </p>
             </div>
-                <div class="picAbout col-md-4"></div>
-        <div class="col-md-2">
+                <div class="picAbout col-xs-12 col-sm-6 col-md-4"></div>
+        <div class=".col-xs-12 col-sm-6 col-md-2">
                 <h2 class="name2">Екип</h2>
                 <div>
                     <button type="button" class="aboutButtons btn-lg" data-toggle="modal" data-target="#myModal">
