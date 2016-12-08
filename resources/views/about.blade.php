@@ -5,23 +5,19 @@
 
 @section('content')
     <div class="container">
-        <div class="row">
-            <div class="col-md-3 SideDate">
+          <div class="col-md-3 SideDate">
                 <p>27.09-02.10</p>
             </div>
         </div>
-    </div>
-    <div  class="container">
-        <div class="row">
+        <div  class="container">
             <div class="col-sm-1">
                 <p id="SuzIstoria">Създаваме<br>история</p>
                 <p id="purvoMezdunarodno">Първото международно<br>биенале за стъкло<br>в България</p>
             </div>
         </div>
-    </div>
 
     <div class="container">
-        <div class="row">
+
             <div class="col-xs-12 col-sm-6 col-lg-12">
                <div class="col-xs-12 col-sm-6 col-lg-6">
                 <h1 class="name1">Нашата визия</h1>
@@ -37,8 +33,10 @@
                     познанията в областта, вдъхновение и позитивно мислене.
                 </p>
             </div>
-                <div class="picAbout col-xs-12 col-sm-6 col-md-4"></div>
-        <div class=".col-xs-12 col-sm-6 col-md-2">
+                <div class="picAbout">
+                    {!! HTML::image('img/picturesFromAbout.jpg') !!}
+                </div>
+        <div class="col-xs-12 col-sm-6 col-md-2">
                 <h2 class="name2">Екип</h2>
                 <div>
                     <button type="button" class="aboutButtons btn-lg" data-toggle="modal" data-target="#myModal">
@@ -147,7 +145,7 @@
            </div>
          </div>
       </div>
-    </div>
+
 @endsection
 
 

@@ -20,13 +20,11 @@
         </div>
     </div>
 
-
     <div class="container">
-
         <div class="col-xs-12 col-sm-6 col-lg-6 firsttxt">
-            <h3 class="partnersName1">Направи дарение</h3>
-            <hr>
-            <p>
+            <h3 class="partnersName">Направи дарение</h3>
+            <hr class="hr1">
+            <p class="p1">
                 Имате ли отношение към съвременното изкуство? Вярвате ли, че изкуство
                 има силата отвори сърцата и съзнанието ни? Искате ли да подкрепите
                 талантливи артисти да създават нови творби? И най-вече искатели в България
@@ -35,19 +33,19 @@
                 събития. Нашият екип влага цялата енергия и генерира нови идеи, чрез които да
                 разнообрази творческата сцена в София и България. Стани част от това приключение!<br><br>
                 За повече информация как може да ни подкрепите, моля пишете ни на
-                <span><a class="emailAdress" href="#">glassbiennalebg@gmail.com</a></span> или се обадете на <span class="telfonNomer">+359 889 567 488.</span>
+                <span><a class="emailAdress" href="mailto:glassbiennalebg@gmail.com">glassbiennalebg@gmail.com</a></span> или се обадете на <span class="telfonNomer">+359 889 567 488.</span>
             </p>
         </div>
-            <div class="col-xs-12 col-sm-6 col-md-6">
-                <h3>Възможности</h3>
+            <div class="col-xs-12 col-sm-6 col-md-5 vzmoznosti">
+                <h3 class="partnersName1">Възможности</h3>
                 <hr>
-                <p>
+                <p class="p1">
                     Ако искате да научите повече за възможността да станете част от нашия екип, който ще
-                    организира следващото биенале през 2019 година, моля пишете ни на  <span><a class="emailAdress" href="#">glassbiennalebg@gmail.com</a></span>
+                    организира следващото биенале през 2019 година, моля пишете ни на  <span><a class="emailAdress" href="mailto:glassbiennalebg@gmail.com">glassbiennalebg@gmail.com</a></span>
                 </p>
             </div>
             <div class="col-xs-12 col-sm-6 col-md-5">
-                <h3>Спонсори и партньори</h3>
+                <h3 class="partnersName1">Спонсори и партньори</h3>
                 <hr>
                 <h4 class="partnersName2">Главни партньори</h4><br>
                 <div class="ahover">

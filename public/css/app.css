@@ -398,15 +398,11 @@ body{
 .clearfix{
     overflow: auto;
 }
-.picAbout{
-    background-image: url('../img/picturesFromAbout.jpg');
-    width: 550px;
-    height: 750px;
+.picAbout img{
+    max-width:100%;
+    height: auto;
     position: relative;
     float: right;
-    background-size: contain;
-    background-repeat: no-repeat;
-
 }
 
 .aboutButtons{
@@ -432,6 +428,62 @@ body{
     margin-left: 150px;
 }
 .partnersName1{
+    font-size: 20px;
+    font-family: "DecimaMonoX";
+    color: rgb(240, 77, 63);
+    font-weight: bold;
+    text-transform: uppercase;
+
+}
+.partnersName{
+    margin-left: 150px;
+    font-size: 20px;
+    font-family: "DecimaMonoX";
+    color: rgb(240, 77, 63);
+    font-weight: bold;
+    text-transform: uppercase;
+
+}
+.hr1{
     margin-left: 150px;
 }
-
+.p1{
+    font-family: "359Sans";
+}
+.emailAdress{
+    color: rgb(240, 77, 63);
+}
+.telfonNomer{
+    color: rgb(240, 77, 63);
+}
+.partnersName2{
+    font-size: 15px;
+    font-family: "359Sans";
+    color: rgb(121, 77, 159);
+    font-weight: bold;
+    text-transform: uppercase;
+}
+.ahover a{
+    filter: gray;
+    -webkit-filter: grayscale(100%);
+}
+/*Program Css*/
+.lihorizontal li {
+    display: inline;
+    list-style-type: none;
+    padding-right: 20px;
+    font-family: "DecimaMonoX";
+    font-weight: bold;
+    text-transform: uppercase;
+}
+.lihorizontal a{
+    color: rgb(240, 77, 63);
+}
+.programData{
+    font-size: 15px;
+    font-family: "DecimaMonoX";
+    color: rgb(121, 77, 159);
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-left: 157px;
+}
