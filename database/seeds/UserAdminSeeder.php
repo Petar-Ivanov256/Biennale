@@ -18,5 +18,12 @@ class UserAdminSeeder extends Seeder
         $user->password = bcrypt('123456');
         $user->role_id = Role::where('title', 'admin')->first()->id;
         $user->save();
+
+        $user = new User();
+        $user->name = 'Pesho';
+        $user->email = 'pesho@user.com';
+        $user->password = bcrypt('123456');
+        $user->role_id = Role::where('title', 'user')->first()->id;
+        $user->save();
     }
 }

@@ -32,7 +32,7 @@ class User extends Authenticatable
     public function isAdmin()
     {
         $adminRoleId = Role::where('title', 'admin')->first()->id;
-        return $this->id == $adminRoleId;
+        return $this->role_id == $adminRoleId;
     }
 }
 
