@@ -4,6 +4,14 @@
 /.idea
 Homestead.json
 Homestead.yaml
+.env
+
+/node_modules
+/public/storage
+/vendor
+/.idea
+Homestead.json
+Homestead.yaml
 
 
 vendor/

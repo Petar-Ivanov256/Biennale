@@ -1,1 +1,0 @@
-<h1>Praten email {{$text}}</h1>
