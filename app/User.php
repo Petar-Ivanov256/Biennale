@@ -2,6 +2,8 @@
 namespace App;
 use Illuminate\Notifications\Notifiable;
 use Illuminate\Foundation\Auth\User as Authenticatable;
+use App\Role;
+
 class User extends Authenticatable
 {
     use Notifiable;
@@ -25,6 +27,12 @@ class User extends Authenticatable
     public function role()
     {
         return $this->belongsTo(Role::class);
+    }
+
+    public function isAdmin()
+    {
+        $adminRoleId = Role::where('title', 'admin')->first()->id;
+        return $this->id == $adminRoleId;
     }
 }
 
