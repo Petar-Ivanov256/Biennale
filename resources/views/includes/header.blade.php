@@ -51,12 +51,19 @@
                 </ul>
                 <ul class="nav navbar-nav navbar-right" id="IconsMenuComponents">
                     @if(Auth::check())
-                    <li><a href="#">{{ Auth::user()->name }}</a></li>
-                    <li><a href="{{ URL::to('/logout') }}">Изход</a></li>
+                        <li><a href="#">{{ Auth::user()->name }}</a></li>
+
+                        @if (Auth::user()->isAdmin())
+                            <li><a href="{{ URL::to('/admin') }}">Админ</a></li>
+                        @endif
+
+                        <li><a href="{{ URL::to('/logout') }}">Изход</a></li>
                     @else
-                    <li><a href="{{ URL::to('/register') }}">Регистрация</a></li>
-                    <li><a href="{{ URL::to('/signin') }}">Вход</a></li>
+                        <li><a href="{{ URL::to('/register') }}">Регистрация</a></li>
+                        <li><a href="{{ URL::to('/signin') }}">Вход</a></li>
                     @endif
+
+                    
                         <li><a href="#"><i class="fa fa-search" aria-hidden="true"></i></a></li>
                         <li><a href={{url('https://www.facebook.com/')}}><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
                         <li><a href={{url('https://www.instagram.com/')}}><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
