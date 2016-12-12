@@ -4,11 +4,12 @@
 @endsection
 
 @section('content')
+    <a  href="{{ URL::to('/admin/showEvents')}}" class="btn btn-primary">Виж събития</a>
+{{--@if(Auth::user()->isAdmin())--}}
+{{--admin sam--}}
+{{--@else--}}
+{{--ne sam--}}
+{{--@endif--}}
 
-<h1>Stana</h1>
-@if(Auth::user()->isAdmin())
-admin sam
-@else
-ne sam
-@endif
+
 @endsection

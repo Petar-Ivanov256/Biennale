@@ -59,3 +59,10 @@ Route::get('/testauth', 'AuthController@test');
 Route::get('/logout', 'AuthController@logout');
 
 Route::get('/admin', 'Admin\AdminController@home_admin')->middleware('isAdmin');
+
+Route::get('/admin/showEvents', 'Admin\AdminController@show_events')->middleware('isAdmin');
+Route::get('/admin/createEvent', 'Admin\AdminController@create_event')->middleware('isAdmin');
+Route::post('/admin/createEvent', 'Admin\AdminController@add_event')->middleware('isAdmin');
+Route::get('/admin/editEvent/{id}', 'Admin\AdminController@edit_event')->middleware('isAdmin');
+Route::post('/admin/editEvent', 'Admin\AdminController@edit_event_save')->middleware('isAdmin');
+Route::post('/admin/deleteEvent', 'Admin\AdminController@delete_event')->middleware('isAdmin');

@@ -38,7 +38,7 @@ class Events extends Model {
     {
         parent::boot();
 
-        Events::observe(new UserActionsObserver);
+        //Events::observe(new UserActionsObserver);
     }
     
     
