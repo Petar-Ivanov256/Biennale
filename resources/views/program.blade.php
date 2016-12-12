@@ -38,4 +38,21 @@
             </div>
          </div>
     </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-3 programa">
+                <a href="#">{!! HTML::image('img/programimg/pic1.jpg') !!}
+                    <p>27.09-29.09 <span class="leftprogramspan">10:00-18:00</span></p>
+                    <hr>
+                    <p>София <span class="leftprogramspan">Райко Алексиев</span></p>
+                </a>
+            </div>
+            <div class="col-md-3 programa">
+                {!! HTML::image('img/programimg/pic2.jpg') !!}
+            </div>
+            <div class="col-md-3 programa">
+                {!! HTML::image('img/programimg/pic3.jpg') !!}
+            </div>
+        </div>
+    </div>
 @endsection
