@@ -37,9 +37,6 @@
                         <a id="mainMenuComponents" class="Events"href="{{ URL::to('/events')}}">Събития</a>
                     </li>
                     <li>
-                        <a id="mainMenuComponents" class="News"href="{{ URL::to('/news')}}">Новини</a>
-                    </li>
-                    <li>
                         <a id="mainMenuComponents" class="Partners" href="{{ URL::to('/partners')}}">Партньори</a>
                     </li>
                     <li>
