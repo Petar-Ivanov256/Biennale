@@ -4,7 +4,7 @@
 @endsection
 
 @section('head')
-    <link rel="stylesheet" type="text/css" href="{{ URL:: asset('/jquery-ui/jquery-ui.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ URL::asset('/datetime-picker/picker.min.css') }}">
 @endsection
 
 @section('content')
@@ -25,9 +25,25 @@
                 </div>
             </div>
             <div class="form-group">
-                <label for="start" class="col-lg-2 control-label">Дата</label>
+                <label for="start" class="col-lg-2 control-label">Начало</label>
                 <div class="col-lg-6">
-                    <input type="text" class="form-control" id="start" name="start" value="{{ Request::old('start') }}" autofocus>
+                    <div class='input-group date' id='datetimepicker1'>
+                        <input type="text" class="form-control" id="start" name="start" value="{{ Request::old('start') }}" />
+                        <span class="input-group-addon">
+                            <span class="glyphicon glyphicon-calendar"></span>
+                        </span>
+                    </div>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="end" class="col-lg-2 control-label">Край</label>
+                <div class="col-lg-6">
+                    <div class='input-group date' id='datetimepicker2'>
+                        <input type="text" class="form-control" id="end" name="end" value="{{ Request::old('end') }}" />
+                        <span class="input-group-addon">
+                            <span class="glyphicon glyphicon-calendar"></span>
+                        </span>
+                    </div>
                 </div>
             </div>
             <div class="form-group">
@@ -50,10 +66,12 @@
 @endsection
 
 @section('foot')
-    <script type="text/javascript" src="{{ URL:: asset('/jquery-ui/jquery-ui.js') }}"></script>
+    <script type="text/javascript" src="{{ URL:: asset('/datetime-picker/moment-with-locales.min.js') }}"></script>
+    <script type="text/javascript" src="{{ URL:: asset('/datetime-picker/picker.min.js') }}"></script>
     <script>
         $(function() {
-            $("#start").datepicker();
+            $('#datetimepicker1').datetimepicker({ locale: 'bg' });
+            $('#datetimepicker2').datetimepicker({ locale: 'bg' });
         });
     </script>
 @stop

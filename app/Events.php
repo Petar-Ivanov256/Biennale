@@ -40,44 +40,24 @@ class Events extends Model {
 
         //Events::observe(new UserActionsObserver);
     }
-    
-    
-    /*
-    public function setStartAttribute($input)
+
+    public function setStartAttribute($value)
     {
-        if($input != '') {
-            $this->attributes['start'] = Carbon::createFromFormat(config('quickadmin.date_format') . ' ' . config('quickadmin.time_format'), $input)->format('Y-m-d H:i:s');
-        }else{
-            $this->attributes['start'] = '';
-        }
+        $this->attributes['start'] = date('Y-m-d H:i:s', strtotime($value));
     }
 
-    public function getStartAttribute($input)
+    public function setEndAttribute($value)
     {
-        if($input != '0000-00-00') {
-            return Carbon::createFromFormat('Y-m-d H:i:s', $input)->format(config('quickadmin.date_format') . ' ' .config('quickadmin.time_format'));
-        }else{
-            return '';
-        }
+        $this->attributes['end'] = date('Y-m-d H:i:s', strtotime($value));
     }
 
-    public function setEndAttribute($input)
+    public function getStartAttribute()
     {
-        if($input != '') {
-            $this->attributes['end'] = Carbon::createFromFormat(config('quickadmin.date_format') . ' ' . config('quickadmin.time_format'), $input)->format('Y-m-d H:i:s');
-        }else{
-            $this->attributes['end'] = '';
-        }
+        return date('d.m.Y H:i', strtotime($this->attributes['start']));
     }
 
-    public function getEndAttribute($input)
+    public function getEndAttribute()
     {
-        if($input != '0000-00-00') {
-            return Carbon::createFromFormat('Y-m-d H:i:s', $input)->format(config('quickadmin.date_format') . ' ' .config('quickadmin.time_format'));
-        }else{
-            return '';
-        }
+        return date('d.m.Y H:i', strtotime($this->attributes['end']));
     }
-    */
-
 }

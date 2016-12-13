@@ -32,11 +32,9 @@ class AdminController extends Controller
 
         $this->validate($request, $this->validateEvent());
 
-        $date = date('Y-m-d', strtotime($request->input('start')));
-
         $event = new Events();
-        $event->start = $date;
-        //$event->end = $request->input('end');
+        $event->start = $request->input('start');
+        $event->end = $request->input('end');
         $event->place = $request->input('place');
         //$event->artist = $request->input('artist');
         //$event->entrance = $request->input('entrance');
@@ -59,13 +57,12 @@ class AdminController extends Controller
         $id = $request->input('id');
         $title = $request->input('title');
         $place = $request->input('place');
-        $date_start = date('Y-m-d', strtotime($request->input('start')));
         $description = $request->input('description');
 
         $event = Events::find($id);
 
-        $event->start = $date_start;
-        //$event->end = $request->input('end');
+        $event->start = $request->input('start');
+        $event->end = $request->input('end');
         $event->place = $place;
         //$event->artist = $request->input('artist');
         //$event->entrance = $request->input('entrance');
