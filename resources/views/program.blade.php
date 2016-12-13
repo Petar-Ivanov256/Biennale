@@ -20,7 +20,7 @@
         </div>
     </div>
     <div class="container">
-        <div class="row">
+
             <div class="col-xs-12 col-sm-6 col-lg-10">
                 <div class="col-md-2 programData">
                     <p>Дата</p>
@@ -37,22 +37,26 @@
                 </div>
             </div>
          </div>
-    </div>
+
     <div class="container">
-        <div class="row">
-            <div class="col-md-3 programa">
-                <a href="#">{!! HTML::image('img/programimg/pic1.jpg') !!}
-                    <p>27.09-29.09 <span class="leftprogramspan">10:00-18:00</span></p>
-                    <hr>
-                    <p>София <span class="leftprogramspan">Райко Алексиев</span></p>
-                </a>
+           <div class="col-lg-12">
+                <div class="col-lg-3 programa">
+                    <a href="#">{!! HTML::image('img/programimg/pic1.jpg') !!}
+
+                            <span class="ptagleft">27.09-29.09</span>
+                            <span class="ptagleft">10:00-18:00</span>
+                            <hr>
+                            <span class="ptagleft">София</span>
+                            <span class="ptagleft">Райко Алексиев</span>
+
+                    </a>
+                </div>
+                <div class="col-lg-3 programa">
+                    {!! HTML::image('img/programimg/pic2.jpg') !!}
+                </div>
+                <div class="col-lg-3 programa">
+                    {!! HTML::image('img/programimg/pic3.jpg') !!}
+                </div>
             </div>
-            <div class="col-md-3 programa">
-                {!! HTML::image('img/programimg/pic2.jpg') !!}
             </div>
-            <div class="col-md-3 programa">
-                {!! HTML::image('img/programimg/pic3.jpg') !!}
-            </div>
-        </div>
-    </div>
 @endsection

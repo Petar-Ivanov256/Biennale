@@ -491,9 +491,23 @@ body{
 .leftprogramspan{
     color: #761c19;
 }
-.programa img{
+.programa img {
     max-width: 100%;
     height: auto;
     position: relative;
     margin-left: 200px;
+}
+.programa span{
+
+}
+.programa .ptagleft{
+    margin-left: 200px;
+    float: left;
+    width:33.33333%;
+}
+.ptagleft .ptagright{
+    margin-left: 250px;
+    float: right;
+    width:33.33333%;
+
 }
