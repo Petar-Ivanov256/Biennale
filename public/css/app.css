@@ -488,26 +488,60 @@ body{
     margin-left: 157px;
 }
 /*Program Css*/
-.leftprogramspan{
-    color: #761c19;
-}
 .programa img {
+    display: block;
     max-width: 100%;
     height: auto;
     position: relative;
     margin-left: 200px;
 }
 .programa span{
-
+    background-color: rgb(195, 227, 227);
+    /*background-color: #2ab27b;*/
 }
 .programa .ptagleft{
-    margin-left: 200px;
+    left: 200px;
     float: left;
-    width:33.33333%;
+    width:50%;
+    position: relative;
 }
-.ptagleft .ptagright{
-    margin-left: 250px;
-    float: right;
-    width:33.33333%;
+#right-align{
+    text-align: right;
+}
+#right-alignaddress{
+    text-align: right;
+    font-family: "359Sans";
+    color: rgb(255, 255, 255);
+    font-style: italic;
 
+}
+#right-alignhour{
+    font-family: "DecimaMonoX";
+    color: rgb(255, 255, 255);
+    text-transform: uppercase;
+    font-weight: bold;
+    text-align: right;
+}
+#left-aligncity{
+    font-family: "359Sans";
+    color: rgb(255, 255, 255);
+    font-style: italic;
+}
+#left-aligndate{
+    font-family: "DecimaMonoX";
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    text-transform: uppercase;
+}
+.textunderimg{
+    left: 200px;
+}
+.textunderimg h4{
+    font-family: "DecimaMonoX";
+    font-weight: bold;
+    color: rgb(109, 110, 113);
+}
+.textunderimg p{
+    font-family: "359Sans";
+    color: rgb(109, 110, 113);
 }
