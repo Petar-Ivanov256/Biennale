@@ -147,5 +147,53 @@
                 </div>
             </div>
         </div>
+        <div class="container">
+            <div class="col-lg-12">
+                <div class="col-lg-6 programadetails">
+                    <h2>Querevat Voluptatem</h2>
+                    {!! HTML::image('img/programimg/pic7.jpg') !!}
+                    <hr>
+                    <div>
+                        <span class="ptagleft">Дата</span>
+                        <span class="ptagleft">Сряда 27/09/2017</span><br>
+                        <span class="ptagleft">Час</span>
+                        <span class="ptagleft">18:00-20:00</span><br>
+                        <span class="ptagleft">Място</span>
+                        <span class="ptagleft">Галерия Райко Алексиев</span>
+                        <span class="ptagleft">виж картата</span><br>
+                        <span class="ptagleft">Артисти</span>
+                        <span class="ptagleft">дипломанти "Стъкло" НБУ</span><br>
+                        <span class="ptagleft">Вход</span>
+                        <span class="ptagleft">Безплатен</span>
+                    </div>
+                    <div>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                            Donec commodo varius nunc id ullamcorper. Aliquam eget mi commodo, pharetra tellus non, elementum magna.
+                            Morbi aliquet ipsum sed urna egestas eleifend. Vestibulum ante ipsum primis in faucibus orci luctus et
+                            ultrices posuere cubilia Curae; Nullam felis mi, iaculis quis justo vel, tempus egestas est. Class aptent
+                            taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Donec vitae diam odio.
+                            Pellentesque ipsum odio, pharetra a dui at, venenatis laoreet lorem. Phasellus in justo sed nunc cursus
+                            aliquet. Suspendisse cursus magna pulvinar, molestie elit nec, fringilla lorem.
+                        </p>
+                    </div>
+                </div>
+            <div class="col-lg-5 programadetails">
+                     <h2>Други изложби</h2>
+               {!! HTML::image('img/programimg/pic8.jpg') !!}
+                    <br>
+                    <a href="#">
+                        <span class="programadetailsspan">27.09-29.09</span>
+                    </a>
+                <br>
+                    <div class="col-lg-9">
+                        <h5>Querat voluptatem</h5>
+                        <p>
+                            Duis aute irure dolor in reprehenderit in volup
+                        </p>
+                    </div>
+                </div>
+              </div>
+        </div>
     </div>
 @endsection

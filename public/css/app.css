@@ -545,3 +545,18 @@ body{
     font-family: "359Sans";
     color: rgb(109, 110, 113);
 }
+.programadetails img{
+    max-width: 100%;
+    height: auto;
+    position: relative;
+    margin-left: 200px;
+}
+.programadetails h2,h5{
+    margin-left: 200px;
+}
+.programadetailsspan{
+    margin-left:200px;
+}
+.programadetails p{
+    margin-left: 200px;
+}
