@@ -33,6 +33,17 @@ class StaticPagesController extends Controller
         return view('scholarships');
     }
 
+    public function bachelor(Request $request){
+        return view('bachelor');
+    }
+
+    public function master(Request $request){
+        return view('master');
+    }
+    public function phd(Request $request){
+        return view('phd');
+    }
+
     public function authors(Request $request){
         return view('authors');
     }
