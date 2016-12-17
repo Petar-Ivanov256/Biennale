@@ -23,6 +23,9 @@ Route::get('/about','StaticPagesController@about');
 Route::get('/vision','StaticPagesController@vision');
 Route::get('/contact','StaticPagesController@contact');
 Route::get('/scholarships','StaticPagesController@scholarships');
+Route::get('/bachelor','StaticPagesController@bachelor');
+Route::get('/master','StaticPagesController@master');
+Route::get('/phd','StaticPagesController@phd');
 Route::get('/authors','StaticPagesController@authors');
 Route::get('/partners','StaticPagesController@partners');
 
