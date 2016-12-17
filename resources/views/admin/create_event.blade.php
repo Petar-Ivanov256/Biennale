@@ -8,7 +8,7 @@
 @endsection
 
 @section('content')
-    <form class="form-horizontal"  action="{{ URL::to('/admin/createEvent') }}" method="POST">
+    <form class="form-horizontal"  action="{{ URL::to('/admin/createEvent') }}" method="POST" enctype="multipart/form-data">
         <input type="hidden" name="_token" value="{{{ csrf_token() }}}" />
         <fieldset>
             <legend>Ново събитие</legend>
@@ -50,6 +50,11 @@
                 <label for="textArea" class="col-lg-2 control-label">Описание</label>
                 <div class="col-lg-6">
                     <textarea class="form-control" name="description" id="textArea">{{ Request::old('description') }}</textarea>
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="col-lg-10 col-lg-offset-2">
+                    <input id="pic" type="file" name="pic">
                 </div>
             </div>
             <div class="form-group">
