@@ -23,9 +23,9 @@
                     <li>
                         <a id="mainMenuComponents" class="Schlarships"href="{{ URL::to('/scholarships')}}">Стипендии</a>
                         <ul class="dropdown-menu" id="dropdown-content">
-                            <li> <a id="subMenu" href="#">Бакалавър</a></li>
-                            <li> <a id="subMenu" href="#">Магистър</a></li>
-                            <li> <a id="subMenu" href="#">Докторант</a></li>
+                            <li> <a id="subMenu" href="{{ URL::to('/bachelor')}}">Бакалавър</a></li>
+                            <li> <a id="subMenu" href="{{ URL::to('/master')}}">Магистър</a></li>
+                            <li> <a id="subMenu" href="{{ URL::to('/phd')}}">Докторант</a></li>
                         </ul>
                     </li>
                 </ul>
