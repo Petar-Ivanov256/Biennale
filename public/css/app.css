@@ -38,6 +38,12 @@
 
     body { font-size: 10px; }
     h3{ font-size: 15px; font-weight: bold;}
+    body .progdettxt{
+        font-size: 12px;
+    }
+    body .ptagleftprogramdetails{
+        font-size: 10px;
+    }
 
 }
 
@@ -595,6 +601,7 @@ margin-left: 200px;
     font-size: 17px;
     font-family: "359Sans";
     color: rgb(109, 110, 113);
+
 }
 
 .oneprogdet{
@@ -603,6 +610,7 @@ margin-left: 200px;
     color: rgba(109, 110, 113, 0.302);
     font-weight: bold;
     text-transform: uppercase;
+    line-height: 3.2;
 
 }
 .twoprogdet{
@@ -610,7 +618,7 @@ margin-left: 200px;
     font-family: "359Sans";
     color: rgb(109, 110, 113);
     font-style: italic;
-    line-height: 1.2;
+    line-height: 3.2;
 
 }
 .programapdirection {
