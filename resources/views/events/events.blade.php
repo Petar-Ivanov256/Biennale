@@ -157,6 +157,7 @@
                                 {!! HTML::image('img/eventsimg/pic9.jpg') !!}
                                 <br>
                                 <span class="ptagleftdetails" id="left-aligndate">27.09-29.09</span>
+                                <span class="ptagleft"  id="right-alignhour">София</span>
                             </a>
                             <br>
                             <div class="col-lg-12 textunderimg">
@@ -171,6 +172,7 @@
                                 {!! HTML::image('img/eventsimg/pic9.jpg') !!}
                                 <br>
                                 <span class="ptagleftdetails" id="left-aligndate">27.09-29.09</span>
+                                <span class="ptagleft"  id="right-alignhour">София</span>
                             </a>
                             <br>
                             <div class="col-lg-12 textunderimg">
@@ -188,6 +190,7 @@
                                 <br>
 
                                 <span class="ptagleftdetails" id="left-aligndate">27.09-29.09</span>
+                                <span class="ptagleft"  id="right-alignhour">София</span>
                             </a>
                             <br>
                             <div class="col-lg-12 textunderimg">
@@ -202,6 +205,7 @@
                                 {!! HTML::image('img/eventsimg/pic9.jpg') !!}
                                 <br>
                                 <span class="ptagleftdetails" id="left-aligndate">27.09-29.09</span>
+                                <span class="ptagleft"  id="right-alignhour">София</span>
                             </a>
                             <br>
                             <div class="col-lg-12 textunderimg">

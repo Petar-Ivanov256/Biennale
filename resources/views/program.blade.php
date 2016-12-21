@@ -152,6 +152,7 @@
                 <div class="col-lg-6 programadetails">
                     <h2>Querevat Voluptatem</h2>
                     {!! HTML::image('img/programimg/pic7.jpg') !!}
+                    <br>
                     <div class="ptagleftprogramdetails">
                         <span class="oneprogdet">Дата</span>
                         <span class="twoprogdet">Сряда 27/09/2017</span>
@@ -164,8 +165,9 @@
                         <span class="oneprogdet">Вход</span>
                         <span class="twoprogdet">Безплатен</span><br>
                     </div>
+
                     <div>
-                        <p class="progdettxt">
+                         <p class="progdettxt">
                             Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                             Donec commodo varius nunc id ullamcorper. Aliquam eget mi commodo, pharetra tellus non, elementum magna.
                             Morbi aliquet ipsum sed urna egestas eleifend. Vestibulum ante ipsum primis in faucibus orci luctus et
@@ -188,6 +190,7 @@
                                 {!! HTML::image('img/programimg/pic8.jpg') !!}
                                 <br>
                                   <span class="ptagleftdetails" id="left-aligndate">27.09-29.09</span>
+                                 <span class="ptagleft"  id="right-alignhour">София</span>
                                 </a>
                                 <br>
                                 <div class="col-lg-12 textunderimg">
@@ -202,6 +205,7 @@
                                 {!! HTML::image('img/programimg/pic9.jpg') !!}
                                 <br>
                                     <span class="ptagleftdetails" id="left-aligndate">27.09-29.09</span>
+                                    <span class="ptagleft"  id="right-alignhour">София</span>
                                 </a>
                                 <br>
                                 <div class="col-lg-12 textunderimg">
@@ -217,8 +221,8 @@
                                 <a href="#" class="abackcolor">
                                 {!! HTML::image('img/programimg/pic9.jpg') !!}
                                 <br>
-
                                     <span class="ptagleftdetails" id="left-aligndate">27.09-29.09</span>
+                                    <span class="ptagleft"  id="right-alignhour">София</span>
                                 </a>
                                 <br>
                                 <div class="col-lg-12 textunderimg">
@@ -233,6 +237,7 @@
                                 {!! HTML::image('img/programimg/pic10.jpg') !!}
                                 <br>
                                    <span class="ptagleftdetails" id="left-aligndate">27.09-29.09</span>
+                                    <span class="ptagleft"  id="right-alignhour">София</span>
                                 </a>
                                 <br>
                                 <div class="col-lg-12 textunderimg">
