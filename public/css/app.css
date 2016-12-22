@@ -45,6 +45,10 @@
         font-size: 10px;
     }
     span{font-size: 10px; }
+    .divspancontact span{
+        font-size: 10px;
+        height: 40px;
+    }
 
 }
 
@@ -359,13 +363,22 @@ body{
     position: relative;
     z-index: 39;
 }
-#telefonCordinator{
+.divspancontact span{
+    position: relative;
+    height: 30px;
+    float: left;
+    width:50%;
+
+}
+.telefonCordinator {
     font-size: 15px;
     font-family: "359Sans";
     color: rgb(240, 77, 63);
+    position: relative;
+
+}
+#right-aligntel{
     text-align: right;
-    width: 30px;
-    z-index: 42;
 }
 #contactText{
     font-size: 10px;
