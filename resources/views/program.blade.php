@@ -21,8 +21,8 @@
     </div>
     <div class="container">
 
-            <div class="col-xs-12 col-sm-6 col-lg-10">
-                <div class="col-md-2 programData">
+            <div class="col-xs-12 col-sm-6 col-lg-10 programData">
+                <div class="col-md-2 prgdata">
                     <p>Дата</p>
                 </div>
                 <div>
@@ -251,6 +251,6 @@
                     </div>
                 </section>
           </div>
-
+        </div>>
     </div>
 @endsection

@@ -519,11 +519,7 @@ body{
     font-weight: bold;
     text-transform: uppercase;
 }
-.vzmoznosti{
-    float: left;
-    left: 0px;
-    width: 390;
-}
+
 .chashfond{
     float: left;
     left: 200px;
@@ -536,18 +532,19 @@ body{
     font-family: "DecimaMonoX";
     font-weight: bold;
     text-transform: uppercase;
-
 }
 .lihorizontal a{
     color: rgb(240, 77, 63);
 }
 .programData{
-    font-size: 15px;
+    left: 203px;
+}
+.prgdata{
+    font-size: 17px;
     font-family: "DecimaMonoX";
     color: rgb(121, 77, 159);
     font-weight: bold;
     text-transform: uppercase;
-    margin-left: 157px;
 }
 /*Program Css*/
 .programa img {
