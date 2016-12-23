@@ -23,7 +23,7 @@
         <div  class="container">
             <div class="row">
                 <div class="col-lg-12">
-                    <div class="col-lg-4">
+                    <div class="col-lg-4 contact">
                         <h1 class="Title1">Контакти</h1><br>
                         <p id="contactText">
                             Международно биенале на стъклото<br>

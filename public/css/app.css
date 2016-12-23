@@ -287,6 +287,9 @@ body{
     text-align: center;
 }
 /*Contact Forms Css*/
+.contact{
+    left: 200px;
+}
 .contactButon{
     font-size: 10px;
     border: none;
