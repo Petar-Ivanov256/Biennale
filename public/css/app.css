@@ -25,6 +25,21 @@
     src: url('../fonts/Decima/Decima Mono X.otf');
     src: url('../fonts/Decima/Decima Mono X.woff');
 }
+.col-lg-9{
+    left: 200px;
+}
+.col-lg-12{
+    left: auto;
+}
+.col-lg-6{
+    left: 200px;
+}
+.col-lg-4{
+    left: 200px;
+}
+.col-lg-8{
+    left: 200px;
+}
 
 /*Navigation Bar*/
 
@@ -34,7 +49,75 @@
         width: 1500px;
     }
 }
-@media only screen and (max-width: 320px) {
+@media only screen and (max-width: 320px) /*and (max-width: 375px) and(max-width: 412px)  and (max-width: 360px)*/ {
+
+    body { font-size: 10px; }
+    h3{ font-size: 15px; font-weight: bold;}
+    body .progdettxt{
+        font-size: 12px;
+    }
+    body .ptagleftprogramdetails{
+        font-size: 10px;
+    }
+    span{font-size: 10px; }
+    .divspancontact span{
+        font-size: 10px;
+        height: 40px;
+    }
+
+}
+@media only screen and (max-width: 375px){
+
+    body { font-size: 10px; }
+    h3{ font-size: 15px; font-weight: bold;}
+    body .progdettxt{
+        font-size: 12px;
+    }
+    body .ptagleftprogramdetails{
+        font-size: 10px;
+    }
+    span{font-size: 10px; }
+    .divspancontact span{
+        font-size: 10px;
+        height: 40px;
+    }
+
+}
+@media only screen and (max-width: 412px){
+
+    body { font-size: 10px; }
+    h3{ font-size: 15px; font-weight: bold;}
+    body .progdettxt{
+        font-size: 12px;
+    }
+    body .ptagleftprogramdetails{
+        font-size: 10px;
+    }
+    span{font-size: 10px; }
+    .divspancontact span{
+        font-size: 10px;
+        height: 40px;
+    }
+
+}
+@media only screen and  (max-width: 360px){
+
+    body { font-size: 10px; }
+    h3{ font-size: 15px; font-weight: bold;}
+    body .progdettxt{
+        font-size: 12px;
+    }
+    body .ptagleftprogramdetails{
+        font-size: 10px;
+    }
+    span{font-size: 10px; }
+    .divspancontact span{
+        font-size: 10px;
+        height: 40px;
+    }
+
+}
+@media only screen and  (max-width: 414px){
 
     body { font-size: 10px; }
     h3{ font-size: 15px; font-weight: bold;}
@@ -222,12 +305,13 @@ body{
     text-transform: uppercase;
     display: inline-block;
     line-height: 1.2;
-    text-align: left;
+    text-align: right;
+    left: 18px;
     -moz-transform: matrix( 1.83520509777935,0,0,1.82609664835602,0,0);
     -webkit-transform: matrix( 1.83520509777935,0,0,1.82609664835602,0,0);
     -ms-transform: matrix( 1.83520509777935,0,0,1.82609664835602,0,0);
     position: relative;
-    z-index: 63;
+
 }
 #fa-fa-chevron-right{
     font-size: 15px;
@@ -240,10 +324,6 @@ body{
     color: rgba(109, 110, 113, 0.502);
     font-style: italic;
 }
-#contactForm{
-
-
-}
 
 #contentInfo{
     text-align: left;
@@ -253,47 +333,17 @@ body{
     top: 150px;
     margin-left: 150px;
 }
-#contact{
-    float: right;
-}
 
-#Title1{
-    font-size: 15px;
+.Title1{
+    font-size: 28px;
     font-family: "DecimaMonoX";
     color: rgb(240, 77, 63);
     font-weight: bold;
     text-transform: uppercase;
-    line-height: 1.2;
-    -moz-transform: matrix( 1.83520509777935,0,0,1.82609664835602,0,0);
-    -webkit-transform: matrix( 1.83520509777935,0,0,1.82609664835602,0,0);
-    -ms-transform: matrix( 1.83520509777935,0,0,1.82609664835602,0,0);
     position: relative;
-    height: 15px;
-    width: 76px;
-    left: 31px;
-    margin-top: 12px;
-    margin-right: 0px;
-    right: 0px;
 
-    z-index: 32;
 }
-#Title2 {
-    font-size: 15px;
-    font-family: "DecimaMonoX";
-    color: rgb(240, 77, 63);
-    font-weight: bold;
-    text-transform: uppercase;
-    line-height: 1.2;
-    -moz-transform: matrix( 1.83520509777935,0,0,1.82609664835602,0,0);
-    -webkit-transform: matrix( 1.83520509777935,0,0,1.82609664835602,0,0);
-    -ms-transform: matrix( 1.83520509777935,0,0,1.82609664835602,0,0);
-    position: relative;
-    left: 155px;
-    top: 10px;
-    width: 350px;
-    height: 13px;
-    z-index: 32;
-}
+
 #position{
     text-align: left;
     width: 50px;
@@ -354,22 +404,23 @@ body{
 }
 
 #nameForContact{
-    font-size: 15px;
+    font-size: 16px;
     font-family: "DecimaMonoX";
     color: rgb(121, 77, 159);
     font-weight: bold;
     text-transform: uppercase;
     text-align: left;
     position: relative;
-    z-index: 39;
-}
-.divspancontact span{
-    position: relative;
-    height: 30px;
-    float: left;
-    width:50%;
 
 }
+.divspancontact span{
+    float: left;
+    width:50%;
+    position: relative;
+ }
+.contactrightspan{
+   text-align: right;
+ }
 .telefonCordinator {
     font-size: 15px;
     font-family: "359Sans";
@@ -484,7 +535,7 @@ body{
     text-transform: uppercase;
 }
 .ahover a{
-    filter: gray;
+    /*filter: gray;*/
     -webkit-filter: grayscale(100%);
 }
 /*Program Css*/
@@ -637,15 +688,7 @@ body{
     font-style: italic;
 }
 
-.col-lg-9{
-    left: 200px;
-}
-.col-lg-12{
-    left: auto;
-}
-.col-lg-6{
-    left: 200px;
-}
+
 
 
 
