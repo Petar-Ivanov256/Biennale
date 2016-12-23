@@ -493,8 +493,8 @@ body{
 
 }
 /*Partners CSS*/
-.firsttxt p{
-    margin-left: 150px;
+.firsttxt{
+    left: 200px;
 }
 .partnersName1{
     font-size: 20px;
@@ -505,7 +505,6 @@ body{
 
 }
 .partnersName{
-    margin-left: 150px;
     font-size: 20px;
     font-family: "DecimaMonoX";
     color: rgb(240, 77, 63);
@@ -514,7 +513,7 @@ body{
 
 }
 .hr1{
-    margin-left: 150px;
+    left: 150px;
 }
 .p1{
     font-family: "359Sans";
@@ -532,9 +531,14 @@ body{
     font-weight: bold;
     text-transform: uppercase;
 }
-.ahover a{
-    filter: gray;
-    -webkit-filter: grayscale(100%);
+.vzmoznosti{
+    float: left;
+    left: 0px;
+    width: 390;
+}
+.chashfond{
+    float: left;
+    left: 200px;
 }
 /*Program Css*/
 .lihorizontal li {
