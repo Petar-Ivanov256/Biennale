@@ -28,15 +28,10 @@
 .col-lg-9{
     left: 200px;
 }
-.col-lg-12{
-    left: auto;
-}
 .col-lg-6{
     left: 200px;
 }
-.col-lg-4{
-    left: 200px;
-}
+
 .col-lg-8{
     left: 200px;
 }
@@ -411,7 +406,7 @@ body{
     text-transform: uppercase;
     text-align: left;
     position: relative;
-
+    z-index: 39;
 }
 .divspancontact span{
     float: left;
@@ -535,7 +530,7 @@ body{
     text-transform: uppercase;
 }
 .ahover a{
-    /*filter: gray;*/
+    filter: gray;
     -webkit-filter: grayscale(100%);
 }
 /*Program Css*/
@@ -605,7 +600,7 @@ body{
     text-transform: uppercase;
 }
 .textunderimg{
-    left: 200px;
+    /*left: 200px;*/
 }
 .textunderimg h4{
     font-family: "DecimaMonoX";
