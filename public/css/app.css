@@ -442,7 +442,7 @@ body{
     font-family: "359Sans";
     color: rgb(121, 77, 159);
     font-style: italic;
-    margin-left: 157px;
+
 }
 .name1{
     font-size: 19px;
@@ -450,28 +450,16 @@ body{
     color: rgb(240, 77, 63);
     font-weight: bold;
     text-transform: uppercase;
-    margin-left: 157px;
-
 }
-.name2{
-    font-size: 19px;
-    font-family: "DecimaMonoX";
-    color: rgb(240, 77, 63);
-    font-weight: bold;
-    text-transform: uppercase;
-    position: relative;
-    margin-left: 157px;
+.aboutleft{
+    left:200px;
 }
 
-
-.clearfix{
-    overflow: auto;
-}
 .picAbout img{
     max-width:100%;
     height: auto;
     position: relative;
-    float: right;
+    left: 182px;
 }
 
 .aboutButtons{
@@ -488,8 +476,8 @@ body{
     text-transform: uppercase;
     text-align: left;
     position: relative;
-    left: 143px;
-    z-index: 81;
+    padding-left: 0px;
+
 
 }
 /*Partners CSS*/
