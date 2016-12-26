@@ -27,6 +27,8 @@ class CreateEventsTable extends Migration {
             $table->timestamps();
             $table->softDeletes();
         });
+
+        // DB::statement("ALTER TABLE <table name> ADD <column name> MEDIUMBLOB");
     }
 
     /**

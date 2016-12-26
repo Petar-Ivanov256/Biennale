@@ -69,3 +69,11 @@ Route::post('/admin/createEvent', 'Admin\AdminController@add_event')->middleware
 Route::get('/admin/editEvent/{id}', 'Admin\AdminController@edit_event')->middleware('isAdmin');
 Route::post('/admin/editEvent', 'Admin\AdminController@edit_event_save')->middleware('isAdmin');
 Route::post('/admin/deleteEvent', 'Admin\AdminController@delete_event')->middleware('isAdmin');
+
+Route::get('/admin/authors/add', 'AuthorController@add')->middleware('isAdmin');
+Route::post('/admin/authors/add', 'AuthorController@create')->middleware('isAdmin');
+Route::get('/admin/authors/edit/{id}', 'AuthorController@edit')->middleware('isAdmin');
+Route::post('/admin/authors/edit/{id}', 'AuthorController@update')->middleware('isAdmin');
+Route::get('/authors/{id}', 'AuthorController@show');
+Route::get('/admin/authors/all', 'AuthorController@all')-middleware('isAdmin');
+Route::post('/admin/authors/delete/{id}', 'AuthorController@delete')->middleware('isAdmin');

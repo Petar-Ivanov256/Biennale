@@ -7,6 +7,11 @@ use App\Author;
 
 class AuthorController extends Controller
 {
+	public function add(Request $request)
+	{
+		return view('authors.create');
+	}
+
     public function create(Request $request)
     {
     	$this->validate($request, $this->validationRules());
@@ -24,13 +29,19 @@ class AuthorController extends Controller
     public function all(Request $request)
     {
     	$authors = Author::all();
-
-    	return view('TODO', [ 'authors' => $authors ]);
+    	return view('authors.allAuthors', [ 'authors' => $authors ]);
     }
 
     public function show($id)
     {
     	$author = Author::find($id);
+    	return base64_encode(file_get_contents('C:\Users\Dimitar\Desktop\asd.jpg'));  //$author;//view('TODO', [ 'author' => $author ]);
+    }
+
+    public function edit(Request $request, $id)
+    {
+    	$author = Author::find($id);
+    	return view('authors.edit', [ 'author' => $author ]);
     }
 
     public function update(Request $request, $id)
@@ -41,7 +52,7 @@ class AuthorController extends Controller
     	$author->name = $request->input('name');
     	$author->country = $request->input('country');
     	$author->info = $request->input('info');
-    	$author->photo = $request->file('photo');
+    	$author->photo = file_get_contents($request->file('photo'));
     	$author->save();
 
     	return redirect('/');

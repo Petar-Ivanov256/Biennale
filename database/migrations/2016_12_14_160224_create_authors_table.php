@@ -15,6 +15,7 @@ class CreateAuthorsTable extends Migration
             $table->string('country');
             $table->string('info');
             $table->binary('photo')->nullable();
+            $table->timestamps();
         });
     }
 
