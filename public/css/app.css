@@ -682,6 +682,9 @@ body{
 .second-paragraph{
     left: 200px;
 }
+.second-p-paragraph p{
+    display: none;
+}
 
 
 
