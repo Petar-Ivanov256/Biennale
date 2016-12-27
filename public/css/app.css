@@ -675,8 +675,13 @@ body{
     font-style: italic;
 }
 
-
-
+/*Bachelor Css*/
+.first-paragraph{
+    left: 200px;
+}
+.second-paragraph{
+    left: 200px;
+}
 
 
 
