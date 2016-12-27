@@ -4,10 +4,11 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Author;
+use Storage;
 
 class AuthorController extends Controller
 {
-	public function add(Request $request)
+    public function add(Request $request)
 	{
 		return view('authors.create');
 	}
@@ -20,10 +21,14 @@ class AuthorController extends Controller
     	$author->name = $request->input('name');
     	$author->country = $request->input('country');
     	$author->info = $request->input('info');
-    	$author->photo = $request->file('photo');
-    	$author->save();
 
-    	return redirect('/');
+        $photo = $request->file('photo');
+        $path = $photo->store('public');             // storage/app/public/{file name as UUID}
+
+        $author->photo = $path;
+        $author->save();
+
+    	return storage_path('app\\' . $path); //redirect('/');
     }
 
     public function all(Request $request)
@@ -52,16 +57,26 @@ class AuthorController extends Controller
     	$author->name = $request->input('name');
     	$author->country = $request->input('country');
     	$author->info = $request->input('info');
-    	$author->photo = file_get_contents($request->file('photo'));
+    	
+        if ($request->hasFile('photo')) {
+            $photo = $request->file('photo');
+            Storage::delete($author->photo);                // Storage class default folder: storage/app
+            $path = $photo->store('public');             // storage/app/public/{file name as UUID}
+
+            $author->photo = $path;
+        }
+
     	$author->save();
 
-    	return redirect('/');
+    	return redirect('/admin/authors');
     }
 
     public function delete(Request $request, $id)
     {
     	$author = Author::find($id);
     	$author->delete();
+
+        return redirect('/admin/authors');
     }
 
     private function validationRules()

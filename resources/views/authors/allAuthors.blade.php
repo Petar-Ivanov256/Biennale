@@ -12,6 +12,7 @@
 				<td><a href="{{ URL::to('/admin/authors/edit/' . $author->id) }}">Редактиране</a></td>
 				<td>
 					<form method="POST" action="{{ URL::to('/admin/authors/delete/' . $author->id) }}">
+						<input type="hidden" name="_token" value="{{{ csrf_token() }}}" />
 						<button type="submit">Изтриване</button>
 					</form>
 				</td>

@@ -5,7 +5,7 @@
 
 @section('content')
     <a  href="{{ URL::to('/admin/showEvents')}}" class="btn btn-primary">Виж събития</a>
-    <a  href="{{ URL::to('/admin/authors/all')}}" class="btn btn-primary">Виж авторите</a>
+    <a  href="{{ URL::to('/admin/authors')}}" class="btn btn-primary">Виж авторите</a>
 {{--@if(Auth::user()->isAdmin())--}}
 {{--admin sam--}}
 {{--@else--}}

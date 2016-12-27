@@ -75,5 +75,10 @@ Route::post('/admin/authors/add', 'AuthorController@create')->middleware('isAdmi
 Route::get('/admin/authors/edit/{id}', 'AuthorController@edit')->middleware('isAdmin');
 Route::post('/admin/authors/edit/{id}', 'AuthorController@update')->middleware('isAdmin');
 Route::get('/authors/{id}', 'AuthorController@show');
-Route::get('/admin/authors/all', 'AuthorController@all')->middleware('isAdmin');
+Route::get('/admin/authors', 'AuthorController@all')->middleware('isAdmin');
 Route::post('/admin/authors/delete/{id}', 'AuthorController@delete')->middleware('isAdmin');
+
+Route::get('/shits', function ()
+{
+	return storage_path('app\\public');
+});

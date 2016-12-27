@@ -38,9 +38,7 @@
 	    </div>
 	  </fieldset>
 	</form>
-	<img src="{{ $author->photo }}" width="100" height="100">
+	<img src="{{ asset('../storage/app/' . $author->photo) }}" width="100" height="100">
 	{{ $author->photo }}
-	<br>
-	{{ base64_decode($author->photo) }}
-
+	
 @endsection
