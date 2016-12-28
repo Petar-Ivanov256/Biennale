@@ -31,13 +31,13 @@
                     <h2 class="bachelor-header">Условия и минали победители</h2><br>
                     <button class="learn-more" id="bnt"onclick="setColor();">Правила</button>
                     <button class="learn-more">Жури</button>
-                    <button class="learn-more">Победители</button>
-                    <h4 class="bachelor-header2">
+                    <button class="learn-more">Победители</button><br><br>
+                    <p class="second-p-paragraph" id="firstscholarpar">
+                          <span class="bachelor-header2">
                         Правила за участие в конкурс за пълна стипендия в специалност „Стъклото в изкуството и дизайна“, с прием в трети семестър по
                         договор, образователна степен <span class="bac">БАКАЛАВЪР</span>
                         в Нов български университет за периода 2017 – 2020 г.
-                    </h4>
-                    <p class="second-p-paragraph" id="firstscholarpar">
+                    </span><br><br>
                         <span class="numb-colour">1.</span> Творбата да бъде дипломен проект, защитен успешно през учебната 2016-2017 година в Национална гимназия за приложни изкуства „Св. Лука“, специалност „Силикатен дизайн“.<br><br>
                         <span class="numb-colour">2.</span> Творбата да е представена от фотографии с характеристики: 300 DPI минимум, над 3000 пиксела по широката страна, препоръчително на бял фон.<br><br>
                         <span class="numb-colour">3.</span> Да са описани размери, техника и име на автора.<br><br>
