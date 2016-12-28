@@ -682,8 +682,99 @@ body{
 .second-paragraph{
     left: 200px;
 }
-.second-p-paragraph p{
+#firstscholarpar{
+    display: block;
+}
+.second-p-paragraph{
     display: none;
+    height: auto;
+}
+
+.bachelor-header {
+    font-size: 30px;
+    font-family: "DecimaMonoX";
+    color: rgb(240, 77, 63);
+    font-weight: bold;
+    text-transform: uppercase;
+    position: relative;
+    z-index: 106;
+}
+
+.bachelor-header2{
+    font-size: 18px;
+    font-family: "359Sans";
+    color: rgb(121, 77, 159);
+    font-style: italic;
+    position: relative;
+
+}
+.first-p-paragraph{
+    font-size: 15px;
+    font-family: "359Sans";
+    color: rgb(109, 110, 113);
+    position: relative;
+}
+.color-red{
+    color: rgb(240, 77, 63);
+}
+
+
+.learn-more {
+    font-size: 20px;
+    width: 170px;
+    background-color: transparent;
+    font-family: "DecimaMonoX";
+    color: rgb(121, 77, 159);
+    text-transform: uppercase;
+    text-align: center;
+    position: relative;
+    border-width: 1px;
+    border-color: rgb(121, 77, 159);
+    border-style: solid;
+}
+
+.second-p-paragraph {
+    font-size: 15px;
+    font-family: "359Sans";
+    color: rgb(109, 110, 113);
+    position: relative;
+}
+.numb-colour{
+    color: rgb(121, 77, 159);
+    font-weight:bold;
+}
+
+.imp-span{
+    font-size: 17px;
+    font-family: "359Sans";
+    color: rgb(109, 110, 113);
+    font-style: italic;
+    position: relative;
+}
+.bac{
+    font-size: 18px;
+    font-family: "359Sans";
+    color: rgb(121, 77, 159);
+    font-weight: bold;
+}
+
+
+.picspan{
+    max-width:100%;
+    height: auto;
+    position: relative
+}
+.bachelor-span{
+    float: left;
+    width:50%;
+    position: relative;
+}
+.second-p-paragraph .bachelor-span{
+    font-weight: bold;
+}
+.second-p-paragraph .full-scholarship{
+    color:#794D9F ;
+    font-size: 13px;
 }
 
 
