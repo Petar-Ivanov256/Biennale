@@ -776,6 +776,11 @@ body{
     color:#794D9F ;
     font-size: 13px;
 }
+.setColor{
+    background-color:#794D9F;
+    color: #FFFFFF;
+}
+
 /*Application Form CSS*/
 .application-form-part-one{
     left: 200px;

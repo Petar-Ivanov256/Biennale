@@ -7,3 +7,6 @@ $(document).ready(function() {
         $p.hide().eq(i).show()
     })
 });
+$(".learn-more").one('click', function(){
+    $(this).addClass("setColor");
+});
