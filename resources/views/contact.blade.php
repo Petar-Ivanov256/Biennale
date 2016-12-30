@@ -47,22 +47,22 @@
                     <div class="col-lg-8" id="contact">
                         <h2 class="Title1" >Контактна Форма</h2>
                         <form method="POST" action="{{ URL::to('/apply') }}" class="form-horizontal">
-                            <div class="form-group" id="contentContactForm">
+                            <div class="form-group contentContactForm">
                                 <div class="col-md-5">
                                     <input type="text" class="form-control" id="name" name="name" placeholder="Име и фамилия*" value="{{ Request::old('name') }}">
                                 </div>
                             </div>
-                            <div class="form-group" id="contentContactForm">
+                            <div class="form-group contentContactForm">
                                 <div class="col-md-5">
                                     <input type="text" class="form-control" id="email" name="email" placeholder="E-mail*" value="{{ Request::old('email') }}">
                                 </div>
                             </div>
-                            <div class="form-group" id="contentContactForm">
+                            <div class="form-group contentContactForm">
                                 <div class="col-md-5">
                                     <input type="text" class="form-control" id="title" name="Title" placeholder="Заглавие*" value="{{ Request::old('englishTitle') }}">
                                 </div>
                             </div>
-                            <div class="form-group" id="contentContactForm">
+                            <div class="form-group contentContactForm">
                                 <div class="col-md-5">
                                     <textarea class="form-control" id="Message" name="Message" cols="25" rows="5" placeholder="Съобщение*"></textarea>
                                 </div>
