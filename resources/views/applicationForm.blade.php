@@ -8,62 +8,62 @@
         <div class="row">
             <div class="col-md-12">
                 <div class="col-md-5 application-form-part-one">
-                    <h1>Регламент</h1>
-                    <h3>
+                    <h1 class="title-reglament">Регламент</h1>
+                    <h3 class="sub-title">
                         Разгледайте опциите, попълнете апликационната форма и заявете своето участие.
                     </h3>
                     <div>
                         <hr>
-                        <a href="#REALIZED-ART-PIECE" data-toggle="collapse">РЕАЛИЗИРАНА ТВОРБА</a>
+                        <a href="#REALIZED-ART-PIECE" data-toggle="collapse" class="a-drop-down">РЕАЛИЗИРАНА ТВОРБА</a>
                         <hr>
                         <div id="REALIZED-ART-PIECE" class="collapse">
-                            <p>
+                            <p class="text-p">
                                 Изискванията за участие с реализирана творба в стъкло включват попълване на апликационната
                                 форма и качване на снимка с размери минимум 300 DPI, над 3000 пиксела по широката страна,
                                 препоръчително на бял фон.<br><br>
-                                Краен срок за участие с реализирана творба 01.04.2017
+                                Краен срок за участие с реализирана творба <span class="color-red">01.04.2017 г.</span>
                                 <hr>
                             </p>
                         </div>
                     </div>
                     <div>
                         <hr>
-                        <a href="#PROJECT" data-toggle="collapse">НЕРЕАЛИЗИРАНА ТВОРБА</a>
+                        <a href="#PROJECT" data-toggle="collapse" class="a-drop-down">НЕРЕАЛИЗИРАНА ТВОРБА</a>
                         <hr>
                         <div id="PROJECT" class="collapse">
-                            <p>
+                            <p class="text-p">
                                 Изискванията за участие с нереализирана творба / макет; визуализация; технически чертеж с размери; художествена рисунка/
                                 включват попълване на апликационната форма и качване на снимка (в .jpg; .jpeg или .png) на проектa. След реализиране на проекта
                                 е необходимо изпращане на информация и снимка с размери минимум 300 DPI, над 3000 пиксела по широката страна,
                                 препоръчително на бял фон на реализираната творба на <a href="mailto:glassbiennalebg@gmail.com:" id="emailCordinator">glassbiennalebg@gmail.com</a>.
                                 Прикаченият файл трябва да съдържа Вашето име и името на проекта.<br><br>
-                                Краен срок за изпращане на проект - 01.03.2017.<br><br>
-                                Краен срок за изпращане на снимка на реализираната творба – 01.07.2017.<br><br>
+                                Краен срок за изпращане на проект - <span class="color-red">01.03.2017.</span><br><br>
+                                Краен срок за изпращане на снимка на реализираната творба – <span class="color-red" >01.07.2017 г.</span><br><br>
                              <hr>
                             </p>
                         </div>
                     </div>
                     <div>
                         <hr>
-                        <a href="#PROJECT-FOR-BLOWN-GLASS" data-toggle="collapse">ИДЕЕН ПРОЕКТ ЗА ДУХАНО СТЪКЛО</a>
+                        <a href="#PROJECT-FOR-BLOWN-GLASS" data-toggle="collapse" class="a-drop-down">ИДЕЕН ПРОЕКТ ЗА ДУХАНО СТЪКЛО</a>
                         <hr>
                         <div id="PROJECT-FOR-BLOWN-GLASS" class="collapse">
-                            <p>
+                            <p class="text-p">
                                 Ако имате желание, може да приложите проект за духано стъкло - снимка на макет; визуализация; художествена рисунка; технически чертеж с размери,
                                 който да бъде реализиран в град Белослав като част от демонстрациите по време на Международно Биенале на Стъклото. Творбата ще бъде издухана от
-                                чешкия майстор-духач Ондрeй Стрнадел и изложена в галерия в град Варна.
-                                Необходимо е да изпратите проект като включите неговото и Вашето име на <a href="mailto:glassbiennalebg@gmail.com:" id="emailCordinator">glassbiennalebg@gmail.com</a> до 01.07.2017 г.<br>
-                                Не е необходимо да се попълва апликационната форма.
+                                чешкия майстор-духач Ондрeй Стрнадел и изложена в галерия в град Варна.<br><br>
+                                Необходимо е да изпратите проект като включите неговото и Вашето име на
+                                <a href="mailto:glassbiennalebg@gmail.com:" id="emailCordinator">glassbiennalebg@gmail.com</a> до <span class="color-red" >01.07.2017 г.</span><br><br>
+                                <span class="color-red"> Не е необходимо да се попълва апликационната форма.</span>
                             <hr>
                             </p>
                         </div>
                     </div>
                 </div>
-                <div class="col-md-7 application-form-part-two">
-                    <h1>Форма за участие</h1><br>
-                    <button class="private-info">Лична информация</button>
-                    <button class="private-info">Информация за творбата</button><br><br><br>
-                    <form method="POST" action="{{ URL::to('/apply') }}" class="form-horizontal">
+                <div class="col-md-7 application-form-part-one">
+                    <h1 class="title-reglament">Форма за участие</h1>
+                    <h3 class="appl-form-head">Лична информация</h3><br>
+                <form method="POST" action="{{ URL::to('/apply') }}" class="form-horizontal">
                         <div class="form-group">
                            <!-- <label for="name" class="col-lg-2 control-label">Име и фамилия</label>-->
                             <div class="col-md-6">
@@ -88,6 +88,7 @@
                                 <input type="tel" class="form-control" id="phone-number" name="phoneNumber" placeholder="Телефон" value="{{ Request::old('phoneNumber') }}">
                             </div>
                         </div>
+                        <h3 class="appl-form-head">Информация за творбата</h3><br>
                         <div class="form-group">
                            <!-- <label for="title" class="col-lg-2 control-label">Оригинално заглавие</label>-->
                             <div class="col-md-6">
@@ -100,13 +101,14 @@
                                 <input type="text" class="form-control" id="en-title" name="englishTitle" placeholder="Заглавие на английски език" value="{{ Request::old('englishTitle') }}">
                             </div>
                         </div>
+                        <h3 class="sub-title-technique">Техника</h3>
                         <div class="form-group">
-                            <h3>Техника</h3>
-                            <ul>
+
+                            <ul class="columns-application-from">
 
                                 @foreach($techniques as $technique)
 
-                                    <li><label><input type="checkbox" name="technique[]" value="{{$technique->id}}" /> {{$technique->name}}</label></li>
+                                    <li class="app-form-technique"><label><input type="radio" name="technique[]" class="rad" id="button" value="{{$technique->id}}" /> {{$technique->name}}</label></li>
 
                                 @endforeach
 

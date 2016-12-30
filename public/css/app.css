@@ -785,7 +785,60 @@ body{
 .application-form-part-one{
     left: 200px;
 }
-.application-form-part-two{
-    left: 200px;
+.title-reglament{
+    font-size: 33px;
+    font-family: "DecimaMonoX";
+    color: rgb(240, 77, 63);
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: left;
+    position: relative;
 }
+.sub-title{
+    font-size: 20px;
+    font-family: "359Sans";
+    color: rgb(121, 77, 159);
+    font-style: italic;
+    position: relative;
+    z-index: 161;
+}
+
+.text-p {
+    font-size: 17px;
+    font-family: "359Sans";
+    color: rgb(109, 110, 113);
+}
+.a-drop-down{
+    font-size: 20px;
+    font-family: "DecimaMonoX";
+    color: rgba(109, 110, 113, 0.502);
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.appl-form-head{
+    font-size: 20px;
+    font-family: "359Sans";
+    color:#794D9F;
+}
+.columns-application-from{
+    -webkit-columns: 2; /* Chrome, Safari, Opera */
+    -moz-columns: 2; /* Firefox */
+    columns: 2;
+    list-style-type: none;
+    width: 430px;
+}
+.sub-title-technique{
+    font-size: 20px;
+    font-family: "359Sans";
+    color: #F04D3F;
+    font-style: italic;
+    position: relative;
+    z-index: 161;
+}
+
+
+
+
+
 
