@@ -485,7 +485,7 @@ body{
     left: 200px;
 }
 .partnersName1{
-    font-size: 20px;
+    font-size: 30px;
     font-family: "DecimaMonoX";
     color: rgb(240, 77, 63);
     font-weight: bold;
@@ -493,7 +493,7 @@ body{
 
 }
 .partnersName{
-    font-size: 20px;
+    font-size: 30px;
     font-family: "DecimaMonoX";
     color: rgb(240, 77, 63);
     font-weight: bold;
@@ -513,7 +513,7 @@ body{
     color: rgb(240, 77, 63);
 }
 .partnersName2{
-    font-size: 15px;
+    font-size: 20px;
     font-family: "359Sans";
     color: rgb(121, 77, 159);
     font-weight: bold;

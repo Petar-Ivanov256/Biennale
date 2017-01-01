@@ -23,7 +23,7 @@
     <div class="container">
         <div class="col-lg-12">
             <div class="col-xs-12 col-sm-6 col-lg-5 firsttxt">
-                <h3 class="partnersName">Направи дарение</h3>
+                <h1 class="partnersName">Направи дарение</h1>
                 <hr class="hr1">
                 <p class="p1">
                     Имате ли отношение към съвременното изкуство? Вярвате ли, че изкуство
