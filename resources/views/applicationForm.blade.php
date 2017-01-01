@@ -152,6 +152,7 @@
                         <label for="file-8"><span>Снимка на творба 2*</span><strong class="choose-span">Избери</strong></label>
                         <br>
                         <span class="max-Mb">максимум 4MB</span>
+        
                     </div>
                     <div class="col-md-8 form-group content-app">
                         <p>
