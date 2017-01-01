@@ -138,12 +138,36 @@
                                 <input type="text" class="form-control" id="synopsis" name="synopsis" placeholder="Синопсис*" value="{{ Request::old('name') }}">
                             </div>
                         </div>
-                        <input type="hidden" value="{{ Session::token() }}" name="_token">
+
+                    <div>
+                        <input type="file" name="file-7" id="file-7" class="inputfile inputfile-6"/>
+                        <label for="file-7"><span>Снимка на творба 1*</span><strong class="choose-span">Избери</strong></label>
+                        <br>
+                        <span class="max-Mb">максимум 4MB</span>
+
+                     </div>
+                    <br>
+                    <div>
+                        <input type="file" name="file-8" id="file-8" class="inputfile inputfile-6"/>
+                        <label for="file-8"><span>Снимка на творба 2*</span><strong class="choose-span">Избери</strong></label>
+                        <br>
+                        <span class="max-Mb">максимум 4MB</span>
+                    </div>
+                    <div class="col-md-8 form-group content-app">
+                        <p>
+                           <span><input type="checkbox"></span>
+                            <span>Съгласен съм творбата ми да бъде инсталирана в галерийното<br> простраство
+                                от специално подбран екип на Международното биенале на стъкло, България 2017 година.<br></span>
+                        </p>
+                    <div>
+                    </div>
+                    <input type="hidden" value="{{ Session::token() }}" name="_token">
                         <div class="form-group">
                             <div class="col-md-5" id="submitButton">
                                 <button type="submit" class="contactButon">Изпрати&nbsp;<i class="fa fa-chevron-circle-right" id="fa-fa-chevron-right"></i></button>
                             </div>
                         </div>
+                    </div>
                     </form>
                 </div>
             </div>

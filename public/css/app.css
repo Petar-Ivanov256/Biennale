@@ -57,7 +57,7 @@
     span{font-size: 10px; }
     .divspancontact span{
         font-size: 10px;
-        height: 40px;
+        height: 60px;
     }
 
 }
@@ -848,12 +848,119 @@ input[type="checkbox"]{
     background-color:transparent;
     cursor:pointer;
 }
-
-.checkbox label:before {
-    border-radius: 3px;
+.inputfile {
+    width: 0.1px;
+    height: 0.1px;
+    opacity: 0;
+    overflow: hidden;
+    position: absolute;
+    z-index: -1;
 }
 
+.js .inputfile {
+    width: 0.1px;
+    height: 0.1px;
+    opacity: 0;
+    overflow: hidden;
+    position: absolute;
+    z-index: -1;
+}
 
+.inputfile + label {
+    max-width: 80%;
+    font-size: 1.25rem;
+    /* 20px */
+    font-weight: 700;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    cursor: pointer;
+    display: inline-block;
+    overflow: hidden;
+    padding: 0.625rem 1.25rem;
+    /* 10px 20px */
+}
 
+.inputfile + label svg {
+    width: 1em;
+    height: 1em;
+    vertical-align: middle;
+    fill: currentColor;
+    margin-top: -0.25em;
+    /* 4px */
+    margin-right: 0.25em;
+    /* 4px */
+}
+
+.inputfile-6 + label {
+    font-size: 15px;
+    font-family: "359Sans";
+    color: rgba(109, 110, 113, 0.502);
+    font-style: italic;
+    position: relative;
+}
+
+.inputfile-6 + label {
+    border: 1px solid #6D6E71;
+    background-color: #FFFFFF;
+    padding: 0;
+}
+
+.inputfile-6:focus + label,
+.inputfile-6.has-focus + label
+/*.inputfile-6 + label:hover*/{
+    border-color: #794D9F;
+}
+
+.inputfile-6 + label span,
+.inputfile-6 + label strong {
+    padding: 0.625rem 1.25rem;
+    /* 10px 20px */
+}
+
+.inputfile-6 + label span {
+    width: 320px;
+    min-height: 2em;
+    display: inline-block;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    vertical-align: top;
+}
+
+.inputfile-6 + label strong {
+    height: 100%;
+    color: #FFFFFF;
+    background-color: #794D9F;
+    display: inline-block;
+    font-size: 15px;
+    font-family: "DecimaMonoX";
+    text-transform: uppercase;
+    text-align: center;
+    position:relative;
+
+}
+
+.inputfile-6:focus + label strong,
+.inputfile-6.has-focus + label strong,
+.inputfile-6 + label:hover strong {
+    background-color: #794D9F;
+}
+
+@media screen and (max-width: 50em) {
+    .inputfile-6 + label strong {
+        display: block;
+    }
+}
+.content-app {
+    font-size: 17px;
+    font-family: "359Sans";
+    color: rgb(109, 110, 113);
+    font-style: italic;
+}
+.max-Mb {
+    font-size: 15px;
+    font-family: "359Sans";
+    color: rgba(109, 110, 113, 0.502);
+}
 
 
