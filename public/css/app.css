@@ -106,7 +106,9 @@
     }
 }
 @media only screen and (max-width: 375px){
-
+    #homepageOchakvaite-change{
+        font-size: 18px;
+    }
     body { font-size: 10px; }
     h3{ font-size: 15px; font-weight: bold;}
     body .progdettxt{
@@ -149,7 +151,9 @@
     }
 }
 @media only screen and (max-width: 412px){
-
+    #homepageOchakvaite-change{
+        font-size: 18px;
+    }
     body { font-size: 10px; }
     h3{ font-size: 15px; font-weight: bold;}
     body .progdettxt{
@@ -192,7 +196,9 @@
     }
 }
 @media only screen and  (max-width: 360px){
-
+    #homepageOchakvaite-change{
+        font-size: 18px;
+    }
     body { font-size: 10px; }
     h3{ font-size: 15px; font-weight: bold;}
     body .progdettxt{
@@ -235,7 +241,9 @@
     }
 }
 @media only screen and  (max-width: 414px){
-
+    #homepageOchakvaite-change{
+        font-size: 18px;
+    }
     body { font-size: 10px; }
     h3{ font-size: 15px; font-weight: bold;}
     body .progdettxt{
