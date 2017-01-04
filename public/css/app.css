@@ -46,33 +46,37 @@
         width: 1500px;
     }
 }
-@media (max-width: 600px) {
-    .carousel-caption {
-        display: none; /* Hide the carousel text when the screen is less than 600 pixels wide */
-    }
-}
+
 @media only screen and (max-width: 320px) /*and (max-width: 375px) and(max-width: 412px)  and (max-width: 360px)*/ {
 
-    body { font-size: 15px; }
-    h3{ font-size: 15px; font-weight: bold;}
-    body .progdettxt{
+    body {
+        font-size: 15px;
+    }
+
+    h3 {
+        font-size: 15px;
+        font-weight: bold;
+    }
+
+    body .progdettxt {
         font-size: 13px;
     }
-    body .ptagleftprogramdetails{
+
+    body .ptagleftprogramdetails {
         font-size: 13px;
     }
-    span{font-size: 13px; }
-    .divspancontact span{
+
+    span {
+        font-size: 13px;
+    }
+
+    .divspancontact span {
         font-size: 10px;
         height: 60px;
     }
-    .navbar-default nav{
-        left: 200px;
+    .logo{
+        display: none;
     }
-    #dropdown-content{
-        display: block;
-    }
-
 }
 @media only screen and (max-width: 375px){
 
@@ -159,13 +163,15 @@ body{
 
 .navbar-default{
     background-color: transparent;
+    border: none;
  }
 .navbar{
     background-color: transparent;
+    border: none;
 }
-.navB-left{
+/*.navB-left{
     left: 200px;
-}
+}*/
 #navBar {
     position: relative;
 }
@@ -182,10 +188,10 @@ body{
     text-decoration: none;
 }
 
-#myNavbar a:hover{
-    text-decoration: underline;
+.myNavbar a:hover{
     color: #0d1217;
     font-weight: bold;
+    text-decoration: underline;
 }
 
 /* Show the dropdown menu on hover */
@@ -193,12 +199,11 @@ body{
     display: flex;
 }
 /*Border beneath the navigation bar*/
-#myNavbar{
+.myNavbar{
     border-bottom: 1px solid;
-    z-index: 117;
 }
 .Bien{
-    font-size: 16px;
+    font-size: 18px;
     font-family: "359Sans";
     color: rgb(109, 110, 113);
     font-style: italic;
@@ -209,7 +214,7 @@ body{
 }
 
 #mainMenuComponents {
-    font-size: 16px;
+    font-size: 18px;
     font-family: "359Sans";
     color: #6D6E71;
     z-index: 111;
@@ -217,7 +222,7 @@ body{
 #IconsMenuComponents a{
     font-size: 14px;
     font-family: "359Sans";
-    text-align: justify;
+    /*text-align: justify;*/
     color: #6D6E71;
 }
 
@@ -283,9 +288,7 @@ body{
     position: relative;
     margin-left: 200px;
 }
-.carousel{
 
-}
 .carousel-inner img {
     max-width: 100%; /* Set width to 100% */
     height: auto;
