@@ -4,6 +4,7 @@
 @endsection
 
 @section('content')
+
     <div class="container">
         <div class="row">
             <div class="col-xs-12 col-sm-6 col-md-3 SideDate">
@@ -21,7 +22,7 @@
     </div>
     <div class="container">
 
-            <div class="col-xs-12 col-sm-6 col-lg-10 programData">
+            <div class="col-xs-12 col-sm-6 col-lg-10 programData" id="change">
                 <div class="col-md-2 prgdata">
                     <p>Дата</p>
                 </div>
@@ -39,7 +40,7 @@
          </div>
 
     <div class="container">
-           <div class="col-lg-9">
+           <div class="col-lg-9" id="change">
                  <div class="col-lg-4 programa">
                     {!! HTML::image('img/programimg/pic1.jpg') !!}
                      <br>
@@ -95,7 +96,7 @@
             </div>
          </div>
     <div class="container">
-        <div class="col-lg-9">
+        <div class="col-lg-9" id="change">
             <div class="col-lg-4 programa">
 
                 {!! HTML::image('img/programimg/pic4.jpg') !!}
@@ -106,14 +107,14 @@
                     <span class="ptagleft" id="left-aligncity">София</span>
                     <span class="ptagleft" id="right-alignaddress">Райко Алексиев</span>
                 </a>
-                <div class="col-lg-12 textunderimg">
+                <div class="col-lg-12 textunderimg" id="change">
                     <h4>Querat voluptatem</h4>
                     <p>
                         Duis aute irure dolor in reprehenderit in volup
                     </p>
                 </div>
             </div>
-            <div class="col-lg-4 programa">
+            <div class="col-lg-4 programa" id="change">
                 {!! HTML::image('img/programimg/pic5.jpg') !!}
                 <br>
                 <a href="#">
@@ -149,7 +150,7 @@
         </div>
         <div class="container">
             <div class="col-lg-12">
-                <div class="col-lg-6 programadetails">
+                <div class="col-lg-6 programadetails" id="change">
                     <h2>Querevat Voluptatem</h2>
                     {!! HTML::image('img/programimg/pic7.jpg') !!}
                     <br>
@@ -180,7 +181,7 @@
                 </div>
                 <section>
                     <div class="container">
-                        <div class="col-lg-6">
+                        <div class="col-lg-6" id="change">
                     <header>
                         <h2 class="programadet">Други изложби</h2>
                     </header>
@@ -216,7 +217,7 @@
                                 </div>
                          </div>
                    </div>
-                        <div class="col-lg-6">
+                        <div class="col-lg-6" id="change">
                             <div class="col-lg-4 programa">
                                 <a href="#" class="abackcolor">
                                 {!! HTML::image('img/programimg/pic9.jpg') !!}

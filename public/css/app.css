@@ -74,7 +74,34 @@
         font-size: 10px;
         height: 60px;
     }
-    .logo{
+   #homepageOchakvaite-change{
+       font-size: 18px;
+   }
+   .logo{
+       display: none;
+   }
+   .first-paragraph{
+       left: 1px;
+   }
+   #change{
+       left: 1px;
+   }
+ #change-1 img{
+     left: 1px;
+ }
+ #biennale-home-1 img{
+     left: 1px;
+ }
+ #biennale-home-2 img{
+        left: 1px;
+ }
+    .SideDate{
+        display: none;
+    }
+    #SuzIstoria{
+        display: none;
+    }
+    #purvoMezdunarodno{
         display: none;
     }
 }
@@ -93,7 +120,33 @@
         font-size: 10px;
         height: 40px;
     }
-
+    .logo{
+        display: none;
+    }
+    .first-paragraph{
+        left: 1px;
+    }
+    #change{
+        left: 1px;
+    }
+    #change-1 img{
+        left: 1px;
+    }
+    #biennale-home-1 img{
+        left: 1px;
+    }
+    #biennale-home-2 img{
+        left: 1px;
+    }
+    .SideDate{
+        display: none;
+    }
+    #SuzIstoria{
+        display: none;
+    }
+    #purvoMezdunarodno{
+        display: none;
+    }
 }
 @media only screen and (max-width: 412px){
 
@@ -110,7 +163,33 @@
         font-size: 10px;
         height: 40px;
     }
-
+    .logo{
+        display: none;
+    }
+    .first-paragraph{
+        left: 1px;
+    }
+    #change{
+        left: 1px;
+    }
+    #change-1 img{
+        left: 1px;
+    }
+    #biennale-home-1 img{
+        left: 1px;
+    }
+    #biennale-home-2 img{
+        left: 1px;
+    }
+    .SideDate{
+        display: none;
+    }
+    #SuzIstoria{
+        display: none;
+    }
+    #purvoMezdunarodno{
+        display: none;
+    }
 }
 @media only screen and  (max-width: 360px){
 
@@ -127,7 +206,33 @@
         font-size: 10px;
         height: 40px;
     }
-
+    .logo{
+        display: none;
+    }
+    .first-paragraph{
+        left: 1px;
+    }
+    #change{
+        left: 1px;
+    }
+    #change-1 img{
+        left: 1px;
+    }
+    #biennale-home-1 img{
+        left: 1px;
+    }
+    #biennale-home-2 img{
+        left: 1px;
+    }
+    .SideDate{
+        display: none;
+    }
+    #SuzIstoria{
+        display: none;
+    }
+    #purvoMezdunarodno{
+        display: none;
+    }
 }
 @media only screen and  (max-width: 414px){
 
@@ -144,11 +249,79 @@
         font-size: 10px;
         height: 40px;
     }
+    .logo{
+        display: none;
+    }
+    .first-paragraph{
+        left: 1px;
+    }
+    #change{
+        left: 1px;
+    }
+    #change-1 img{
+        left: 1px;
+    }
+    #biennale-home-1 img{
+        left: 1px;
+    }
+    #biennale-home-2 img{
+        left: 1px;
+    }
+    .SideDate{
+        display: none;
+    }
+    #SuzIstoria{
+        display: none;
+    }
+    #purvoMezdunarodno{
+        display: none;
+    }
+}
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px) {
+    body { font-size: 10px; }
+    h3{ font-size: 15px; font-weight: bold;}
+    body .progdettxt{
+        font-size: 12px;
+    }
+    body .ptagleftprogramdetails{
+        font-size: 10px;
+    }
+    span{font-size: 10px; }
+    .divspancontact span{
+        font-size: 10px;
+        height: 40px;
+    }
+    .logo{
+        display: none;
+    }
+    .first-paragraph{
+        left: 1px;
+    }
+    #change{
+        left: 1px;
+    }
+    #change-1 img{
+        left: 1px;
+    }
+    #biennale-home-1 img{
+        left: 1px;
+    }
+    #biennale-home-2 img{
+        left: 1px;
+    }
+    .SideDate{
+        display: none;
+    }
+    #SuzIstoria{
+        display: none;
+    }
+    #purvoMezdunarodno{
+        display: none;
+    }
+}
 
-}
-.navbar-default{
-   padding-bottom: 15px;
-}
+
 body{
     background-image: url('../img/background_biennale.jpg');
     background-repeat: repeat;
@@ -280,13 +453,13 @@ body{
     max-width: 100%;
     height: auto;
     position: relative;
-    margin-left: 200px;
+    left: 200px;
 }
 .biennalehome2 img{
     max-width: 100%;
     height: auto;
     position: relative;
-    margin-left: 200px;
+    left: 200px;
 }
 
 .carousel-inner img {
@@ -503,9 +676,7 @@ body{
     text-transform: uppercase;
     text-align: left;
     position: relative;
-    padding-left: 0px;
-
-
+    padding-left: 1px;
 }
 /*Partners CSS*/
 .firsttxt{

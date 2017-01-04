@@ -21,11 +21,11 @@
     </div>
 
     <div class="container">
-        <div class="row">
-             <div class="biennalehome1">
+        <div class="row" id="change">
+             <div class="biennalehome1" id="biennale-home-1">
                  {!! HTML::image('img/homepageimg/biennalehome.jpg') !!}
              </div>
-             <div class="biennalehome2">
+             <div class="biennalehome2" id="biennale-home-2">
                  {!! HTML::image('img/homepageimg/biennalehome2.jpg') !!}
              </div>
         </div>
@@ -33,9 +33,7 @@
     <div class="container">
         <div class="row">
             <div class="col-xs-12 col-sm-6 col-lg-12">
-                <div class="col-xs-12 col-sm-6 col-lg-11">
-                    <h3 class="homepageOchakvaite">Очаквайте</h3>
-                </div>
+                <h3 class="homepageOchakvaite" id="homepageOchakvaite-change">Очаквайте</h3>
             </div>
         </div>
     </div>

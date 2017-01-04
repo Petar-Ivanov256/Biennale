@@ -22,7 +22,7 @@
 
     <div class="container">
         <div class="col-lg-12">
-            <div class="col-xs-12 col-sm-6 col-lg-5 firsttxt">
+            <div class="col-xs-12 col-sm-6 col-lg-5 firsttxt" id="change">
                 <h1 class="partnersName">Направи дарение</h1>
                 <hr class="hr1">
                 <p class="p1">
@@ -44,7 +44,7 @@
                 </p>
            </div>
            <section>
-            <div class="col-xs-12 col-sm-6 col-md-5 chashfond">
+            <div class="col-xs-12 col-sm-6 col-md-5 chashfond" id="change">
                 <h3 class="partnersName1">Спонсори и партньори</h3>
                 <hr>
                 <h4 class="partnersName2">Главни партньори</h4><br>

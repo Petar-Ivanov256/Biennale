@@ -23,7 +23,7 @@
         <div  class="container">
             <div class="row">
                 <div class="col-lg-12">
-                    <div class="col-lg-4 contact">
+                    <div class="col-lg-4 contact" id="change">
                         <h1 class="Title1">Контакти</h1><br>
                         <p id="contactText">
                             Международно биенале на стъклото<br>
@@ -44,7 +44,7 @@
                             <span class="contactrightspan"><a href="tel:+359887288667" class="telefonCordinator">+359 887 288 667</a></span>
                         </div>
                     </div>
-                    <div class="col-lg-8" id="contact">
+                    <div class="col-lg-8"id="change">
                         <h2 class="Title1" >Контактна Форма</h2>
                         <form method="POST" action="{{ URL::to('/apply') }}" class="form-horizontal">
                             <div class="form-group contentContactForm">

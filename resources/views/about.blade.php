@@ -18,7 +18,7 @@
 
     <div class="container">
         <div class="col-lg-12">
-             <div class="col-xs-12 col-sm-6 col-lg-5 aboutleft">
+             <div class="col-xs-12 col-sm-6 col-lg-5 aboutleft" id="change">
                     <h1 class="name1">Нашата визия</h1>
                     <p class="textAbout">
                         Международно биенале на стъклото е първото по рода си събитие, което се състои края на месец септември на всеки две години в България.
@@ -135,8 +135,8 @@
                     </div>
                 </div>
             <section>
-                <div class="col-lg-5 picAbout">
-                    {!! HTML::image('img/picturesFromAbout.jpg') !!}
+                <div class="col-lg-5 picAbout" id="change-1">
+                    {!! HTML::image('img/picturesFromAbout.jpg')!!}
                 </div>
             </section>
               </div>
