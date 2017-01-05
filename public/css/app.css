@@ -104,6 +104,7 @@
     #purvoMezdunarodno{
         display: none;
     }
+
 }
 @media only screen and (max-width: 375px){
     #homepageOchakvaite-change{
@@ -149,6 +150,7 @@
     #purvoMezdunarodno{
         display: none;
     }
+
 }
 @media only screen and (max-width: 412px){
     #homepageOchakvaite-change{
@@ -194,6 +196,7 @@
     #purvoMezdunarodno{
         display: none;
     }
+
 }
 @media only screen and  (max-width: 360px){
     #homepageOchakvaite-change{
@@ -239,6 +242,7 @@
     #purvoMezdunarodno{
         display: none;
     }
+
 }
 @media only screen and  (max-width: 414px){
     #homepageOchakvaite-change{
@@ -284,6 +288,7 @@
     #purvoMezdunarodno{
         display: none;
     }
+
 }
 /* Small Devices, Tablets */
 /*@media only screen and (min-width : 768px) {
@@ -379,6 +384,7 @@ body{
 #navBar:hover #dropdown-content{
     display: flex;
 }
+
 /*Border beneath the navigation bar*/
 .myNavbar{
     border-bottom: 1px solid;
@@ -403,7 +409,6 @@ body{
 #IconsMenuComponents a{
     font-size: 14px;
     font-family: "359Sans";
-    /*text-align: justify;*/
     color: #6D6E71;
 }
 
