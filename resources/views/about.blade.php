@@ -4,6 +4,7 @@
 @endsection
 
 @section('content')
+    <h1>{{ trans('test.hello_test') }}</h1>
     <div class="container">
           <div class="col-md-3 SideDate">
                 <p>27.09-02.10</p>

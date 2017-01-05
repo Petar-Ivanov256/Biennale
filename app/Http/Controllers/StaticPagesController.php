@@ -18,6 +18,7 @@ class StaticPagesController extends Controller
     }
 
     public function about(Request $request){
+
         return view('about');
     }
 

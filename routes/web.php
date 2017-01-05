@@ -16,22 +16,34 @@
 //});
 
 
-Route::get('/','HomeController@home');
+Route::group(
+    [
+    'prefix' => LaravelLocalization::setLocale(),
+    'middleware' => ['localeSessionRedirect', 'localizationRedirect']
+    ],
+    function () {
+    /** ADD ALL LOCALIZED ROUTES INSIDE THIS GROUP **/
+    Route::get('/', 'HomeController@home');
+    Route::get('/about', 'StaticPagesController@about');
+});
 
-Route::get('/terms','StaticPagesController@terms');
-Route::get('/about','StaticPagesController@about');
-Route::get('/vision','StaticPagesController@vision');
-Route::get('/contact','StaticPagesController@contact');
-Route::get('/scholarships','StaticPagesController@scholarships');
-Route::get('/bachelor','StaticPagesController@bachelor');
-Route::get('/master','StaticPagesController@master');
-Route::get('/phd','StaticPagesController@phd');
-Route::get('/authors','StaticPagesController@authors');
-Route::get('/partners','StaticPagesController@partners');
 
-Route::get('/archive','ArchiveController@archive');
+Route::get('/terms', 'StaticPagesController@terms');
 
-Route::get('/news','NewsController@news');
+//Route::get('/about','StaticPagesController@about');
+
+Route::get('/vision', 'StaticPagesController@vision');
+Route::get('/contact', 'StaticPagesController@contact');
+Route::get('/scholarships', 'StaticPagesController@scholarships');
+Route::get('/bachelor', 'StaticPagesController@bachelor');
+Route::get('/master', 'StaticPagesController@master');
+Route::get('/phd', 'StaticPagesController@phd');
+Route::get('/authors', 'StaticPagesController@authors');
+Route::get('/partners', 'StaticPagesController@partners');
+
+Route::get('/archive', 'ArchiveController@archive');
+
+Route::get('/news', 'NewsController@news');
 Route::get('/news/add', 'NewsController@add');
 Route::post('/news/add', 'NewsController@create');
 Route::get('/news/all', 'NewsController@getAll');
@@ -40,16 +52,16 @@ Route::get('/news/edit/{id}', 'NewsController@edit');
 Route::post('/news/edit/{id}', 'NewsController@update');
 Route::delete('/news/{id}', 'NewsController@delete');
 
-Route::get('/events','EventsController@events');
+Route::get('/events', 'EventsController@events');
 Route::get('/events/create', 'EventsController@create');
 Route::post('/events/create', 'EventsController@add');
 
-Route::get('/program','ProgramController@program');
+Route::get('/program', 'ProgramController@program');
 
-Route::get('/apply-for-attendance','FormsController@applyForAttendanceForm');
-Route::post('/apply-for-attendance','FormsController@sendEmail');
+Route::get('/apply-for-attendance', 'FormsController@applyForAttendanceForm');
+Route::post('/apply-for-attendance', 'FormsController@sendEmail');
 Route::post('/apply', 'FormsController@sendForm');
-Route::get('send-email','FormsController@sendEmail');
+Route::get('send-email', 'FormsController@sendEmail');
 
 Route::get('/register', 'AuthController@showRegister');
 Route::post('/register', 'AuthController@registerUser');
@@ -78,7 +90,6 @@ Route::get('/authors/{id}', 'AuthorController@show');
 Route::get('/admin/authors', 'AuthorController@all')->middleware('isAdmin');
 Route::post('/admin/authors/delete/{id}', 'AuthorController@delete')->middleware('isAdmin');
 
-Route::get('/shits', function ()
-{
-	return storage_path('app\\public');
+Route::get('/shits', function () {
+    return storage_path('app\\public');
 });
