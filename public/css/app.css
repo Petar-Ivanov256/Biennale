@@ -830,24 +830,23 @@ body{
     text-decoration: underline solid #F04D3F ;
 }
 
-/*.конкурси {
-    font-size: 15.148px;
-    font-family: "359 Sans";
-    color: rgb(172, 210, 210);
+.events-menu li{
+    font-size: 15px;
+    font-family: "359Sans";
     text-transform: uppercase;
-    line-height: 2.781;
-    text-align: center;
     -moz-transform: matrix( 1.32029813799958,0,0,1.32029813799958,0,0);
     -webkit-transform: matrix( 1.32029813799958,0,0,1.32029813799958,0,0);
     -ms-transform: matrix( 1.32029813799958,0,0,1.32029813799958,0,0);
-    position: absolute;
-    left: 1231.778px;
-    top: 185.63px;
-    width: 64.103px;
-    height: 10.057px;
+    position: relative;
+    display: inline;
+    padding-right: 20px;
+    list-style-type: none;
     z-index: 62;
 }
-*/
+.events-menu a{
+    color: rgb(172, 210, 210);
+}
+
 
 #biennale-week {
     font-size: 15px;

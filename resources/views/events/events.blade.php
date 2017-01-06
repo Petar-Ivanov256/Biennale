@@ -27,7 +27,7 @@
             </div>
             <div>
                 <div>
-                <ul class="lihorizontal">
+                <ul class="events-menu">
                     <li><a href="#1">Изложби</a></li>
                     <li><a href="#2">Лекции</a></li>
                     <li><a href="#3" data-toggle="collapse">Творчески ателиета</a></li>
