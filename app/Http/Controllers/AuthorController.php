@@ -28,7 +28,8 @@ class AuthorController extends Controller
         $author->photo = $path;
         $author->save();
 
-    	return storage_path('app\\' . $path); //redirect('/');
+    	//return storage_path('app\\' . $path); //redirect('/');
+        return redirect('/admin/authors');
     }
 
     public function all(Request $request)

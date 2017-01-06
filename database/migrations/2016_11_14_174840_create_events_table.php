@@ -28,7 +28,7 @@ class CreateEventsTable extends Migration {
             $table->softDeletes();
         });
 
-        // DB::statement("ALTER TABLE <table name> ADD <column name> MEDIUMBLOB");
+        DB::statement("ALTER TABLE `events` CHANGE COLUMN `photo` `photo` MEDIUMBLOB NULL AFTER `description`");
     }
 
     /**

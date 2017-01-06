@@ -83,6 +83,17 @@ class AdminController extends Controller
         $place = $request->input('place');
         $description = $request->input('description');
 
+        //TODO PROBLEM: some pics with extensions like png get exception Image source not readable but the problem is that reworked pictures (form PS for example) which are ending with JPG are not working too.
+        // DEBUG the problem from above
+        var_dump($request->file('pic'));
+        try {
+            $img = Image::make($request->file('pic')->getRealPath());
+            //Not sure why we need this ? Should be discuss with Mariyana
+            Response::make($img->encode($request->file('pic')->extension()));
+        } catch (NotReadableException $e) {
+            return view('admin.admin_exception', ['exc'=> $e]);
+        }
+
         $event = Events::find($id);
 
         $event->start = $request->input('start');
@@ -92,7 +103,7 @@ class AdminController extends Controller
         //$event->entrance = $request->input('entrance');
         $event->title = $title;
         $event->description = $description;
-        //$event->photo = $request->file('photo');
+        $event->photo = $img;
         $event->save();
 
         return redirect('/admin/showEvents');
