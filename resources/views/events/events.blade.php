@@ -19,12 +19,12 @@
             </div>
         </div>
     </div>
-    <div class="container">
+    <div class="container" id="top">
         <div class="col-lg-9" id="change">
             <div class="col-lg-4 programa">
-                {!! HTML::image('img/eventsimg/pic1.jpg') !!}
-                <br>
                 <a href="#" class="abackcolor">
+                    {!! HTML::image('img/eventsimg/pic1.jpg') !!}
+                    <br>
                     <span class="ptagleft" id="left-aligndate">27.09-29.09</span>
                     <span class="ptagleft" id="right-alignhour">10:00-18:00</span>
                     <span class="ptagleft" id="left-aligncity">София</span>
@@ -39,9 +39,9 @@
                 </div>
             </div>
             <div class="col-lg-4 programa">
-                {!! HTML::image('img/eventsimg/pic2.jpg') !!}
-                <br>
-                <a href="#">
+               <a href="#">
+                   {!! HTML::image('img/eventsimg/pic2.jpg') !!}
+                   <br>
                     <span class="ptagleft" id="left-aligndate">27.09-29.09</span>
                     <span class="ptagleft" id="right-alignhour">10:00-18:00</span>
                     <span class="ptagleft" id="left-aligncity">София</span>
@@ -57,9 +57,9 @@
 
             </div>
             <div class="col-lg-4 programa">
-                {!! HTML::image('img/eventsimg/pic3.jpg') !!}
-                <br>
                 <a href="#">
+                    {!! HTML::image('img/eventsimg/pic3.jpg') !!}
+                    <br>
                     <span class="ptagleft" id="left-aligndate">27.09-29.09</span>
                     <span class="ptagleft" id="right-alignhour">10:00-18:00</span>
                     <span class="ptagleft" id="left-aligncity">София</span>
@@ -78,9 +78,9 @@
     <div class="container">
         <div class="col-lg-9" id="change">
             <div class="col-lg-4 programa">
-                {!! HTML::image('img/eventsimg/pic4.jpg') !!}
-                <br>
                 <a href="#" class="abackcolor">
+                    {!! HTML::image('img/eventsimg/pic4.jpg') !!}
+                    <br>
                     <span class="ptagleft" id="left-aligndate">27.09-29.09</span>
                     <span class="ptagleft" id="right-alignhour">10:00-18:00</span>
                     <span class="ptagleft" id="left-aligncity">София</span>
@@ -95,9 +95,9 @@
                 </div>
             </div>
             <div class="col-lg-4 programa">
-                {!! HTML::image('img/eventsimg/pic5.jpg') !!}
-                <br>
                 <a href="#">
+                    {!! HTML::image('img/eventsimg/pic5.jpg') !!}
+                    <br>
                     <span class="ptagleft" id="left-aligndate">27.09-29.09</span>
                     <span class="ptagleft" id="right-alignhour">10:00-18:00</span>
                     <span class="ptagleft" id="left-aligncity">София</span>
@@ -113,9 +113,9 @@
 
             </div>
             <div class="col-lg-4 programa">
-                {!! HTML::image('img/eventsimg/pic3.jpg') !!}
-                <br>
                 <a href="#">
+                    {!! HTML::image('img/eventsimg/pic3.jpg') !!}
+                    <br>
                     <span class="ptagleft" id="left-aligndate">27.09-29.09</span>
                     <span class="ptagleft" id="right-alignhour">10:00-18:00</span>
                     <span class="ptagleft" id="left-aligncity">София</span>
@@ -159,6 +159,7 @@
                         aliquet. Suspendisse cursus magna pulvinar, molestie elit nec, fringilla lorem.
                     </p>
                 </div>
+                <a href="#top" class="back-to-top"><span class="ptagleftdetailss"></span><span class="ptagleftdetailss">Обратно към всички</span></a>
             </div>
             <section>
                 <div class="container">
