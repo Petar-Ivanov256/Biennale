@@ -877,7 +877,12 @@ body{
     position: relative;
 
 }
-
+.transform{
+    font-family: "DecimaMonoX";
+    font-size: 20px;
+    font-weight: bold;
+    color: #794D9F;
+}
 .programadetails h2{
     font-size: 30px;
     font-family: "DecimaMonoX";
@@ -891,14 +896,31 @@ body{
     color: rgb(109, 110, 113);
 
 }
+.back-to-top{
+    font-size: 20px;
+    font-family: "DecimaMonoX";
+    color: rgba(109, 110, 113, 0.302);
+    font-weight: bold;
+    text-transform: uppercase;
+
+}
+.ptagleftdetailss{
+    width: 50%;
+    text-align: right;
+    position: relative;
+    border-bottom: 1px solid;
+    border-top: 1px solid;
+    padding-top: 12px;
+    padding-bottom: 12px;
+}
 
 .ptagleftdetails {
     width: 50%;
     position: relative;
 }
+
 .ptagleftdetails{
     float: left;
-
     position: relative;
 }
 .programadetails span{
@@ -941,6 +963,7 @@ body{
     font-family: "359 Sans";
     color: rgba(121, 77, 159, 0.502);
     font-style: italic;
+    font-weight: bold;
 }
 
 /*Bachelor Css*/

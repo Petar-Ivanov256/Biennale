@@ -25,13 +25,13 @@
                <div class="col-md-2">
                    <ul>
                        <li>
-                           <a href="#">Стипендии за бакалавър</a>
+                           <a href={{ URL::to('/bachelor')}}>Стипендии за бакалавър</a>
                        </li>
                        <li>
-                           <a href="#">Стипендии за магистър</a>
+                           <a href={{ URL::to('/master')}}>Стипендии за магистър</a>
                        </li>
                        <li>
-                           <a href="#">Стипендии за доктор</a>
+                           <a href={{ URL::to('/phd')}}>Стипендии за доктор</a>
                        </li>
                        <li>
                            <a href="{{ URL::to('/authors')}}">Автори</a>
