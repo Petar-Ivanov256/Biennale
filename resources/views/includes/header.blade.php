@@ -45,7 +45,7 @@
                     <a id="mainMenuComponents" class="Partners" href="{{ URL::to('/partners')}}">Партньори</a>
                 </li>
                 <li>
-                    <a id="mainMenuComponents" class="Archives" href="{{ URL::to('/archive')}}">Архиви</a>
+                    <a id="mainMenuComponents" class="Archives" href="{{ URL::to('/archive')}}">Архив</a>
                 </li>
                 <li>
                     <a id="mainMenuComponents" class="Contacts" href="{{ URL::to('/contact')}}">Контакти</a>
