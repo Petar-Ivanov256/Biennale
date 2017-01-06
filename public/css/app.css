@@ -846,6 +846,19 @@ body{
 .events-menu a{
     color: rgb(172, 210, 210);
 }
+.events-p p{
+    font-size: 15px;
+    left: 15px;
+    font-family: "359Sans";
+    text-transform: uppercase;
+    -moz-transform: matrix( 1.32029813799958,0,0,1.32029813799958,0,0);
+    -webkit-transform: matrix( 1.32029813799958,0,0,1.32029813799958,0,0);
+    -ms-transform: matrix( 1.32029813799958,0,0,1.32029813799958,0,0);
+    position: relative;
+    display: inline;
+    color: rgb(172, 210, 210);
+    z-index: 62;
+}
 
 
 #biennale-week {

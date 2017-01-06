@@ -46,13 +46,12 @@
                         <li><a href="#">Август</a></li>
                         <li><a href="#">Септември</a></li>
                         <li><a href="#">Октомври</a></li>
-
                     </ul>
                 </div>
             </div>
-
         </div>
         <div class="col-lg-9" id="change">
+            <div id="1" class="events-p"><p>Изложби<p></div><br>
             <div class="col-lg-4 programa">
                 <a href="#" class="abackcolor">
                     {!! HTML::image('img/eventsimg/pic1.jpg') !!}
@@ -86,7 +85,6 @@
                         Duis aute irure dolor in reprehenderit in volup
                     </p>
                 </div>
-
             </div>
             <div class="col-lg-4 programa">
                 <a href="#">
@@ -162,7 +160,274 @@
                 </div>
             </div>
         </div>
+
+
+        <div class="col-lg-9" id="change">
+            <div id="2" class="events-p"><p>Лекции<p></div><br>
+            <div class="col-lg-4 programa">
+                <a href="#" class="abackcolor">
+                    {!! HTML::image('img/eventsimg/pic1.jpg') !!}
+                    <br>
+                    <span class="ptagleft" id="left-aligndate">27.09-29.09</span>
+                    <span class="ptagleft" id="right-alignhour">10:00-18:00</span>
+                    <span class="ptagleft" id="left-aligncity">София</span>
+                    <span class="ptagleft" id="right-alignaddress">Райко Алексиев</span>
+                </a>
+                <br>
+                <div class="col-lg-12 textunderimg">
+                    <h4>Querat voluptatem</h4>
+                    <p>
+                        Duis aute irure dolor in reprehenderit in volup
+                    </p>
+                </div>
+            </div>
+            <div class="col-lg-4 programa">
+                <a href="#">
+                    {!! HTML::image('img/eventsimg/pic2.jpg') !!}
+                    <br>
+                    <span class="ptagleft" id="left-aligndate">27.09-29.09</span>
+                    <span class="ptagleft" id="right-alignhour">10:00-18:00</span>
+                    <span class="ptagleft" id="left-aligncity">София</span>
+                    <span class="ptagleft" id="right-alignaddress">Райко Алексиев</span>
+                </a>
+                <br>
+                <div class="col-lg-12 textunderimg">
+                    <h4>Querat voluptatem</h4>
+                    <p>
+                        Duis aute irure dolor in reprehenderit in volup
+                    </p>
+                </div>
+            </div>
+            <div class="col-lg-4 programa">
+                <a href="#">
+                    {!! HTML::image('img/eventsimg/pic3.jpg') !!}
+                    <br>
+                    <span class="ptagleft" id="left-aligndate">27.09-29.09</span>
+                    <span class="ptagleft" id="right-alignhour">10:00-18:00</span>
+                    <span class="ptagleft" id="left-aligncity">София</span>
+                    <span class="ptagleft" id="right-alignaddress">Райко Алексиев</span>
+                </a>
+                <br>
+                <div class="col-lg-12 textunderimg">
+                    <h4>Querat voluptatem</h4>
+                    <p>
+                        Duis aute irure dolor in reprehenderit in volup
+                    </p>
+                </div>
+            </div>
+        </div>
     </div>
+    <div class="container">
+        <div class="col-lg-9" id="change">
+            <div class="col-lg-4 programa">
+                <a href="#" class="abackcolor">
+                    {!! HTML::image('img/eventsimg/pic4.jpg') !!}
+                    <br>
+                    <span class="ptagleft" id="left-aligndate">27.09-29.09</span>
+                    <span class="ptagleft" id="right-alignhour">10:00-18:00</span>
+                    <span class="ptagleft" id="left-aligncity">София</span>
+                    <span class="ptagleft" id="right-alignaddress">Райко Алексиев</span>
+                </a>
+                <br>
+                <div class="col-lg-12 textunderimg">
+                    <h4>Querat voluptatem</h4>
+                    <p>
+                        Duis aute irure dolor in reprehenderit in volup
+                    </p>
+                </div>
+            </div>
+            <div class="col-lg-4 programa">
+                <a href="#">
+                    {!! HTML::image('img/eventsimg/pic5.jpg') !!}
+                    <br>
+                    <span class="ptagleft" id="left-aligndate">27.09-29.09</span>
+                    <span class="ptagleft" id="right-alignhour">10:00-18:00</span>
+                    <span class="ptagleft" id="left-aligncity">София</span>
+                    <span class="ptagleft" id="right-alignaddress">Райко Алексиев</span>
+                </a>
+                <br>
+                <div class="col-lg-12 textunderimg">
+                    <h4>Querat voluptatem</h4>
+                    <p>
+                        Duis aute irure dolor in reprehenderit in volup
+                    </p>
+                </div>
+
+            </div>
+            <div class="col-lg-4 programa">
+                <a href="#">
+                    {!! HTML::image('img/eventsimg/pic3.jpg') !!}
+                    <br>
+                    <span class="ptagleft" id="left-aligndate">27.09-29.09</span>
+                    <span class="ptagleft" id="right-alignhour">10:00-18:00</span>
+                    <span class="ptagleft" id="left-aligncity">София</span>
+                    <span class="ptagleft" id="right-alignaddress">Райко Алексиев</span>
+                </a>
+                <br>
+                <div class="col-lg-12 textunderimg">
+                    <h4>Querat voluptatem</h4>
+                    <p>
+                        Duis aute irure dolor in reprehenderit in volup
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-lg-9" id="change">
+            <div id="4" class="events-p"><p>Конкурси<p></div><br>
+            <div class="col-lg-4 programa">
+                <a href="#" class="abackcolor">
+                    {!! HTML::image('img/eventsimg/pic1.jpg') !!}
+                    <br>
+                    <span class="ptagleft" id="left-aligndate">27.09-29.09</span>
+                    <span class="ptagleft" id="right-alignhour">10:00-18:00</span>
+                    <span class="ptagleft" id="left-aligncity">София</span>
+                    <span class="ptagleft" id="right-alignaddress">Райко Алексиев</span>
+                </a>
+                <br>
+                <div class="col-lg-12 textunderimg">
+                    <h4>Querat voluptatem</h4>
+                    <p>
+                        Duis aute irure dolor in reprehenderit in volup
+                    </p>
+                </div>
+            </div>
+            <div class="col-lg-4 programa">
+                <a href="#">
+                    {!! HTML::image('img/eventsimg/pic2.jpg') !!}
+                    <br>
+                    <span class="ptagleft" id="left-aligndate">27.09-29.09</span>
+                    <span class="ptagleft" id="right-alignhour">10:00-18:00</span>
+                    <span class="ptagleft" id="left-aligncity">София</span>
+                    <span class="ptagleft" id="right-alignaddress">Райко Алексиев</span>
+                </a>
+                <br>
+                <div class="col-lg-12 textunderimg">
+                    <h4>Querat voluptatem</h4>
+                    <p>
+                        Duis aute irure dolor in reprehenderit in volup
+                    </p>
+                </div>
+            </div>
+            <div class="col-lg-4 programa">
+                <a href="#">
+                    {!! HTML::image('img/eventsimg/pic3.jpg') !!}
+                    <br>
+                    <span class="ptagleft" id="left-aligndate">27.09-29.09</span>
+                    <span class="ptagleft" id="right-alignhour">10:00-18:00</span>
+                    <span class="ptagleft" id="left-aligncity">София</span>
+                    <span class="ptagleft" id="right-alignaddress">Райко Алексиев</span>
+                </a>
+                <br>
+                <div class="col-lg-12 textunderimg">
+                    <h4>Querat voluptatem</h4>
+                    <p>
+                        Duis aute irure dolor in reprehenderit in volup
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="col-lg-9" id="change">
+            <div class="col-lg-4 programa">
+                <a href="#" class="abackcolor">
+                    {!! HTML::image('img/eventsimg/pic4.jpg') !!}
+                    <br>
+                    <span class="ptagleft" id="left-aligndate">27.09-29.09</span>
+                    <span class="ptagleft" id="right-alignhour">10:00-18:00</span>
+                    <span class="ptagleft" id="left-aligncity">София</span>
+                    <span class="ptagleft" id="right-alignaddress">Райко Алексиев</span>
+                </a>
+                <br>
+                <div class="col-lg-12 textunderimg">
+                    <h4>Querat voluptatem</h4>
+                    <p>
+                        Duis aute irure dolor in reprehenderit in volup
+                    </p>
+                </div>
+            </div>
+            <div class="col-lg-4 programa">
+                <a href="#">
+                    {!! HTML::image('img/eventsimg/pic5.jpg') !!}
+                    <br>
+                    <span class="ptagleft" id="left-aligndate">27.09-29.09</span>
+                    <span class="ptagleft" id="right-alignhour">10:00-18:00</span>
+                    <span class="ptagleft" id="left-aligncity">София</span>
+                    <span class="ptagleft" id="right-alignaddress">Райко Алексиев</span>
+                </a>
+                <br>
+                <div class="col-lg-12 textunderimg">
+                    <h4>Querat voluptatem</h4>
+                    <p>
+                        Duis aute irure dolor in reprehenderit in volup
+                    </p>
+                </div>
+
+            </div>
+            <div class="col-lg-4 programa">
+                <a href="#">
+                    {!! HTML::image('img/eventsimg/pic3.jpg') !!}
+                    <br>
+                    <span class="ptagleft" id="left-aligndate">27.09-29.09</span>
+                    <span class="ptagleft" id="right-alignhour">10:00-18:00</span>
+                    <span class="ptagleft" id="left-aligncity">София</span>
+                    <span class="ptagleft" id="right-alignaddress">Райко Алексиев</span>
+                </a>
+                <br>
+                <div class="col-lg-12 textunderimg">
+                    <h4>Querat voluptatem</h4>
+                    <p>
+                        Duis aute irure dolor in reprehenderit in volup
+                    </p>
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     <div class="container">
         <div class="col-lg-12">
             <div class="col-lg-6 programadetails" id="change">
