@@ -814,6 +814,54 @@ body{
     font-weight: bold;
     text-transform: uppercase;
 }
+/*Event Css*/
+
+.months li{
+    font-size: 14px;
+    font-family: "359Sans";
+    text-transform: uppercase;
+    display: inline;
+    list-style-type: none;
+    padding-right: 20px;
+    z-index: 75;
+}
+.months a{
+    color: rgb(240, 77, 63);
+    text-decoration: underline solid #F04D3F ;
+}
+
+/*.конкурси {
+    font-size: 15.148px;
+    font-family: "359 Sans";
+    color: rgb(172, 210, 210);
+    text-transform: uppercase;
+    line-height: 2.781;
+    text-align: center;
+    -moz-transform: matrix( 1.32029813799958,0,0,1.32029813799958,0,0);
+    -webkit-transform: matrix( 1.32029813799958,0,0,1.32029813799958,0,0);
+    -ms-transform: matrix( 1.32029813799958,0,0,1.32029813799958,0,0);
+    position: absolute;
+    left: 1231.778px;
+    top: 185.63px;
+    width: 64.103px;
+    height: 10.057px;
+    z-index: 62;
+}
+*/
+
+#biennale-week {
+    font-size: 15px;
+    font-family: "359Sans";
+    color: rgb(121, 77, 159);
+    font-style: italic;
+    text-transform: uppercase;
+    -moz-transform: matrix( 1.32029813799958,0,0,1.32029813799958,0,0);
+    -webkit-transform: matrix( 1.32029813799958,0,0,1.32029813799958,0,0);
+    -ms-transform: matrix( 1.32029813799958,0,0,1.32029813799958,0,0);
+    position: relative;
+    z-index: 63;
+}
+
 /*Program Css*/
 .programa img {
     display: block;

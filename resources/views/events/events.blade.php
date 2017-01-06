@@ -20,6 +20,38 @@
         </div>
     </div>
     <div class="container" id="top">
+        <div class="col-lg-9">
+            <div class="col-md-2 prgdata">
+                <p>Събития</p>
+                <p>Период</p>
+            </div>
+            <div>
+                <div>
+                <ul class="lihorizontal">
+                    <li><a href="#1">Изложби</a></li>
+                    <li><a href="#2">Лекции</a></li>
+                    <li><a href="#3" data-toggle="collapse">Творчески ателиета</a></li>
+                    <li><a href="#4">Конкурси</a></li>
+                    <li id="biennale-week">Седмица на биеналето</li>
+                </ul>
+                </div>
+                <div id="3" class="collapse">
+                    <ul class="months">
+                        <li><a href="#">Февруари</a></li>
+                        <li><a href="#">Март</a></li>
+                        <li><a href="#">Април</a></li>
+                        <li><a href="#">Май</a></li>
+                        <li><a href="#">Юни</a></li>
+                        <li><a href="#">Юли</a></li>
+                        <li><a href="#">Август</a></li>
+                        <li><a href="#">Септември</a></li>
+                        <li><a href="#">Октомври</a></li>
+
+                    </ul>
+                </div>
+            </div>
+
+        </div>
         <div class="col-lg-9" id="change">
             <div class="col-lg-4 programa">
                 <a href="#" class="abackcolor">
