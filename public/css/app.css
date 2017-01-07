@@ -107,6 +107,9 @@
     #return-footer{
         left: 1px;
     }
+    #event-back{
+        left: 1px;
+    }
 }
 @media only screen and (max-width: 375px){
     #homepageOchakvaite-change{
@@ -153,6 +156,9 @@
         display: none;
     }
     #return-footer{
+        left: 1px;
+    }
+    #event-back{
         left: 1px;
     }
 }
@@ -203,6 +209,9 @@
     #return-footer{
         left: 1px;
     }
+    #event-back{
+        left: 1px;
+    }
 }
 @media only screen and  (max-width: 360px){
     #homepageOchakvaite-change{
@@ -249,6 +258,9 @@
         display: none;
     }
     #return-footer{
+        left: 1px;
+    }
+    #event-back{
         left: 1px;
     }
 }
@@ -299,6 +311,9 @@
     #return-footer{
         left: 1px;
     }
+    #event-back{
+        left: 1px;
+    }
 }
 /* Small Devices, Tablets */
 /*@media only screen and (min-width : 768px) {
@@ -342,6 +357,9 @@
     #purvoMezdunarodno{
         display: none;
     }#return-footer{
+        left: 1px;
+    }
+    #event-back{
         left: 1px;
     }
 }*/
@@ -873,7 +891,9 @@ body{
     position: relative;
     z-index: 63;
 }
-
+.event-left{
+    left: 200px;
+}
 /*Program Css*/
 .programa img {
     display: block;
