@@ -20,7 +20,7 @@
         </div>
     </div>
     <div class="container" id="top">
-        <div class="col-lg-9">
+        <div class="col-lg-9 event-left" id="event-back">
             <div class="col-md-2 prgdata">
                 <p>Събития</p>
                 <p>Период</p>
@@ -37,19 +37,20 @@
                 </div>
                 <div id="3" class="collapse">
                     <ul class="months">
-                        <li><a href="#">Февруари</a></li>
-                        <li><a href="#">Март</a></li>
-                        <li><a href="#">Април</a></li>
-                        <li><a href="#">Май</a></li>
-                        <li><a href="#">Юни</a></li>
-                        <li><a href="#">Юли</a></li>
-                        <li><a href="#">Август</a></li>
-                        <li><a href="#">Септември</a></li>
-                        <li><a href="#">Октомври</a></li>
+                        <li><a href="#02">Февруари</a></li>
+                        <li><a href="#03">Март</a></li>
+                        <li><a href="#04">Април</a></li>
+                        <li><a href="#05">Май</a></li>
+                        <li><a href="#06">Юни</a></li>
+                        <li><a href="#07">Юли</a></li>
+                        <li><a href="#08">Август</a></li>
+                        <li><a href="#09">Септември</a></li>
+                        <li><a href="#10">Октомври</a></li>
                     </ul>
                 </div>
             </div>
         </div>
+        <!--Izlozbi-->
         <div class="col-lg-9" id="change">
             <div id="1" class="events-p"><p>Изложби<p></div><br>
             <div class="col-lg-4 programa">
@@ -161,7 +162,119 @@
             </div>
         </div>
 
+<!--Tvorcheski atelieta-->
+        <div class="col-lg-9" id="change">
+            <div id="02" class="events-p"><p>Творчески ателиета<p></div><br>
+            <div class="col-lg-4 programa">
+                <a href="#" class="abackcolor">
+                    {!! HTML::image('img/eventsimg/pic1.jpg') !!}
+                    <br>
+                    <span class="ptagleft" id="left-aligndate">27.09-29.09</span>
+                    <span class="ptagleft" id="right-alignhour">10:00-18:00</span>
+                    <span class="ptagleft" id="left-aligncity">София</span>
+                    <span class="ptagleft" id="right-alignaddress">Райко Алексиев</span>
+                </a>
+                <br>
+                <div class="col-lg-12 textunderimg">
+                    <h4>Querat voluptatem</h4>
+                    <p>
+                        Duis aute irure dolor in reprehenderit in volup
+                    </p>
+                </div>
+            </div>
+            <div class="col-lg-4 programa">
+                <a href="#">
+                    {!! HTML::image('img/eventsimg/pic2.jpg') !!}
+                    <br>
+                    <span class="ptagleft" id="left-aligndate">27.09-29.09</span>
+                    <span class="ptagleft" id="right-alignhour">10:00-18:00</span>
+                    <span class="ptagleft" id="left-aligncity">София</span>
+                    <span class="ptagleft" id="right-alignaddress">Райко Алексиев</span>
+                </a>
+                <br>
+                <div class="col-lg-12 textunderimg">
+                    <h4>Querat voluptatem</h4>
+                    <p>
+                        Duis aute irure dolor in reprehenderit in volup
+                    </p>
+                </div>
+            </div>
+            <div class="col-lg-4 programa">
+                <a href="#">
+                    {!! HTML::image('img/eventsimg/pic3.jpg') !!}
+                    <br>
+                    <span class="ptagleft" id="left-aligndate">27.09-29.09</span>
+                    <span class="ptagleft" id="right-alignhour">10:00-18:00</span>
+                    <span class="ptagleft" id="left-aligncity">София</span>
+                    <span class="ptagleft" id="right-alignaddress">Райко Алексиев</span>
+                </a>
+                <br>
+                <div class="col-lg-12 textunderimg">
+                    <h4>Querat voluptatem</h4>
+                    <p>
+                        Duis aute irure dolor in reprehenderit in volup
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="col-lg-9" id="change">
+            <div class="col-lg-4 programa">
+                <a href="#" class="abackcolor">
+                    {!! HTML::image('img/eventsimg/pic4.jpg') !!}
+                    <br>
+                    <span class="ptagleft" id="left-aligndate">27.09-29.09</span>
+                    <span class="ptagleft" id="right-alignhour">10:00-18:00</span>
+                    <span class="ptagleft" id="left-aligncity">София</span>
+                    <span class="ptagleft" id="right-alignaddress">Райко Алексиев</span>
+                </a>
+                <br>
+                <div class="col-lg-12 textunderimg">
+                    <h4>Querat voluptatem</h4>
+                    <p>
+                        Duis aute irure dolor in reprehenderit in volup
+                    </p>
+                </div>
+            </div>
+            <div class="col-lg-4 programa">
+                <a href="#">
+                    {!! HTML::image('img/eventsimg/pic5.jpg') !!}
+                    <br>
+                    <span class="ptagleft" id="left-aligndate">27.09-29.09</span>
+                    <span class="ptagleft" id="right-alignhour">10:00-18:00</span>
+                    <span class="ptagleft" id="left-aligncity">София</span>
+                    <span class="ptagleft" id="right-alignaddress">Райко Алексиев</span>
+                </a>
+                <br>
+                <div class="col-lg-12 textunderimg">
+                    <h4>Querat voluptatem</h4>
+                    <p>
+                        Duis aute irure dolor in reprehenderit in volup
+                    </p>
+                </div>
 
+            </div>
+            <div class="col-lg-4 programa">
+                <a href="#">
+                    {!! HTML::image('img/eventsimg/pic3.jpg') !!}
+                    <br>
+                    <span class="ptagleft" id="left-aligndate">27.09-29.09</span>
+                    <span class="ptagleft" id="right-alignhour">10:00-18:00</span>
+                    <span class="ptagleft" id="left-aligncity">София</span>
+                    <span class="ptagleft" id="right-alignaddress">Райко Алексиев</span>
+                </a>
+                <br>
+                <div class="col-lg-12 textunderimg">
+                    <h4>Querat voluptatem</h4>
+                    <p>
+                        Duis aute irure dolor in reprehenderit in volup
+                    </p>
+                </div>
+            </div>
+        </div>
+
+<!--Lekcii-->
         <div class="col-lg-9" id="change">
             <div id="2" class="events-p"><p>Лекции<p></div><br>
             <div class="col-lg-4 programa">
@@ -272,7 +385,7 @@
                 </div>
             </div>
         </div>
-
+<!--Konkursi-->
         <div class="col-lg-9" id="change">
             <div id="4" class="events-p"><p>Конкурси<p></div><br>
             <div class="col-lg-4 programa">
@@ -392,42 +505,6 @@
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
     <div class="container">
         <div class="col-lg-12">
             <div class="col-lg-6 programadetails" id="change">
@@ -439,7 +516,7 @@
                     <span class="oneprogdet">Час</span>
                     <span class="twoprogdet">18:00-20:00</span>
                     <span class="oneprogdet">Място</span>
-                    <span class="twoprogdet">Галерия Райко Алексиев <a href="#" class="programapdirection">виж картата</a></span>
+                    <span class="twoprogdet">Галерия Райко Алексиев <a href="{{url('https://www.google.bg/maps/place/Galeria+Rayko+Aleksiev/@42.6940046,23.3264532,17z/data=!3m1!4b1!4m5!3m4!1s0x40aa8573cd8ef9e7:0x65f0adc8c2fca7!8m2!3d42.6940046!4d23.3286419?hl=bg')}}" class="programapdirection">виж картата</a></span>
                     <span class="oneprogdet">Артисти</span>
                     <span class="twoprogdet">дипломанти "Стъкло" НБУ</span>
                     <span class="oneprogdet">Вход</span>
