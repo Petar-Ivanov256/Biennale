@@ -375,6 +375,7 @@ body{
     width:150px;
     height:65px;
     background-size: 150px 65px;
+    background-color: transparent;
 }
 
 .navbar-default{
