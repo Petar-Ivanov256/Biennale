@@ -9,7 +9,9 @@
 namespace App\Http\Controllers;
 
 
+use App\Mail\ContactFormEmail;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Mail;
 
 class StaticPagesController extends Controller
 {
@@ -28,6 +30,19 @@ class StaticPagesController extends Controller
 
     public function contact(Request $request){
         return view('contact');
+    }
+
+    public function send_contact_mail(Request $request){
+
+        $name = $request->input('name');
+        $email = $request->input('email');
+        $description = $request->input('title');
+        $content = $request->input('message');
+
+        $myEmail = 'senderglassbiennalebg@gmail.com';
+        Mail::to($myEmail)->send(new ContactFormEmail($name,$email,$description,$content));
+
+        return redirect('/contact');
     }
 
     public function scholarships(Request $request){

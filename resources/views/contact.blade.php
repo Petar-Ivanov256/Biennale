@@ -4,6 +4,7 @@
 @endsection
 
 @section('content')
+    <h1>Dase sloji saobhstenie che emaila e praten ama da e gotino naprimer s javascript</h1>
          <div class="container">
             <div class="row">
                 <div class="col-md-3 SideDate">
@@ -46,7 +47,8 @@
                     </div>
                     <div class="col-lg-8"id="change">
                         <h2 class="Title1" >Контактна Форма</h2>
-                        <form method="POST" action="{{ URL::to('/apply') }}" class="form-horizontal">
+                        <form method="POST" action="{{ URL::to('/contact/send-mail') }}" class="form-horizontal">
+                            <input type="hidden" name="_token" value="{{{ csrf_token() }}}" />
                             <div class="form-group contentContactForm">
                                 <div class="col-md-5">
                                     <input type="text" class="form-control" id="name" name="name" placeholder="Име и фамилия*" value="{{ Request::old('name') }}">
@@ -59,12 +61,12 @@
                             </div>
                             <div class="form-group contentContactForm">
                                 <div class="col-md-5">
-                                    <input type="text" class="form-control" id="title" name="Title" placeholder="Заглавие*" value="{{ Request::old('englishTitle') }}">
+                                    <input type="text" class="form-control" id="title" name="title" placeholder="Заглавие*" value="{{ Request::old('title') }}">
                                 </div>
                             </div>
                             <div class="form-group contentContactForm">
                                 <div class="col-md-5">
-                                    <textarea class="form-control" id="Message" name="Message" cols="25" rows="5" placeholder="Съобщение*"></textarea>
+                                    <textarea class="form-control" id="message" name="message" cols="25" rows="5" placeholder="Съобщение*"></textarea>
                                 </div>
                             </div>
                             <div class="form-group">

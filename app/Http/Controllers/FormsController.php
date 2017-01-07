@@ -10,6 +10,7 @@ namespace App\Http\Controllers;
 
 
 #use App\Mail\ApplicationFormEmail;
+use App\Mail\NewAuthorEmail;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Mail;
 use App\ApplicationForm;
@@ -25,18 +26,6 @@ class FormsController extends Controller
         return view('applicationForm', ['techniques' => $techniques]);
     }
 
-//    public function sendEmail(Request $request){
-//
-//        $test = $request->input('test');
-//
-//        $myEmail = 'glassbiennalebg@gmail.com';
-//
-//        // Send "instance of class" and the passed parameters to the email are from the constructor
-//        Mail::to($myEmail)->send(new ApplicationFormEmail($test));
-//
-//        return view('applyForAttendanceForm', ['data'=>$test]);
-//    }
-//
     public function sendForm(Request $request)
     {
 
@@ -59,6 +48,10 @@ class FormsController extends Controller
         foreach ($request->technique as $tech_id) {
             $form->techniques()->save(Technique::find($tech_id));
         }
+
+        $myEmail = 'senderglassbiennalebg@gmail.com';
+        // Не знам дали така се вземат променливи от модела ако не по стандартния начин: $name = $request->input('name');
+        Mail::to($myEmail)->send(new NewAuthorEmail($form->name,$form->country,$form->email, $form->phoneNumber));
 
         return redirect('/');
     }

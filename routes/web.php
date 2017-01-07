@@ -34,6 +34,7 @@ Route::get('/terms', 'StaticPagesController@terms');
 
 Route::get('/vision', 'StaticPagesController@vision');
 Route::get('/contact', 'StaticPagesController@contact');
+Route::post('/contact/send-mail','StaticPagesController@send_contact_mail');
 Route::get('/scholarships', 'StaticPagesController@scholarships');
 Route::get('/bachelor', 'StaticPagesController@bachelor');
 Route::get('/master', 'StaticPagesController@master');
@@ -59,9 +60,7 @@ Route::post('/events/create', 'EventsController@add');
 Route::get('/program', 'ProgramController@program');
 
 Route::get('/apply-for-attendance', 'FormsController@applyForAttendanceForm');
-Route::post('/apply-for-attendance', 'FormsController@sendEmail');
 Route::post('/apply', 'FormsController@sendForm');
-Route::get('send-email', 'FormsController@sendEmail');
 
 Route::get('/register', 'AuthController@showRegister');
 Route::post('/register', 'AuthController@registerUser');
