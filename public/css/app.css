@@ -1334,5 +1334,11 @@ input[type="checkbox"]{
     font-family: "359Sans";
     color: rgba(109, 110, 113, 0.502);
 }
+/*Authors CSS*/
+.authors-pic img{
+    max-width:100%;
+    height: auto;
+    position: relative;
 
+}
 
