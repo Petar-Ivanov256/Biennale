@@ -110,6 +110,9 @@
     #event-back{
         left: 1px;
     }
+    #return-authors{
+        left: 1px;
+    }
 }
 @media only screen and (max-width: 375px){
     #homepageOchakvaite-change{
@@ -159,6 +162,9 @@
         left: 1px;
     }
     #event-back{
+        left: 1px;
+    }
+    #return-authors{
         left: 1px;
     }
 }
@@ -212,6 +218,9 @@
     #event-back{
         left: 1px;
     }
+    #return-authors{
+        left: 1px;
+    }
 }
 @media only screen and  (max-width: 360px){
     #homepageOchakvaite-change{
@@ -261,6 +270,9 @@
         left: 1px;
     }
     #event-back{
+        left: 1px;
+    }
+    #return-authors{
         left: 1px;
     }
 }
@@ -314,6 +326,9 @@
     #event-back{
         left: 1px;
     }
+    #return-authors{
+        left: 1px;
+    }
 }
 /* Small Devices, Tablets */
 /*@media only screen and (min-width : 768px) {
@@ -360,6 +375,9 @@
         left: 1px;
     }
     #event-back{
+        left: 1px;
+    }
+    #return-authors{
         left: 1px;
     }
 }*/
@@ -1341,4 +1359,100 @@ input[type="checkbox"]{
     position: relative;
 
 }
+.title-Authors{
 
+    font-size: 25px;
+    font-family: "DecimaMonoX";
+    color: rgb(240, 77, 63);
+    font-weight: bold;
+    text-transform: uppercase;
+    position: relative;
+    z-index: 58;
+}
+
+.span-authors-data{
+    font-size: 25px;
+    font-family: "DecimaMonoX";
+    color: #C3E3E3;
+    font-weight: bold;
+    text-transform: uppercase;
+    position: relative;
+    z-index: 58;
+}
+
+.authors-people{
+    font-size: 14px;
+    list-style-type: none;
+    font-family: "359Sans";
+    font-weight: bold;
+    position: relative;
+    padding-bottom: 150px;
+    padding-left: 1px;
+}
+#space-author-li li{
+    padding-bottom: 20px;
+    padding-left: 9px;
+}
+#space-author-li li:hover{
+    background-color: rgba(195, 227, 227, 0.302);
+}
+.authors-people a{
+    color: rgb(109, 110, 113);
+}
+.country-authors{
+    font-size: 12px;
+    font-family: "359Sans";
+    color: rgba(121, 77, 159, 0.502);
+    font-style: italic;
+    position: relative;
+    z-index: 51;
+}
+.info-name{
+    font-size: 25px;
+    font-family: "359Sans";
+    color: rgb(121, 77, 159);
+    position: relative;
+    z-index: 61;
+}
+.info-about-person{
+    font-size: 17px;
+    font-family: "359Sans";
+    color: rgb(240, 77, 63);
+    list-style-type: none;
+    padding-left: 1px;
+    position: relative;
+    z-index: 63;
+
+}
+.info-autor-about{
+    font-size: 17px;
+    font-family: "359Sans";
+    color: rgb(109, 110, 113);
+    line-height: 1.2;
+    position: relative;
+    z-index: 63;
+}
+.info-authors-text-under-pic{
+    font-size: 15px;
+    font-family: "359Sans";
+    color: rgb(109, 110, 113);
+    line-height: 1.2;
+    position: relative;
+    z-index: 72;
+}
+.info-about-tech{
+    font-size: 15px;
+    font-family: "359Sans";
+    color: rgb(109, 110, 113);
+    position: absolute;
+    z-index: 73;
+}
+#backgcolo-info-authors{
+    background-color: lightgray;
+}
+.authors-move{
+    left: 200px;
+}
+#move-down{
+    padding-bottom: 250px;
+}
