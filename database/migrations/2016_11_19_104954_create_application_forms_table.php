@@ -29,6 +29,9 @@ class CreateApplicationFormsTable extends Migration
             $table->string('installationGuide');
             $table->string('year');
             $table->string('synopsis');
+
+            $table->string('photo1');
+            $table->string('photo2');
         });
     }
 

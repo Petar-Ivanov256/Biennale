@@ -79,7 +79,8 @@
                 <div class="col-md-7 application-form-part-one" id="change">
                     <h1 class="title-reglament">Форма за участие</h1>
                     <h3 class="appl-form-head">Лична информация</h3><br>
-                <form method="POST" action="{{ URL::to('/apply') }}" class="form-horizontal">
+                <form method="POST" action="{{ URL::to('/apply') }}" class="form-horizontal" enctype="multipart/form-data">
+                    <input type="hidden" value="{{ Session::token() }}" name="_token">
                         <div class="form-group">
                            <!-- <label for="name" class="col-lg-2 control-label">Име и фамилия</label>-->
                             <div class="col-md-6 contentContactForm">
@@ -124,7 +125,7 @@
 
                                 @foreach($techniques as $technique)
 
-                                    <li class="app-form-technique"><input type="checkbox" name="technique[]" class="rad" id="button" value="{{$technique->id}}" /><label>{{$technique->name}}</label></li>
+                                    <li class="app-form-technique"><input type="checkbox" name="technique[]" class="rad" id="button-{{ $technique->id }}" value="{{$technique->id}}" /><label for="button-{{ $technique->id }}">{{$technique->name}}</label></li>
 
                                 @endforeach
 
@@ -178,7 +179,7 @@
                         </p>
                     <div>
                     </div>
-                    <input type="hidden" value="{{ Session::token() }}" name="_token">
+                    
                         <div class="form-group">
                             <div class="col-md-5" id="submitButton">
                                 <button type="submit" class="contactButon">Изпрати&nbsp;<i class="fa fa-chevron-circle-right" id="fa-fa-chevron-right"></i></button>
