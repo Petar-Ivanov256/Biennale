@@ -1357,8 +1357,8 @@ input[type="checkbox"]{
     max-width:100%;
     height: auto;
     position: relative;
-
 }
+
 .title-Authors{
 
     font-size: 25px;
@@ -1456,3 +1456,32 @@ input[type="checkbox"]{
 #move-down{
     padding-bottom: 250px;
 }
+
+/*
+
+.modal {
+    display: none;
+    background-color: rgba(255, 255, 255, 0.38);
+}
+
+.modal{
+    -webkit-animation-name: zoom;
+    -webkit-animation-duration: 0.6s;
+    animation-name: zoom;
+    animation-duration: 0.6s;
+}
+
+@-webkit-keyframes zoom {
+    from {-webkit-transform:scale(0)}
+    to {-webkit-transform:scale(1)}
+}
+
+@keyframes zoom {
+    from {transform:scale(0)}
+    to {transform:scale(1)}
+}
+.modal-img img{
+    float: left;
+}
+*/
+

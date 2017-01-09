@@ -25,7 +25,6 @@ class CreateEventsTable extends Migration {
             $table->string("description");
             $table->binary("photo")->nullable();
             $table->timestamps();
-            $table->softDeletes();
         });
 
         DB::statement("ALTER TABLE `events` CHANGE COLUMN `photo` `photo` MEDIUMBLOB NULL AFTER `description`");
@@ -38,7 +37,7 @@ class CreateEventsTable extends Migration {
      */
     public function down()
     {
-        Schema::drop('events');
+        Schema::dropIfExists('events');
     }
 
 }
