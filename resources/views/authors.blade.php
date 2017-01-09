@@ -48,23 +48,23 @@
                             , sit amet finibus ipsum facilisis. Class aptent taciti sociosqu ad litora torquent per conubia nostra,
                             per inceptos himenaeos. Fusce eu nisi lacinia, gravida nibh a, tristique magna. Cras sem est, lacinia
                             et laoreet sit amet, semper id erat. Sed dapibus lorem ut pellentesque laoreet. In quis erat nisl.
-                            </p>
+                        </p>
                         <br>
                         <div class="authors-pic">
                             <div class="col-md-6">
                                 <div>
                                     {!! HTML::image('img/authors/pic1autr.jpg') !!}
                                     <br><br>
-                                   <div class="info-authors-backgcolor" id="backgcolo-info-authors">
-                                       <p class="info-authors-text-under-pic">
-                                           Duis aute irure dolor in reprehenderit
-                                       </p>
-                                       <p class="info-about-tech">
-                                           in volup
-                                       </p><br><br>
-                                   </div>
+                                    <div class="info-authors-backgcolor" id="backgcolo-info-authors">
+                                        <p class="info-authors-text-under-pic">
+                                            Duis aute irure dolor in reprehenderit
+                                        </p>
+                                        <p class="info-about-tech">
+                                            in volup
+                                        </p><br><br>
+                                    </div>
                                 </div><br>
-                           </div>
+                            </div>
                             <div class="col-md-6">
                                 {!! HTML::image('img/authors/pic1autr.jpg') !!}
                                 <br><br>
@@ -79,9 +79,9 @@
                             </div>
                         </div>
 
-                   </div>
-              </div>
-           </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 @endsection
