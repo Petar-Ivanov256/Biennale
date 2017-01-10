@@ -42,7 +42,7 @@ class StaticPagesController extends Controller
         $myEmail = 'senderglassbiennalebg@gmail.com';
         Mail::to($myEmail)->send(new ContactFormEmail($name,$email,$description,$content));
 
-        return redirect('/contact');
+        return redirect('/contact')->with('success', 'Успешно изпратихте съобщение!');
     }
 
     public function scholarships(Request $request){
