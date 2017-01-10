@@ -45,10 +45,10 @@
                             <span class="contactrightspan"><a href="tel:+359887288667" class="telefonCordinator">+359 887 288 667</a></span>
                         </div>
                     </div>
-                    <div class="col-lg-8"id="change">
+                    <div class="col-lg-8 moveleft-cotact" id="change">
                         <h2 class="Title1" >Контактна Форма</h2>
                         <form method="POST" action="{{ URL::to('/contact/send-mail') }}" class="form-horizontal">
-                            <input type="hidden" name="_token" value="{{{ csrf_token() }}}" />
+                            <input type="hidden" name="_token" value="{{ csrf_token() }}}" />
                             <div class="form-group contentContactForm">
                                 <div class="col-md-5">
                                     <input type="text" class="form-control" id="name" name="name" placeholder="Име и фамилия*" value="{{ Request::old('name') }}">

@@ -32,9 +32,7 @@
     left: 200px;
 }
 
-.col-lg-8{
-    left: 200px;
-}
+
 
 /*Navigation Bar*/
 .leftNav{
@@ -618,6 +616,9 @@ body{
     position: relative;
 
 }
+.moveleft-cotact{
+    left: 200px;
+}
 #fa-fa-chevron-right{
     font-size: 15px;
     color: rgb(121, 77, 159);
@@ -871,14 +872,11 @@ body{
     font-size: 15px;
     font-family: "359Sans";
     text-transform: uppercase;
-    -moz-transform: matrix( 1.32029813799958,0,0,1.32029813799958,0,0);
-    -webkit-transform: matrix( 1.32029813799958,0,0,1.32029813799958,0,0);
-    -ms-transform: matrix( 1.32029813799958,0,0,1.32029813799958,0,0);
     position: relative;
     display: inline;
     padding-right: 20px;
     list-style-type: none;
-    z-index: 62;
+
 }
 .events-menu a{
     color: rgb(172, 210, 210);
@@ -888,13 +886,10 @@ body{
     left: 15px;
     font-family: "359Sans";
     text-transform: uppercase;
-    -moz-transform: matrix( 1.32029813799958,0,0,1.32029813799958,0,0);
-    -webkit-transform: matrix( 1.32029813799958,0,0,1.32029813799958,0,0);
-    -ms-transform: matrix( 1.32029813799958,0,0,1.32029813799958,0,0);
     position: relative;
     display: inline;
     color: rgb(172, 210, 210);
-    z-index: 62;
+
 }
 
 
@@ -904,11 +899,7 @@ body{
     color: rgb(121, 77, 159);
     font-style: italic;
     text-transform: uppercase;
-    -moz-transform: matrix( 1.32029813799958,0,0,1.32029813799958,0,0);
-    -webkit-transform: matrix( 1.32029813799958,0,0,1.32029813799958,0,0);
-    -ms-transform: matrix( 1.32029813799958,0,0,1.32029813799958,0,0);
     position: relative;
-    z-index: 63;
 }
 .event-left{
     left: 200px;
@@ -924,6 +915,15 @@ body{
 .programa span{
     background-color: rgb(195, 227, 227);
     /*background-color: #2ab27b;*/
+}
+#vert div{
+    display: inline;
+}
+
+#horizontal{
+    border: 3px solid green;
+    padding: 10px;
+    position: relative;
 }
 .programa .ptagleft{
     float: left;
@@ -1027,8 +1027,6 @@ body{
     width:50%;
     position: relative;
     height: 50px;
-
-
 }
 .ptagleftprogramdetails{
     height: 210px;
