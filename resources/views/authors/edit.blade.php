@@ -29,6 +29,7 @@
     	<div class="form-group">
 	    	<label for="photo" class="col-lg-2 control-label">Снимка</label>
 	    	<input type="file" name="photo" id="photo" value="{{ $author->photo }}">
+	    	<img src="{{ $author->photo }}" width="50" height="50">
 	    </div>
 	    <div class="form-group">
 	      <div class="col-lg-10 col-lg-offset-2">
@@ -38,7 +39,5 @@
 	    </div>
 	  </fieldset>
 	</form>
-	<img src="{{ asset('../storage/app/' . $author->photo) }}" width="100" height="100">
-	{{ $author->photo }}
 	
 @endsection

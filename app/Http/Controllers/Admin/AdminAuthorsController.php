@@ -6,6 +6,7 @@ use Illuminate\Http\Request;
 use App\Author;
 use Storage;
 use App\Http\Controllers\Controller;
+use Image;
 
 class AdminAuthorsController extends Controller
 {
@@ -23,11 +24,9 @@ class AdminAuthorsController extends Controller
     	$author->country = $request->input('country');
     	$author->info = $request->input('info');
 
-        $photo = $request->file('photo');
-        $path = $photo->store('uploads');             // storage/app/uploads/{file name as UUID}
-        $path = 'storage/app/' . $path;
-        
-        $author->photo = $path;
+        $img = Image::make($request->file('photo')->getRealPath())->encode('data-url');
+        $author->photo = $img;
+
         $author->save();
 
         return redirect('/admin/authors');
@@ -61,12 +60,9 @@ class AdminAuthorsController extends Controller
     	$author->info = $request->input('info');
     	
         if ($request->hasFile('photo')) {
-            $photo = $request->file('photo');
-            Storage::delete($author->photo);                // Storage class default folder: storage/app
-            $path = $photo->store('uploads');             // storage/app/uploads/{file name as UUID}
-            $path = 'storage/app/' . $path;
 
-            $author->photo = $path;
+            $img = Image::make($request->file('photo')->getRealPath())->encode('data-url');
+            $author->photo = $img;
         }
 
     	$author->save();
