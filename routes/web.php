@@ -79,14 +79,10 @@ Route::get('/admin/editEvent/{id}', 'Admin\AdminEventsController@edit_event')->m
 Route::post('/admin/editEvent', 'Admin\AdminEventsController@edit_event_save')->middleware('isAdmin');
 Route::post('/admin/deleteEvent', 'Admin\AdminEventsController@delete_event')->middleware('isAdmin');
 
-Route::get('/admin/authors/add', 'AuthorController@add')->middleware('isAdmin');
-Route::post('/admin/authors/add', 'AuthorController@create')->middleware('isAdmin');
-Route::get('/admin/authors/edit/{id}', 'AuthorController@edit')->middleware('isAdmin');
-Route::post('/admin/authors/edit/{id}', 'AuthorController@update')->middleware('isAdmin');
-Route::get('/authors/{id}', 'AuthorController@show');
-Route::get('/admin/authors', 'AuthorController@all')->middleware('isAdmin');
-Route::post('/admin/authors/delete/{id}', 'AuthorController@delete')->middleware('isAdmin');
-
-Route::get('/shits', function () {
-    return storage_path('app\\public');
-});
+Route::get('/admin/authors/add', 'Admin\AdminAuthorsController@add')->middleware('isAdmin');
+Route::post('/admin/authors/add', 'Admin\AdminAuthorsController@create')->middleware('isAdmin');
+Route::get('/admin/authors/edit/{id}', 'Admin\AdminAuthorsController@edit')->middleware('isAdmin');
+Route::post('/admin/authors/edit/{id}', 'Admin\AdminAuthorsController@update')->middleware('isAdmin');
+Route::get('/authors/{id}', 'Admin\AdminAuthorsController@show');
+Route::get('/admin/authors', 'Admin\AdminAuthorsController@all')->middleware('isAdmin');
+Route::post('/admin/authors/delete/{id}', 'Admin\AdminAuthorsController@delete')->middleware('isAdmin');
