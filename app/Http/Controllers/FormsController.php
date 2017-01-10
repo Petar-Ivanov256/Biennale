@@ -45,8 +45,15 @@ class FormsController extends Controller
         $photo1 = $request->file('file-7');
         $photo2 = $request->file('file-8');
 
-        $path1 = $photo1->store('public');      // saves it to storage/app/public/{file name as UUID}
-        $path2 = $photo2->store('public');
+        $path1 = $photo1->store('uploads');      // saves it to storage/app/uploads/{file name as UUID}
+        $path2 = $photo2->store('uploads');
+
+        // TODO: File upload max size: 2MB ?!?!?!
+        // Fix: edit php.ini
+        // upload_max_filesize = 100M post_max_size = 100M
+
+        $path1 = 'storage/app/' . $path1;
+        $path2 = 'storage/app/' . $path2;
 
         $form->photo1 = $path1;
         $form->photo2 = $path2;
@@ -60,7 +67,7 @@ class FormsController extends Controller
         // $myEmail = 'senderglassbiennalebg@gmail.com';
         // Не знам дали така се вземат променливи от модела ако не по стандартния начин: $name = $request->input('name');
         // Mail::to($myEmail)->send(new NewAuthorEmail($form->name,$form->country,$form->email, $form->phoneNumber));
-
+        
         return redirect('/')->with('success', 'Еваларката качи формичка :)');
     }
 
@@ -77,7 +84,8 @@ class FormsController extends Controller
             'installationGuide' => 'required|max:300',
             'year' => 'required|max:4',
             'synopsis' => 'required|max:100',
-            'file-7' => 'max:4096'
+            'file-7' => 'max:4096',
+            'technique' => 'required'
         ];
     }
 }

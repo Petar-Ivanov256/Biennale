@@ -9,6 +9,7 @@
 		@foreach ($authors as $author)
 			<tr>
 				<td>{{ $author->name }}</td>
+				<td><img src="{{ asset('../' . $author->photo) }}" width="50" height="50"></td>
 				<td><a href="{{ URL::to('/admin/authors/edit/' . $author->id) }}">Редактиране</a></td>
 				<td>
 					<form method="POST" action="{{ URL::to('/admin/authors/delete/' . $author->id) }}">

@@ -23,12 +23,12 @@ class AuthorController extends Controller
     	$author->info = $request->input('info');
 
         $photo = $request->file('photo');
-        $path = $photo->store('public');             // storage/app/public/{file name as UUID}
-
+        $path = $photo->store('uploads');             // storage/app/uploads/{file name as UUID}
+        $path = 'storage/app/' . $path;
+        
         $author->photo = $path;
         $author->save();
 
-    	//return storage_path('app\\' . $path); //redirect('/');
         return redirect('/admin/authors');
     }
 
@@ -62,7 +62,8 @@ class AuthorController extends Controller
         if ($request->hasFile('photo')) {
             $photo = $request->file('photo');
             Storage::delete($author->photo);                // Storage class default folder: storage/app
-            $path = $photo->store('public');             // storage/app/public/{file name as UUID}
+            $path = $photo->store('uploads');             // storage/app/uploads/{file name as UUID}
+            $path = 'storage/app/' . $path;
 
             $author->photo = $path;
         }
