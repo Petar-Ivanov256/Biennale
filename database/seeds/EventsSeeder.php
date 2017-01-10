@@ -86,7 +86,13 @@ class EventsSeeder extends Seeder
         $event->entrance = '3.50 vav valauta';
         $event->title = 'Test event 6';
         $event->description = 'Test event 5 bql mercedes me presledva v jivotaaa i neotlachno zad mene varviiiiii tttatatatata';
+
         $img = Image::make("C:/xampp/htdocs/Biennale/public/img/eventsimg/pic6.jpg")->encode('data-url');
+//        $type = pathinfo("C:/xampp/htdocs/Biennale/public/img/eventsimg/pic6.jpg", PATHINFO_EXTENSION);
+//        $data = file_get_contents("C:/xampp/htdocs/Biennale/public/img/eventsimg/pic6.jpg");
+//        $base64 = 'data:image/' . $type . ';base64,' . base64_encode($data);
+
+
         $event->photo = $img;
         $event->save();
 

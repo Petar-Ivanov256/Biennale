@@ -53,9 +53,7 @@ Route::get('/news/edit/{id}', 'NewsController@edit');
 Route::post('/news/edit/{id}', 'NewsController@update');
 Route::delete('/news/{id}', 'NewsController@delete');
 
-Route::get('/events', 'EventsController@events');
-Route::get('/events/create', 'EventsController@create');
-Route::post('/events/create', 'EventsController@add');
+Route::get('/events', 'EventsController@show_events');
 
 Route::get('/program', 'ProgramController@program');
 

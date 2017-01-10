@@ -14,33 +14,10 @@ use App\Events;
 
 class EventsController extends Controller
 {
-    public function events(Request $request) {
+    public function show_events(Request $request) {
 
-        return view('events/events');
-    }
-
-    public function create(Request $request) {
-    	return view('events/create');
-    }
-
-    public function add(Request $request) {
-    	
-    	$this->validate($request, $this->validateEvent());
-
-    	$date = date('Y-m-d', strtotime($request->input('start')));
-
-    	$event = new Events();
-    	$event->start = $date;
-    	//$event->end = $request->input('end');
-    	$event->place = $request->input('place');
-    	//$event->artist = $request->input('artist');
-    	//$event->entrance = $request->input('entrance');
-    	$event->title = $request->input('title');
-    	$event->description = $request->input('description');
-    	//$event->photo = $request->file('photo');
-    	$event->save();
-
-    	return redirect('/events');
+        $events = Events::all();
+    	return view('events.events', ['events' => $events]);
     }
 
     private function validateEvent() {
