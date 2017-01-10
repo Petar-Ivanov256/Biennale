@@ -25,6 +25,18 @@
                 </div>
             </div>
             <div class="form-group">
+                <label for="place" class="col-lg-2 control-label">Артист</label>
+                <div class="col-lg-6">
+                    <input type="text" class="form-control" id="artist" name="artist" placeholder="Артист" value="{{ Request::old('artist') }}" autofocus>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="place" class="col-lg-2 control-label">Вход</label>
+                <div class="col-lg-6">
+                    <input type="text" class="form-control" id="entrance" name="entrance" placeholder="Вход" value="{{ Request::old('entrance') }}" autofocus>
+                </div>
+            </div>
+            <div class="form-group">
                 <label for="start" class="col-lg-2 control-label">Начало</label>
                 <div class="col-lg-6">
                     <div class='input-group date' id='datetimepicker1'>
