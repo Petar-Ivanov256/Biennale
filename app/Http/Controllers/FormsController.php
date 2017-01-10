@@ -15,6 +15,7 @@ use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Mail;
 use App\ApplicationForm;
 use App\Technique;
+use Image;
 
 class FormsController extends Controller
 {
@@ -42,21 +43,14 @@ class FormsController extends Controller
         $form->year = $request->input('year');
         $form->synopsis = $request->input('synopsis');
 
-        $photo1 = $request->file('file-7');
-        $photo2 = $request->file('file-8');
-
-        $path1 = $photo1->store('uploads');      // saves it to storage/app/uploads/{file name as UUID}
-        $path2 = $photo2->store('uploads');
-
         // TODO: File upload max size: 2MB ?!?!?!
         // Fix: edit php.ini
         // upload_max_filesize = 100M post_max_size = 100M
 
-        $path1 = 'storage/app/' . $path1;
-        $path2 = 'storage/app/' . $path2;
-
-        $form->photo1 = $path1;
-        $form->photo2 = $path2;
+        $img1 = Image::make($request->file('file-7')->getRealPath())->encode('data-url');
+        $form->photo1 = $img1;
+        $img2 = Image::make($request->file('file-8')->getRealPath())->encode('data-url');
+        $form->photo2 = $img2;
 
         $form->save();
 

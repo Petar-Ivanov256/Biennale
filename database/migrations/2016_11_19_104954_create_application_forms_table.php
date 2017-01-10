@@ -30,9 +30,12 @@ class CreateApplicationFormsTable extends Migration
             $table->string('year');
             $table->string('synopsis');
 
-            $table->string('photo1');
-            $table->string('photo2');
+            $table->binary('photo1')->nullable();
+            $table->binary('photo2')->nullable();
         });
+
+        DB::statement("ALTER TABLE `application_forms` CHANGE COLUMN `photo1` `photo1` MEDIUMBLOB NULL AFTER `synopsis`");
+        DB::statement("ALTER TABLE `application_forms` CHANGE COLUMN `photo2` `photo2` MEDIUMBLOB NULL AFTER `photo1`");
     }
 
     /**
