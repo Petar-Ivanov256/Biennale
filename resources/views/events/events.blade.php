@@ -54,8 +54,9 @@
         <div class="col-lg-9" id="change">
         <div class="row" id="ver">
             <div id="1" class="events-p"><p>Изложби<p></div><br>
-            <div class="col-lg-4 programa">
+
                 @foreach($events as $event)
+                <div class="col-lg-4 programa">
                     <a href="#" class="abackcolor">
                         <img src="{{$event->photo}}">
                         {{--{!! HTML::image('img/eventsimg/pic1.jpg') !!}--}}
@@ -72,8 +73,8 @@
                             {{$event->description}}
                         </p>
                     </div>
-                @endforeach
-            </div>
+                </div>
+            @endforeach
         </div>
     </div>
  </div>
