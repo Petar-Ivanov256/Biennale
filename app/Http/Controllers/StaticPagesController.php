@@ -34,6 +34,8 @@ class StaticPagesController extends Controller
 
     public function send_contact_mail(Request $request){
 
+        $this->validate($request, $this->validationRules());
+
         $name = $request->input('name');
         $email = $request->input('email');
         $description = $request->input('title');
@@ -66,6 +68,16 @@ class StaticPagesController extends Controller
 
     public function partners(Request $request){
         return view('partners');
+    }
+
+    private function validationRules()
+    {
+        return [
+            'name' => 'required|max:100',
+            'email' => 'required|max:100|email',
+            'title' => 'required|max:100',
+            'message' => 'required|max:500'
+        ];
     }
 }
 
