@@ -80,40 +80,34 @@
                     <h1 class="title-reglament">Форма за участие</h1>
                     <h3 class="appl-form-head">Лична информация</h3><br>
                 <form method="POST" action="{{ URL::to('/apply') }}" class="form-horizontal" enctype="multipart/form-data">
-                    <input type="hidden" value="{{ Session::token() }}" name="_token">
+                    {{ csrf_field() }}
                         <div class="form-group">
-                           <!-- <label for="name" class="col-lg-2 control-label">Име и фамилия</label>-->
                             <div class="col-md-6 contentContactForm">
                                 <input type="text" class="form-control" id="name" name="name" placeholder="Име и фамилия*" value="{{ Request::old('name') }}">
                             </div>
                         </div>
                         <div class="form-group">
-                          <!--  <label for="country" class="col-lg-2 control-label">Държава</label>-->
                             <div class="col-md-6 contentContactForm">
                                 <input type="text" class="form-control" id="country" name="country" placeholder="Държава*" value="{{ Request::old('country') }}">
                             </div>
                         </div>
                         <div class="form-group">
-                          <!--  <label for="email" class="col-lg-2 control-label">E-mail</label>-->
                             <div class="col-md-6 contentContactForm">
                                 <input type="text" class="form-control" id="email" name="email" placeholder="E-mail*" value="{{ Request::old('email') }}">
                             </div>
                         </div>
                         <div class="form-group">
-                          <!--  <label for="phone-number" class="col-lg-2 control-label">Телефон</label>-->
                             <div class="col-md-6 contentContactForm">
                                 <input type="tel" class="form-control" id="phone-number" name="phoneNumber" placeholder="Телефон*" value="{{ Request::old('phoneNumber') }}">
                             </div>
                         </div>
                         <h3 class="appl-form-head">Информация за творбата</h3><br>
                         <div class="form-group">
-                           <!-- <label for="title" class="col-lg-2 control-label">Оригинално заглавие</label>-->
                             <div class="col-md-6 contentContactForm">
                                 <input type="text" class="form-control" id="title" name="title" placeholder="Оригинално заглавие*" value="{{ Request::old('title') }}">
                             </div>
                         </div>
                         <div class="form-group">
-                         <!--   <label for="en-title" class="col-lg-2 control-label">Заглавие на английски език</label>-->
                             <div class="col-md-6 contentContactForm">
                                 <input type="text" class="form-control" id="en-title" name="englishTitle" placeholder="Заглавие на английски език*" value="{{ Request::old('englishTitle') }}">
                             </div>
@@ -132,25 +126,21 @@
                             </ul>
                         </div>
                         <div class="form-group">
-                          <!--  <label for="dimensions" class="col-lg-2 control-label">Размери (в/ш/д)</label>-->
                             <div class="col-md-6 contentContactForm">
                                 <input type="text" class="form-control" id="dimensions" name="dimensions" placeholder="Размери (в/ш/д)*" value="{{ Request::old('dimensions') }}">
                             </div>
                         </div>
                         <div class="form-group">
-                            <!--<label for="installation-guide" class="col-lg-2 control-label">Насоки за поставяне</label>-->
                             <div class="col-md-6 contentContactForm">
                                 <textarea class="form-control" rows="3" id="installation-guide" name="installationGuide" placeholder="Насоки за поставяне*">{{ Request::old('name') }}</textarea>
                             </div>
                         </div>
                         <div class="form-group">
-                           <!-- <label for="year" class="col-lg-2 control-label">Година на създаване</label>-->
                             <div class="col-md-6 contentContactForm">
                                 <input type="text" class="form-control" id="year" name="year" placeholder="Година на създаване*" value="{{ Request::old('name') }}">
                             </div>
                         </div>
                         <div class="form-group">
-                           <!-- <label for="synopsis" class="col-lg-2 control-label">Синопсис</label>-->
                             <div class="col-md-6 contentContactForm">
                                 <input type="text" class="form-control" id="synopsis" name="synopsis" placeholder="Синопсис*" value="{{ Request::old('name') }}">
                             </div>
@@ -173,9 +163,12 @@
                     </div>
                     <div class="col-md-8 form-group content-app">
                         <p>
-                           <span><input type="checkbox"></span>
-                            <span>Съгласен съм творбата ми да бъде инсталирана в галерийното<br> простраство
-                                от специално подбран екип на Международното биенале на стъкло, България 2017 година.<br></span>
+                           <span><input type="checkbox" required id="terms"></span>
+                            <label for="terms">
+                                <span>Съгласен съм творбата ми да бъде инсталирана в галерийното<br> простраство
+                                    от специално подбран екип на Международното биенале на стъкло, България 2017 година.<br>
+                                </span>
+                            </label>
                         </p>
                     <div>
                     </div>

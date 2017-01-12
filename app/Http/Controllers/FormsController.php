@@ -78,8 +78,9 @@ class FormsController extends Controller
             'installationGuide' => 'required|max:300',
             'year' => 'required|max:4',
             'synopsis' => 'required|max:100',
-            'file-7' => 'max:4096',
-            'technique' => 'required'
+            'file-7' => 'required|max:4096',
+            'file-8' => 'required|max:4096',
+            'technique' => 'required',
         ];
     }
 }
