@@ -78,6 +78,15 @@ class AdminAuthorsController extends Controller
         return redirect('/admin/authors');
     }
 
+    public function toggleVisibility($id)
+    {
+        $author = Author::find($id);
+        $author->isVisible = !$author->isVisible;
+        $author->save();
+
+        return response()->json(200);
+    }
+
     private function validationRules()
     {
     	return [

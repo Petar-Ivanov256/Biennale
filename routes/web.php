@@ -86,3 +86,4 @@ Route::post('/admin/authors/edit/{id}', 'Admin\AdminAuthorsController@update')->
 Route::get('/authors/{id}', 'Admin\AdminAuthorsController@show');
 Route::get('/admin/authors', 'Admin\AdminAuthorsController@all')->middleware('isAdmin');
 Route::post('/admin/authors/delete/{id}', 'Admin\AdminAuthorsController@delete')->middleware('isAdmin');
+Route::put('/admin/authors/toggleVisibility/{id}', 'Admin\AdminAuthorsController@toggleVisibility')->middleware('isAdmin');

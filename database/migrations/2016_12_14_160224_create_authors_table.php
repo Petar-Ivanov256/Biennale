@@ -15,7 +15,7 @@ class CreateAuthorsTable extends Migration
             $table->string('country');
             $table->string('info');
             $table->binary('photo')->nullable();
-            // TODO: isVisible
+            $table->boolean('isVisible')->default(false);
             $table->timestamps();
         });
 
