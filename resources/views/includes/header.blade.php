@@ -26,29 +26,29 @@
             </ul>
             <ul class="nav navbar-nav myNavbar" id="navBar">
                 <li>
-                    <a id="mainMenuComponents" class="Schlarships" href="#">Стипендии</a>
+                    <a id="mainMenuScholer" class="Schlarships" href="#">Стипендии</a>
                     <ul class="dropdown-menu" id="dropdown-content">
-                        <li> <a class="subMenu" href="{{ URL::to('/bachelor')}}">Бакалавър</a></li>
-                        <li> <a class="subMenu" href="{{ URL::to('/master')}}">Магистър</a></li>
-                        <li> <a class="subMenu" href="{{ URL::to('/phd')}}">Докторант</a></li>
+                        <li class="diplay-horizontal"> <a class="subMenu" href="{{ URL::to('/bachelor')}}">Бакалавър</a></li>
+                        <li class="diplay-horizontal"> <a class="subMenu" href="{{ URL::to('/master')}}">Магистър</a></li>
+                        <li class="diplay-horizontal"> <a class="subMenu" href="{{ URL::to('/phd')}}">Докторант</a></li>
                     </ul>
                 </li>
             </ul>
             <ul class="nav navbar-nav myNavbar" id="navBar">
                 <li>
-                    <a id="mainMenuComponents" class="Authors"href="{{ URL::to('/authors')}}">Автори</a>
+                    <a class="mainMenuComponents" href="{{ URL::to('/authors')}}">Автори</a>
                 </li>
                 <li>
-                    <a id="mainMenuComponents" class="Events"href="{{ URL::to('/events')}}">Събития</a>
+                    <a class="mainMenuComponents" href="{{ URL::to('/events')}}">Събития</a>
                 </li>
                 <li>
-                    <a id="mainMenuComponents" class="Partners" href="{{ URL::to('/partners')}}">Партньори</a>
+                    <a class="mainMenuComponents" href="{{ URL::to('/partners')}}">Партньори</a>
                 </li>
                 <li>
-                    <a id="mainMenuComponents" class="Archives" href="{{ URL::to('/archive')}}">Архив</a>
+                    <a class="mainMenuComponents"  href="{{ URL::to('/archive')}}">Архив</a>
                 </li>
                 <li>
-                    <a id="mainMenuComponents" class="Contacts" href="{{ URL::to('/contact')}}">Контакти</a>
+                    <a class="mainMenuComponents"  href="{{ URL::to('/contact')}}">Контакти</a>
                 </li>
             </ul>
             <ul class="nav navbar-nav myNavbar" id="IconsMenuComponents">

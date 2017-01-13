@@ -431,6 +431,9 @@ body{
 #navBar:hover #dropdown-content{
     display: flex;
 }
+.dropdown-menu{
+    display: inline;
+}
 
 /*Border beneath the navigation bar*/
 .myNavbar{
@@ -444,15 +447,20 @@ body{
     line-height: 2.07;
     text-align: left;
     position: relative;
-    z-index: 1000;
+
 }
 
-#mainMenuComponents {
+.mainMenuComponents {
     font-size: 18px;
     font-family: "359Sans";
     color: #6D6E71;
-    z-index: 111;
 }
+#mainMenuScholer {
+     font-size: 18px;
+     font-family: "359Sans";
+     color: #6D6E71;
+ }
+
 #IconsMenuComponents a{
     font-size: 14px;
     font-family: "359Sans";
@@ -469,7 +477,7 @@ body{
     position: absolute;
     left: 1702px;
     top: 58.39px;
-    z-index: 110;
+
 }
 
 /*Sub menu*/
@@ -480,7 +488,7 @@ body{
     font-style: italic;
     position: relative;
     line-height: 2.07;
-    z-index: 116;
+
 }
 /*FooterCSS*/
 #BladeFooter li{
@@ -505,8 +513,6 @@ body{
     font-family:"359Sans";
     color: rgba(109, 110, 113, 0.502);
     font-style: italic;
-    line-height:2.07;
-    z-index: 36;
     border:none;
     outline:none;
     box-shadow: none;
