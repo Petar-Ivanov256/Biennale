@@ -44,7 +44,7 @@
                 </div>
                 <div class="col-lg-5 second-paragraph" id="change">
                     <h2 class="bachelor-header">Условия и минали победители</h2><br>
-                    <button class="learn-more" id="bnt"onclick="setColor();">Правила</button>
+                    <button class="learn-more">Правила</button>
                     <button class="learn-more">Жури</button>
                     <button class="learn-more">Победители</button><br><br>
                     <p class="second-p-paragraph" id="firstscholarpar">
