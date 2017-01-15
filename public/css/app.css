@@ -1490,3 +1490,28 @@ input[type="checkbox"]{
 }
 */
 
+/*Archive CSS*/
+.move-left-archive{
+    left: 200px;
+}
+.a-manage-collapse li{
+    list-style-type: none;
+    padding-top: 5px;
+    padding-bottom: 10px;
+    text-align: left;
+}
+.a-manage-collapse a:hover{
+    color: rgb(240, 77, 63);
+}
+
+.color-black-hover  span:hover{
+    color: #0d1217;
+}
+.a-manage-collapse{
+    padding-left: 0;
+}
+.left-archive-span{
+    float: left;
+    width: 95%;
+    position: relative;
+}
