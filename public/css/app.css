@@ -1500,6 +1500,19 @@ input[type="checkbox"]{
     padding-bottom: 10px;
     text-align: left;
 }
+.a-manage-collapse{
+    padding-bottom: 100px;
+}
+.a-manage-collapse a{
+    font-size: 20px;
+    font-family: "DecimaMonoX";
+    color: rgba(109, 110, 113, 0.502);
+    font-weight: bold;
+    text-transform: uppercase;
+    line-height: 1.2;
+    position: relative;
+
+}
 .a-manage-collapse a:hover{
     color: rgb(240, 77, 63);
 }
@@ -1515,3 +1528,37 @@ input[type="checkbox"]{
     width: 95%;
     position: relative;
 }
+
+.buttons-archive{
+    font-size: 20px;
+    width: 225px;
+    top: 28px;;
+    background-color: transparent;
+    font-family: "DecimaMonoX";
+    color: rgb(121, 77, 159);
+    text-transform: uppercase;
+    text-align: center;
+    position: relative;
+    border-width: 1px;
+    border-color: rgb(121, 77, 159);
+    border-style: solid;
+}
+.paragraph-archive-header{
+    font-size: 17px;
+    font-family: "359Sans";
+    color: rgb(121, 77, 159);
+    font-style: italic;
+    line-height: 1.2;
+    position: relative;
+}
+.header-archive {
+    font-size: 27px;
+    font-family: "DecimaMonoX";
+    color: rgb(240, 77, 63);
+    font-weight: bold;
+    text-transform: uppercase;
+    line-height: 2.2;
+    position: relative;
+}
+
+
