@@ -13,8 +13,9 @@ namespace App\Http\Controllers;
 use App\Mail\NewAuthorEmail;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Mail;
-use App\ApplicationForm;
 use App\Technique;
+use App\Author;
+use App\Work;
 use Image;
 
 class FormsController extends Controller
@@ -31,32 +32,42 @@ class FormsController extends Controller
     {
         $this->validate($request, $this->validationRules());
 
-        $form = new ApplicationForm();
-        $form->name = $request->input('name');
-        $form->country = $request->input('country');
-        $form->email = $request->input('email');
-        $form->phoneNumber = $request->input('phoneNumber');
-        $form->title = $request->input('title');
-        $form->englishTitle = $request->input('englishTitle');
-        $form->dimensions = $request->input('dimensions');
-        $form->installationGuide = $request->input('installationGuide');
-        $form->year = $request->input('year');
-        $form->synopsis = $request->input('synopsis');
+        $author = new Author();
+        $work = new Work();
+
+        $author->name = $request->input('name');
+        $author->country = $request->input('country');
+        $author->email = $request->input('email');
+        $author->phoneNumber = $request->input('phoneNumber');
+
+        $author->save();
+
+        $work->title = $request->input('title');
+        $work->englishTitle = $request->input('englishTitle');
+        $work->dimensions = $request->input('dimensions');
+        $work->installationGuide = $request->input('installationGuide');
+        $work->year = $request->input('year');
+        $work->synopsis = $request->input('synopsis');
 
         // TODO: File upload max size: 2MB ?!?!?!
         // Fix: edit php.ini
         // upload_max_filesize = 100M post_max_size = 100M
 
         $img1 = Image::make($request->file('file-7')->getRealPath())->encode('data-url');
-        $form->photo1 = $img1;
+        $work->photo1 = $img1;
         $img2 = Image::make($request->file('file-8')->getRealPath())->encode('data-url');
-        $form->photo2 = $img2;
+        $work->photo2 = $img2;
 
-        $form->save();
+        $work->save();
 
         foreach ($request->technique as $tech_id) {
-            $form->techniques()->save(Technique::find($tech_id));
+            $work->techniques()->save(Technique::find($tech_id));
+            //$tech = Technique::find($tech_id);
+            //$tech->works()->save($work);
+            //$tech->works()->attach($work->id);
         }
+
+        $author->works()->save($work);
 
         // $myEmail = 'senderglassbiennalebg@gmail.com';
         // Не знам дали така се вземат променливи от модела ако не по стандартния начин: $name = $request->input('name');
@@ -70,7 +81,7 @@ class FormsController extends Controller
         return [
             'name' => 'required|max:100',
             'country' => 'required|max:100',
-            'email' => 'required|max:100|email|unique:application_forms',
+            'email' => 'required|max:100|email|unique:authors',
             'phoneNumber' => 'required|max:100',
             'title' => 'required|max:100',
             'englishTitle' => 'required|max:100',

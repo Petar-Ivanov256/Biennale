@@ -8,11 +8,11 @@ class Work extends Model
 {
     public function authors()
     {
-        return $this->belongsToMany('App\Author');
+        return $this->belongsToMany('App\Author', 'author_work');
     }
 
     public function techniques()
     {
-    	return $this->belongsToMany('App\Technique');
+    	return $this->belongsToMany('App\Technique', 'work_technique');
     }
 }
