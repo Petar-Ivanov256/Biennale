@@ -87,3 +87,10 @@ Route::get('/authors/{id}', 'Admin\AdminAuthorsController@show');
 Route::get('/admin/authors', 'Admin\AdminAuthorsController@all')->middleware('isAdmin');
 Route::post('/admin/authors/delete/{id}', 'Admin\AdminAuthorsController@delete')->middleware('isAdmin');
 Route::put('/admin/authors/toggleVisibility/{id}', 'Admin\AdminAuthorsController@toggleVisibility')->middleware('isAdmin');
+
+Route::get('/admin/works', 'Admin\AdminWorksController@index')->middleware('isAdmin');
+Route::get('/admin/works/add', 'Admin\AdminWorksController@create')->middleware('isAdmin');
+Route::post('/admin/works/add', 'Admin\AdminWorksController@store')->middleware('isAdmin');
+Route::get('/admin/works/edit/{id}', 'Admin\AdminWorksController@edit')->middleware('isAdmin');
+Route::post('/admin/works/edit/{id}', 'Admin\AdminWorksController@update')->middleware('isAdmin');
+Route::post('/admin/works/delete/{id}', 'Admin\AdminWorksController@delete')->middleware('isAdmin');

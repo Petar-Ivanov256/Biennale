@@ -4,7 +4,6 @@
 @endsection
 
 @section('content')
-    <h1>Pravq remont na cqlata forma 4e si e ebalo maikata, ne pipaite</h1>
     <div class="container">
         <div class="row">
             <div class="col-xs-12 col-sm-6 col-md-3 SideDate">

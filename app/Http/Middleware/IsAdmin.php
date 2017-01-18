@@ -16,6 +16,10 @@ class IsAdmin
      */
     public function handle($request, Closure $next)
     {
+        if (!Auth::check()) {
+            return redirect('/signin');
+        }
+        
         if (!$request->user()->IsAdmin()) {
             return redirect('/');
         }
