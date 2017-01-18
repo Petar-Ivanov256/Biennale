@@ -21,9 +21,15 @@
 	      </div>
 	    </div>
 	    <div class="form-group">
+	      <label for="email" class="col-lg-2 control-label">E-mail</label>
+	      <div class="col-lg-6">
+	        <input type="text" class="form-control" id="email" name="email" value="{{ Request::old('email') }}" >
+	      </div>
+	    </div>
+	    <div class="form-group">
       		<label for="info" class="col-lg-2 control-label">Информация</label>
       		<div class="col-lg-10">
-        		<textarea class="form-control" rows="3" id="info" name="info"></textarea>
+        		<textarea class="form-control" rows="3" id="info" name="info">{{ Request::old('info') }}</textarea>
       		</div>
     	</div>
     	<div class="form-group">

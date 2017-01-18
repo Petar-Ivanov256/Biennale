@@ -14,7 +14,7 @@ class CreateAuthorsTable extends Migration
             $table->string('name');
             $table->string('country');
             $table->string('email');
-            $table->string('phoneNumber');
+            $table->string('phoneNumber')->nullable();
             $table->string('info')->nullable();
             $table->binary('photo')->nullable();
             $table->boolean('isVisible')->default(false);

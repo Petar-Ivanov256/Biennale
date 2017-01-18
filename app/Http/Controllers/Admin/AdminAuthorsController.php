@@ -17,12 +17,13 @@ class AdminAuthorsController extends Controller
 
     public function create(Request $request)
     {
-    	$this->validate($request, $this->validationRules());
+    	$this->validate($request, $this->createValidationRules());
 
     	$author = new Author();
     	$author->name = $request->input('name');
     	$author->country = $request->input('country');
     	$author->info = $request->input('info');
+        $author->email = $request->input('email');
 
         $img = Image::make($request->file('photo')->getRealPath())->encode('data-url');
         $author->photo = $img;
@@ -52,12 +53,13 @@ class AdminAuthorsController extends Controller
 
     public function update(Request $request, $id)
     {
-    	$this->validate($request, $this->validationRules());
+    	$this->validate($request, $this->editValidationRules());
 
     	$author = Author::find($id);
     	$author->name = $request->input('name');
     	$author->country = $request->input('country');
     	$author->info = $request->input('info');
+        $author->email = $request->input('email');
     	
         if ($request->hasFile('photo')) {
 
@@ -87,12 +89,25 @@ class AdminAuthorsController extends Controller
         return response()->json(200);
     }
 
-    private function validationRules()
+    private function createValidationRules()
     {
     	return [
     		'name' => 'required|max:100',
     		'country' => 'required|max:100',
-    		'info' => 'required'
+    		'info' => 'required',
+            'email' => 'required|max:100|email|unique:authors',
+            'photo' => 'required|image|max:4096',
     	];
+    }
+
+    private function editValidationRules()
+    {
+        return [
+            'name' => 'required|max:100',
+            'country' => 'required|max:100',
+            'info' => 'required',
+            'email' => 'required|max:100|email',
+            'photo' => 'image|max:4096',
+        ];
     }
 }
