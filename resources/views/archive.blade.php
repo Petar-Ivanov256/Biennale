@@ -21,7 +21,7 @@
     </div>
     <div class="container">
         <div class="row">
-            <div class="col-md-12 clo-lg-12 move-left-archive">
+            <div class="col-md-12 clo-lg-12 move-left-archive" id="back-archive">
                 <div class="col-md-5 col-lg-5">
                     <h2 class="header-archive">Архив <span>2017</span></h2>
                     <p class="paragraph-archive-header">
