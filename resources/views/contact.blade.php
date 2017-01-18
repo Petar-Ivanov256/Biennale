@@ -4,7 +4,6 @@
 @endsection
 
 @section('content')
-    <h1>Dase sloji saobhstenie che emaila e praten ama da e gotino naprimer s javascript</h1>
          <div class="container">
             <div class="row">
                 <div class="col-md-3 SideDate">
