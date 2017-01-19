@@ -995,6 +995,18 @@ body{
     font-family: "359Sans";
     color: rgb(109, 110, 113);
 }
+.subtextunderimg p{
+    font-family: "359Sans";
+    color: rgb(109, 110, 113);
+}
+.subtextunderimg p{
+    width: 210px;
+}
+.subtextunderimg h4{
+    font-family: "DecimaMonoX";
+    font-weight: bold;
+    color: rgb(109, 110, 113);
+}
 
 .textunderimg p{
     width: 340px;
