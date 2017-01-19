@@ -19,7 +19,7 @@
                             <a class="AttendencyForm subMenu" href="{{ URL::to('/apply-for-attendance')}}">{{ trans('header.form') }}</a>
                         </li>
                         <li>
-                            <a class="About subMenu" href="{{ URL::to('/about')}}">За нас</a>
+                            <a class="About subMenu" href="{{ URL::to('/about')}}">{{ trans('header.about') }}</a>
                         </li>
                     </ul>
                 </li>

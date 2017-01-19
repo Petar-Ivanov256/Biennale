@@ -23,10 +23,10 @@
                     <p class="textAbout">
                         {{ trans('about.vision_content') }}
                     </p>
-                    <h2 class="name1">Екип</h2>
+                    <h2 class="name1">{{ trans('about.team') }}</h2>
                     <div>
                         <button type="button" class="aboutButtons btn-lg" data-toggle="modal" data-target="#myModal">
-                            Арт Директор
+                            {{ trans('about.art_director') }}
                         </button><br>
                         <!-- Modal -->
                         <div class="modal fade bs-example-modal-lg" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
@@ -46,7 +46,7 @@
                             </div>
                         </div>
                         <button type="button" class="aboutButtons btn-lg" data-toggle="modal" data-target="#mycoordinatorModal">
-                            Координатори
+                            {{ trans('about.coordinators') }}
                         </button><br>
                         <!-- Modal -->
                         <div class="modal fade bs-example-modal-lg" id="mycoordinatorModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
@@ -66,7 +66,7 @@
                             </div>
                         </div>
                         <button type="button" class="aboutButtons btn-lg" data-toggle="modal" data-target="#myJuryModal">
-                            Жури
+                            {{ trans('about.jury') }}
                         </button><br>
                         <!-- Modal -->
                         <div class="modal fade bs-example-modal-lg" id="myJuryModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
@@ -87,7 +87,7 @@
                             </div>
                         </div>
                         <button type="button" class="aboutButtons btn-lg" data-toggle="modal" data-target="#myDesignModal">
-                            Графичен дизаин
+                            {{ trans('about.graph_design') }}
                         </button><br>
                         <!-- Modal -->
                         <div class="modal fade bs-example-modal-lg" id="myDesignModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
@@ -108,7 +108,7 @@
                             </div>
                         </div>
                         <button type="button" class="aboutButtons btn-lg" data-toggle="modal" data-target="#myWebModal">
-                            Уеб дизаин
+                            {{ trans('about.web_design') }}
                         </button><br>
                         <!-- Modal -->
                         <div class="modal fade bs-example-modal-lg" id="myWebModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">

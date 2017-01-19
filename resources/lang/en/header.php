@@ -2,5 +2,5 @@
 
 return [
     'form' => 'Submission',
-
+    'about' => 'About us',
 ];
