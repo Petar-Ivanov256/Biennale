@@ -5,14 +5,14 @@
 
 @section('content')
     
-	<table>
+	<table class="table table-striped table-hover">
 		@foreach ($authors as $author)
 			<tr>
 				<td>{{ $author->name }}</td>
 				<td><img src="{{ $author->photo }}" width="50" height="50"></td>
 				<td>
-					<a href="#" id="visibility-btn" data-id="{{ $author->id }}" data-visibility="{{ $author->isVisible }}" >
-						{{ $author->isVisible ? 'Make invisible' : 'Make visible' }}
+					<a href="#" class="visibility-btn" data-id="{{ $author->id }}" data-visibility="{{ $author->isVisible }}" >
+						{{ $author->isVisible ? 'Скрий' : 'Покажи' }}
 					</a>
 				</td>
 				<td><a href="{{ URL::to('/admin/authors/edit/' . $author->id) }}">Редактиране</a></td>
@@ -47,10 +47,10 @@
                },
                success: function(data) {
 		               	if(element.attr('data-visibility') == 0) {
-		               		element.text('Make invisible');
+		               		element.text('Скрий');
 		               		element.attr('data-visibility', '1');
 		               	} else {
-		               		element.text('Make visible');
+		               		element.text('Покажи');
 		               		element.attr('data-visibility', '0');
 		               	}
 		            },
@@ -60,6 +60,6 @@
             });
          }
 
-         $('#visibility-btn').on('click', toggleVisibility);
+         $('.visibility-btn').on('click', toggleVisibility);
 	</script>
 @endsection
