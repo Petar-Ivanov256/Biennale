@@ -29,4 +29,5 @@ return [
     'pic2' => 'Photo of art piece 2',
     'agreement1' => 'I agree my art piece to be installed in the exhibition area',
     'agreement2' => 'by the especially selected team, responsible for the arrangement of the International Biennale of Glass, Bulgaria 2017.',
+    'successMsg' => 'Your application request has been sent successfully.'
 ];

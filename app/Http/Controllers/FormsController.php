@@ -62,9 +62,6 @@ class FormsController extends Controller
 
         foreach ($request->technique as $tech_id) {
             $work->techniques()->save(Technique::find($tech_id));
-            //$tech = Technique::find($tech_id);
-            //$tech->works()->save($work);
-            //$tech->works()->attach($work->id);
         }
 
         $author->works()->save($work);
@@ -73,7 +70,7 @@ class FormsController extends Controller
         // Не знам дали така се вземат променливи от модела ако не по стандартния начин: $name = $request->input('name');
         // Mail::to($myEmail)->send(new NewAuthorEmail($form->name,$form->country,$form->email, $form->phoneNumber));
         
-        return redirect('/')->with('success', 'Еваларката качи формичка :)');
+        return redirect('/')->with('success', trans('form.successMsg'));
     }
 
     private function validationRules()
