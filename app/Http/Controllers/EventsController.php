@@ -20,6 +20,12 @@ class EventsController extends Controller
     	return view('events.events', ['events' => $events]);
     }
 
+    public function getById($id)
+    {
+        $event = Events::find($id);
+        return response()->json(['event' => $event]);
+    }
+
     private function validateEvent() {
     	return [
     		'start' => 'required',

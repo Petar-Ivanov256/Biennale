@@ -131,3 +131,5 @@ Route::post('/admin/works/add', 'Admin\AdminWorksController@store')->middleware(
 Route::get('/admin/works/edit/{id}', 'Admin\AdminWorksController@edit')->middleware('isAdmin');
 Route::post('/admin/works/edit/{id}', 'Admin\AdminWorksController@update')->middleware('isAdmin');
 Route::post('/admin/works/delete/{id}', 'Admin\AdminWorksController@delete')->middleware('isAdmin');
+
+Route::get('/events/getDetails/{id}', 'EventsController@getById');

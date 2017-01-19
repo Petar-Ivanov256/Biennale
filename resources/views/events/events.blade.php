@@ -56,8 +56,8 @@
             <div id="1" class="events-p"><p>Изложби<p></div><br>
 
                 @foreach($events as $event)
-                <div class="col-lg-4 programa">
-                    <a href="#" class="abackcolor">
+                <div class="col-lg-4 programa" onclick="getDetails({{ $event->id }})">
+                    <a href="#details-img" class="abackcolor">
                         <img src="{{$event->photo}}">
                         {{--{!! HTML::image('img/eventsimg/pic1.jpg') !!}--}}
                         <br>
@@ -70,7 +70,7 @@
                     <div class="col-lg-8 textunderimg">
                         <h4>{{$event->title}}</h4>
                         <p>
-                            {!!$event->description!!}
+                            {!! substr($event->description, 0, 75) . '...' !!}
                         </p>
                     </div>
                 </div>
@@ -88,18 +88,18 @@
         <div class="col-lg-12">
             <div class="col-lg-6 programadetails" id="change">
                 <h2>Творческа работилница</h2>
-                {!! HTML::image('img/eventsimg/pic8.jpg') !!}
+                <img src="{{ asset('img/eventsimg/pic8.jpg') }}" id="details-img">
                 <div class="ptagleftprogramdetails">
                     <span class="oneprogdet">Дата</span>
-                    <span class="twoprogdet">Сряда 27/09/2017</span>
+                    <span class="twoprogdet" id="details-date">Сряда 27/09/2017</span>
                     <span class="oneprogdet">Час</span>
-                    <span class="twoprogdet">18:00-20:00</span>
+                    <span class="twoprogdet" id="details-time">18:00-20:00</span>
                     <span class="oneprogdet">Място</span>
-                    <span class="twoprogdet">Галерия Райко Алексиев <a href="{{url('https://www.google.bg/maps/place/Galeria+Rayko+Aleksiev/@42.6940046,23.3264532,17z/data=!3m1!4b1!4m5!3m4!1s0x40aa8573cd8ef9e7:0x65f0adc8c2fca7!8m2!3d42.6940046!4d23.3286419?hl=bg')}}" class="programapdirection">виж картата</a></span>
+                    <span class="twoprogdet" id="details-location">Галерия Райко Алексиев <a href="{{url('https://www.google.bg/maps/place/Galeria+Rayko+Aleksiev/@42.6940046,23.3264532,17z/data=!3m1!4b1!4m5!3m4!1s0x40aa8573cd8ef9e7:0x65f0adc8c2fca7!8m2!3d42.6940046!4d23.3286419?hl=bg')}}" class="programapdirection">виж картата</a></span>
                     <span class="oneprogdet">Артисти</span>
-                    <span class="twoprogdet">дипломанти "Стъкло" НБУ</span>
+                    <span class="twoprogdet" id="details-artist">дипломанти "Стъкло" НБУ</span>
                     <span class="oneprogdet">Вход</span>
-                    <span class="twoprogdet">Безплатен</span><br>
+                    <span class="twoprogdet" id="details-entrance">Безплатен</span><br>
                 </div>
                 <div>
                     <p class="progdettxt">
@@ -189,4 +189,31 @@
             </section>
         </div>
 </div>
+@endsection
+
+@section('foot')
+
+<script type="text/javascript">
+
+function getDetails(id) {
+    let url = '{{ url('/events/getDetails') }}';
+    url += '/' + id;
+
+    $.ajax({
+        method: "GET",
+        url: url
+    }).done(function(event) {
+        console.log(event);
+        console.log(event.event.start);
+        $('#details-date').text(event.event.start);
+        $('#details-time').text(event.event.start + ' - ' + event.event.end);
+        $('#details-location').text(event.event.place);
+        $('#details-artist').text(event.event.artist);
+        $('#details-entrance').text(event.event.entrance);
+        $('#details-img').attr('src', event.event.photo);
+    });
+}
+
+</script>
+
 @endsection
