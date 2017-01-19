@@ -70,7 +70,7 @@
                     <div class="col-lg-8 textunderimg">
                         <h4>{{$event->title}}</h4>
                         <p>
-                            {{$event->description}}
+                            {!!$event->description!!}
                         </p>
                     </div>
                 </div>
