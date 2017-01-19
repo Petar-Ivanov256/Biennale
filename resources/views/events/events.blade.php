@@ -67,7 +67,7 @@
                         <span class="ptagleft" id="right-alignaddress">{{$event->artist}}</span>
                     </a>
                     <br>
-                    <div class="col-lg-8 textunderimg">
+                    <div class="col-lg-4 textunderimg">
                         <h4>{{$event->title}}</h4>
                         <p>
                             {!! substr($event->description, 0, 75) . '...' !!}
