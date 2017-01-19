@@ -23,71 +23,64 @@
         <div class="row">
             <div class="col-md-12">
                 <div class="col-md-5 application-form-part-one" id="change">
-                    <h1 class="title-reglament">Регламент</h1>
+                    <h1 class="title-reglament">{{ trans('form.rules') }}</h1>
                     <h3 class="sub-title">
-                        Разгледайте опциите, попълнете апликационната форма и заявете своето участие.
+                        {{ trans('form.see_options') }}
                     </h3>
                     <div>
                         <hr>
-                        <a href="#REALIZED-ART-PIECE" data-toggle="collapse" class="a-drop-down">РЕАЛИЗИРАНА ТВОРБА</a>
+                        <a href="#REALIZED-ART-PIECE" data-toggle="collapse" class="a-drop-down">{{ trans('form.art_piece') }}</a>
                         <hr>
                         <div id="REALIZED-ART-PIECE" class="collapse">
                             <p class="text-p">
-                                Изискванията за участие с реализирана творба в стъкло включват попълване на апликационната
-                                форма и качване на снимка с размери минимум 300 DPI, над 3000 пиксела по широката страна,
-                                препоръчително на бял фон.<br><br>
-                                Краен срок за участие с реализирана творба <span class="color-red">01.04.2017 г.</span>
+                                {{ trans('form.art_piece_content1') }}<br><br>
+                                {{ trans('form.art_piece_content2') }} <span class="color-red">01.04.2017 {{ trans('common.year_abr') }}</span>
                                 <hr>
                             </p>
                         </div>
                     </div>
                     <div>
                         <hr>
-                        <a href="#PROJECT" data-toggle="collapse" class="a-drop-down">НЕРЕАЛИЗИРАНА ТВОРБА</a>
+                        <a href="#PROJECT" data-toggle="collapse" class="a-drop-down">{{ trans('form.project') }}</a>
                         <hr>
                         <div id="PROJECT" class="collapse">
                             <p class="text-p">
-                                Изискванията за участие с нереализирана творба / макет; визуализация; технически чертеж с размери; художествена рисунка/
-                                включват попълване на апликационната форма и качване на снимка (в .jpg; .jpeg или .png) на проектa. След реализиране на проекта
-                                е необходимо изпращане на информация и снимка с размери минимум 300 DPI, над 3000 пиксела по широката страна,
-                                препоръчително на бял фон на реализираната творба на <a href="mailto:glassbiennalebg@gmail.com:" id="emailCordinator">glassbiennalebg@gmail.com</a>.
-                                Прикаченият файл трябва да съдържа Вашето име и името на проекта.<br><br>
-                                Краен срок за изпращане на проект - <span class="color-red">01.03.2017.</span><br><br>
-                                Краен срок за изпращане на снимка на реализираната творба – <span class="color-red" >01.07.2017 г.</span><br><br>
+                                {{ trans('form.project_content1') }} <a href="mailto:glassbiennalebg@gmail.com:" id="emailCordinator">glassbiennalebg@gmail.com</a>.
+                                {{ trans('form.project_content2') }}<br><br>
+                                {{ trans('form.project_content3') }} - <span class="color-red">01.03.2017 {{ trans('common.year_abr') }}</span><br><br>
+                                {{ trans('form.project_content4') }} - <span class="color-red" >01.07.2017 {{ trans('common.year_abr') }}</span><br><br>
                              <hr>
                             </p>
                         </div>
                     </div>
                     <div>
                         <hr>
-                        <a href="#PROJECT-FOR-BLOWN-GLASS" data-toggle="collapse" class="a-drop-down">ИДЕЕН ПРОЕКТ ЗА ДУХАНО СТЪКЛО</a>
+                        <a href="#PROJECT-FOR-BLOWN-GLASS" data-toggle="collapse" class="a-drop-down">{{ trans('form.blown_glass') }}</a>
                         <hr>
                         <div id="PROJECT-FOR-BLOWN-GLASS" class="collapse">
                             <p class="text-p">
-                                Ако имате желание, може да приложите проект за духано стъкло - снимка на макет; визуализация; художествена рисунка; технически чертеж с размери,
-                                който да бъде реализиран в град Белослав като част от демонстрациите по време на Международно Биенале на Стъклото. Творбата ще бъде издухана от
-                                чешкия майстор-духач Ондрeй Стрнадел и изложена в галерия в град Варна.<br><br>
-                                Необходимо е да изпратите проект като включите неговото и Вашето име на
-                                <a href="mailto:glassbiennalebg@gmail.com:" id="emailCordinator">glassbiennalebg@gmail.com</a> до <span class="color-red" >01.07.2017 г.</span><br><br>
-                                <span class="color-red"> Не е необходимо да се попълва апликационната форма.</span>
+                                {{ trans('form.blown_glass_content1') }}<br><br>
+                                {{ trans('form.blown_glass_content2') }}
+                                <a href="mailto:glassbiennalebg@gmail.com:" id="emailCordinator">glassbiennalebg@gmail.com</a> {{ trans('common.until') }} <span class="color-red" >01.07.2017 {{ trans('common.year_abr') }}</span><br><br>
+                                <span class="color-red"> {{ trans('form.blown_glass_content3') }}</span>
                             <hr>
                             </p>
                         </div>
                     </div>
                 </div>
                 <div class="col-md-7 application-form-part-one" id="change">
-                    <h1 class="title-reglament">Форма за участие</h1>
-                    <h3 class="appl-form-head">Лична информация</h3><br>
+                    <h1 class="title-reglament">{{ trans('form.app_form') }}</h1>
+                    <h3 class="appl-form-head">{{ trans('form.personal_info') }}</h3><br>
                 <form method="POST" action="{{ URL::to('/apply') }}" class="form-horizontal" enctype="multipart/form-data">
                     {{ csrf_field() }}
                         <div class="form-group">
                             <div class="col-md-6 contentContactForm">
-                                <input type="text" class="form-control" id="name" name="name" placeholder="Име и фамилия*" value="{{ Request::old('name') }}">
+                                <input type="text" class="form-control" id="name" name="name" placeholder="{{ trans('common.name') }}*" value="{{ Request::old('name') }}">
                             </div>
                         </div>
                         <div class="form-group">
                             <div class="col-md-6 contentContactForm">
-                                <input type="text" class="form-control" id="country" name="country" placeholder="Държава*" value="{{ Request::old('country') }}">
+                                <input type="text" class="form-control" id="country" name="country" placeholder="{{ trans('common.country') }}*" value="{{ Request::old('country') }}">
                             </div>
                         </div>
                         <div class="form-group">
@@ -97,21 +90,21 @@
                         </div>
                         <div class="form-group">
                             <div class="col-md-6 contentContactForm">
-                                <input type="tel" class="form-control" id="phone-number" name="phoneNumber" placeholder="Телефон*" value="{{ Request::old('phoneNumber') }}">
+                                <input type="tel" class="form-control" id="phone-number" name="phoneNumber" placeholder="{{ trans('common.phone') }}*" value="{{ Request::old('phoneNumber') }}">
                             </div>
                         </div>
-                        <h3 class="appl-form-head">Информация за творбата</h3><br>
+                        <h3 class="appl-form-head">{{ trans('form.info_art_p') }}</h3><br>
                         <div class="form-group">
                             <div class="col-md-6 contentContactForm">
-                                <input type="text" class="form-control" id="title" name="title" placeholder="Оригинално заглавие*" value="{{ Request::old('title') }}">
+                                <input type="text" class="form-control" id="title" name="title" placeholder="{{ trans('form.org_name') }}*" value="{{ Request::old('title') }}">
                             </div>
                         </div>
                         <div class="form-group">
                             <div class="col-md-6 contentContactForm">
-                                <input type="text" class="form-control" id="en-title" name="englishTitle" placeholder="Заглавие на английски език*" value="{{ Request::old('englishTitle') }}">
+                                <input type="text" class="form-control" id="en-title" name="englishTitle" placeholder="{{ trans('form.english_title') }}*" value="{{ Request::old('englishTitle') }}">
                             </div>
                         </div>
-                        <h3 class="sub-title-technique">Техника*</h3>
+                        <h3 class="sub-title-technique">{{ trans('form.techniques') }}*</h3>
                         <div class="form-group">
 
                             <ul class="columns-application-from">
@@ -126,46 +119,45 @@
                         </div>
                         <div class="form-group">
                             <div class="col-md-6 contentContactForm">
-                                <input type="text" class="form-control" id="dimensions" name="dimensions" placeholder="Размери (в/ш/д)*" value="{{ Request::old('dimensions') }}">
+                                <input type="text" class="form-control" id="dimensions" name="dimensions" placeholder="{{ trans('form.dimensions') }}*" value="{{ Request::old('dimensions') }}">
                             </div>
                         </div>
                         <div class="form-group">
                             <div class="col-md-6 contentContactForm">
-                                <textarea class="form-control" rows="3" id="installation-guide" name="installationGuide" placeholder="Насоки за поставяне*">{{ Request::old('name') }}</textarea>
+                                <textarea class="form-control" rows="3" id="installation-guide" name="installationGuide" placeholder="{{ trans('form.install_guide') }}*">{{ Request::old('name') }}</textarea>
                             </div>
                         </div>
                         <div class="form-group">
                             <div class="col-md-6 contentContactForm">
-                                <input type="text" class="form-control" id="year" name="year" placeholder="Година на създаване*" value="{{ Request::old('name') }}">
+                                <input type="text" class="form-control" id="year" name="year" placeholder="{{ trans('form.year_realization') }}*" value="{{ Request::old('name') }}">
                             </div>
                         </div>
                         <div class="form-group">
                             <div class="col-md-6 contentContactForm">
-                                <input type="text" class="form-control" id="synopsis" name="synopsis" placeholder="Синопсис*" value="{{ Request::old('name') }}">
+                                <input type="text" class="form-control" id="synopsis" name="synopsis" placeholder="{{ trans('form.sinopsis') }}*" value="{{ Request::old('name') }}">
                             </div>
                         </div>
 
                     <div>
                         <input type="file" name="file-7" id="file-7" class="inputfile inputfile-6"/>
-                        <label for="file-7"><span>Снимка на творба 1*</span><strong class="choose-span">Избери</strong></label>
+                        <label for="file-7"><span>{{ trans('form.pic1') }}*</span><strong class="choose-span">{{ trans('common.browse') }}</strong></label>
                         <br>
-                        <span class="max-Mb">максимум 4MB</span>
+                        <span class="max-Mb">{{ trans('common.max') }} 4MB</span>
 
                      </div>
                     <br>
                     <div>
                         <input type="file" name="file-8" id="file-8" class="inputfile inputfile-6"/>
-                        <label for="file-8"><span>Снимка на творба 2*</span><strong class="choose-span">Избери</strong></label>
+                        <label for="file-8"><span>{{ trans('form.pic2') }}*</span><strong class="choose-span">{{ trans('common.browse') }}</strong></label>
                         <br>
-                        <span class="max-Mb">максимум 4MB</span>
+                        <span class="max-Mb">{{ trans('common.max') }} 4MB</span>
         
                     </div>
                     <div class="col-md-8 form-group content-app">
                         <p>
                            <span><input type="checkbox" required id="terms"></span>
                             <label for="terms">
-                                <span>Съгласен съм творбата ми да бъде инсталирана в галерийното<br> простраство
-                                    от специално подбран екип на Международното биенале на стъкло, България 2017 година.<br>
+                                <span>{{ trans('form.agreement1') }}<br> {{ trans('form.agreement2') }}<br>
                                 </span>
                             </label>
                         </p>
@@ -174,7 +166,7 @@
                     
                         <div class="form-group">
                             <div class="col-md-5" id="submitButton">
-                                <button type="submit" class="contactButon">Изпрати&nbsp;<i class="fa fa-chevron-circle-right" id="fa-fa-chevron-right"></i></button>
+                                <button type="submit" class="contactButon">{{ trans('common.submit') }}&nbsp;<i class="fa fa-chevron-circle-right" id="fa-fa-chevron-right"></i></button>
                             </div>
                         </div>
                     </div>

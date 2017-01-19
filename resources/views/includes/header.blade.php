@@ -16,7 +16,7 @@
                             <a class="Program subMenu" href="{{ URL::to('/program')}}">Програма</a>
                         </li>
                         <li>
-                            <a class="AttendencyForm subMenu" href="{{ URL::to('/apply-for-attendance')}}">Форма за участие</a>
+                            <a class="AttendencyForm subMenu" href="{{ URL::to('/apply-for-attendance')}}">{{ trans('header.form') }}</a>
                         </li>
                         <li>
                             <a class="About subMenu" href="{{ URL::to('/about')}}">За нас</a>
