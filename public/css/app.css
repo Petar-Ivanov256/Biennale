@@ -995,6 +995,10 @@ body{
     font-family: "359Sans";
     color: rgb(109, 110, 113);
 }
+
+.textunderimg p{
+    width: 340px;
+}
 .programadetails img{
     max-width: 100%;
     height: auto;
