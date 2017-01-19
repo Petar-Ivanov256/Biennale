@@ -144,7 +144,7 @@
                                 <span class="ptagleft"  id="right-alignhour">София</span>
                             </a>
                             <br>
-                            <div class="col-lg-12 subtextunderimg">
+                            <div class="col-lg-4 subtextunderimg">
                                 <h4>Querat voluptatem</h4>
                                 <p>
                                     Duis aute irure dolor in reprehenderit in volup
@@ -162,7 +162,7 @@
                                 <span class="ptagleft"  id="right-alignhour">София</span>
                             </a>
                             <br>
-                            <div class="col-lg-12 subtextunderimg">
+                            <div class="col-lg-4 subtextunderimg">
                                 <h4>Querat voluptatem</h4>
                                 <p>
                                     Duis aute irure dolor in reprehenderit in volup
@@ -177,7 +177,7 @@
                                 <span class="ptagleft"  id="right-alignhour">София</span>
                             </a>
                             <br>
-                            <div class="col-lg-12 subtextunderimg">
+                            <div class="col-lg-4 subtextunderimg">
                                 <h4>Querat voluptatem</h4>
                                 <p>
                                     Duis aute irure dolor in reprehenderit in volup
