@@ -10,10 +10,10 @@
         <div class="logo col-sm-2">&nbsp;</div>
         <div class="collapse navbar-collapse col-md-12" id="targetNav">
             <ul class="nav navbar-nav myNavbar" id="navBar" >
-                <li class="dropdown"><a  class="Bien" href="{{ URL::to('/')}}">Бианале</a>
+                <li class="dropdown"><a  class="Bien" href="{{ URL::to('/')}}">{{ trans('header.biennale') }}</a>
                     <ul class="dropdown-menu" id="dropdown-content">
                         <li>
-                            <a class="Program subMenu" href="{{ URL::to('/program')}}">Програма</a>
+                            <a class="Program subMenu" href="{{ URL::to('/program')}}">{{ trans('header.program') }}</a>
                         </li>
                         <li>
                             <a class="AttendencyForm subMenu" href="{{ URL::to('/apply-for-attendance')}}">{{ trans('header.form') }}</a>
@@ -26,29 +26,29 @@
             </ul>
             <ul class="nav navbar-nav myNavbar" id="navBar">
                 <li>
-                    <a id="mainMenuScholer" class="Schlarships" href="#">Стипендии</a>
+                    <a id="mainMenuScholer" class="Schlarships" href="#">{{ trans('header.scholarship') }}</a>
                     <ul class="dropdown-menu" id="dropdown-content">
-                        <li class="diplay-horizontal"> <a class="subMenu" href="{{ URL::to('/bachelor')}}">Бакалавър</a></li>
-                        <li class="diplay-horizontal"> <a class="subMenu" href="{{ URL::to('/master')}}">Магистър</a></li>
-                        <li class="diplay-horizontal"> <a class="subMenu" href="{{ URL::to('/phd')}}">Докторант</a></li>
+                        <li class="diplay-horizontal"> <a class="subMenu" href="{{ URL::to('/bachelor')}}">{{ trans('header.bachelor') }}</a></li>
+                        <li class="diplay-horizontal"> <a class="subMenu" href="{{ URL::to('/master')}}">{{ trans('header.master') }}</a></li>
+                        <li class="diplay-horizontal"> <a class="subMenu" href="{{ URL::to('/phd')}}">{{ trans('header.phd') }}</a></li>
                     </ul>
                 </li>
             </ul>
             <ul class="nav navbar-nav myNavbar" id="navBar">
                 <li>
-                    <a class="mainMenuComponents" href="{{ URL::to('/authors')}}">Автори</a>
+                    <a class="mainMenuComponents" href="{{ URL::to('/authors')}}">{{ trans('header.artists') }}</a>
                 </li>
                 <li>
-                    <a class="mainMenuComponents" href="{{ URL::to('/events')}}">Събития</a>
+                    <a class="mainMenuComponents" href="{{ URL::to('/events')}}">{{ trans('header.events') }}</a>
                 </li>
                 <li>
-                    <a class="mainMenuComponents" href="{{ URL::to('/partners')}}">Партньори</a>
+                    <a class="mainMenuComponents" href="{{ URL::to('/partners')}}">{{ trans('header.partners') }}</a>
                 </li>
                 <li>
-                    <a class="mainMenuComponents"  href="{{ URL::to('/archive')}}">Архив</a>
+                    <a class="mainMenuComponents"  href="{{ URL::to('/archive')}}">{{ trans('header.archive') }}</a>
                 </li>
                 <li>
-                    <a class="mainMenuComponents"  href="{{ URL::to('/contact')}}">Контакти</a>
+                    <a class="mainMenuComponents"  href="{{ URL::to('/contact')}}">{{ trans('header.contacts') }}</a>
                 </li>
             </ul>
             <ul class="nav navbar-nav myNavbar" id="IconsMenuComponents">
@@ -60,9 +60,9 @@
                     @endif
 
                     <li><a href="{{ URL::to('/logout') }}">Изход</a></li>
-                @else
-                    <li><a href="{{ URL::to('/register') }}">Регистрация</a></li>
-                    <li><a href="{{ URL::to('/signin') }}">Вход</a></li>
+                {{--@else--}}
+                    {{--<li><a href="{{ URL::to('/register') }}">Регистрация</a></li>--}}
+                    {{--<li><a href="{{ URL::to('/signin') }}">Вход</a></li>--}}
                 @endif
 
 
