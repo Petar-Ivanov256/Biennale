@@ -52,7 +52,7 @@ class EventsSeeder extends Seeder
         $img = Image::make("C:/xampp/htdocs/Biennale/public/img/eventsimg/pic3.jpg")->encode('data-url');
         $event->photo = $img;
         $event->save();
-//
+
 //        $event = new Events();
 //        $event->start = date('Ymd',strtotime('20161112' . "+6 days"));
 //        $event->end = date('Ymd',strtotime('20161112' . "+7 days"));
