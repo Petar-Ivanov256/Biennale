@@ -34,6 +34,7 @@ Route::group(
         Route::get('/phd', 'StaticPagesController@phd');
         Route::get('/authors', 'StaticPagesController@authors');
         Route::get('/partners', 'StaticPagesController@partners');
+        Route::get('/terms', 'StaticPagesController@terms');
 
         Route::get('/archive', 'ArchiveController@archive');
 
@@ -47,6 +48,7 @@ Route::group(
         Route::delete('/news/{id}', 'NewsController@delete');
 
         Route::get('/events', 'EventsController@show_events');
+        Route::get('/events/getDetails/{id}', 'EventsController@getById');
 
         Route::get('/program', 'ProgramController@program');
 
@@ -65,47 +67,47 @@ Route::group(
 });
 
 
-Route::get('/terms', 'StaticPagesController@terms');
+
 
 //Route::get('/about','StaticPagesController@about');
 
-Route::get('/vision', 'StaticPagesController@vision');
-Route::get('/contact', 'StaticPagesController@contact');
-Route::post('/contact/send-mail','StaticPagesController@send_contact_mail');
-Route::get('/scholarships', 'StaticPagesController@scholarships');
-Route::get('/bachelor', 'StaticPagesController@bachelor');
-Route::get('/master', 'StaticPagesController@master');
-Route::get('/phd', 'StaticPagesController@phd');
-Route::get('/authors', 'StaticPagesController@authors');
-Route::get('/partners', 'StaticPagesController@partners');
-
-Route::get('/archive', 'ArchiveController@archive');
-
-Route::get('/news', 'NewsController@news');
-Route::get('/news/add', 'NewsController@add');
-Route::post('/news/add', 'NewsController@create');
-Route::get('/news/all', 'NewsController@getAll');
-Route::get('/news/{id}', 'NewsController@getArticle');
-Route::get('/news/edit/{id}', 'NewsController@edit');
-Route::post('/news/edit/{id}', 'NewsController@update');
-Route::delete('/news/{id}', 'NewsController@delete');
-
-Route::get('/events', 'EventsController@show_events');
-
-Route::get('/program', 'ProgramController@program');
-
-Route::get('/apply-for-attendance', 'FormsController@applyForAttendanceForm');
-Route::post('/apply', 'FormsController@sendForm');
-
-Route::get('/register', 'AuthController@showRegister');
-Route::post('/register', 'AuthController@registerUser');
-
-Route::get('/signin', 'AuthController@showLogin');
-Route::post('/signin', 'AuthController@loginUser');
-
-Route::get('/testauth', 'AuthController@test');
-
-Route::get('/logout', 'AuthController@logout');
+//Route::get('/vision', 'StaticPagesController@vision');
+//Route::get('/contact', 'StaticPagesController@contact');
+//Route::post('/contact/send-mail','StaticPagesController@send_contact_mail');
+//Route::get('/scholarships', 'StaticPagesController@scholarships');
+//Route::get('/bachelor', 'StaticPagesController@bachelor');
+//Route::get('/master', 'StaticPagesController@master');
+//Route::get('/phd', 'StaticPagesController@phd');
+//Route::get('/authors', 'StaticPagesController@authors');
+//Route::get('/partners', 'StaticPagesController@partners');
+//
+//Route::get('/archive', 'ArchiveController@archive');
+//
+//Route::get('/news', 'NewsController@news');
+//Route::get('/news/add', 'NewsController@add');
+//Route::post('/news/add', 'NewsController@create');
+//Route::get('/news/all', 'NewsController@getAll');
+//Route::get('/news/{id}', 'NewsController@getArticle');
+//Route::get('/news/edit/{id}', 'NewsController@edit');
+//Route::post('/news/edit/{id}', 'NewsController@update');
+//Route::delete('/news/{id}', 'NewsController@delete');
+//
+//Route::get('/events', 'EventsController@show_events');
+//
+//Route::get('/program', 'ProgramController@program');
+//
+//Route::get('/apply-for-attendance', 'FormsController@applyForAttendanceForm');
+//Route::post('/apply', 'FormsController@sendForm');
+//
+//Route::get('/register', 'AuthController@showRegister');
+//Route::post('/register', 'AuthController@registerUser');
+//
+//Route::get('/signin', 'AuthController@showLogin');
+//Route::post('/signin', 'AuthController@loginUser');
+//
+//Route::get('/testauth', 'AuthController@test');
+//
+//Route::get('/logout', 'AuthController@logout');
 
 Route::get('/admin', 'Admin\AdminController@home_admin')->middleware('isAdmin');
 
@@ -132,4 +134,3 @@ Route::get('/admin/works/edit/{id}', 'Admin\AdminWorksController@edit')->middlew
 Route::post('/admin/works/edit/{id}', 'Admin\AdminWorksController@update')->middleware('isAdmin');
 Route::post('/admin/works/delete/{id}', 'Admin\AdminWorksController@delete')->middleware('isAdmin');
 
-Route::get('/events/getDetails/{id}', 'EventsController@getById');
