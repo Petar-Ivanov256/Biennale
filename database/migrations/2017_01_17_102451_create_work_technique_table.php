@@ -17,10 +17,10 @@ class CreateWorkTechniqueTable extends Migration
             $table->timestamps();
 
             $table->integer('work_id')->unsigned();
-            $table->foreign('work_id')->references('id')->on('works');
+            $table->foreign('work_id')->references('id')->on('works')->onDelete('cascade');
 
             $table->integer('technique_id')->unsigned();
-            $table->foreign('technique_id')->references('id')->on('techniques');
+            $table->foreign('technique_id')->references('id')->on('techniques')->onDelete('cascade');
         });
     }
 

@@ -17,10 +17,10 @@ class CreateAuthorWorkTable extends Migration
             $table->timestamps();
 
             $table->integer('author_id')->unsigned();
-            $table->foreign('author_id')->references('id')->on('authors');
+            $table->foreign('author_id')->references('id')->on('authors')->onDelete('cascade');
 
             $table->integer('work_id')->unsigned();
-            $table->foreign('work_id')->references('id')->on('works');
+            $table->foreign('work_id')->references('id')->on('works')->onDelete('cascade');
         });
     }
 
