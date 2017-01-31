@@ -25,7 +25,7 @@
             <div class="col-xs-12 col-sm-6 col-lg-5 firsttxt" id="change">
                 <h1 class="partnersName">Направи дарение</h1>
                 <hr class="hr1">
-                <p class="p1">
+                <p class="p1 text-justify">
                     Имате ли отношение към съвременното изкуство? Вярвате ли, че изкуство
                     има силата отвори сърцата и съзнанието ни? Искате ли да подкрепите
                     талантливи артисти да създават нови творби? И най-вече искатели в България
@@ -38,7 +38,7 @@
                 </p>
                 <h3 class="partnersName1">Възможности</h3>
                 <hr>
-                <p class="p1">
+                <p class="p1 text-justify">
                     Ако искате да научите повече за възможността да станете част от нашия екип, който ще
                     организира следващото биенале през 2019 година, моля пишете ни на  <span><a class="emailAdress" href="mailto:glassbiennalebg@gmail.com">glassbiennalebg@gmail.com</a></span>
                 </p>

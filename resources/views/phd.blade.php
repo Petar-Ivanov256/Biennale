@@ -27,7 +27,7 @@
                     <h4 class="bachelor-header2">
                         Стратегическа цел на "Международно биенале на стъклото" е развитието на художественото стъкло в България
                     </h4>
-                    <p class="first-p-paragraph">
+                    <p class="first-p-paragraph text-justify">
                         Стратегическа цел на Международно биенале на стъклото е развитието на художественото стъкло в България. За постигането на тази цел,
                         в хармония с нашата визия,ние се стремим да инвестираме в развитието на знания и умения на изграждащи се автори, както и ученици от
                         средните училища с потенциал.Затова предоставяме стипендии за обучението им в специалностите по стъкло в <span class="color-red">Нов български университет</span>.
@@ -47,7 +47,7 @@
                     <button class="learn-more">Правила</button>
                     <button class="learn-more">Жури</button>
                     <button class="learn-more">Победители</button><br><br>
-                    <p class="second-p-paragraph" id="firstscholarpar">
+                    <p class="second-p-paragraph text-justify" id="firstscholarpar">
                         <span class="bachelor-header2">
                             Правила за участие в конкурс за пълна стипендия в специалност „Стъкло“, с продължителност от три семестъра,
                             образователна степен  <span class="bac">ДОКТОР</span> в Нов български университет за периода 2017 – 2020 г
@@ -91,7 +91,7 @@
                         <span class="bachelor-span">Виктор Николов</span>
                         <span class="picspan"> {!! HTML::image('img/scholarships/pic2.jpg') !!}</span><br><br>
                         <br><br><br><br><br>
-                        <p>
+                        <p class="text-justify">
                             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam cursus nisl in maximus elementum. Maecenas a augue convallis, dapibus orci in, dapibus nibh.
                             Donec efficitur arcu at augue laoreet dictum. In quis dolor velit. Etiam viverra sit amet mauris quis porttitor. Aenean blandit ante sed dui rhoncus, ac
                             tincidunt nisi tempor. In nec tortor a ipsum pharetra fringilla. Mauris viverra scelerisque risus at vehicula. Proin at consectetur tellus. Praesent nunc

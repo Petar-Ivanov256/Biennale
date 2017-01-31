@@ -41,7 +41,7 @@
                             <span id="nameForContact">София-Хара Хадзопулу</span>
                             <span class="contactrightspan"><a href="mailto:sofia.hadzopoulu@gmail.com" id="emailCordinator">sofia.hadzopoulu@gmail.com</a></span>
                             <span id="cordinator">координатор</span>
-                            <span class="contactrightspan"><a href="tel:+359887288667" class="telefonCordinator">+359 887 288 667</a></span>
+                            <span class="contactrightspan"><a href="tel:+359886923081" class="telefonCordinator">+359 886 923 081</a></span>
                         </div>
                     </div>
                     <div class="col-lg-8 moveleft-cotact" id="change">

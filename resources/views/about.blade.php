@@ -20,7 +20,7 @@
         <div class="col-lg-12">
              <div class="col-xs-12 col-sm-6 col-lg-5 aboutleft" id="change">
                     <h1 class="name1">{{ trans('about.vision') }}</h1>
-                    <p class="textAbout">
+                    <p class="textAbout text-justify">
                         {{ trans('about.vision_content') }}
                     </p>
                     <h2 class="name1">{{ trans('about.team') }}</h2>
@@ -95,7 +95,7 @@
                                 <div class="modal-content">
                                     <div class="modal-header">
                                         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                                        <h4 class="modal-title" id="myModalLabel">Графичен дизаин</h4>
+                                        <h4 class="modal-title" id="myModalLabel">Графичен дизайн</h4>
                                     </div>
                                     <div class="modal-body">
                                         ...
@@ -116,7 +116,7 @@
                                 <div class="modal-content">
                                     <div class="modal-header">
                                         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                                        <h4 class="modal-title" id="myModalLabel">Уеб дизаин</h4>
+                                        <h4 class="modal-title" id="myModalLabel">Уеб дизайн</h4>
                                     </div>
                                     <div class="modal-body">
                                         ...

@@ -12,6 +12,6 @@ return [
     'team' => 'Екип',
     'coordinators' => 'Координатори',
     'jury' => 'Жури',
-    'graph_design' => 'Графичен дизаин',
-    'web_design' => 'Уеб дизаин',
+    'graph_design' => 'Графичен дизайн',
+    'web_design' => 'Уеб дизайн',
 ];

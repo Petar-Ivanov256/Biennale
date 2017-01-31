@@ -37,6 +37,7 @@
                 </div>
                 <div id="3" class="collapse">
                     <ul class="months">
+                        <li><a href="#01">Януари</a></li>
                         <li><a href="#02">Февруари</a></li>
                         <li><a href="#03">Март</a></li>
                         <li><a href="#04">Април</a></li>
@@ -46,6 +47,8 @@
                         <li><a href="#08">Август</a></li>
                         <li><a href="#09">Септември</a></li>
                         <li><a href="#10">Октомври</a></li>
+                        <li><a href="#11">Ноември</a></li>
+                        <li><a href="#12">Декември</a></li>
                     </ul>
                 </div>
             </div>

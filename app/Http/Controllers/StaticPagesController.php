@@ -41,8 +41,8 @@ class StaticPagesController extends Controller
         $description = $request->input('title');
         $content = $request->input('message');
 
-        $myEmail = 'senderglassbiennalebg@gmail.com';
-        Mail::to($myEmail)->send(new ContactFormEmail($name,$email,$description,$content));
+        $emailTo = 'glassbiennalebg@gmail.com';
+        Mail::to($emailTo)->send(new ContactFormEmail($name,$email,$description,$content));
 
         return redirect('/contact')->with('success', 'Успешно изпратихте съобщение!');
     }

@@ -41,7 +41,7 @@
                             <li>male</li>
                             <li>b. Varna</li>
                         </ul>
-                        <p class="info-autor-about">
+                        <p class="info-autor-about text-justify">
                             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin vel nisi pulvinar, laoreet turpis quis,
                             venenatis turpis. Aenean egestas, nibh sed scelerisque iaculis, risus tortor lobortis arcu, non
                             consectetur mi nibh id ex. Quisque ultricies pellentesque aliquam. Sed pretium nunc at turpis feugiat

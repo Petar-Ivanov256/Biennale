@@ -83,5 +83,11 @@ class TechniquesTableSeeder extends Seeder
         $mixedTechnique = new Technique();
         $mixedTechnique->name = 'mixed technique';
         $mixedTechnique->save();
+
+        $lampworking = new Technique();
+        $lampworking->name = 'lampworking';
+        $lampworking->save();
+
+        // todo: other
     }
 }

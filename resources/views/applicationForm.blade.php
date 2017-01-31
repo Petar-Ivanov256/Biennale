@@ -32,7 +32,7 @@
                         <a href="#REALIZED-ART-PIECE" data-toggle="collapse" class="a-drop-down">{{ trans('form.art_piece') }}</a>
                         <hr>
                         <div id="REALIZED-ART-PIECE" class="collapse">
-                            <p class="text-p">
+                            <p class="text-p text-justify">
                                 {{ trans('form.art_piece_content1') }}<br><br>
                                 {{ trans('form.art_piece_content2') }} <span class="color-red">01.04.2017 {{ trans('common.year_abr') }}</span>
                                 <hr>
@@ -44,7 +44,7 @@
                         <a href="#PROJECT" data-toggle="collapse" class="a-drop-down">{{ trans('form.project') }}</a>
                         <hr>
                         <div id="PROJECT" class="collapse">
-                            <p class="text-p">
+                            <p class="text-p text-justify">
                                 {{ trans('form.project_content1') }} <a href="mailto:glassbiennalebg@gmail.com:" id="emailCordinator">glassbiennalebg@gmail.com</a>.
                                 {{ trans('form.project_content2') }}<br><br>
                                 {{ trans('form.project_content3') }} - <span class="color-red">01.03.2017 {{ trans('common.year_abr') }}</span><br><br>
@@ -58,7 +58,7 @@
                         <a href="#PROJECT-FOR-BLOWN-GLASS" data-toggle="collapse" class="a-drop-down">{{ trans('form.blown_glass') }}</a>
                         <hr>
                         <div id="PROJECT-FOR-BLOWN-GLASS" class="collapse">
-                            <p class="text-p">
+                            <p class="text-p text-justify">
                                 {{ trans('form.blown_glass_content1') }}<br><br>
                                 {{ trans('form.blown_glass_content2') }}
                                 <a href="mailto:glassbiennalebg@gmail.com:" id="emailCordinator">glassbiennalebg@gmail.com</a> {{ trans('common.until') }} <span class="color-red" >01.07.2017 {{ trans('common.year_abr') }}</span><br><br>
