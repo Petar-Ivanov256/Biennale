@@ -9,71 +9,71 @@
                <div class="col-md-2">
                    <ul>
                        <li>
-                           <a  href="{{ URL::to('/program')}}">Програма</a>
+                           <a  href="{{ URL::to('/program')}}">{{ trans('footer.program') }}</a>
                        </li>
                        <li>
-                           <a  href="{{ URL::to('/terms')}}">Регламент</a>
+                           <a  href="{{ URL::to('/terms')}}">{{ trans('footer.regulations') }}</a>
                        </li>
                        <li>
-                           <a href="{{ URL::to('/apply-for-attendance')}}">Форма за участие</a>
+                           <a href="{{ URL::to('/apply-for-attendance')}}">{{ trans('footer.form') }}</a>
                        </li>
                        <li>
-                           <a  href="{{ URL::to('/vision')}}">Визия</a>
+                           <a  href="{{ URL::to('/vision')}}">{{ trans('footer.vision') }}</a>
                        </li>
                    </ul>
                </div>
                <div class="col-md-2">
                    <ul>
                        <li>
-                           <a href={{ URL::to('/bachelor')}}>Стипендии за бакалавър</a>
+                           <a href={{ URL::to('/bachelor')}}>{{ trans('footer.bachelor') }}</a>
                        </li>
                        <li>
-                           <a href={{ URL::to('/master')}}>Стипендии за магистър</a>
+                           <a href={{ URL::to('/master')}}>{{ trans('footer.masters') }}</a>
                        </li>
                        <li>
-                           <a href={{ URL::to('/phd')}}>Стипендии за доктор</a>
+                           <a href={{ URL::to('/phd')}}>{{ trans('footer.phd') }}</a>
                        </li>
                        <li>
-                           <a href="{{ URL::to('/authors')}}">Автори</a>
+                           <a href="{{ URL::to('/authors')}}">{{ trans('footer.authors') }}</a>
                        </li>
                    </ul>
                </div>
                <div class="col-md-1">
                    <ul>
                        <li>
-                           <a href="#">Изложби</a>
+                           <a href="#">{{ trans('footer.exhibitions') }}</a>
                        </li>
                        <li>
-                           <a href="#">Ателиета</a>
+                           <a href="#">{{ trans('footer.workshops') }}</a>
                        </li>
                        <li>
-                           <a href="#">Лекции</a>
+                           <a href="#">{{ trans('footer.lectures') }}</a>
                        </li>
                        <li>
-                           <a href="#">Галерия</a>
+                           <a href="#">{{ trans('footer.gallery') }}</a>
                        </li>
                    </ul>
                </div>
                <div class="col-md-2">
                    <ul>
                        <li>
-                           <a href="{{ URL::to('/about')}}">За нас</a>
+                           <a href="{{ URL::to('/about')}}">{{ trans('footer.about') }}</a>
                        </li>
                        <li>
-                           <a href="{{ URL::to('/partners')}}">Партньори</a>
+                           <a href="{{ URL::to('/partners')}}">{{ trans('footer.partners') }}</a>
                        </li>
                        <li>
-                           <a href="{{ URL::to('/contact')}}">Контакти</a>
+                           <a href="{{ URL::to('/contact')}}">{{ trans('footer.contacts') }}</a>
                        <li>
-                           <a href="{{ URL::to('/archive')}}">Архив</a>
+                           <a href="{{ URL::to('/archive')}}">{{ trans('footer.archive') }}</a>
                        </li>
                    </ul>
                </div>
                <div class="col-md-2">
                    <form>
-                       <label for="email" id="Newsletter">Месечен бюлетин</label><br>
+                       <label for="email" id="Newsletter">{{ trans('footer.bulletin') }}</label><br>
                        <input type="email" name="email" placeholder="e-mail" id="e-mail"><br><br>
-                       <button type="submit" class="btn-submit">Запиши се</button>
+                       <button type="submit" class="btn-submit">{{ trans('footer.subscribe') }}</button>
                    </form>
                </div>
            </div>
