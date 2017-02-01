@@ -24,33 +24,33 @@
             <div class="row">
                 <div class="col-lg-12">
                     <div class="col-lg-4 contact" id="change">
-                        <h1 class="Title1">Контакти</h1><br>
+                        <h1 class="Title1">{{ trans('titles.contacts') }}</h1><br>
                         <p id="contactText">
-                            Международно биенале на стъклото<br>
-                            София 1000, България<br>
-                            ул. Номередно №12<br>
+                            {{ trans('contacts.biennale') }}<br>
+                            {{ trans('contacts.city') }}<br>
+                            {{ trans('contacts.street') }}<br>
                         </p>
                         <p>
                             <a href="mailto:glassbiennalebg@gmail.com" id="emailCordinator">glassbiennalebg@gmail.com</a>
                         </p>
                         <div class="divspancontact">
-                            <span id="nameForContact">Александра Велева</span>
+                            <span id="nameForContact">{{ trans('contacts.alex') }}</span>
                             <span class="contactrightspan"><a href="mailto:alex.kotseva@gmail.com" id="emailCordinator">alex.kotseva@gmail.com</a></span>
-                            <span id="cordinator">координатор</span>
+                            <span id="cordinator">{{ trans('contacts.coordinator') }}</span>
                             <span class="contactrightspan"><a href="tel:+359887288667" class="telefonCordinator">+359 887 288 667</a></span>
-                            <span id="nameForContact">София-Хара Хадзопулу</span>
+                            <span id="nameForContact">{{ trans('contacts.sofia') }}</span>
                             <span class="contactrightspan"><a href="mailto:sofia.hadzopoulu@gmail.com" id="emailCordinator">sofia.hadzopoulu@gmail.com</a></span>
-                            <span id="cordinator">координатор</span>
+                            <span id="cordinator">{{ trans('contacts.coordinator') }}</span>
                             <span class="contactrightspan"><a href="tel:+359886923081" class="telefonCordinator">+359 886 923 081</a></span>
                         </div>
                     </div>
                     <div class="col-lg-8 moveleft-cotact" id="change">
-                        <h2 class="Title1" >Контактна Форма</h2>
+                        <h2 class="Title1" >{{ trans('contacts.form') }}</h2>
                         <form method="POST" action="{{ URL::to('/contact/send-mail') }}" class="form-horizontal">
                             {{ csrf_field() }}
                             <div class="form-group contentContactForm">
                                 <div class="col-md-5">
-                                    <input type="text" class="form-control" id="name" name="name" placeholder="Име и фамилия*" value="{{ Request::old('name') }}">
+                                    <input type="text" class="form-control" id="name" name="name" placeholder="{{ trans('contacts.name') }}*" value="{{ Request::old('name') }}">
                                 </div>
                             </div>
                             <div class="form-group contentContactForm">
@@ -60,7 +60,7 @@
                             </div>
                             <div class="form-group contentContactForm">
                                 <div class="col-md-5">
-                                    <input type="text" class="form-control" id="title" name="title" placeholder="Заглавие*" value="{{ Request::old('title') }}">
+                                    <input type="text" class="form-control" id="title" name="title" placeholder="{{ trans('contacts.title') }}*" value="{{ Request::old('title') }}">
                                 </div>
                             </div>
                             <div class="form-group contentContactForm">
@@ -72,7 +72,7 @@
                             </div>
                             <div class="form-group">
                                 <div class="col-md-5" id="submitButton">
-                                    <button type="submit" class="contactButon">Изпрати&nbsp;<i class="fa fa-chevron-circle-right" id="fa-fa-chevron-right"></i></button>
+                                    <button type="submit" class="contactButon">{{ trans('contacts.send') }}&nbsp;<i class="fa fa-chevron-circle-right" id="fa-fa-chevron-right"></i></button>
                                 </div>
                             </div>
                         </form>
