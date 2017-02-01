@@ -1,6 +1,6 @@
 @extends('layouts.master')
 @section('title')
-    Начало
+    {{ trans('titles.home') }}
 @endsection
 
 @section('content')

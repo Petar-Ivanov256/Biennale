@@ -1,6 +1,6 @@
 @extends('layouts.master')
 @section('title')
-    Магистър
+    {{ trans('titles.masters') }}
 @endsection
 @section('content')
     <div class="container">

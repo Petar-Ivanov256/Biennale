@@ -4,7 +4,7 @@
        <div class="row">
            <div class="col-md-10 footer-move-left" id="return-footer">
                <div class="col-md-2">
-                   <p id="footer_sin">с подкрепата на<br><span id="footer_span">Tianaderrah Foundation</span></p>
+                   <p id="footer_sin">{{ trans('footer.sponsor') }}<br><span id="footer_span">Tianaderrah Foundation</span></p>
                </div>
                <div class="col-md-2">
                    <ul>

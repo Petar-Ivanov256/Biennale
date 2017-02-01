@@ -70,7 +70,7 @@
                 <li><a href={{url('https://www.facebook.com/InternationalBiennaleGlassBulgaria/')}} target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
                 <li><a href={{url('https://www.instagram.com/')}}><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
                 <li><a href={{url('https://www.pinterest.com/')}}><i class="fa fa-pinterest" aria-hidden="true"></i></a></li>
-                <li><a href={{url('https://www.twitter.com/')}}><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+                <li><a href={{url('https://twitter.com/GlassBiennaleBG')}} target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
             </ul>
             <ul class="language_bar_chooser nav navbar-nav myNavbar" id="navBar">
                 @foreach(LaravelLocalization::getSupportedLocales() as $localeCode => $properties)

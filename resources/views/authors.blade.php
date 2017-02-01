@@ -1,6 +1,6 @@
 @extends('layouts.master')
 @section('title')
-    Автори
+    {{ trans('titles.authors') }}
 @endsection
 
 @section('content')

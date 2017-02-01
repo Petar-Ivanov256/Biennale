@@ -1,6 +1,6 @@
 @extends('layouts.master')
 @section('title')
-    Записване за участие
+    {{ trans('titles.submission') }}
 @endsection
 
 @section('content')

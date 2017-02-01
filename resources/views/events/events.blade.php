@@ -1,6 +1,6 @@
 @extends('layouts.master')
 @section('title')
-    Събития
+    {{ trans('titles.events') }}
 @endsection
 
 @section('content')

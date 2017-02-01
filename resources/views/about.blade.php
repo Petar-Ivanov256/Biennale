@@ -1,6 +1,6 @@
 @extends('layouts.master')
 @section('title')
-    За нас
+    {{ trans('titles.about') }}
 @endsection
 
 @section('content')

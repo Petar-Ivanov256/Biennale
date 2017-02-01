@@ -19,4 +19,5 @@ return [
     'archive' => 'Archive',
     'bulletin' => 'Monthly bulletin',
     'subscribe' => 'Subscribe',
+    'sponsor' => 'General sponsor',
 ];

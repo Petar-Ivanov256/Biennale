@@ -1,6 +1,6 @@
 @extends('layouts.master')
 @section('title')
-    Архив
+    {{ trans('titles.archive') }}
 @endsection
 
 @section('content')

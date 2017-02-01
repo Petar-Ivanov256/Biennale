@@ -1,6 +1,6 @@
 @extends('layouts.master')
 @section('title')
-    Доктор
+    {{ trans('titles.phd') }}
 @endsection
 @section('content')
     <div class="container">

@@ -1,6 +1,6 @@
 @extends('layouts.master')
 @section('title')
-    Контакти
+    {{ trans('titles.contacts') }}
 @endsection
 
 @section('content')
