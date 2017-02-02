@@ -27,7 +27,7 @@ Route::group(
         Route::get('/about', 'StaticPagesController@about');
         Route::get('/vision', 'StaticPagesController@vision');
         Route::get('/contact', 'StaticPagesController@contact');
-        Route::post('/contact/send-mail','StaticPagesController@send_contact_mail');
+        
         Route::get('/scholarships', 'StaticPagesController@scholarships');
         Route::get('/bachelor', 'StaticPagesController@bachelor');
         Route::get('/master', 'StaticPagesController@master');
@@ -53,21 +53,23 @@ Route::group(
         Route::get('/program', 'ProgramController@program');
 
         Route::get('/apply-for-attendance', 'FormsController@applyForAttendanceForm');
-        Route::post('/apply', 'FormsController@sendForm');
+        
 
         Route::get('/register', 'AuthController@showRegister');
-        Route::post('/register', 'AuthController@registerUser');
+        
 
         Route::get('/signin', 'AuthController@showLogin');
-        Route::post('/signin', 'AuthController@loginUser');
+        
 
         Route::get('/testauth', 'AuthController@test');
 
         Route::get('/logout', 'AuthController@logout');
 });
 
-
-
+Route::post('/contact/send-mail','StaticPagesController@send_contact_mail');
+Route::post('/apply', 'FormsController@sendForm');
+Route::post('/signin', 'AuthController@loginUser');
+Route::post('/register', 'AuthController@registerUser');
 
 //Route::get('/about','StaticPagesController@about');
 
