@@ -14,7 +14,7 @@
 				<td>
 					<form method="POST" action="{{ URL::to('/admin/works/delete/' . $work->id) }}">
 						<input type="hidden" id="token" name="_token" value="{{{ csrf_token() }}}" />
-						<button type="submit">Изтриване</button>
+						<button class="btn btn-danger" type="submit">Изтриване</button>
 					</form>
 				</td>
 			</tr>

@@ -3,6 +3,10 @@
     Автори
 @endsection
 
+@section('head')
+	<link rel="stylesheet" type="text/css" href="{{ asset('/multi-select/css/multi-select.css') }}">
+@endsection
+
 @section('content')
     
 	<form class="form-horizontal" method="POST" enctype="multipart/form-data">
@@ -28,8 +32,14 @@
 	    </div>
 	    <div class="form-group">
       		<label for="info" class="col-lg-2 control-label">Информация</label>
-      		<div class="col-lg-10">
+      		<div class="col-lg-6">
         		<textarea class="form-control" rows="3" id="info" name="info">{{ $author->info }}</textarea>
+      		</div>
+    	</div>
+    	<div class="form-group">
+      		<label for="info_en" class="col-lg-2 control-label">Информация на английски</label>
+      		<div class="col-lg-6">
+        		<textarea class="form-control" rows="3" id="info_en" name="info_en">{{ $author->info_en }}</textarea>
       		</div>
     	</div>
     	<div class="form-group">
@@ -38,12 +48,28 @@
 	    	<img src="{{ $author->photo }}" width="50" height="50">
 	    </div>
 	    <div class="form-group">
+	    	<label for="work" class="col-lg-2 control-label">Творби</label>
+	    	<div class="col-lg-10">
+		        <select multiple id="work" name="works[]" class="form-control">
+		        	@foreach ($works as $work)
+		        		<option value="{{ $work->id }}" 
+		        		{{ $author->works()->find($work->id) ? "selected" : "" }}>{{ $work->englishTitle }}</option>
+		        	@endforeach
+		        </select>
+		      </div>
+	    </div>
+	    <div class="form-group">
 	      <div class="col-lg-10 col-lg-offset-2">
-	        <button type="reset" class="btn btn-default">Cancel</button>
-	        <button type="submit" class="btn btn-primary">Submit</button>
+	        <button type="reset" class="btn btn-default">Изчисти</button>
+	        <button type="submit" class="btn btn-primary">Редактиране</button>
 	      </div>
 	    </div>
 	  </fieldset>
 	</form>
 	
+@endsection
+
+@section('foot')
+	<script type="text/javascript" src="{{ asset('multi-select/js/jquery.multi-select.js') }}"></script>
+	<script type="text/javascript">$('#work').multiSelect()</script>
 @endsection

@@ -7,28 +7,36 @@ use App\Author;
 use Storage;
 use App\Http\Controllers\Controller;
 use Image;
+use App\Work;
 
 class AdminAuthorsController extends Controller
 {
     public function add(Request $request)
 	{
-		return view('authors.create');
+        $works = Work::all()->sortBy('englishTitle');
+		return view('authors.create', ['works' => $works]);
 	}
 
     public function create(Request $request)
     {
     	$this->validate($request, $this->createValidationRules());
-
+        
     	$author = new Author();
     	$author->name = $request->input('name');
     	$author->country = $request->input('country');
     	$author->info = $request->input('info');
+        $author->info_en = $request->input('info_en');
         $author->email = $request->input('email');
 
         $img = Image::make($request->file('photo')->getRealPath())->encode('data-url');
         $author->photo = $img;
 
         $author->save();
+
+        $worksIds = $request->input('works');
+        foreach ($worksIds as $id) {
+            $author->works()->attach($id);
+        }
 
         return redirect('/admin/authors');
     }
@@ -48,7 +56,8 @@ class AdminAuthorsController extends Controller
     public function edit(Request $request, $id)
     {
     	$author = Author::find($id);
-    	return view('authors.edit', [ 'author' => $author ]);
+        $works = Work::all()->sortBy('englishTitle');
+    	return view('authors.edit', [ 'author' => $author, 'works' => $works ]);
     }
 
     public function update(Request $request, $id)
@@ -59,12 +68,19 @@ class AdminAuthorsController extends Controller
     	$author->name = $request->input('name');
     	$author->country = $request->input('country');
     	$author->info = $request->input('info');
+        $author->info_en = $request->input('info_en');
         $author->email = $request->input('email');
     	
         if ($request->hasFile('photo')) {
 
             $img = Image::make($request->file('photo')->getRealPath())->encode('data-url');
             $author->photo = $img;
+        }
+
+        $worksIds = $request->input('works');
+        $author->works()->detach();
+        foreach ($worksIds as $id) {
+            $author->works()->attach($id);
         }
 
     	$author->save();
@@ -97,6 +113,7 @@ class AdminAuthorsController extends Controller
     		'info' => 'required',
             'email' => 'required|max:100|email|unique:authors',
             'photo' => 'required|image|max:4096',
+            'works' => 'required'
     	];
     }
 
@@ -108,6 +125,7 @@ class AdminAuthorsController extends Controller
             'info' => 'required',
             'email' => 'required|max:100|email',
             'photo' => 'image|max:4096',
+            'works' => 'required'
         ];
     }
 }
