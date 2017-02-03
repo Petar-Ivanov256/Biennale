@@ -22,7 +22,9 @@ class CreateEventsTable extends Migration {
             $table->string("artist")->nullable();
             $table->string("entrance")->nullable();
             $table->string("title");
+            $table->string("title_en")->nullable();
             $table->string("description");
+            $table->string("description_en")->nullable();
             $table->binary("photo")->nullable();
             $table->timestamps();
         });

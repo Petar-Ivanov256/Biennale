@@ -19,6 +19,8 @@ class CreateAuthorsTable extends Migration
             $table->binary('photo')->nullable();
             $table->boolean('isVisible')->default(false);
             $table->timestamps();
+
+            $table->string('info_en')->nullable();
         });
 
         DB::statement("ALTER TABLE `authors` CHANGE COLUMN `photo` `photo` MEDIUMBLOB NULL AFTER `info`");

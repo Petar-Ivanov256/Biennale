@@ -55,4 +55,9 @@ class Events extends Model {
     {
         return date('d.m.Y H:i', strtotime($this->attributes['end']));
     }
+
+    public function category()
+    {
+        return $this->belongsTo('App\Category');
+    }
 }

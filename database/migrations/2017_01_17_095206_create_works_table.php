@@ -24,6 +24,7 @@ class CreateWorksTable extends Migration
             $table->string('installationGuide');
             $table->string('year');
             $table->string('synopsis');
+            $table->string('synopsis_en')->nullable();
 
             $table->binary('photo1')->nullable();
             $table->binary('photo2')->nullable();

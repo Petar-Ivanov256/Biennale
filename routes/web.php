@@ -38,15 +38,6 @@ Route::group(
 
         Route::get('/archive', 'ArchiveController@archive');
 
-        Route::get('/news', 'NewsController@news');
-        Route::get('/news/add', 'NewsController@add');
-        Route::post('/news/add', 'NewsController@create');
-        Route::get('/news/all', 'NewsController@getAll');
-        Route::get('/news/{id}', 'NewsController@getArticle');
-        Route::get('/news/edit/{id}', 'NewsController@edit');
-        Route::post('/news/edit/{id}', 'NewsController@update');
-        Route::delete('/news/{id}', 'NewsController@delete');
-
         Route::get('/events', 'EventsController@show_events');
         Route::get('/events/getDetails/{id}', 'EventsController@getById');
 
@@ -136,3 +127,10 @@ Route::get('/admin/works/edit/{id}', 'Admin\AdminWorksController@edit')->middlew
 Route::post('/admin/works/edit/{id}', 'Admin\AdminWorksController@update')->middleware('isAdmin');
 Route::post('/admin/works/delete/{id}', 'Admin\AdminWorksController@delete')->middleware('isAdmin');
 
+Route::get('/admin/category', 'CategoryController@index')->middleware('isAdmin');
+Route::get('/admin/category/create', 'CategoryController@create')->middleware('isAdmin');
+Route::post('/admin/category/store', 'CategoryController@store')->middleware('isAdmin');
+Route::get('/admin/category/{id}', 'CategoryController@show')->middleware('isAdmin');
+Route::get('/admin/category/edit/{id}', 'CategoryController@edit')->middleware('isAdmin');
+Route::post('/admin/category/edit/{id}', 'CategoryController@update')->middleware('isAdmin');
+Route::post('/admin/category/delete/{id}', 'CategoryController@destroy')->middleware('isAdmin');
