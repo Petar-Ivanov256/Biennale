@@ -16,7 +16,7 @@ use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Response;
 use Image;
 use Intervention\Image\Exception\NotReadableException;
-
+use App\Category;
 
 class AdminEventsController extends Controller
 {
@@ -28,7 +28,8 @@ class AdminEventsController extends Controller
 
     public function create_event(Request $request)
     {
-        return view('admin.create_event');
+        $categories = Category::all();
+        return view('admin.create_event', ['categories' => $categories]);
     }
 
     public function add_event(Request $request)
@@ -50,7 +51,13 @@ class AdminEventsController extends Controller
         $event->title = $request->input('title');
         $event->description = $request->input('description');
         $event->photo = $img;
+        $event->title_en = $request->input('title_en');
+        $event->description_en = $request->input('description_en');
+        
         $event->save();
+
+        $chosenCategory = Category::find($request->input('category'));
+        $chosenCategory->events()->save($event);
 
         return redirect('/admin/showEvents');
     }
@@ -59,8 +66,10 @@ class AdminEventsController extends Controller
     {
         $id = $request->input('id');
         $event = Events::find($id);
+        $categories = Category::all();
+        $currentCategory = $event->category;
 
-        return view('admin.edit_event', ['event' => $event]);
+        return view('admin.edit_event', ['event' => $event, 'categories' => $categories, 'currentCategory' => $currentCategory]);
     }
 
     public function edit_event_save(Request $request)
@@ -85,6 +94,10 @@ class AdminEventsController extends Controller
         $event->entrance = $request->input('entrance');
         $event->title = $request->input('title');
         $event->description = $request->input('description');
+        $event->title_en = $request->input('title_en');
+        $event->description_en = $request->input('description_en');
+        $chosenCategory = Category::find($request->input('category'));
+        $event->category()->associate($chosenCategory);
         $event->save();
 
         return redirect('/admin/showEvents');
@@ -107,7 +120,9 @@ class AdminEventsController extends Controller
             'place' => 'required',
             'title' => 'required',
             'description' => 'required',
-            'pic' => 'required'
+            //'pic' => 'required',
+            'title_en' => 'required',
+            'description_en' => 'required'
         ];
     }
 }

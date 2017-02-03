@@ -19,6 +19,12 @@
                 </div>
             </div>
             <div class="form-group">
+                <label for="title_en" class="col-lg-2 control-label">Заглавие на английски</label>
+                <div class="col-lg-6">
+                    <input type="text" class="form-control" id="title_en" name="title_en" placeholder="English title" value="{{ old('title_en') }}">
+                </div>
+            </div>
+            <div class="form-group">
                 <label for="place" class="col-lg-2 control-label">Място</label>
                 <div class="col-lg-6">
                     <input type="text" class="form-control" id="place" name="place" placeholder="Място" value="{{ Request::old('place') }}" autofocus>
@@ -59,9 +65,25 @@
                 </div>
             </div>
             <div class="form-group">
+              <label for="select" class="col-lg-2 control-label">Категория</label>
+              <div class="col-lg-6">
+                <select class="form-control" id="select" name="category">
+                    @foreach ($categories as $c)
+                        <option value="{{ $c->id }}">{{ $c->title }}</option>
+                    @endforeach
+                </select>
+              </div>
+            </div>
+            <div class="form-group">
                 <label for="textArea" class="col-lg-2 control-label">Описание</label>
                 <div class="col-lg-6">
                     <textarea class="form-control" name="description" id="textArea">{{ Request::old('description') }}</textarea>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="textArea_en" class="col-lg-2 control-label">Описание на английски</label>
+                <div class="col-lg-6">
+                    <textarea class="form-control" name="description_en" id="textArea_en">{{ old('description_en') }}</textarea>
                 </div>
             </div>
             <div class="form-group">
