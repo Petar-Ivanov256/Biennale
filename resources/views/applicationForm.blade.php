@@ -124,17 +124,17 @@
                         </div>
                         <div class="form-group">
                             <div class="col-md-6 contentContactForm">
-                                <textarea class="form-control" rows="3" id="installation-guide" name="installationGuide" placeholder="{{ trans('form.install_guide') }}*">{{ Request::old('name') }}</textarea>
+                                <textarea class="form-control" rows="3" id="installation-guide" name="installationGuide" placeholder="{{ trans('form.install_guide') }}*">{{ Request::old('installationGuide') }}</textarea>
                             </div>
                         </div>
                         <div class="form-group">
                             <div class="col-md-6 contentContactForm">
-                                <input type="text" class="form-control" id="year" name="year" placeholder="{{ trans('form.year_realization') }}*" value="{{ Request::old('name') }}">
+                                <input type="text" class="form-control" id="year" name="year" placeholder="{{ trans('form.year_realization') }}*" value="{{ Request::old('year') }}">
                             </div>
                         </div>
                         <div class="form-group">
                             <div class="col-md-6 contentContactForm">
-                                <input type="text" class="form-control" id="synopsis" name="synopsis" placeholder="{{ trans('form.sinopsis') }}*" value="{{ Request::old('name') }}">
+                                <input type="text" class="form-control" id="synopsis" name="synopsis" placeholder="{{ trans('form.sinopsis') }}*" value="{{ Request::old('synopsis') }}">
                             </div>
                         </div>
 
