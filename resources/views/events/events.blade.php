@@ -4,14 +4,14 @@
 @endsection
 
 @section('content')
-    <div class="container">
+    <div class="container-fluid">
         <div class="row">
             <div class="col-xs-12 col-sm-6 col-md-3 SideDate">
                 <p>27.09-02.10</p>
             </div>
         </div>
     </div>
-    <div  class="container">
+    <div  class="container-fluid">
         <div class="row">
             <div class="col-xs-12 col-sm-6 col-sm-1">
                 <p id="SuzIstoria">Създаваме история</p>
@@ -19,8 +19,9 @@
             </div>
         </div>
     </div>
-    <div class="container" id="top">
-        <div class="col-lg-9 event-left" id="event-back">
+    <div class="container-fluid" id="top">
+        <div class="row">
+        <div class="col-md-9 event-left" id="event-back">
             <div class="col-md-2 prgdata">
                 <p>Събития</p>
                 <p>Период</p>
@@ -54,12 +55,11 @@
             </div>
         </div>
         <!--Izlozbi-->
-        <div class="col-lg-9" id="change">
-        <div class="row" id="ver">
-            <div id="1" class="events-p"><p>Изложби<p></div><br>
+        <div class="col-md-9 programa" id="event-back">
+             <div id="1" class="events-p"><p>Изложби<p></div><br>
 
                 @foreach($events as $event)
-                <div class="col-lg-4 programa" onclick="getDetails({{ $event->id }})">
+                <div class="col-lg-4" onclick="getDetails({{ $event->id }})">
                     <a href="#details-img" class="abackcolor">
                         <img src="{{$event->photo}}">
                         {{--{!! HTML::image('img/eventsimg/pic1.jpg') !!}--}}
@@ -70,7 +70,7 @@
                         <span class="ptagleft" id="right-alignaddress">{{$event->artist}}</span>
                     </a>
                     <br>
-                    <div class="col-lg-4 textunderimg">
+                    <div class="textunderimg">
                         <h4>{{$event->title}}</h4>
                         <p>
                             {!! substr($event->description, 0, 75) . '...' !!}
@@ -87,9 +87,9 @@
 
 
 
-    <div class="container">
-        <div class="col-lg-12">
-            <div class="col-lg-6 programadetails" id="change">
+    <div class="container-fluid">
+        <div class="row">
+         <div class="col-md-5 programadetails" id="change">
                 <h2>Творческа работилница</h2>
                 <img src="{{ asset('img/eventsimg/pic8.jpg') }}" id="details-img">
                 <div class="ptagleftprogramdetails">
@@ -118,80 +118,76 @@
                 <a href="#top" class="back-to-top"><span class="ptagleftdetailss"></span><span class="ptagleftdetailss">Обратно към всички</span></a>
             </div>
             <section>
-                <div class="container">
-                    <div class="col-lg-6" id="change">
-                        <header>
-                            <h2 class="programadet">Други изложби</h2>
-                        </header>
+                <div class=" col-md-5 programa" id="change">
+                    <header>
+                        <h2 class="programadet">Други изложби</h2>
+                    </header>
+                    <div class="col-md-5">
 
-                        <div class="col-lg-4 programa">
-                            <a href="#" class="abackcolor">
-                                {!! HTML::image('img/eventsimg/pic9.jpg') !!}
-                                <br>
-                                <span class="ptagleftdetails" id="left-aligndate">27.09-29.09</span>
-                                <span class="ptagleft"  id="right-alignhour">София</span>
-                            </a>
+                        <a href="#" class="abackcolor">
+                            {!! HTML::image('img/eventsimg/pic9.jpg') !!}
                             <br>
-                            <div class="col-lg-4 subtextunderimg">
-                                <h4>Querat voluptatem</h4>
-                                <p>
-                                    Duis aute irure dolor in reprehenderit in volup
-                                </p>
-                            </div>
-                        </div>
-                        <div class="col-lg-4 programa">
-                            <a href="#">
-                                {!! HTML::image('img/eventsimg/pic9.jpg') !!}
-                                <br>
-                                <span class="ptagleftdetails" id="left-aligndate">27.09-29.09</span>
-                                <span class="ptagleft"  id="right-alignhour">София</span>
-                            </a>
-                            <br>
-                            <div class="col-lg-4 subtextunderimg">
-                                <h4>Querat voluptatem</h4>
-                                <p>
-                                    Duis aute irure dolor in reprehenderit in volup
-                                </p>
-                            </div>
+                            <span class="ptagleftdetails" id="left-aligndate">27.09-29.09</span>
+                            <span class="ptagleft"  id="right-alignhour">София</span>
+                        </a>
+                        <br>
+                        <div class="textunderimg">
+                            <h4>Querat voluptatem</h4>
+                            <p>
+                                Duis aute irure dolor in reprehenderit in volup
+                            </p>
                         </div>
                     </div>
-                    <div class="col-lg-6" id="change">
-                        <div class="col-lg-4 programa">
-                            <a href="#" class="abackcolor">
-                                {!! HTML::image('img/eventsimg/pic9.jpg') !!}
-                                <br>
-
-                                <span class="ptagleftdetails" id="left-aligndate">27.09-29.09</span>
-                                <span class="ptagleft"  id="right-alignhour">София</span>
-                            </a>
+                    <div class="col-md-5">
+                        <a href="#">
+                            {!! HTML::image('img/eventsimg/pic9.jpg') !!}
                             <br>
-                            <div class="col-lg-4 subtextunderimg">
-                                <h4>Querat voluptatem</h4>
-                                <p>
-                                    Duis aute irure dolor in reprehenderit in volup
-                                </p>
-                            </div>
+                            <span class="ptagleftdetails" id="left-aligndate">27.09-29.09</span>
+                            <span class="ptagleft"  id="right-alignhour">София</span>
+                        </a>
+                        <br>
+                        <div class="textunderimg">
+                            <h4>Querat voluptatem</h4>
+                            <p>
+                                Duis aute irure dolor in reprehenderit in volup
+                            </p>
                         </div>
-                        <div class="col-lg-4 programa">
-                            <a href="#">
-                                {!! HTML::image('img/eventsimg/pic9.jpg') !!}
-                                <br>
-                                <span class="ptagleftdetails" id="left-aligndate">27.09-29.09</span>
-                                <span class="ptagleft"  id="right-alignhour">София</span>
-                            </a>
+                    </div>
+
+                    <div class="col-md-5">
+                        <a href="#">
+                            {!! HTML::image('img/eventsimg/pic9.jpg') !!}
                             <br>
-                            <div class="col-lg-4 subtextunderimg">
-                                <h4>Querat voluptatem</h4>
-                                <p>
-                                    Duis aute irure dolor in reprehenderit in volup
-                                </p>
-                            </div>
+                            <span class="ptagleftdetails" id="left-aligndate">27.09-29.09</span>
+                            <span class="ptagleft"  id="right-alignhour">София</span>
+                        </a>
+                        <br>
+                        <div class="textunderimg">
+                            <h4>Querat voluptatem</h4>
+                            <p>
+                                Duis aute irure dolor in reprehenderit in volup
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-md-5">
+                        <a href="#">
+                            {!! HTML::image('img/eventsimg/pic9.jpg') !!}
+                            <br>
+                            <span class="ptagleftdetails" id="left-aligndate">27.09-29.09</span>
+                            <span class="ptagleft"  id="right-alignhour">София</span>
+                        </a>
+                        <br>
+                        <div class="textunderimg">
+                            <h4>Querat voluptatem</h4>
+                            <p>
+                                Duis aute irure dolor in reprehenderit in volup
+                            </p>
                         </div>
                     </div>
                 </div>
             </section>
         </div>
-</div>
+     </div>
 @endsection
 
 @section('foot')

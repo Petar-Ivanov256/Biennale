@@ -4,14 +4,14 @@
 @endsection
 
 @section('content')
-    <div class="container">
+    <div class="container-fluid">
         <div class="row">
             <div class="col-xs-12 col-sm-6 col-md-3 SideDate">
                 <p>27.09-02.10</p>
             </div>
         </div>
     </div>
-    <div  class="container">
+    <div  class="container-fluid">
         <div class="row">
             <div class="col-xs-12 col-sm-6 col-sm-1">
                 <p id="SuzIstoria">Създаваме история</p>
@@ -19,10 +19,10 @@
             </div>
         </div>
     </div>
-    <div class="container">
+    <div class="container-fluid">
         <div class="row">
-            <div class="col-md-12 clo-lg-12 move-left-archive" id="back-archive">
-                <div class="col-md-5 col-lg-5">
+            <div class="col-md-10 move-left-archive" id="back-archive">
+                <div class="col-md-6">
                     <h2 class="header-archive">Архив <span>2017</span></h2>
                     <p class="paragraph-archive-header">
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce vehicula felis justo, pharetra
@@ -44,7 +44,7 @@
                             </a></li>
                     </ul>
                 </div>
-                <div class="col-md-4 col-lg-4 collapse" id="artists">
+                <div class="col-md-6 collapse" id="artists">
                     <button class="buttons-archive">Победители</button>
                     <button class="buttons-archive">Участници</button>
                     <br><br><br>

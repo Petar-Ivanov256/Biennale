@@ -19,9 +19,8 @@
             </div>
         </div>
     </div>
-    <div class="container">
+    <div class="container-fluid">
         <div class="row">
-            <div class="col-md-12">
                 <div class="col-md-5 application-form-part-one" id="change">
                     <h1 class="title-reglament">{{ trans('form.rules') }}</h1>
                     <h3 class="sub-title">
@@ -35,8 +34,9 @@
                             <p class="text-p text-justify">
                                 {{ trans('form.art_piece_content1') }}<br><br>
                                 {{ trans('form.art_piece_content2') }} <span class="color-red">01.04.2017 {{ trans('common.year_abr') }}</span>
-                                <hr>
+
                             </p>
+                            <hr>
                         </div>
                     </div>
                     <div>
@@ -49,8 +49,9 @@
                                 {{ trans('form.project_content2') }}<br><br>
                                 {{ trans('form.project_content3') }} - <span class="color-red">01.03.2017 {{ trans('common.year_abr') }}</span><br><br>
                                 {{ trans('form.project_content4') }} - <span class="color-red" >01.07.2017 {{ trans('common.year_abr') }}</span><br><br>
-                             <hr>
+
                             </p>
+                            <hr>
                         </div>
                     </div>
                     <div>
@@ -63,12 +64,13 @@
                                 {{ trans('form.blown_glass_content2') }}
                                 <a href="mailto:glassbiennalebg@gmail.com:" id="emailCordinator">glassbiennalebg@gmail.com</a> {{ trans('common.until') }} <span class="color-red" >01.07.2017 {{ trans('common.year_abr') }}</span><br><br>
                                 <span class="color-red"> {{ trans('form.blown_glass_content3') }}</span>
-                            <hr>
+
                             </p>
+                            <hr>
                         </div>
                     </div>
                 </div>
-                <div class="col-md-7 application-form-part-one" id="change">
+                <div class="col-md-6 application-form-part-one" id="change">
                     <h1 class="title-reglament">{{ trans('form.app_form') }}</h1>
                     <h3 class="appl-form-head">{{ trans('form.personal_info') }}</h3><br>
                 <form method="POST" action="{{ URL::to('/apply') }}" class="form-horizontal" enctype="multipart/form-data">
@@ -174,6 +176,6 @@
                 </div>
             </div>
         </div>
-    </div>
+
     <!-- TODO Validations for application Form - last three items --->
 @endsection

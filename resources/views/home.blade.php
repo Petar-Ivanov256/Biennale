@@ -4,14 +4,14 @@
 @endsection
 
 @section('content')
-    <div class="container">
+    <div class="container-fluid">
         <div class="row">
             <div class="col-xs-12 col-sm-6 col-md-3 SideDate">
                 <p>27.09-02.10</p>
             </div>
         </div>
     </div>
-    <div  class="container">
+    <div  class="container-fluid">
         <div class="row">
             <div class="col-xs-12 col-sm-6 col-sm-1">
                 <p id="SuzIstoria">Създаваме история</p>
@@ -20,7 +20,7 @@
         </div>
     </div>
 
-    <div class="container">
+    <div class="container-fluid">
         <div class="row" id="change">
              <div class="biennalehome1" id="biennale-home-1">
                  {!! HTML::image('img/homepageimg/biennalehome.jpg') !!}
@@ -30,9 +30,9 @@
              </div>
         </div>
     </div>
-    <div class="container">
+    <div class="container-fluid">
         <div class="row">
-            <div class="col-xs-12 col-sm-6 col-lg-12">
+            <div class="col-md-3 move-ochakvaite" id="change">
                 <h3 class="homepageOchakvaite" id="homepageOchakvaite-change">Очаквайте</h3>
             </div>
         </div>

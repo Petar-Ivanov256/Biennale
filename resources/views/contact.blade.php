@@ -20,10 +20,9 @@
             </div>
         </div>
 
-        <div  class="container">
+        <div  class="container-fluid">
             <div class="row">
-                <div class="col-lg-12">
-                    <div class="col-lg-4 contact" id="change">
+                  <div class="col-md-5 contact" id="change">
                         <h1 class="Title1">{{ trans('titles.contacts') }}</h1><br>
                         <p id="contactText">
                             {{ trans('contacts.biennale') }}<br>
@@ -44,7 +43,7 @@
                             <span class="contactrightspan"><a href="tel:+359886923081" class="telefonCordinator">+359 886 923 081</a></span>
                         </div>
                     </div>
-                    <div class="col-lg-8 moveleft-cotact" id="change">
+                    <div class="col-md-7 moveleft-cotact" id="change">
                         <h2 class="Title1" >{{ trans('contacts.form') }}</h2>
                         <form method="POST" action="{{ URL::to('/contact/send-mail') }}" class="form-horizontal">
                             {{ csrf_field() }}
@@ -80,7 +79,6 @@
                 </div>
             </div>
             <br><br><br>
-        </div>
 
         <!-- TODO Validations for contact Form--->
 

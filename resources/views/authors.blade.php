@@ -4,14 +4,14 @@
 @endsection
 
 @section('content')
-    <div class="container">
+    <div class="container-fluid">
         <div class="row">
             <div class="col-xs-12 col-sm-6 col-md-3 SideDate">
                 <p>27.09-02.10</p>
             </div>
         </div>
     </div>
-    <div  class="container">
+    <div  class="container-fluid">
         <div class="row">
             <div class="col-xs-12 col-sm-6 col-sm-1">
                 <p id="SuzIstoria">Създаваме история</p>
@@ -19,10 +19,10 @@
             </div>
         </div>
     </div>
-    <div class="container">
+    <div class="container-fluid">
         <div class="row">
-            <div class="col-md-12 col-lg-12 authors-move" id="return-authors">
-                <div class="col-md-4 col-lg-4 contestants">
+            <div class="">
+                <div class="col-md-4 contestants authors-move" id="return-authors">
                     <h2 class="title-Authors">Автори <span class="span-authors-data">2017</span></h2>
                     <hr>
                     <ul class="authors-people" id="space-author-li">
@@ -31,7 +31,7 @@
                         <li><a>Anton Ivanov<br><span class="country-authors">България</span></a></li>
                     </ul>
                 </div>
-                <div class="col-md-5 col-lg-5">
+                <div class="col-md-5 sub-authors-move" id="sub-authors-move-return">
                     <h2 class="title-Authors">Информация и творби</h2>
                     <hr>
                     <div id="1" class="collapse">
@@ -51,7 +51,7 @@
                         </p>
                         <br>
                         <div class="authors-pic">
-                            <div class="col-md-6">
+                            <div class="col-md-5">
                                 <div>
                                     {!! HTML::image('img/authors/pic1autr.jpg') !!}
                                     <br><br>
@@ -65,7 +65,7 @@
                                     </div>
                                 </div><br>
                             </div>
-                            <div class="col-md-6">
+                            <div class="col-md-5">
                                 {!! HTML::image('img/authors/pic1autr.jpg') !!}
                                 <br><br>
                                 <div class="info-authors-backgcolor" id="backgcolo-info-authors">
