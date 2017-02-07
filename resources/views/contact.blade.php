@@ -4,14 +4,14 @@
 @endsection
 
 @section('content')
-         <div class="container">
+         <div class="container-fluid">
             <div class="row">
                 <div class="col-md-3 SideDate">
                     <p>27.09-02.10</p>
                 </div>
             </div>
         </div>
-        <div  class="container">
+        <div  class="container-fluid">
             <div class="row">
                 <div class="col-sm-1">
                     <p id="SuzIstoria">Създаваме<br>история</p>
