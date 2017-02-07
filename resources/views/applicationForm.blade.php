@@ -216,11 +216,13 @@
                             </span>
                         @endif
                     </div>
-                    <div class="col-md-8 form-group content-app">
+                    <div class="col-md-8 form-group content-app text-justify">
                         <p>
                            <span><input type="checkbox" required id="terms"></span>
                             <label for="terms">
-                                <span>{{ trans('form.agreement1') }}<br> {{ trans('form.agreement2') }}<br>
+                                <span>
+                                    {{ trans('form.agreement1') }}
+                                    {{ trans('form.agreement2') }}<br>
                                 </span>
                             </label>
                         </p>
