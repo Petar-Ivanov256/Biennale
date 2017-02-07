@@ -51,16 +51,16 @@
             <div class="item active">
                 {!! HTML::image('img/homepageimg/biennalehome3.jpg') !!}
                 <div class="carousel-caption">
-                    <h3>New York</h3>
-                    <p>The atmosphere in New York is lorem ipsum.</p>
+                    <h3></h3>
+                    <p></p>
                 </div>
             </div>
 
             <div class="item">
                 {!! HTML::image('img/homepageimg/biennalehome3.jpg') !!}
                 <div class="carousel-caption">
-                    <h3>Chicago</h3>
-                    <p>Thank you, Chicago - A night we won't forget.</p>
+                    <h3></h3>
+                    <p></p>
                 </div>
             </div>
         </div>
