@@ -3,14 +3,14 @@
     {{ trans('titles.phd') }}
 @endsection
 @section('content')
-    <div class="container-fluid">
+    <div class="container">
         <div class="row">
             <div class="col-xs-12 col-sm-6 col-md-3 SideDate">
                 <p>27.09-02.10</p>
             </div>
         </div>
     </div>
-    <div  class="container-fluid">
+    <div  class="container">
         <div class="row">
             <div class="col-xs-12 col-sm-6 col-sm-1">
                 <p id="SuzIstoria">Създаваме история</p>
@@ -18,7 +18,7 @@
             </div>
         </div>
     </div>
-    <div class="container-fluid">
+    <div class="container">
         <div class="row">
             <div class="col-md-5 first-paragraph" id="change">
                     <h1 class="bachelor-header">Обща информация</h1>
@@ -41,7 +41,7 @@
                         им по време на курса на обучение е необходимо студентът да спазва сроковете и правилника на университета, както и да се развива в областта и да участва ежегодно в различни международни форуми.
                     </p>
                 </div>
-                <div class="col-md-5 second-paragraph" id="change">
+                <div class="col-md-6 second-paragraph" id="change">
                     <h2 class="bachelor-header">Условия и минали победители</h2><br>
                     <button class="learn-more">Правила</button>
                     <button class="learn-more">Жури</button>

@@ -3,14 +3,14 @@
     {{ trans('titles.program') }}
     @endsection
 @section('content')
-    <div class="container-fluid">
+    <div class="container">
         <div class="row">
             <div class="col-sm-6 col-sm-1 SideDate">
                 <p>27.09-02.10</p>
             </div>
         </div>
     </div>
-    <div  class="container-fluid">
+    <div  class="container">
         <div class="row">
             <div class="col-sm-6 col-sm-1">
                 <p id="SuzIstoria">Създаваме история</p>
@@ -18,7 +18,7 @@
             </div>
         </div>
     </div>
-    <div class="container-fluid" id="top">
+    <div class="container" id="top">
         <div class="row">
             <div class="col-md-1 programData" id="change">
                 <p class="prgdata">Дата</p>
@@ -35,7 +35,7 @@
             </div>
         </div>
   </div>
-  <div class="container-fluid">
+  <div class="container">
    <div class="row">
        <div class="col-md-9 programa" id="change">
            <div id="27"><p class="transform">27</p></div>
@@ -195,7 +195,7 @@
          </div>
       </div>
  </div>
-    <div class="container-fluid">
+    <div class="container">
         <div class="row">
             <div class="col-md-9 programa" id="change">
                 <div id="28"><p class="transform">28</p></div>
@@ -236,7 +236,7 @@
              </div>
         </div>
     </div>
-    <div class="container-fluid">
+    <div class="container">
         <div class="row">
             <div class="col-md-9 programa" id="change">
                 <div id="29"><p class="transform">29</p></div>
@@ -277,7 +277,7 @@
             </div>
         </div>
     </div>
-    <div class="container-fluid">
+    <div class="container">
         <div class="row">
             <div class="col-md-9 programa" id="change">
                 <div id="30"><p class="transform">30</p></div>
@@ -318,7 +318,7 @@
             </div>
         </div>
     </div>
-    <div class="container-fluid">
+    <div class="container">
         <div class="row">
             <div class="col-md-9 programa" id="change">
                 <div id="01"><p class="transform">01</p></div>
@@ -359,7 +359,7 @@
             </div>
         </div>
     </div>
-    <div class="container-fluid">
+    <div class="container">
         <div class="row">
             <div class="col-md-9 programa" id="change">
                 <div id="02"><p class="transform">02</p></div>
@@ -409,7 +409,7 @@
 
 
 
-    <div class="container-fluid">
+    <div class="container">
         <div class="row">
             <div class="col-md-5 programadetails" id="change">
                 <h2>Querevat Voluptatem</h2>
@@ -442,7 +442,7 @@
                 <a href="#top" class="back-to-top"><span class="ptagleftdetailss"></span><span class="ptagleftdetailss">Обратно към всички</span></a>
             </div>
             <section>
-                    <div class=" col-md-5 programa" id="change">
+                    <div class=" col-md-6 programa" id="change">
                         <header>
                             <h2 class="programadet">Други изложби</h2>
                         </header>
