@@ -78,32 +78,62 @@
                         <div class="form-group">
                             <div class="col-md-6 contentContactForm">
                                 <input type="text" class="form-control" id="name" name="name" placeholder="{{ trans('common.name') }}*" value="{{ Request::old('name') }}">
+                                @if ($errors->has('name'))
+                                    <span class="help-block">
+                                        <strong>{{ $errors->first('name') }}</strong>
+                                    </span>
+                                @endif
                             </div>
                         </div>
                         <div class="form-group">
                             <div class="col-md-6 contentContactForm">
                                 <input type="text" class="form-control" id="country" name="country" placeholder="{{ trans('common.country') }}*" value="{{ Request::old('country') }}">
+                                @if ($errors->has('country'))
+                                    <span class="help-block">
+                                        <strong>{{ $errors->first('country') }}</strong>
+                                    </span>
+                                @endif
                             </div>
                         </div>
                         <div class="form-group">
                             <div class="col-md-6 contentContactForm">
                                 <input type="text" class="form-control" id="email" name="email" placeholder="E-mail*" value="{{ Request::old('email') }}">
+                                @if ($errors->has('email'))
+                                    <span class="help-block">
+                                        <strong>{{ $errors->first('email') }}</strong>
+                                    </span>
+                                @endif
                             </div>
                         </div>
                         <div class="form-group">
                             <div class="col-md-6 contentContactForm">
                                 <input type="tel" class="form-control" id="phone-number" name="phoneNumber" placeholder="{{ trans('common.phone') }}*" value="{{ Request::old('phoneNumber') }}">
+                                @if ($errors->has('phoneNumber'))
+                                    <span class="help-block">
+                                        <strong>{{ $errors->first('phoneNumber') }}</strong>
+                                    </span>
+                                @endif
                             </div>
                         </div>
                         <h3 class="appl-form-head">{{ trans('form.info_art_p') }}</h3><br>
                         <div class="form-group">
                             <div class="col-md-6 contentContactForm">
                                 <input type="text" class="form-control" id="title" name="title" placeholder="{{ trans('form.org_name') }}*" value="{{ Request::old('title') }}">
+                                @if ($errors->has('title'))
+                                    <span class="help-block">
+                                        <strong>{{ $errors->first('title') }}</strong>
+                                    </span>
+                                @endif
                             </div>
                         </div>
                         <div class="form-group">
                             <div class="col-md-6 contentContactForm">
                                 <input type="text" class="form-control" id="en-title" name="englishTitle" placeholder="{{ trans('form.english_title') }}*" value="{{ Request::old('englishTitle') }}">
+                                @if ($errors->has('englishTitle'))
+                                    <span class="help-block">
+                                        <strong>{{ $errors->first('englishTitle') }}</strong>
+                                    </span>
+                                @endif
                             </div>
                         </div>
                         <h3 class="sub-title-technique">{{ trans('form.techniques') }}*</h3>
@@ -116,36 +146,63 @@
                                     <li class="app-form-technique"><input type="checkbox" name="technique[]" class="rad" id="button-{{ $technique->id }}" value="{{$technique->id}}" /><label for="button-{{ $technique->id }}">{{$technique->name}}</label></li>
 
                                 @endforeach
-
                             </ul>
+                            @if ($errors->has('technique'))
+                                <span class="help-block">
+                                    <strong>{{ $errors->first('technique') }}</strong>
+                                </span>
+                            @endif
                         </div>
                         <div class="form-group">
                             <div class="col-md-6 contentContactForm">
                                 <input type="text" class="form-control" id="dimensions" name="dimensions" placeholder="{{ trans('form.dimensions') }}*" value="{{ Request::old('dimensions') }}">
+                                @if ($errors->has('dimensions'))
+                                    <span class="help-block">
+                                        <strong>{{ $errors->first('dimensions') }}</strong>
+                                    </span>
+                                @endif
                             </div>
                         </div>
                         <div class="form-group">
                             <div class="col-md-6 contentContactForm">
                                 <textarea class="form-control" rows="3" id="installation-guide" name="installationGuide" placeholder="{{ trans('form.install_guide') }}*">{{ Request::old('installationGuide') }}</textarea>
+                                @if ($errors->has('installationGuide'))
+                                    <span class="help-block">
+                                        <strong>{{ $errors->first('installationGuide') }}</strong>
+                                    </span>
+                                @endif
                             </div>
                         </div>
                         <div class="form-group">
                             <div class="col-md-6 contentContactForm">
                                 <input type="text" class="form-control" id="year" name="year" placeholder="{{ trans('form.year_realization') }}*" value="{{ Request::old('year') }}">
+                                @if ($errors->has('year'))
+                                    <span class="help-block">
+                                        <strong>{{ $errors->first('year') }}</strong>
+                                    </span>
+                                @endif
                             </div>
                         </div>
                         <div class="form-group">
                             <div class="col-md-6 contentContactForm">
                                 <input type="text" class="form-control" id="synopsis" name="synopsis" placeholder="{{ trans('form.sinopsis') }}*" value="{{ Request::old('synopsis') }}">
+                                @if ($errors->has('synopsis'))
+                                    <span class="help-block">
+                                        <strong>{{ $errors->first('synopsis') }}</strong>
+                                    </span>
+                                @endif
                             </div>
                         </div>
-
                     <div>
                         <input type="file" name="file-7" id="file-7" class="inputfile inputfile-6"/>
                         <label for="file-7"><span>{{ trans('form.pic1') }}*</span><strong class="choose-span">{{ trans('common.browse') }}</strong></label>
                         <br>
                         <span class="max-Mb">{{ trans('common.max') }} 4MB</span>
-
+                        @if ($errors->has('file-7'))
+                            <span class="help-block">
+                                <strong>{{ $errors->first('file-7') }}</strong>
+                            </span>
+                        @endif
                      </div>
                     <br>
                     <div>
@@ -153,7 +210,11 @@
                         <label for="file-8"><span>{{ trans('form.pic2') }}*</span><strong class="choose-span">{{ trans('common.browse') }}</strong></label>
                         <br>
                         <span class="max-Mb">{{ trans('common.max') }} 4MB</span>
-        
+                        @if ($errors->has('file-8'))
+                            <span class="help-block">
+                                <strong>{{ $errors->first('file-8') }}</strong>
+                            </span>
+                        @endif
                     </div>
                     <div class="col-md-8 form-group content-app">
                         <p>

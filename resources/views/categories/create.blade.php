@@ -12,12 +12,22 @@
 	      <label for="title" class="col-lg-2 control-label">Име на категория</label>
 	      <div class="col-lg-10">
 	        <input type="text" class="form-control" id="title" name="title" autofocus value="{{ old('title') }}">
+	        @if ($errors->has('title'))
+			    <span class="help-block">
+			        <strong>{{ $errors->first('title') }}</strong>
+			    </span>
+			@endif
 	      </div>
 	    </div>
 	    <div class="form-group">
 	      <label for="title-en" class="col-lg-2 control-label">Име на категория на английски</label>
 	      <div class="col-lg-10">
 	        <input type="text" class="form-control" id="title-en" name="title_en" value="{{ old('title_en') }}">
+	        @if ($errors->has('title_en'))
+			    <span class="help-block">
+			        <strong>{{ $errors->first('title_en') }}</strong>
+			    </span>
+			@endif
 	      </div>
 	    </div>
 	    <div class="form-group">

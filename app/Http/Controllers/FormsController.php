@@ -84,7 +84,7 @@ class FormsController extends Controller
             'englishTitle' => 'required|max:100',
             'dimensions' => 'required|max:100',
             'installationGuide' => 'required|max:300',
-            'year' => 'required|max:4',
+            'year' => 'required|numeric|min:1900|max:2017',
             'synopsis' => 'required|max:100',
             'file-7' => 'required|image|max:4096',
             'file-8' => 'required|image|max:4096',

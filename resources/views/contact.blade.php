@@ -50,16 +50,31 @@
                             <div class="form-group contentContactForm">
                                 <div class="col-md-5">
                                     <input type="text" class="form-control" id="name" name="name" placeholder="{{ trans('contacts.name') }}*" value="{{ Request::old('name') }}">
+                                    @if ($errors->has('name'))
+                                        <span class="help-block">
+                                            <strong>{{ $errors->first('name') }}</strong>
+                                        </span>
+                                    @endif
                                 </div>
                             </div>
                             <div class="form-group contentContactForm">
                                 <div class="col-md-5">
                                     <input type="text" class="form-control" id="email" name="email" placeholder="E-mail*" value="{{ Request::old('email') }}">
+                                    @if ($errors->has('email'))
+                                        <span class="help-block">
+                                            <strong>{{ $errors->first('email') }}</strong>
+                                        </span>
+                                    @endif
                                 </div>
                             </div>
                             <div class="form-group contentContactForm">
                                 <div class="col-md-5">
                                     <input type="text" class="form-control" id="title" name="title" placeholder="{{ trans('contacts.title') }}*" value="{{ Request::old('title') }}">
+                                    @if ($errors->has('title'))
+                                        <span class="help-block">
+                                            <strong>{{ $errors->first('title') }}</strong>
+                                        </span>
+                                    @endif
                                 </div>
                             </div>
                             <div class="form-group contentContactForm">
@@ -67,6 +82,11 @@
                                     <textarea class="form-control" id="message" name="message" cols="25" rows="5" placeholder="Съобщение*">
                                         {{ Request::old('message') }}
                                     </textarea>
+                                    @if ($errors->has('message'))
+                                        <span class="help-block">
+                                            <strong>{{ $errors->first('message') }}</strong>
+                                        </span>
+                                    @endif
                                 </div>
                             </div>
                             <div class="form-group">

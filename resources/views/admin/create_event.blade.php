@@ -16,30 +16,55 @@
                 <label for="title" class="col-lg-2 control-label">Заглавие</label>
                 <div class="col-lg-6">
                     <input type="text" class="form-control" id="title" name="title" placeholder="Заглавие" value="{{ Request::old('title') }}" autofocus>
+                    @if ($errors->has('title'))
+                        <span class="help-block">
+                            <strong>{{ $errors->first('title') }}</strong>
+                        </span>
+                    @endif
                 </div>
             </div>
             <div class="form-group">
                 <label for="title_en" class="col-lg-2 control-label">Заглавие на английски</label>
                 <div class="col-lg-6">
                     <input type="text" class="form-control" id="title_en" name="title_en" placeholder="English title" value="{{ old('title_en') }}">
+                    @if ($errors->has('title_en'))
+                        <span class="help-block">
+                            <strong>{{ $errors->first('title_en') }}</strong>
+                        </span>
+                    @endif
                 </div>
             </div>
             <div class="form-group">
                 <label for="place" class="col-lg-2 control-label">Място</label>
                 <div class="col-lg-6">
-                    <input type="text" class="form-control" id="place" name="place" placeholder="Място" value="{{ Request::old('place') }}" autofocus>
+                    <input type="text" class="form-control" id="place" name="place" placeholder="Място" value="{{ Request::old('place') }}">
+                    @if ($errors->has('place'))
+                        <span class="help-block">
+                            <strong>{{ $errors->first('place') }}</strong>
+                        </span>
+                    @endif
                 </div>
             </div>
             <div class="form-group">
                 <label for="place" class="col-lg-2 control-label">Артист</label>
                 <div class="col-lg-6">
-                    <input type="text" class="form-control" id="artist" name="artist" placeholder="Артист" value="{{ Request::old('artist') }}" autofocus>
+                    <input type="text" class="form-control" id="artist" name="artist" placeholder="Артист" value="{{ Request::old('artist') }}">
+                    @if ($errors->has('artist'))
+                        <span class="help-block">
+                            <strong>{{ $errors->first('artist') }}</strong>
+                        </span>
+                    @endif
                 </div>
             </div>
             <div class="form-group">
                 <label for="place" class="col-lg-2 control-label">Вход</label>
                 <div class="col-lg-6">
-                    <input type="text" class="form-control" id="entrance" name="entrance" placeholder="Вход" value="{{ Request::old('entrance') }}" autofocus>
+                    <input type="text" class="form-control" id="entrance" name="entrance" placeholder="Вход" value="{{ Request::old('entrance') }}">
+                    @if ($errors->has('entrance'))
+                        <span class="help-block">
+                            <strong>{{ $errors->first('entrance') }}</strong>
+                        </span>
+                    @endif
                 </div>
             </div>
             <div class="form-group">
@@ -51,6 +76,11 @@
                             <span class="glyphicon glyphicon-calendar"></span>
                         </span>
                     </div>
+                    @if ($errors->has('start'))
+                        <span class="help-block">
+                            <strong>{{ $errors->first('start') }}</strong>
+                        </span>
+                    @endif
                 </div>
             </div>
             <div class="form-group">
@@ -62,33 +92,58 @@
                             <span class="glyphicon glyphicon-calendar"></span>
                         </span>
                     </div>
+                    @if ($errors->has('end'))
+                        <span class="help-block">
+                            <strong>{{ $errors->first('end') }}</strong>
+                        </span>
+                    @endif
                 </div>
             </div>
             <div class="form-group">
-              <label for="select" class="col-lg-2 control-label">Категория</label>
-              <div class="col-lg-6">
+                <label for="select" class="col-lg-2 control-label">Категория</label>
+                <div class="col-lg-6">
                 <select class="form-control" id="select" name="category">
                     @foreach ($categories as $c)
                         <option value="{{ $c->id }}">{{ $c->title }}</option>
                     @endforeach
                 </select>
-              </div>
+                @if ($errors->has('category'))
+                    <span class="help-block">
+                        <strong>{{ $errors->first('category') }}</strong>
+                    </span>
+                @endif
+                </div>
             </div>
             <div class="form-group">
                 <label for="textArea" class="col-lg-2 control-label">Описание</label>
                 <div class="col-lg-6">
                     <textarea class="form-control" name="description" id="textArea">{{ Request::old('description') }}</textarea>
+                    @if ($errors->has('description'))
+                        <span class="help-block">
+                            <strong>{{ $errors->first('description') }}</strong>
+                        </span>
+                    @endif
                 </div>
             </div>
             <div class="form-group">
                 <label for="textArea_en" class="col-lg-2 control-label">Описание на английски</label>
                 <div class="col-lg-6">
                     <textarea class="form-control" name="description_en" id="textArea_en">{{ old('description_en') }}</textarea>
+                    @if ($errors->has('description_en'))
+                        <span class="help-block">
+                            <strong>{{ $errors->first('description_en') }}</strong>
+                        </span>
+                    @endif
                 </div>
             </div>
             <div class="form-group">
                 <div class="col-lg-10 col-lg-offset-2">
                     <input id="pic" type="file" name="pic">
+                    @if ($errors->has('pic'))
+                        <span class="help-block">
+                            <strong>{{ $errors->first('pic') }}</strong>
+                        </span>
+                    @endif
                 </div>
             </div>
             <div class="form-group">

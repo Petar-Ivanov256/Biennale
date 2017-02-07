@@ -16,35 +16,67 @@
 	      <label for="name" class="col-lg-2 control-label">Име</label>
 	      <div class="col-lg-6">
 	        <input type="text" class="form-control" id="name" name="name" value="{{ Request::old('name') }}" autofocus>
+	        @if ($errors->has('name'))
+                <span class="help-block">
+                    <strong>{{ $errors->first('name') }}</strong>
+                </span>
+            @endif
 	      </div>
 	    </div>
 	    <div class="form-group">
 	      <label for="country" class="col-lg-2 control-label">Държава</label>
 	      <div class="col-lg-6">
 	        <input type="text" class="form-control" id="country" name="country" value="{{ Request::old('country') }}" >
+	        @if ($errors->has('country'))
+                <span class="help-block">
+                    <strong>{{ $errors->first('country') }}</strong>
+                </span>
+            @endif
 	      </div>
 	    </div>
 	    <div class="form-group">
 	      <label for="email" class="col-lg-2 control-label">E-mail</label>
 	      <div class="col-lg-6">
 	        <input type="text" class="form-control" id="email" name="email" value="{{ Request::old('email') }}" >
+	        @if ($errors->has('email'))
+                <span class="help-block">
+                    <strong>{{ $errors->first('email') }}</strong>
+                </span>
+            @endif
 	      </div>
 	    </div>
 	    <div class="form-group">
       		<label for="info" class="col-lg-2 control-label">Информация</label>
       		<div class="col-lg-6">
         		<textarea class="form-control" rows="3" id="info" name="info">{{ Request::old('info') }}</textarea>
+        		@if ($errors->has('info'))
+	                <span class="help-block">
+	                    <strong>{{ $errors->first('info') }}</strong>
+	                </span>
+	            @endif
       		</div>
     	</div>
     	<div class="form-group">
       		<label for="info_en" class="col-lg-2 control-label">Информация на английски</label>
       		<div class="col-lg-6">
         		<textarea class="form-control" rows="3" id="info_en" name="info_en">{{ Request::old('info_en') }}</textarea>
+        		@if ($errors->has('info_en'))
+	                <span class="help-block">
+	                    <strong>{{ $errors->first('info_en') }}</strong>
+	                </span>
+	            @endif
       		</div>
     	</div>
     	<div class="form-group">
 	    	<label for="photo" class="col-lg-2 control-label">Снимка</label>
-	    	<input type="file" name="photo" id="photo">
+	    	<div class="col-lg-6">
+	    		<input type="file" name="photo" id="photo">
+		    	@if ($errors->has('photo'))
+	                <span class="help-block">
+	                    <strong>{{ $errors->first('photo') }}</strong>
+	                </span>
+	            @endif
+	    	</div>
 	    </div>
 	    <div class="form-group">
 	    	<label for="work" class="col-lg-2 control-label">Творби</label>
@@ -54,7 +86,12 @@
 		        		<option value="{{ $work->id }}">{{ $work->englishTitle }}</option>
 		        	@endforeach
 		        </select>
-		      </div>
+		        @if ($errors->has('works'))
+	                <span class="help-block">
+	                    <strong>{{ $errors->first('works') }}</strong>
+	                </span>
+	            @endif
+		    </div>
 	    </div>
 	    <div class="form-group">
 	      <div class="col-lg-10 col-lg-offset-2">
