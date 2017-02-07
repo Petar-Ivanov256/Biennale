@@ -55,10 +55,11 @@ Route::group(
         Route::get('/testauth', 'AuthController@test');
 
         Route::get('/logout', 'AuthController@logout');
+        Route::post('/contact/send-mail','StaticPagesController@send_contact_mail');
+        Route::post('/apply', 'FormsController@sendForm');
 });
 
-Route::post('/contact/send-mail','StaticPagesController@send_contact_mail');
-Route::post('/apply', 'FormsController@sendForm');
+
 Route::post('/signin', 'AuthController@loginUser');
 Route::post('/register', 'AuthController@registerUser');
 

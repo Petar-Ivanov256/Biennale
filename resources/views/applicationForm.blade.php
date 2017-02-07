@@ -73,7 +73,7 @@
                 <div class="col-md-6 application-form-part-one" id="change">
                     <h1 class="title-reglament">{{ trans('form.app_form') }}</h1>
                     <h3 class="appl-form-head">{{ trans('form.personal_info') }}</h3><br>
-                <form method="POST" action="{{ URL::to('/apply') }}" class="form-horizontal" enctype="multipart/form-data">
+                <form method="POST" action="{{ URL::to(App::getLocale() . '/apply') }}" class="form-horizontal" enctype="multipart/form-data">
                     {{ csrf_field() }}
                         <div class="form-group">
                             <div class="col-md-6 contentContactForm">

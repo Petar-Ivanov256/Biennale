@@ -45,7 +45,7 @@
                     </div>
                     <div class="col-md-7 moveleft-cotact" id="change">
                         <h2 class="Title1" >{{ trans('contacts.form') }}</h2>
-                        <form method="POST" action="{{ URL::to('/contact/send-mail') }}" class="form-horizontal">
+                        <form method="POST" action="{{ URL::to(App::getLocale() . '/contact/send-mail') }}" class="form-horizontal">
                             {{ csrf_field() }}
                             <div class="form-group contentContactForm">
                                 <div class="col-md-5">
