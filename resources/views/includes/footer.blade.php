@@ -22,7 +22,7 @@
                        </li>
                    </ul>
                </div>
-               <div class="col-md-2">
+               <div class="col-md-3">
                    <ul>
                        <li>
                            <a href={{ URL::to('/bachelor')}}>{{ trans('footer.bachelor') }}</a>
