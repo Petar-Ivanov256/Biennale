@@ -845,6 +845,13 @@ body{
     text-transform: uppercase;
 
 }
+.gen_partner{
+    font-size: 15px;
+    font-family: "DecimaMonoX";
+    color: rgb(240, 77, 63);
+    font-weight: bold;
+    text-transform: uppercase;
+}
 .hr1{
     left: 150px;
 }
