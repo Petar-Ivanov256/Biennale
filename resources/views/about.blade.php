@@ -23,6 +23,9 @@
                     <p class="textAbout text-justify">
                         {{ trans('about.vision_content') }}
                     </p>
+                    <p  class="textAbout text-justify">
+                        {{ trans('about.vision_content_second') }}
+                    </p>
                     <h2 class="name1">{{ trans('about.team') }}</h2>
                     <div>
                         <button type="button" class="aboutButtons btn-lg" data-toggle="modal" data-target="#myModal">
