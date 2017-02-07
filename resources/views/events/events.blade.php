@@ -4,14 +4,14 @@
 @endsection
 
 @section('content')
-    <div class="container-fluid">
+    <div class="container">
         <div class="row">
             <div class="col-xs-12 col-sm-6 col-md-3 SideDate">
                 <p>27.09-02.10</p>
             </div>
         </div>
     </div>
-    <div  class="container-fluid">
+    <div  class="container">
         <div class="row">
             <div class="col-xs-12 col-sm-6 col-sm-1">
                 <p id="SuzIstoria">Създаваме история</p>
@@ -19,7 +19,7 @@
             </div>
         </div>
     </div>
-    <div class="container-fluid" id="top">
+    <div class="container" id="top">
         <div class="row">
         <div class="col-md-9 event-left" id="event-back">
             <div class="col-md-2 prgdata">
@@ -87,7 +87,7 @@
 
 
 
-    <div class="container-fluid">
+    <div class="container">
         <div class="row">
          <div class="col-md-5 programadetails" id="change">
                 <h2>Творческа работилница</h2>
@@ -118,7 +118,7 @@
                 <a href="#top" class="back-to-top"><span class="ptagleftdetailss"></span><span class="ptagleftdetailss">Обратно към всички</span></a>
             </div>
             <section>
-                <div class=" col-md-5 programa" id="change">
+                <div class=" col-md-6 programa" id="change">
                     <header>
                         <h2 class="programadet">Други изложби</h2>
                     </header>

@@ -1,6 +1,6 @@
 <hr>
 <footer id="BladeFooter">
-   <div class="container-fluid">
+   <div class="container">
        <div class="row">
            <div class="col-md-10 footer-move-left" id="return-footer">
                <div class="col-md-2">
