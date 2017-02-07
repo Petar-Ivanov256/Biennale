@@ -105,7 +105,7 @@
                     <span class="twoprogdet" id="details-entrance">Безплатен</span><br>
                 </div>
                 <div>
-                    <p class="progdettxt">
+                    <p class="progdettxt text-justify">
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                         Donec commodo varius nunc id ullamcorper. Aliquam eget mi commodo, pharetra tellus non, elementum magna.
                         Morbi aliquet ipsum sed urna egestas eleifend. Vestibulum ante ipsum primis in faucibus orci luctus et
