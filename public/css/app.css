@@ -991,6 +991,7 @@ body{
     font-family: "359Sans";
     color: rgb(255, 255, 255);
     font-style: italic;
+    padding-right: 5px;
 
 }
 #right-alignhour{
@@ -999,17 +1000,20 @@ body{
     text-transform: uppercase;
     font-weight: bold;
     text-align: right;
+    padding-right: 5px;
 }
 #left-aligncity{
     font-family: "359Sans";
     color: rgb(255, 255, 255);
     font-style: italic;
+    padding-left: 5px;
 }
 #left-aligndate{
     font-family: "DecimaMonoX";
     color: rgb(255, 255, 255);
     font-weight: bold;
     text-transform: uppercase;
+    padding-left: 5px;
 }
 .textunderimg{
     /*left: 200px;*/
