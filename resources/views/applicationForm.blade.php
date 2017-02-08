@@ -115,6 +115,12 @@
                                 @endif
                             </div>
                         </div>
+                    <div class="contentContactForm_S">
+                        <label for="male" class="radio-inline">
+                            <input type="radio" name="optradio">{{ trans('form.s_male') }}</label>
+                        <label for="female" class="radio-inline">
+                            <input type="radio" name="optradio">{{ trans('form.s_female') }}</label>
+                    </div>
                         <h3 class="appl-form-head">{{ trans('form.info_art_p') }}</h3><br>
                         <div class="form-group">
                             <div class="col-md-6 contentContactForm">

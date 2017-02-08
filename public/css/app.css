@@ -669,6 +669,7 @@ body{
     font-style: italic;
 }
 
+
 #contentInfo{
     text-align: left;
     position: absolute;
@@ -1258,6 +1259,12 @@ body{
 .application-form-part-one{
     left: 165px;
 }
+.help-block{
+    color: rgb(240, 77, 63);
+    font-family: "359Sans";
+    font-style: italic;
+    font-size: 13px;
+}
 .title-reglament{
     font-size: 33px;
     font-family: "DecimaMonoX";
@@ -1274,6 +1281,12 @@ body{
     font-style: italic;
     position: relative;
     z-index: 161;
+}
+
+.contentContactForm_S{
+    font-size: 15px;
+    font-family: "359Sans";
+    color: rgba(109, 110, 113, 0.94);
 }
 
 .text-p {

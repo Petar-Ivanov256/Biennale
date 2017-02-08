@@ -19,6 +19,8 @@ return [
     'personal_info' => 'Personal information',
     'info_art_p' => 'About your art piece',
     'org_name' => 'Original Title',
+    's_male'=>'male',
+    's_female'=>'female',
     'english_title' => 'Title in English',
     'techniques' => 'Techniques',
     'dimensions' => 'Dimensions (h/w/l)',
