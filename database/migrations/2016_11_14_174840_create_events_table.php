@@ -24,8 +24,10 @@ class CreateEventsTable extends Migration {
             $table->string("title");
             $table->string("title_en")->nullable();
             $table->string("description");
-            $table->string("description_en")->nullable();
             $table->binary("photo")->nullable();
+            $table->string("description_en")->nullable();
+            $table->string('latitude')->nullable();
+            $table->string('longitude')->nullable();
             $table->timestamps();
         });
 

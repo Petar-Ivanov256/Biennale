@@ -137,8 +137,9 @@
                 </div>
             </div>
             <div class="form-group">
-                <div class="col-lg-10 col-lg-offset-2">
-                    <input id="pic" type="file" name="pic">
+                <label for="pic" class="col-lg-2 control-label">Снимка</label>
+                <div class="col-lg-6">
+                    <input id="pic" type="file" name="pic" class="form-control">
                     @if ($errors->has('pic'))
                         <span class="help-block">
                             <strong>{{ $errors->first('pic') }}</strong>
@@ -146,6 +147,33 @@
                     @endif
                 </div>
             </div>
+            <div class="form-group">
+                <div id="map" class="col-lg-6 col-lg-offset-2" style="min-height: 500px"></div>
+            </div>
+
+            <div class="form-group">
+                <label for="lat" class="col-lg-2 control-label">Географска ширина</label>
+                <div class="col-lg-6">
+                    <input type="text" class="form-control" id="lat" name="lat" value="{{ Request::old('lat') }}">
+                    @if ($errors->has('lat'))
+                        <span class="help-block">
+                            <strong>{{ $errors->first('lat') }}</strong>
+                        </span>
+                    @endif
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="lng" class="col-lg-2 control-label">Географска дължина</label>
+                <div class="col-lg-6">
+                    <input type="text" class="form-control" id="lng" name="lng" value="{{ Request::old('lng') }}">
+                    @if ($errors->has('lng'))
+                        <span class="help-block">
+                            <strong>{{ $errors->first('lng') }}</strong>
+                        </span>
+                    @endif
+                </div>
+            </div>
+
             <div class="form-group">
                 <div class="col-lg-10 col-lg-offset-2">
                     <button type="reset" class="btn btn-default">Cancel</button>
@@ -168,4 +196,32 @@
             $('#datetimepicker2').datetimepicker({ locale: 'bg' });
         });
     </script>
+    <script>
+        let map;
+        function initMap() {
+            let coordinatesSofia = {lat: 42.695, lng: 23.322};
+            map = new google.maps.Map(document.getElementById('map'), {
+              center: coordinatesSofia,
+              zoom: 12
+            });
+
+            let marker = new google.maps.Marker({
+                position: coordinatesSofia,
+                map: null // initially is null so that the marker isn't initially visible
+            });
+
+            google.maps.event.addListener(map, "click", function(event) {
+                let lat = event.latLng.lat();
+                let lng = event.latLng.lng();
+                
+                marker.setPosition({ lat: lat, lng: lng });
+                marker.setMap(map);
+
+                $('#lat').val(lat);
+                $('#lng').val(lng);
+            });
+        }
+    </script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBccFrd4wr6hE1qHkf1JbdYfLuRHSibPQk&callback=initMap"
+    async defer></script>
 @stop

@@ -53,6 +53,8 @@ class AdminEventsController extends Controller
         $event->photo = $img;
         $event->title_en = $request->input('title_en');
         $event->description_en = $request->input('description_en');
+        $event->latitude = $request->input('lat');
+        $event->longitude = $request->input('lng');
         
         $event->save();
 
@@ -74,6 +76,7 @@ class AdminEventsController extends Controller
 
     public function edit_event_save(Request $request)
     {
+        $this->validate($request, $this->validateEvent());
         $id = $request->input('id');
 
         $event = Events::find($id);
@@ -96,6 +99,8 @@ class AdminEventsController extends Controller
         $event->description = $request->input('description');
         $event->title_en = $request->input('title_en');
         $event->description_en = $request->input('description_en');
+        $event->latitude = $request->input('lat');
+        $event->longitude = $request->input('lng');
         $chosenCategory = Category::find($request->input('category'));
         $event->category()->associate($chosenCategory);
         $event->save();
@@ -122,7 +127,9 @@ class AdminEventsController extends Controller
             'description' => 'required',
             //'pic' => 'required',
             'title_en' => 'required',
-            'description_en' => 'required'
+            'description_en' => 'required',
+            'lat' => 'required',
+            'lng' => 'required'
         ];
     }
 }
