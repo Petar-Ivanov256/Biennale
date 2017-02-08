@@ -38,6 +38,7 @@
                 </div>
                 <div id="3" class="collapse">
                     <ul class="months">
+                        <li><a href="#00">Декември (2016)</a></li>
                         <li><a href="#01">Януари</a></li>
                         <li><a href="#02">Февруари</a></li>
                         <li><a href="#03">Март</a></li>

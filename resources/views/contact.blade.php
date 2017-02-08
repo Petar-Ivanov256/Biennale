@@ -24,23 +24,13 @@
             <div class="row">
                   <div class="col-md-5 contact" id="change">
                         <h1 class="Title1">{{ trans('titles.contacts') }}</h1><br>
-                        <p id="contactText">
-                            {{ trans('contacts.biennale') }}<br>
-                            {{ trans('contacts.city') }}<br>
-                            {{ trans('contacts.street') }}<br>
-                        </p>
                         <p>
                             <a href="mailto:glassbiennalebg@gmail.com" id="emailCordinator">glassbiennalebg@gmail.com</a>
                         </p>
                         <div class="divspancontact">
+                            <span id="cordinator">{{ trans('contacts.coordinator') }}</span>
                             <span id="nameForContact">{{ trans('contacts.alex') }}</span>
-                            <span class="contactrightspan"><a href="mailto:alex.kotseva@gmail.com" id="emailCordinator">alex.kotseva@gmail.com</a></span>
-                            <span id="cordinator">{{ trans('contacts.coordinator') }}</span>
-                            <span class="contactrightspan"><a href="tel:+359887288667" class="telefonCordinator">+359 887 288 667</a></span>
                             <span id="nameForContact">{{ trans('contacts.sofia') }}</span>
-                            <span class="contactrightspan"><a href="mailto:sofia.hadzopoulu@gmail.com" id="emailCordinator">sofia.hadzopoulu@gmail.com</a></span>
-                            <span id="cordinator">{{ trans('contacts.coordinator') }}</span>
-                            <span class="contactrightspan"><a href="tel:+359886923081" class="telefonCordinator">+359 886 923 081</a></span>
                         </div>
                     </div>
                     <div class="col-md-7 moveleft-cotact" id="change">

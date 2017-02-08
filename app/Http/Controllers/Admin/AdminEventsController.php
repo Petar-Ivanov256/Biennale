@@ -36,8 +36,11 @@ class AdminEventsController extends Controller
     {
         $this->validate($request, $this->validateEvent());
 
+        $img = null;
         try {
-            $img = Image::make($request -> file('pic')->getRealPath())->encode('data-url');
+            if ($request->hasFile('pic')) {
+                $img = Image::make($request -> file('pic')->getRealPath())->encode('data-url');
+            }
         } catch (NotReadableException $e) {
             return view('admin.admin_exception', ['exc'=> $e]);
         }

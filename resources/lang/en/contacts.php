@@ -1,11 +1,8 @@
 <?php
 
 return [
-    'biennale' => 'Internation Glass Biennale',
-    'city' => 'Sofia 1000, Bulgaria',
-    'street' => 'Example str. №12',
     'alex' => 'Alexandra Veleva',
-    'coordinator' => 'Coordinator',
+    'coordinator' => 'Chief coordinators',
     'sofia' => 'Sofia-Chara Chatzopoulou',
     'form' => 'Contact form',
     'name' => 'Full name',
