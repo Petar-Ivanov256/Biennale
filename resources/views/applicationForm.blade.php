@@ -243,5 +243,4 @@
             </div>
         </div>
 
-    <!-- TODO Validations for application Form - last three items --->
 @endsection
