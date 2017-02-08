@@ -158,7 +158,7 @@
                             </ul>
                             @if ($errors->has('technique'))
                                 <span class="help-block">
-                                    <strong>{{ $errors->first('technique') }}</strong>
+                                    <strong class="line-in">{{ $errors->first('technique') }}</strong>
                                 </span>
                             @endif
                         </div>

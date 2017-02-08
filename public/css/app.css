@@ -1259,6 +1259,9 @@ body{
 .application-form-part-one{
     left: 165px;
 }
+.line-in{
+    padding-left: 16px;
+}
 .help-block{
     color: rgb(240, 77, 63);
     font-family: "359Sans";
