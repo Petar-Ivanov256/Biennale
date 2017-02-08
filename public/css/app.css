@@ -737,17 +737,17 @@ body{
     color: rgb(240, 77, 63);
     font-style: italic;
     text-align: left;
-    z-index: 43;
+
 }
 #emailCordinator {
     font-size: 16px;
     font-family: "359Sans";
     color: rgb(240, 77, 63);
     text-align: right;
-    z-index: 42;
+
 }
 
-#nameForContact{
+#nameForContact_A{
     font-size: 16px;
     font-family: "DecimaMonoX";
     color: rgb(121, 77, 159);
@@ -755,8 +755,19 @@ body{
     text-transform: uppercase;
     text-align: left;
     position: relative;
-    z-index: 39;
+
 }
+
+#nameForContact_S{
+     font-size: 16px;
+     font-family: "DecimaMonoX";
+     color: rgb(121, 77, 159);
+     font-weight: bold;
+     text-transform: uppercase;
+     text-align: left;
+     position: relative;
+
+ }
 .divspancontact span{
     float: left;
     width:50%;

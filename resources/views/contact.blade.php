@@ -28,9 +28,9 @@
                             <a href="mailto:glassbiennalebg@gmail.com" id="emailCordinator">glassbiennalebg@gmail.com</a>
                         </p>
                         <div class="divspancontact">
-                            <span id="cordinator">{{ trans('contacts.coordinator') }}</span>
-                            <span id="nameForContact">{{ trans('contacts.alex') }}</span>
-                            <span id="nameForContact">{{ trans('contacts.sofia') }}</span>
+                            <p id="cordinator">{{ trans('contacts.coordinator') }}</p>
+                            <p id="nameForContact_A">{{ trans('contacts.alex') }}</p>
+                            <p id="nameForContact_S">{{ trans('contacts.sofia') }}</p>
                         </div>
                     </div>
                     <div class="col-md-7 moveleft-cotact" id="change">
