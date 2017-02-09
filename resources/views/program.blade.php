@@ -3,21 +3,6 @@
     {{ trans('titles.program') }}
     @endsection
 @section('content')
-    <div class="container">
-        <div class="row">
-            <div class="col-sm-6 col-sm-1 SideDate">
-                <p>27.09-02.10</p>
-            </div>
-        </div>
-    </div>
-    <div  class="container">
-        <div class="row">
-            <div class="col-sm-6 col-sm-1">
-                <p id="SuzIstoria">Създаваме история</p>
-                <p id="purvoMezdunarodno">Първото международно<br>биенале за стъкло<br>в България</p>
-            </div>
-        </div>
-    </div>
     <div class="container" id="top">
         <div class="row">
             <div class="col-md-1 programData" id="change">
