@@ -588,17 +588,39 @@ body{
 
 }
 /*HomePageCSS*/
+.move-home-left{
+    left: 150px;
+}
+
+.text-input-p{
+    font-size: 15px;
+    font-family: "DecimaMonoX";
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    text-transform: uppercase;
+    line-height: 2.106;
+    text-align: center;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
 .biennalehome1 img{
     max-width: 100%;
     height: auto;
     position: relative;
-    left: 200px;
+
 }
 .biennalehome2 img{
     max-width: 100%;
     height: auto;
     position: relative;
-    left: 200px;
+
+}
+.text-under-img{
+    background-image: url('../img/homepageimg/green-strip.jpeg');
+
 }
 
 .carousel-inner img {
@@ -703,11 +725,10 @@ body{
     -moz-transform: matrix( 0,-14.5878554630068,14.5878554630068,0,0,0);
     -webkit-transform: matrix( 0,-14.5878554630068,14.5878554630068,0,0,0);
     -ms-transform: matrix( 0,-14.5878554630068,14.5878554630068,0,0,0);
-    position: absolute;
-    left:30px;
+     left:30px;
     width: 27px;
     margin-top: 25px;
-    z-index: 11;
+    position: relative;
 }
 #purvoMezdunarodno {
     font-size: 15px;

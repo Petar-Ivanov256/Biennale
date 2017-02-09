@@ -17,6 +17,7 @@
     </div>
     
     <div id="main">
+        @include('includes.leftSide')
         @yield('content')
     </div>
 
