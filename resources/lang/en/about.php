@@ -17,4 +17,7 @@ return [
     'jury' => 'Jury',
     'graph_design' => 'Graphic Design',
     'web_design' => 'Web Design',
+    'workshops' => 'Workshops',
+    'lecturers' => 'Lecturers',
+    'video' => 'Video'
 ];

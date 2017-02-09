@@ -16,4 +16,7 @@ return [
     'jury' => 'Жури',
     'graph_design' => 'Графичен дизайн',
     'web_design' => 'Уеб дизайн',
+    'workshops' => 'Творчески работилници',
+    'lecturers' => 'Лектори',
+    'video' => 'Видео'
 ];
