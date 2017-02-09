@@ -15,12 +15,12 @@ class CreateAuthorsTable extends Migration
             $table->string('country');
             $table->string('email');
             $table->string('phoneNumber')->nullable();
-            $table->string('info')->nullable();
+            $table->string('info', 2000)->nullable();
             $table->binary('photo')->nullable();
             $table->boolean('isVisible')->default(false);
             $table->timestamps();
 
-            $table->string('info_en')->nullable();
+            $table->string('info_en', 2000)->nullable();
         });
 
         DB::statement("ALTER TABLE `authors` CHANGE COLUMN `photo` `photo` MEDIUMBLOB NULL AFTER `info`");

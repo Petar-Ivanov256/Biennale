@@ -12,9 +12,9 @@
             <ul class="nav navbar-nav myNavbar" id="navBar" >
                 <li class="dropdown"><a  class="Bien" href="{{ URL::to('/')}}">{{ trans('header.biennale') }}</a>
                     <ul class="dropdown-menu" id="dropdown-content">
-                        <li>
+                        {{-- <li>
                             <a class="Program subMenu" href="{{ URL::to('/program')}}">{{ trans('header.program') }}</a>
-                        </li>
+                        </li> --}}
                         <li>
                             <a class="AttendencyForm subMenu" href="{{ URL::to('/apply-for-attendance')}}">{{ trans('header.form') }}</a>
                         </li>
@@ -44,9 +44,9 @@
                 <li>
                     <a class="mainMenuComponents" href="{{ URL::to('/partners')}}">{{ trans('header.partners') }}</a>
                 </li>
-                <li>
+                {{-- <li>
                     <a class="mainMenuComponents"  href="{{ URL::to('/archive')}}">{{ trans('header.archive') }}</a>
-                </li>
+                </li> --}}
                 <li>
                     <a class="mainMenuComponents"  href="{{ URL::to('/contact')}}">{{ trans('header.contacts') }}</a>
                 </li>

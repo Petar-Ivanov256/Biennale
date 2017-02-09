@@ -46,12 +46,23 @@
                 </div>
             </div>
             <div class="form-group">
-                <label for="place" class="col-lg-2 control-label">Артист</label>
+                <label for="participants" class="col-lg-2 control-label">Участници</label>
                 <div class="col-lg-6">
-                    <input type="text" class="form-control" id="artist" name="artist" placeholder="Артист" value="{{ Request::old('artist') }}">
-                    @if ($errors->has('artist'))
+                    <input type="text" class="form-control" id="participants" name="participants" placeholder="Участници" value="{{ Request::old('participants') }}">
+                    @if ($errors->has('participants'))
                         <span class="help-block">
-                            <strong>{{ $errors->first('artist') }}</strong>
+                            <strong>{{ $errors->first('participants') }}</strong>
+                        </span>
+                    @endif
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="participants_en" class="col-lg-2 control-label">Участници на английски</label>
+                <div class="col-lg-6">
+                    <input type="text" class="form-control" id="participants_en" name="participants_en" placeholder="Participants" value="{{ Request::old('participants_en') }}">
+                    @if ($errors->has('participants_en'))
+                        <span class="help-block">
+                            <strong>{{ $errors->first('participants_en') }}</strong>
                         </span>
                     @endif
                 </div>

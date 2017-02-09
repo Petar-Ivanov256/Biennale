@@ -8,9 +8,9 @@
                </div>
                <div class="col-md-2">
                    <ul>
-                       <li>
+                       {{-- <li>
                            <a  href="{{ URL::to('/program')}}">{{ trans('footer.program') }}</a>
-                       </li>
+                       </li> --}}
                        <li>
                            <a  href="{{ URL::to('/terms')}}">{{ trans('footer.regulations') }}</a>
                        </li>
@@ -64,9 +64,9 @@
                        </li>
                        <li>
                            <a href="{{ URL::to('/contact')}}">{{ trans('footer.contacts') }}</a>
-                       <li>
+                       {{-- <li>
                            <a href="{{ URL::to('/archive')}}">{{ trans('footer.archive') }}</a>
-                       </li>
+                       </li> --}}
                    </ul>
                </div>
                <div class="col-md-2">

@@ -21,7 +21,7 @@ class CreateWorksTable extends Migration
             $table->string('englishTitle');
             
             $table->string('dimensions');
-            $table->string('installationGuide');
+            $table->string('installationGuide', 1000);
             $table->string('year');
             $table->string('synopsis');
             $table->string('synopsis_en')->nullable();

@@ -31,8 +31,9 @@
                 <ul class="events-menu">
                     <li><a href="#1">Изложби</a></li>
                     <li><a href="#2">Лекции</a></li>
-                    <li><a href="#3" data-toggle="collapse">Творчески ателиета</a></li>
+                    <li><a href="#3" data-toggle="collapse">Творчески работилници</a></li>
                     <li><a href="#4">Конкурси</a></li>
+                    <li><a href="#4">Кампании</a></li>
                     <li id="biennale-week">Седмица на биеналето</li>
                 </ul>
                 </div>
@@ -68,7 +69,7 @@
                         <span class="ptagleft" id="left-aligndate"> {{date('d.m', strtotime($event->end))}}-{{date('d.m', strtotime($event->end))}}</span>
                         <span class="ptagleft" id="right-alignhour">{{date('H:i', strtotime($event->end))}}-{{date('H:i', strtotime($event->end))}}</span>
                         <span class="ptagleft" id="left-aligncity">{{$event->place}}</span>
-                        <span class="ptagleft" id="right-alignaddress">{{$event->artist}}</span>
+                        <span class="ptagleft" id="right-alignaddress">{{$event->participants}}</span>
                     </a>
                     <br>
                     <div class="textunderimg">
@@ -119,7 +120,7 @@
                 <a href="#top" class="back-to-top"><span class="ptagleftdetailss"></span><span class="ptagleftdetailss">Обратно към всички</span></a>
             </div>
             <section>
-                <div class=" col-md-6 programa" id="change">
+                {{-- <div class=" col-md-6 programa" id="change">
                     <header>
                         <h2 class="programadet">Други изложби</h2>
                     </header>
@@ -185,7 +186,7 @@
                             </p>
                         </div>
                     </div>
-                </div>
+                </div> --}}
             </section>
         </div>
      </div>

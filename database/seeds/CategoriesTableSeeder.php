@@ -22,13 +22,18 @@ class CategoriesTableSeeder extends Seeder
         ]);
 
         DB::table('categories')->insert([
-            'title' => 'Творчески ателиета',
+            'title' => 'Творчески работилници',
             'title_en' => 'Workshops'
         ]);
 
         DB::table('categories')->insert([
             'title' => 'Конкурси',
             'title_en' => 'Contests'
+        ]);
+
+        DB::table('categories')->insert([
+            'title' => 'Кампании',
+            'title_en' => 'Campaigns'
         ]);
     }
 }
