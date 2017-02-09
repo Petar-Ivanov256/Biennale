@@ -4,23 +4,7 @@
 @endsection
 
 @section('content')
-         <div class="container">
-            <div class="row">
-                <div class="col-md-3 SideDate">
-                    <p>27.09-02.10</p>
-                </div>
-            </div>
-        </div>
-        <div  class="container">
-            <div class="row">
-                <div class="col-sm-1">
-                    <p id="SuzIstoria">Създаваме<br>история</p>
-                    <p id="purvoMezdunarodno">Първото международно<br>биенале за стъкло<br>в България</p>
-                </div>
-            </div>
-        </div>
-
-        <div  class="container">
+         <div  class="container">
             <div class="row">
                   <div class="col-md-5 contact" id="change">
                         <h1 class="Title1">{{ trans('titles.contacts') }}</h1><br>

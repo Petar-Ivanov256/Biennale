@@ -6,28 +6,21 @@
 @section('content')
     <div class="container">
         <div class="row">
-            <div class="col-xs-12 col-sm-6 col-md-3 SideDate">
-                <p>27.09-02.10</p>
-            </div>
-        </div>
-    </div>
-    <div  class="container">
-        <div class="row">
-            <div class="col-xs-12 col-sm-6 col-sm-1">
-                <p id="SuzIstoria">Създаваме история</p>
-                <p id="purvoMezdunarodno">Първото международно<br>биенале за стъкло<br>в България</p>
-            </div>
-        </div>
-    </div>
+            <div class="col-md-10 move-home-left" id="change">
+             <div class=" img-responsive biennalehome1" id="biennale-home-1">
+                 {!! HTML::image('img/homepageimg/hero-image-bg.jpeg') !!}
+             </div>
 
-    <div class="container">
-        <div class="row" id="change">
-             <div class="biennalehome1" id="biennale-home-1">
-                 {!! HTML::image('img/homepageimg/biennalehome.jpg') !!}
+                <div class="text-under-img">
+                   <p class="text-input-p">
+                       {{ trans('home.text-p') }}
+                   </p>
+                </div>
+
+             <div class="img-responsive biennalehome2" id="biennale-home-2">
+                 {!! HTML::image('img/homepageimg/participate-bg.jpg') !!}
              </div>
-             <div class="biennalehome2" id="biennale-home-2">
-                 {!! HTML::image('img/homepageimg/biennalehome2.jpg') !!}
-             </div>
+            </div>
         </div>
     </div>
     <div class="container">
@@ -49,7 +42,7 @@
         <!-- Wrapper for slides -->
         <div class="carousel-inner" role="listbox">
             <div class="item active">
-                {!! HTML::image('img/homepageimg/biennalehome3.jpg') !!}
+                {!! HTML::image('img/homepageimg/portrait_01.jpg') !!}
                 <div class="carousel-caption">
                     <h3></h3>
                     <p></p>
@@ -57,7 +50,7 @@
             </div>
 
             <div class="item">
-                {!! HTML::image('img/homepageimg/biennalehome3.jpg') !!}
+                {!! HTML::image('img/homepageimg/portrait_02.jpg') !!}
                 <div class="carousel-caption">
                     <h3></h3>
                     <p></p>
