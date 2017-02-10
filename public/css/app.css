@@ -109,6 +109,15 @@
     #sub-authors-move-return{
         left: 1px;
     }
+    #team-1{
+        left: 1px;
+    }
+    #team-2{
+        left: 1px;
+    }
+    #team-6{
+        left: 1px;
+    }
 }
 @media only screen and (max-width: 375px){
     #homepageOchakvaite-change{
@@ -167,6 +176,15 @@
         left: 1px;
     }
     #sub-authors-move-return{
+        left: 1px;
+    }
+    #team-1{
+        left: 1px;
+    }
+    #team-2{
+        left: 1px;
+    }
+    #team-6{
         left: 1px;
     }
 }
@@ -229,6 +247,15 @@
     #sub-authors-move-return{
         left: 1px;
     }
+    #team-1{
+        left: 1px;
+    }
+    #team-2{
+        left: 1px;
+    }
+    #team-6{
+        left: 1px;
+    }
 }
 @media only screen and  (max-width: 360px){
     #homepageOchakvaite-change{
@@ -287,6 +314,15 @@
         left: 1px;
     }
     #sub-authors-move-return{
+        left: 1px;
+    }
+    #team-1{
+        left: 1px;
+    }
+    #team-2{
+        left: 1px;
+    }
+    #team-6{
         left: 1px;
     }
 }
@@ -349,6 +385,15 @@
     #sub-authors-move-return{
         left: 1px;
     }
+    #team-1{
+        left: 1px;
+    }
+    #team-2{
+        left: 1px;
+    }
+    #team-6{
+        left: 1px;
+    }
 }
 /* Small Devices, Tablets */
 /*@media only screen and (min-width : 768px) {
@@ -404,6 +449,15 @@
         left: 1px;
     }
     #sub-authors-move-return{
+        left: 1px;
+    }
+     .class-return{
+        left: 1px;
+    }
+    #team-2{
+        left: 1px;
+    }
+     #team-6{
         left: 1px;
     }
 }*/
@@ -834,14 +888,30 @@ body{
 .aboutleft{
     left: 165px;
 }
-
-.picAbout img{
-    max-width:100%;
+.picAbout{
+    left: 150px;
+}
+.picAbout img {
+    max-width: 100%;
     height: auto;
     position: relative;
-    left: 182px;
+}
+.txt-article{
+    font-size: 17px;
+    font-family: "359Sans";
+    color: rgb(109, 110, 113);
 }
 
+.art-head {
+    font-family: "359Sans";
+    color: rgb(109, 110, 113);
+}
+.shrink-pic{
+    width: 197px;
+}
+.art-shop-sv{
+    width: 218px;
+}
 .aboutButtons{
     border: none;
     outline:none;
@@ -1290,7 +1360,7 @@ body{
     font-size: 13px;
 }
 .title-reglament{
-    font-size: 33px;
+    font-size: 26px;
     font-family: "DecimaMonoX";
     color: rgb(240, 77, 63);
     font-weight: bold;
@@ -1299,7 +1369,7 @@ body{
     position: relative;
 }
 .sub-title{
-    font-size: 20px;
+    font-size: 17px;
     font-family: "359Sans";
     color: rgb(121, 77, 159);
     font-style: italic;
@@ -1314,12 +1384,12 @@ body{
 }
 
 .text-p {
-    font-size: 17px;
+    font-size: 16px;
     font-family: "359Sans";
     color: rgb(109, 110, 113);
 }
 .a-drop-down{
-    font-size: 20px;
+    font-size: 17px;
     font-family: "DecimaMonoX";
     color: rgba(109, 110, 113, 0.502);
     font-weight: bold;
@@ -1327,7 +1397,7 @@ body{
 }
 
 .appl-form-head{
-    font-size: 20px;
+    font-size: 17px;
     font-family: "359Sans";
     color:#794D9F;
 }
