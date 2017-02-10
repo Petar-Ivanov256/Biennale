@@ -42,7 +42,7 @@
         <!-- Wrapper for slides -->
         <div class="carousel-inner" role="listbox">
             <div class="item active">
-                {!! HTML::image('img/homepageimg/portrait_01.jpg') !!}
+                {!! HTML::image('img/homepageimg/portrait_1.jpg') !!}
                 <div class="carousel-caption">
                     <h3></h3>
                     <p></p>
@@ -50,7 +50,7 @@
             </div>
 
             <div class="item">
-                {!! HTML::image('img/homepageimg/portrait_02.jpg') !!}
+                {!! HTML::image('img/homepageimg/portrait_2.jpg') !!}
                 <div class="carousel-caption">
                     <h3></h3>
                     <p></p>
