@@ -55,13 +55,13 @@
                 </p>
                 <div class="second-p-paragraph">
                     <span class="bachelor-span">доц. д-р Константин Вълчев</span>
-                    <span class="picspan"> {!! HTML::image('img/scholarships/pic1.jpg') !!}</span><br><br>
+                    <span class="picspan"> {!! HTML::image('img/scholarships/konstantin valchev_patron.jpg') !!}</span><br><br>
                     <span class="bachelor-span">Зденек Лхотски</span>
-                    <span class="picspan"> {!! HTML::image('img/scholarships/pic1.jpg') !!}</span><br><br>
+                    <span class="picspan"> {!! HTML::image('img/scholarships/zdenek-lhotsky.jpg') !!}</span><br><br>
                     <span class="bachelor-span">Дана Замечникова</span>
                     <span class="picspan"> {!! HTML::image('img/scholarships/pic1.jpg') !!}</span><br><br>
                     <span class="bachelor-span">Милан Крайчек</span>
-                    <span class="picspan"> {!! HTML::image('img/scholarships/pic1.jpg') !!}</span><br><br>
+                    <span class="picspan"> {!! HTML::image('img/scholarships/milan-krajicek.jpg') !!}</span><br><br>
                    <!-- <span class="bachelor-span">гл. ас. д-р Владимир Димитров</span>
                     <span class="picspan"> {!! HTML::image('img/scholarships/pic1.jpg') !!}</span><br><br>
                     <span class="bachelor-span">д-р Анжела Данева</span>

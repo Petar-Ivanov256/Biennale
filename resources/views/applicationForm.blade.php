@@ -6,7 +6,7 @@
 @section('content')
        <div class="container">
         <div class="row">
-                <div class="col-md-5 application-form-part-one" id="change">
+                <div class="col-md-4 application-form-part-one" id="change">
                     <h1 class="title-reglament">{{ trans('form.rules') }}</h1>
                     <h3 class="sub-title">
                         {{ trans('form.see_options') }}
@@ -55,13 +55,13 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md-6 application-form-part-one" id="change">
+                <div class="col-md-7 application-form-part-one" id="change">
                     <h1 class="title-reglament">{{ trans('form.app_form') }}</h1>
                     <h3 class="appl-form-head">{{ trans('form.personal_info') }}</h3><br>
                 <form method="POST" action="{{ URL::to(App::getLocale() . '/apply') }}" class="form-horizontal" enctype="multipart/form-data">
                     {{ csrf_field() }}
                         <div class="form-group">
-                            <div class="col-md-6 contentContactForm">
+                            <div class="col-md-7 contentContactForm">
                                 <input type="text" class="form-control" id="name" name="name" placeholder="{{ trans('common.name') }}*" value="{{ Request::old('name') }}">
                                 @if ($errors->has('name'))
                                     <span class="help-block">
@@ -71,7 +71,7 @@
                             </div>
                         </div>
                         <div class="form-group">
-                            <div class="col-md-6 contentContactForm">
+                            <div class="col-md-7 contentContactForm">
                                 <input type="text" class="form-control" id="country" name="country" placeholder="{{ trans('common.country') }}*" value="{{ Request::old('country') }}">
                                 @if ($errors->has('country'))
                                     <span class="help-block">
@@ -81,7 +81,7 @@
                             </div>
                         </div>
                         <div class="form-group">
-                            <div class="col-md-6 contentContactForm">
+                            <div class="col-md-7 contentContactForm">
                                 <input type="text" class="form-control" id="email" name="email" placeholder="E-mail*" value="{{ Request::old('email') }}">
                                 @if ($errors->has('email'))
                                     <span class="help-block">
@@ -91,7 +91,7 @@
                             </div>
                         </div>
                         <div class="form-group">
-                            <div class="col-md-6 contentContactForm">
+                            <div class="col-md-7 contentContactForm">
                                 <input type="tel" class="form-control" id="phone-number" name="phoneNumber" placeholder="{{ trans('common.phone') }}*" value="{{ Request::old('phoneNumber') }}">
                                 @if ($errors->has('phoneNumber'))
                                     <span class="help-block">
@@ -108,7 +108,7 @@
                     </div>
                         <h3 class="appl-form-head">{{ trans('form.info_art_p') }}</h3><br>
                         <div class="form-group">
-                            <div class="col-md-6 contentContactForm">
+                            <div class="col-md-7 contentContactForm">
                                 <input type="text" class="form-control" id="title" name="title" placeholder="{{ trans('form.org_name') }}*" value="{{ Request::old('title') }}">
                                 @if ($errors->has('title'))
                                     <span class="help-block">
@@ -118,7 +118,7 @@
                             </div>
                         </div>
                         <div class="form-group">
-                            <div class="col-md-6 contentContactForm">
+                            <div class="col-md-7 contentContactForm">
                                 <input type="text" class="form-control" id="en-title" name="englishTitle" placeholder="{{ trans('form.english_title') }}*" value="{{ Request::old('englishTitle') }}">
                                 @if ($errors->has('englishTitle'))
                                     <span class="help-block">
@@ -148,7 +148,7 @@
                             @endif
                         </div>
                         <div class="form-group">
-                            <div class="col-md-6 contentContactForm">
+                            <div class="col-md-7 contentContactForm">
                                 <input type="text" class="form-control" id="dimensions" name="dimensions" placeholder="{{ trans('form.dimensions') }}*" value="{{ Request::old('dimensions') }}">
                                 @if ($errors->has('dimensions'))
                                     <span class="help-block">
@@ -158,7 +158,7 @@
                             </div>
                         </div>
                         <div class="form-group">
-                            <div class="col-md-6 contentContactForm">
+                            <div class="col-md-7 contentContactForm">
                                 <textarea class="form-control" rows="3" id="installation-guide" name="installationGuide" placeholder="{{ trans('form.install_guide') }}*">{{ Request::old('installationGuide') }}</textarea>
                                 @if ($errors->has('installationGuide'))
                                     <span class="help-block">
@@ -168,7 +168,7 @@
                             </div>
                         </div>
                         <div class="form-group">
-                            <div class="col-md-6 contentContactForm">
+                            <div class="col-md-7 contentContactForm">
                                 <input type="text" class="form-control" id="year" name="year" placeholder="{{ trans('form.year_realization') }}*" value="{{ Request::old('year') }}">
                                 @if ($errors->has('year'))
                                     <span class="help-block">
@@ -178,7 +178,7 @@
                             </div>
                         </div>
                         <div class="form-group">
-                            <div class="col-md-6 contentContactForm">
+                            <div class="col-md-7 contentContactForm">
                                 <input type="text" class="form-control" id="synopsis" name="synopsis" placeholder="{{ trans('form.sinopsis') }}*" value="{{ Request::old('synopsis') }}">
                                 @if ($errors->has('synopsis'))
                                     <span class="help-block">
@@ -210,7 +210,7 @@
                             </span>
                         @endif
                     </div>
-                    <div class="col-md-8 form-group content-app text-justify">
+                    <div class="col-md-7 form-group content-app text-justify">
                         <p>
                            <span><input type="checkbox" required id="terms"></span>
                             <label for="terms">
@@ -224,7 +224,7 @@
                     </div>
                     
                         <div class="form-group">
-                            <div class="col-md-5" id="submitButton">
+                            <div class="col-md-4" id="submitButton">
                                 <button type="submit" class="contactButon">{{ trans('common.submit') }}&nbsp;<i class="fa fa-chevron-circle-right" id="fa-fa-chevron-right"></i></button>
                             </div>
                         </div>

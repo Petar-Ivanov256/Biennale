@@ -134,25 +134,87 @@
                   {!! HTML::image('img/picturesFromAbout.jpg')!!}
                 </div> --}}
                 <div class="col-md-5 picAbout hide" id="team-1">
-                    <img src="{{ asset('/img/team/art_director_konstantin valchev_patron.jpg') }}">
-                    <h2>Доц. д-р Константин Вълчев - {{ trans('about.art_director') }}</h2>
-                    <article>
-                        Като художник моите творчески търсения са инспирирани най-вече от стъклото именно защото то се различава силно от другите традиционни материали. Опитвам се да изтъкна максимално качествата и възможностите на този материал, чиято сила на въздействие се дължи изцяло на светлината. Главната ми цел е с помощта на комбинацията от различните по форма, големина и дебелина пластични обеми да концентрирам и събера светлината в определения обект, скулптура или композиция от стъклени елементи, които от своя страна да я пречупват, излъчват, поглъщат и отразяват по определен начин ...
+                    <img class="center-block" src="{{ asset('/img/team/art_director_konstantin valchev_patron.jpg') }}">
+                    <h2 class="text-center art-head">Доц. д-р Константин Вълчев <br> {{--{{ trans('about.art_director') }}--}}</h2>
+                    <article class="text-justify txt-article">
+                        Като художник моите творчески търсения са инспирирани най-вече от стъклото именно защото
+                        то се различава силно от другите традиционни материали. Опитвам се да изтъкна максимално
+                        качествата и възможностите на този материал, чиято сила на въздействие се дължи изцяло на
+                        светлината. Главната ми цел е с помощта на комбинацията от различните по форма, големина и
+                        дебелина пластични обеми да концентрирам и събера светлината в определения обект, скулптура
+                        или композиция от стъклени елементи, които от своя страна да я пречупват, излъчват, поглъщат
+                        и отразяват по определен начин ...
                     </article>
                 </div>
                 <div class="col-md-5 picAbout hide" id="team-2">
                     <article>
-                        <div>Снимка Алекс – Александра Велева - главен координатор на Международна биенале на стъклото</div>
-                        <div>Снимка Софи – София – Хара Хадзопулу – главен координатор на Международно биенале на стъклото</div>
+                        <div class="col-md-5">
+                            Снимка Алекс
+                            <br>
+                            <div class="textunderimg">
+                                <h4>Александра Велева</h4>
+                                <p>
+                                    главен координатор на Международна биенале на стъклото
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-md-5">
+                            Снимка Софи
+                            <br>
+                            <div class="textunderimg">
+                                <h4>София – Хара Хадзопулу</h4>
+                                <p>
+                                    главен координатор на Международна биенале на стъклото
+                                </p>
+                            </div>
+                        </div>
+
                         <br><br>
-                        <img src="{{ asset('/img/team/flora_dyulgeryan.jpg') }}">
-                        <div>Флора Дюлгерян – координатор на Международно биенале на стъклото за град Варна</div>
-                        <img src="{{ asset('/img/team/denica_todorova.jpg') }}">
-                        <div>Деница Тодорова – координатор на Международно биенале на стъклото за град Велико Търново</div>
-                        <div>Снимка Калчев – Данко Калчев – координатор на Международно биенале на стъклото за град Белослав</div>
-                        <img src="{{ asset('/img/team/elizar_milev_koordinator_ngpi.jpg') }}">
-                        <div>Елизар Милев – координатор на Международно биенале на стъклото за НГПИ „Св. Лука“</div>
-                    </article>
+                        <div class="col-md-5">
+                            <img src="{{ asset('/img/team/flora_dyulgeryan.jpg') }}">
+                                <br>
+                        <div class="textunderimg">
+                                <h4>Флора Дюлгерян</h4>
+                                <p>
+                                    координатор на Международно биенале
+                                    на стъклото за град Варна
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-md-5 shrink-pic">
+                            <img src="{{ asset('/img/team/denica_todorova.jpg') }}">
+                            <br>
+                            <div class="textunderimg">
+                                <h4>Деница Тодорова</h4>
+                                <p>
+                                    координатор на Международно биенале
+                                    на стъклото за град Велико Търново
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-md-5">
+                            Снимка Калчев
+                            <br>
+                            <div class="textunderimg">
+                                <h4>Данко Калчев</h4>
+                                <p>
+                                    координатор на Международно биенале
+                                    на стъклото за град Белослав
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-md-5">
+                            <img src="{{ asset('/img/team/elizar_milev_koordinator_ngpi.jpg') }}">
+                            <br>
+                            <div class="textunderimg">
+                                <h4>Елизар Милев</h4>
+                                <p>
+                                    координатор на Международно биенале
+                                    на стъклото за НГПИ „Св. Лука“
+                                </p>
+                            </div>
+                        </div>
+                   </article>
                 </div>
                 <div class="col-md-5 picAbout hide" id="team-3">
                     <h2>{{ trans('about.jury') }}</h2>
@@ -179,12 +241,26 @@
                     <article>
                         {{-- <img src="{{ asset('/img/team/raya_todorova.jpg') }}"> --}}
                         Снимки на Райна Тасева, Рая Сотирова, Веселина Гекова, Александра Велева, София-Хара Хадзопулу /детски творчески работилници/
-                        
+
                         <br>
-                        <img src="{{ asset('/img/team/alexander_tasev.JPG') }}">
-                        <img src="{{ asset('/img/team/stefan_velev.JPG') }}">
-                        Снимки Александър Тасев, Стефан Велев /творческа работилница “Fusing and slumping”/
-                        
+                        <div class="col-md-5">
+                            <img src="{{ asset('/img/team/alexander_tasev.JPG') }}">
+                            <br>
+                            <div class="textunderimg">
+                                <h4>Александър Тасев</h4>
+                                <p>творческа работилница “Fusing and slumping</p>
+                           </div>
+
+                        </div>
+                        <div class="col-md-5 art-shop-sv">
+                            <img src="{{ asset('/img/team/stefan_velev.JPG') }}">
+                            <br>
+                            <div class="textunderimg">
+                                <h4>Стефан Велев</h4>
+                                <p>творческа работилница “Fusing and slumping</p>
+                            </div>
+                      </div>
+
                         <br>
                         <img src="{{ asset('/img/team/ondrej_strnadel.JPG') }}">
                         Снимка Ondrej Strnadel /творческа работилница за духано стъкло – майстор-духач/

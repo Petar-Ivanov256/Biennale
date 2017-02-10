@@ -6,7 +6,7 @@
 @section('content')
          <div  class="container">
             <div class="row">
-                  <div class="col-md-5 contact" id="change">
+                  <div class="col-md-4 contact" id="change">
                         <h1 class="Title1">{{ trans('titles.contacts') }}</h1><br>
                         <p>
                             <a href="mailto:glassbiennalebg@gmail.com" id="emailCordinator">glassbiennalebg@gmail.com</a>
@@ -22,7 +22,7 @@
                         <form method="POST" action="{{ URL::to(App::getLocale() . '/contact/send-mail') }}" class="form-horizontal">
                             {{ csrf_field() }}
                             <div class="form-group contentContactForm">
-                                <div class="col-md-5">
+                                <div class="col-md-7">
                                     <input type="text" class="form-control" id="name" name="name" placeholder="{{ trans('contacts.name') }}*" value="{{ Request::old('name') }}">
                                     @if ($errors->has('name'))
                                         <span class="help-block">
@@ -32,7 +32,7 @@
                                 </div>
                             </div>
                             <div class="form-group contentContactForm">
-                                <div class="col-md-5">
+                                <div class="col-md-7">
                                     <input type="text" class="form-control" id="email" name="email" placeholder="E-mail*" value="{{ Request::old('email') }}">
                                     @if ($errors->has('email'))
                                         <span class="help-block">
@@ -42,7 +42,7 @@
                                 </div>
                             </div>
                             <div class="form-group contentContactForm">
-                                <div class="col-md-5">
+                                <div class="col-md-7">
                                     <input type="text" class="form-control" id="title" name="title" placeholder="{{ trans('contacts.title') }}*" value="{{ Request::old('title') }}">
                                     @if ($errors->has('title'))
                                         <span class="help-block">
@@ -52,7 +52,7 @@
                                 </div>
                             </div>
                             <div class="form-group contentContactForm">
-                                <div class="col-md-5">
+                                <div class="col-md-7">
                                     <textarea class="form-control" id="message" name="message" cols="25" rows="5" placeholder="Съобщение*">
                                         {{ Request::old('message') }}
                                     </textarea>
@@ -64,7 +64,7 @@
                                 </div>
                             </div>
                             <div class="form-group">
-                                <div class="col-md-5" id="submitButton">
+                                <div class="col-md-4" id="submitButton">
                                     <button type="submit" class="contactButon">{{ trans('contacts.send') }}&nbsp;<i class="fa fa-chevron-circle-right" id="fa-fa-chevron-right"></i></button>
                                 </div>
                             </div>
