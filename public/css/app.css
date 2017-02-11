@@ -118,6 +118,9 @@
     #team-6{
         left: 1px;
     }
+    #details{
+        left: 1px;
+    }
 }
 @media only screen and (max-width: 375px){
     #homepageOchakvaite-change{
@@ -185,6 +188,9 @@
         left: 1px;
     }
     #team-6{
+        left: 1px;
+    }
+    #details{
         left: 1px;
     }
 }
@@ -256,6 +262,9 @@
     #team-6{
         left: 1px;
     }
+    #details{
+        left: 1px;
+    }
 }
 @media only screen and  (max-width: 360px){
     #homepageOchakvaite-change{
@@ -323,6 +332,9 @@
         left: 1px;
     }
     #team-6{
+        left: 1px;
+    }
+    #details{
         left: 1px;
     }
 }
@@ -394,6 +406,9 @@
     #team-6{
         left: 1px;
     }
+    #details{
+        left: 1px;
+    }
 }
 /* Small Devices, Tablets */
 /*@media only screen and (min-width : 768px) {
@@ -458,6 +473,9 @@
         left: 1px;
     }
      #team-6{
+        left: 1px;
+    }
+    #details{
         left: 1px;
     }
 }*/
