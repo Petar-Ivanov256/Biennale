@@ -19,14 +19,16 @@ class CreateEventsTable extends Migration {
             $table->dateTime("start");
             $table->dateTime("end")->nullable();
             $table->string("place");
+            $table->string("place_en");
             $table->string("participants")->nullable();
             $table->string('participants_en')->nullable();
             $table->string("entrance")->nullable();
+            $table->string("entrance_en")->nullable();
             $table->string("title");
             $table->string("title_en")->nullable();
             $table->string("description", 2000);
-            $table->binary("photo")->nullable();
             $table->string("description_en", 2000)->nullable();
+            $table->binary("photo")->nullable();
             $table->string('latitude')->nullable();
             $table->string('longitude')->nullable();
             $table->timestamps();

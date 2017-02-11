@@ -23,7 +23,7 @@ class EventsController extends Controller
     public function getById($id)
     {
         $event = Events::find($id);
-        return response()->json(['event' => $event]);
+        return response()->json(['event' => $event, 'category'=> $event->category]);
     }
 
     private function validateEvent() {

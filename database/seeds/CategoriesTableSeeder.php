@@ -12,28 +12,28 @@ class CategoriesTableSeeder extends Seeder
     public function run()
     {
         DB::table('categories')->insert([
-            'title' => 'Изложби',
-            'title_en' => 'Exhibitions'
+            'title' => 'Изложба',
+            'title_en' => 'Exhibition'
         ]);
 
         DB::table('categories')->insert([
-            'title' => 'Лекции',
-            'title_en' => 'Lectures'
+            'title' => 'Лекция',
+            'title_en' => 'Lecture'
         ]);
 
         DB::table('categories')->insert([
-            'title' => 'Творчески работилници',
-            'title_en' => 'Workshops'
+            'title' => 'Творческа работилница',
+            'title_en' => 'Workshop'
         ]);
 
         DB::table('categories')->insert([
-            'title' => 'Конкурси',
-            'title_en' => 'Contests'
+            'title' => 'Конкурс',
+            'title_en' => 'Contest'
         ]);
 
         DB::table('categories')->insert([
-            'title' => 'Кампании',
-            'title_en' => 'Campaigns'
+            'title' => 'Кампания',
+            'title_en' => 'Campaign'
         ]);
     }
 }

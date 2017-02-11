@@ -44,160 +44,191 @@
         <!--Izlozbi-->
         <div class="col-md-9 programa" id="event-back">
              <div id="1" class="events-p"><p>Изложби<p></div><br>
-
                 @foreach($events as $event)
-                <div class="col-lg-4" onclick="getDetails({{ $event->id }})">
-                    <a href="#details-img" class="abackcolor">
-                        <img src="{{$event->photo}}">
-                        {{--{!! HTML::image('img/eventsimg/pic1.jpg') !!}--}}
-                        <br>
-                        <span class="ptagleft" id="left-aligndate"> {{date('d.m', strtotime($event->end))}}-{{date('d.m', strtotime($event->end))}}</span>
-                        <span class="ptagleft" id="right-alignhour">{{date('H:i', strtotime($event->end))}}-{{date('H:i', strtotime($event->end))}}</span>
-                        <span class="ptagleft" id="left-aligncity">{{$event->place}}</span>
-                        <span class="ptagleft" id="right-alignaddress">{{$event->participants}}</span>
-                    </a>
-                    <br>
-                    <div class="textunderimg">
-                        <h4>{{$event->title}}</h4>
-                        <p>
-                            {!! substr($event->description, 0, 75) . '...' !!}
-                        </p>
-                    </div>
-                </div>
+                    @if (LaravelLocalization::getCurrentLocale() == 'en')
+                        <div class="col-lg-4" onclick="getDetails({{ $event->id }}, '{{LaravelLocalization::getCurrentLocale()}}')">
+                            <a href="#details" class="abackcolor">
+                                <img src="{{$event->photo}}">
+                                {{--{!! HTML::image('img/eventsimg/pic1.jpg') !!}--}}
+                                <br>
+                                <span class="ptagleft" id="left-aligndate"> {{date('d.m', strtotime($event->start))}}-{{date('d.m', strtotime($event->start))}}</span>
+                                <span class="ptagleft" id="right-alignhour">{{date('H:i', strtotime($event->end))}}-{{date('H:i', strtotime($event->end))}}</span>
+                                <span class="ptagleft" id="left-aligncity">{{$event->place_en}}</span>
+                                <span class="ptagleft" id="right-alignaddress">{{$event->participants_en}}</span>
+                            </a>
+                            <br>
+                            <div class="textunderimg">
+                                <h4>{{$event->title_en}}</h4>
+                                <p>
+                                    {!! substr($event->description_en, 0, 75) . '...' !!}
+                                </p>
+                            </div>
+                        </div>
+                    @else
+                        <div class="col-lg-4" onclick="getDetails({{ $event->id }}, '{{LaravelLocalization::getCurrentLocale()}}')">
+                            <a href="#details-img" class="abackcolor">
+                                <img src="{{$event->photo}}">
+                                {{--{!! HTML::image('img/eventsimg/pic1.jpg') !!}--}}
+                                <br>
+                                <span class="ptagleft" id="left-aligndate"> {{date('d.m', strtotime($event->start))}}-{{date('d.m', strtotime($event->start))}}</span>
+                                <span class="ptagleft" id="right-alignhour">{{date('H:i', strtotime($event->end))}}-{{date('H:i', strtotime($event->end))}}</span>
+                                <span class="ptagleft" id="left-aligncity">{{$event->place}}</span>
+                                <span class="ptagleft" id="right-alignaddress">{{$event->participants}}</span>
+                            </a>
+                            <br>
+                            <div class="textunderimg">
+                                <h4>{{$event->title}}</h4>
+                                <p>
+                                    {!! substr($event->description, 0, 75) . '...' !!}
+                                </p>
+                            </div>
+                        </div>
+                    @endif
             @endforeach
         </div>
     </div>
  </div>
 
-
-
-
-
-
-    <div class="container">
-        <div class="row">
-         <div class="col-md-5 programadetails" id="change">
-                <h2>Творческа работилница</h2>
-                <img src="{{ asset('img/eventsimg/pic8.jpg') }}" id="details-img">
-                <div class="ptagleftprogramdetails">
-                    <span class="oneprogdet">Дата</span>
-                    <span class="twoprogdet" id="details-date">Сряда 27/09/2017</span>
-                    <span class="oneprogdet">Час</span>
-                    <span class="twoprogdet" id="details-time">18:00-20:00</span>
-                    <span class="oneprogdet">Място</span>
-                    <span class="twoprogdet" id="details-location">Галерия Райко Алексиев <a href="{{url('https://www.google.bg/maps/place/Galeria+Rayko+Aleksiev/@42.6940046,23.3264532,17z/data=!3m1!4b1!4m5!3m4!1s0x40aa8573cd8ef9e7:0x65f0adc8c2fca7!8m2!3d42.6940046!4d23.3286419?hl=bg')}}" class="programapdirection">виж картата</a></span>
-                    <span class="oneprogdet">Артисти</span>
-                    <span class="twoprogdet" id="details-artist">дипломанти "Стъкло" НБУ</span>
-                    <span class="oneprogdet">Вход</span>
-                    <span class="twoprogdet" id="details-entrance">Безплатен</span><br>
-                </div>
-                <div>
-                    <p class="progdettxt text-justify">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                        Donec commodo varius nunc id ullamcorper. Aliquam eget mi commodo, pharetra tellus non, elementum magna.
-                        Morbi aliquet ipsum sed urna egestas eleifend. Vestibulum ante ipsum primis in faucibus orci luctus et
-                        ultrices posuere cubilia Curae; Nullam felis mi, iaculis quis justo vel, tempus egestas est. Class aptent
-                        taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Donec vitae diam odio.
-                        Pellentesque ipsum odio, pharetra a dui at, venenatis laoreet lorem. Phasellus in justo sed nunc cursus
-                        aliquet. Suspendisse cursus magna pulvinar, molestie elit nec, fringilla lorem.
-                    </p>
-                </div>
-                <a href="#top" class="back-to-top"><span class="ptagleftdetailss"></span><span class="ptagleftdetailss">Обратно към всички</span></a>
+<div class="container">
+    <div class="row">
+        <div class="col-md-5 programadetails" id="details">
+            <h2 id="event-category"></h2>
+            <img src="" id="details-img">
+            <div class="ptagleftprogramdetails">
+                <span class="oneprogdet">Дата</span>
+                <span class="twoprogdet" id="details-date"></span>
+                <span class="oneprogdet">Час</span>
+                <span class="twoprogdet" id="details-time"></span>
+                <span class="oneprogdet">Място</span>
+                {{--<span class="twoprogdet" id="details-location">Галерия Райко Алексиев <a href="{{url('https://www.google.bg/maps/place/Galeria+Rayko+Aleksiev/@42.6940046,23.3264532,17z/data=!3m1!4b1!4m5!3m4!1s0x40aa8573cd8ef9e7:0x65f0adc8c2fca7!8m2!3d42.6940046!4d23.3286419?hl=bg')}}" class="programapdirection">виж картата</a></span>--}}
+                <span class="twoprogdet" id="details-location"></span>
+                <span class="oneprogdet">Участници</span>
+                <span class="twoprogdet" id="details-artist"></span>
+                <span class="oneprogdet">Вход</span>
+                <span class="twoprogdet" id="details-entrance"></span><br>
             </div>
-            <section>
-                {{-- <div class=" col-md-6 programa" id="change">
-                    <header>
-                        <h2 class="programadet">Други изложби</h2>
-                    </header>
-                    <div class="col-md-5">
+            <div>
+                <p class="progdettxt text-justify" id="event-description">
 
-                        <a href="#" class="abackcolor">
-                            {!! HTML::image('img/eventsimg/pic9.jpg') !!}
-                            <br>
-                            <span class="ptagleftdetails" id="left-aligndate">27.09-29.09</span>
-                            <span class="ptagleft"  id="right-alignhour">София</span>
-                        </a>
-                        <br>
-                        <div class="textunderimg">
-                            <h4>Querat voluptatem</h4>
-                            <p>
-                                Duis aute irure dolor in reprehenderit in volup
-                            </p>
-                        </div>
-                    </div>
-                    <div class="col-md-5">
-                        <a href="#">
-                            {!! HTML::image('img/eventsimg/pic9.jpg') !!}
-                            <br>
-                            <span class="ptagleftdetails" id="left-aligndate">27.09-29.09</span>
-                            <span class="ptagleft"  id="right-alignhour">София</span>
-                        </a>
-                        <br>
-                        <div class="textunderimg">
-                            <h4>Querat voluptatem</h4>
-                            <p>
-                                Duis aute irure dolor in reprehenderit in volup
-                            </p>
-                        </div>
-                    </div>
-
-                    <div class="col-md-5">
-                        <a href="#">
-                            {!! HTML::image('img/eventsimg/pic9.jpg') !!}
-                            <br>
-                            <span class="ptagleftdetails" id="left-aligndate">27.09-29.09</span>
-                            <span class="ptagleft"  id="right-alignhour">София</span>
-                        </a>
-                        <br>
-                        <div class="textunderimg">
-                            <h4>Querat voluptatem</h4>
-                            <p>
-                                Duis aute irure dolor in reprehenderit in volup
-                            </p>
-                        </div>
-                    </div>
-                    <div class="col-md-5">
-                        <a href="#">
-                            {!! HTML::image('img/eventsimg/pic9.jpg') !!}
-                            <br>
-                            <span class="ptagleftdetails" id="left-aligndate">27.09-29.09</span>
-                            <span class="ptagleft"  id="right-alignhour">София</span>
-                        </a>
-                        <br>
-                        <div class="textunderimg">
-                            <h4>Querat voluptatem</h4>
-                            <p>
-                                Duis aute irure dolor in reprehenderit in volup
-                            </p>
-                        </div>
-                    </div>
-                </div> --}}
-            </section>
+                </p>
+            </div>
+            <a href="#top" class="back-to-top"><span class="ptagleftdetailss"></span><span class="ptagleftdetailss">Обратно към всички</span></a>
         </div>
-     </div>
+        <section>
+            {{-- <div class=" col-md-6 programa" id="change">
+                <header>
+                    <h2 class="programadet">Други изложби</h2>
+                </header>
+                <div class="col-md-5">
+                    <a href="#" class="abackcolor">
+                        {!! HTML::image('img/eventsimg/pic9.jpg') !!}
+                        <br>
+                        <span class="ptagleftdetails" id="left-aligndate">27.09-29.09</span>
+                        <span class="ptagleft"  id="right-alignhour">София</span>
+                    </a>
+                    <br>
+                    <div class="textunderimg">
+                        <h4>Querat voluptatem</h4>
+                        <p>
+                            Duis aute irure dolor in reprehenderit in volup
+                        </p>
+                    </div>
+                </div>
+                <div class="col-md-5">
+                    <a href="#">
+                        {!! HTML::image('img/eventsimg/pic9.jpg') !!}
+                        <br>
+                        <span class="ptagleftdetails" id="left-aligndate">27.09-29.09</span>
+                        <span class="ptagleft"  id="right-alignhour">София</span>
+                    </a>
+                    <br>
+                    <div class="textunderimg">
+                        <h4>Querat voluptatem</h4>
+                        <p>
+                            Duis aute irure dolor in reprehenderit in volup
+                        </p>
+                    </div>
+                </div>
+                <div class="col-md-5">
+                    <a href="#">
+                        {!! HTML::image('img/eventsimg/pic9.jpg') !!}
+                        <br>
+                        <span class="ptagleftdetails" id="left-aligndate">27.09-29.09</span>
+                        <span class="ptagleft"  id="right-alignhour">София</span>
+                    </a>
+                    <br>
+                    <div class="textunderimg">
+                        <h4>Querat voluptatem</h4>
+                        <p>
+                            Duis aute irure dolor in reprehenderit in volup
+                        </p>
+                    </div>
+                </div>
+                <div class="col-md-5">
+                    <a href="#">
+                        {!! HTML::image('img/eventsimg/pic9.jpg') !!}
+                        <br>
+                        <span class="ptagleftdetails" id="left-aligndate">27.09-29.09</span>
+                        <span class="ptagleft"  id="right-alignhour">София</span>
+                    </a>
+                    <br>
+                    <div class="textunderimg">
+                        <h4>Querat voluptatem</h4>
+                        <p>
+                            Duis aute irure dolor in reprehenderit in volup
+                        </p>
+                    </div>
+                </div>
+            </div> --}}
+        </section>
+    </div>
+</div>
 @endsection
 
 @section('foot')
 
 <script type="text/javascript">
 
-function getDetails(id) {
+$(document).ready(getDetails(1,'{{LaravelLocalization::getCurrentLocale()}}'));
+
+function getDetails(id, locale) {
     let url = '{{ url('/events/getDetails') }}';
     url += '/' + id;
 
-    $.ajax({
-        method: "GET",
-        url: url
-    }).done(function(event) {
-        console.log(event);
-        console.log(event.event.start);
-        $('#details-date').text(event.event.start);
-        $('#details-time').text(event.event.start + ' - ' + event.event.end);
-        $('#details-location').text(event.event.place);
-        $('#details-artist').text(event.event.artist);
-        $('#details-entrance').text(event.event.entrance);
-        $('#details-img').attr('src', event.event.photo);
-    });
+    if(locale == 'en'){
+        $.ajax({
+            method: "GET",
+            url: url
+        }).done(function(event) {
+            console.log(event);
+            console.log(event.event.start);
+            $('#event-category').text(event.category.title_en);
+            $('#details-date').text(event.event.start);
+            $('#details-time').text(event.event.start + ' - ' + event.event.end);
+            $('#details-location').text(event.event.place_en);
+            $('#details-artist').text(event.event.participants_en);
+            $('#details-entrance').text(event.event.entrance_en);
+            $('#details-img').attr('src', event.event.photo);
+            $('#event-description').html(event.event.description_en);
+        });
+    }
+    else{
+        $.ajax({
+            method: "GET",
+            url: url
+        }).done(function(event) {
+            console.log(event);
+            console.log(event.event.start);
+            $('#event-category').text(event.category.title);
+            $('#details-date').text(event.event.start);
+            $('#details-time').text(event.event.start + ' - ' + event.event.end);
+            $('#details-location').text(event.event.place);
+            $('#details-artist').text(event.event.participants);
+            $('#details-entrance').text(event.event.entrance);
+            $('#details-img').attr('src', event.event.photo);
+            $('#event-description').html(event.event.description);
+        });
+    }
 }
 
 </script>

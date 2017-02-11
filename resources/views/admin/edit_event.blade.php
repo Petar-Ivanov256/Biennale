@@ -8,6 +8,7 @@
 @endsection
 
 @section('content')
+    <div class="col-md-12" style="margin-left: 250px">
         <form class="form-horizontal"  action="{{ URL::to('/admin/editEvent') }}" method="POST" enctype="multipart/form-data">
             <input type="hidden" name="id" value="{{$event->id}}" />
             <input type="hidden" name="_token" value="{{{ csrf_token() }}}" />
@@ -196,6 +197,7 @@
                 </div>
             </fieldset>
         </form>
+    </div>
 
         <script src="{{ URL::asset('js/tinymce/tinymce.min.js') }}"></script>
         <script src="{{ URL::asset('js/tinymceSettings.js') }}"></script>
