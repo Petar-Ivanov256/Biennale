@@ -149,7 +149,7 @@
                 <div class="col-md-5 picAbout hide" id="team-2">
                     <article>
                         <div class="col-md-5">
-                            Снимка Алекс
+                            <img src="{{ asset('/img/team/alexandra veleva.jpg') }}">
                             <br>
                             <div class="textunderimg">
                                 <h4>Александра Велева</h4>
@@ -240,7 +240,49 @@
                     <h2>{{ trans('about.workshops') }}</h2>
                     <article>
                         {{-- <img src="{{ asset('/img/team/raya_todorova.jpg') }}"> --}}
-                        Снимки на Райна Тасева, Рая Сотирова, Веселина Гекова, Александра Велева, София-Хара Хадзопулу /детски творчески работилници/
+
+                        <div class="col-md-5">
+                            Снимки на Райна Тасева
+                            <br>
+                            <div class="textunderimg">
+                                <h4>Райна Тасева</h4>
+                                <p>детски творчески работилници</p>
+                            </div>
+
+                        </div>
+                        <div class="col-md-5">
+                            Снимки на Рая Сотирова
+                            <br>
+                            <div class="textunderimg">
+                                <h4>Рая Сотирова</h4>
+                                <p>детски творчески работилници</p>
+                            </div>
+
+                        </div>
+                        <div class="col-md-5">
+                            <img src="{{ asset('/img/team/veselina gekova.JPG') }}">
+                            <br>
+                            <div class="textunderimg">
+                                <h4>Веселина Гекова</h4>
+                                <p>детски творчески работилници</p>
+                            </div>
+                        </div>
+                        <div class="col-md-5">
+                            <img src="{{ asset('/img/team/alexandra veleva.JPG') }}">
+                            <br>
+                            <div class="textunderimg">
+                                <h4>Александра Велева</h4>
+                                <p>детски творчески работилници</p>
+                            </div>
+                        </div>
+                        <div class="col-md-5">
+                            Снимка София-Хара Хадзопулу
+                            <br>
+                            <div class="textunderimg">
+                                <h4>София-Хара Хадзопулу</h4>
+                                <p>детски творчески работилници</p>
+                            </div>
+                        </div>
 
                         <br>
                         <div class="col-md-5">
@@ -262,38 +304,109 @@
                       </div>
 
                         <br>
-                        <img src="{{ asset('/img/team/ondrej_strnadel.JPG') }}">
-                        Снимка Ondrej Strnadel /творческа работилница за духано стъкло – майстор-духач/
-                        Снимка помощници /творческа работилница за духано стъкло – помощник-духач/
-                        Снимка Лилия Пангелова / творческа работилница за духано стъкло – помощник-духач/
-                        
+                        <div class="col-md-5 art-shop-sv">
+                            <img src="{{ asset('/img/team/ondrej_strnadel.JPG') }}">
+                            <br>
+                            <div class="textunderimg">
+                                <h4>Ondrej Strnadel</h4>
+                                <p>творческа работилница за духано стъкло – майстор-духач</p>
+                            </div>
+                        </div>
+                        <div class="col-md-5 art-shop-sv">
+                            Снимка помощници /творческа работилница за духано стъкло – помощник-духач/
+                            <br>
+                            <div class="textunderimg">
+                                <h4></h4>
+                                <p>творческа работилница за духано стъкло – майстор-духач</p>
+                            </div>
+                        </div>
+                        <div class="col-md-5 art-shop-sv">
+                            <img src="{{ asset('/img/team/Lilia_Pangelova.jpg') }}">
+                            <br>
+                            <div class="textunderimg">
+                                <h4>Лилия Пангелова</h4>
+                                <p>творческа работилница за духано стъкло – помощник-духач</p>
+                            </div>
+                        </div>
+
                         <br>
-                        <img src="{{ asset('/img/team/milan_krajicek.jpg') }}">
-                        Снимка Милан Крайчек
- 
-                        Снимка Дана Замечникова ?
+                        <div class="col-md-5 art-shop-sv">
+                            <img src="{{ asset('/img/team/milan_krajicek.jpg') }}">
+                            <br>
+                            <div class="textunderimg">
+                                <h4>Милан Крайчек</h4>
+                                <p></p>
+                            </div>
+                        </div>
+                        <div class="col-md-5 art-shop-sv">
+                            Снимка
+                            <br>
+                            <div class="textunderimg">
+                                <h4>Дана Замечникова</h4>
+                                <p></p>
+                            </div>
+                        </div>
+
                     </article>
                 </div>
                 <div class="col-md-5 picAbout hide" id="team-7">
                     <h2>{{ trans('about.lecturers') }}</h2>
                     <article>
-                        <img src="{{ asset('/img/team/zdenek_lhotsky.jpg') }}">
-                        Снимка Зденек Лхотски
+                        <div class="col-md-5">
+                            <img src="{{ asset('/img/team/zdenek_lhotsky.jpg') }}">
+                            <br>
+                            <div class="textunderimg">
+                                <h4>Зденек Лхотски</h4>
+                            </div>
+                        </div>
 
-                        Снимка Дана Замечникова
-                        
-                        <br>
-                        <img src="{{ asset('/img/team/milan_krajicek.jpg') }}">
-                        Снимка Милан Крайчек
-                        Снимка Александра Велева и София-Хара Хадзопулу
+                        <div class="col-md-5">
+                            Снимка
+                            <br>
+                            <div class="textunderimg">
+                                <h4>Дана Замечникова</h4>
+                            </div>
+                        </div>
 
                         <br>
-                        <img src="{{ asset('/img/team/denica_todorova.jpg') }}">
-                        Снимка Деница Тодорова
-
+                        <div class="col-md-5">
+                            <img src="{{ asset('/img/team/milan_krajicek.jpg') }}">
+                            <br>
+                            <div class="textunderimg">
+                                <h4>Милан Крайчек</h4>
+                            </div>
+                        </div>
+                        <div class="col-md-5">
+                            <img src="{{ asset('/img/team/alexandra veleva.jpg') }}">
+                            <br>
+                            <div class="textunderimg">
+                                <h4>Александра Велева</h4>
+                            </div>
+                        </div>
+                        <div class="col-md-5">
+                            Снимка
+                            <br>
+                            <div class="textunderimg">
+                                <h4>София-Хара Хадзопулу</h4>
+                            </div>
+                        </div>
                         <br>
-                        <img src="{{ asset('/img/team/elizar_milev_koordinator_ngpi.jpg') }}">
-                        Снимка Елизар Милев
+                        <div class="col-md-5">
+                            <img src="{{ asset('/img/team/denica_todorova.jpg') }}">
+                            <br>
+                            <div class="textunderimg">
+                                <h4>Деница Тодорова</h4>
+                            </div>
+                        </div>
+                        <br>
+                        <div class="col-md-5">
+                            <img src="{{ asset('/img/team/elizar_milev_koordinator_ngpi.jpg') }}">
+                            <br>
+                            <div class="textunderimg">
+                                <h4>Елизар Милев</h4>
+                            </div>
+                        </div>
+
                     </article>
                 </div>
             </section>
