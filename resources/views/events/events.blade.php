@@ -65,7 +65,7 @@
                             </div>
                         </div>
                     @else
-                        <div class="col-lg-4" onclick="getDetails({{ $event->id }}, '{{LaravelLocalization::getCurrentLocale()}}')">
+                        <div class="col-md-5" onclick="getDetails({{ $event->id }}, '{{LaravelLocalization::getCurrentLocale()}}')">
                             <a href="#details" class="abackcolor">
                                 <img src="{{$event->photo}}">
                                 {{--{!! HTML::image('img/eventsimg/pic1.jpg') !!}--}}
