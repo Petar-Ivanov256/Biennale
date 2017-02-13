@@ -306,7 +306,7 @@
                             </div>
                        </div>
                         <div class="col-md-5">
-                            {!! HTML::image('img/images.png') !!}
+                            <img src="{{ asset('/img/team/raya_todorova.JPG') }}">
                             <br>
                             <div class="textunderimg">
                                 <h4>Рая Сотирова</h4>
