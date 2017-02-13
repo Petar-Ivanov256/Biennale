@@ -225,15 +225,71 @@
                 <div class="col-md-5 picAbout hide" id="team-4">
                     <h2>{{ trans('about.graph_design') }}</h2>
                     <article>
-                        Ана Балева, Тодор Георгиев, Галин Ганчев
+                        <div class="col-md-5">
+                            {!! HTML::image('img/images.png') !!}
+                            <br>
+                            <div class="textunderimg">
+                                <h4>Ана Балева</h4>
+                                <p></p>
+                            </div>
+                        </div>
+                        <div class="col-md-5">
+                            {!! HTML::image('img/images.png') !!}
+                            <br>
+                            <div class="textunderimg">
+                                <h4>Тодор Георгиев</h4>
+                                <p></p>
+                            </div>
+                        </div>
+                        <div class="col-md-5">
+                            {!! HTML::image('img/images.png') !!}
+                            <br>
+                            <div class="textunderimg">
+                                <h4>Галин Ганчев</h4>
+                                <p></p>
+                            </div>
+                        </div>
+
                     </article>
                 </div>
                 <div class="col-md-5 picAbout hide" id="team-5">
                     <h2>{{ trans('about.web_design') }}</h2>
                     <article>
-                        Снимки на Димитър Бакърджиев, Ивайло Стоянов, Петър Иванов
+                        <div class="col-md-5">
+                            {!! HTML::image('img/images.png') !!}
+                            <br>
+                            <div class="textunderimg">
+                                <h4>Димитър Бакърджиев</h4>
+                                <p></p>
+                            </div>
+                        </div>
                         <br>
-                        Снимка: Нонка Христова /IT project manager/
+                        <div class="col-md-5">
+                            {!! HTML::image('img/images.png') !!}
+                            <br>
+                            <div class="textunderimg">
+                                <h4>Петър Иванов</h4>
+                                <p></p>
+                            </div>
+                        </div>
+                        <div class="col-md-5">
+                            {!! HTML::image('img/images.png') !!}
+                            <br>
+                            <div class="textunderimg">
+                                <h4>Ивайло Стоянов</h4>
+                                <p></p>
+                            </div>
+                        </div>
+                        <br>
+                        <div class="col-md-5">
+                            {!! HTML::image('img/images.png') !!}
+                            <br>
+                            <div class="textunderimg">
+                                <h4> Нонка Христова</h4>
+                                <p>IT project manager</p>
+                            </div>
+                        </div>
+
                     </article>
                 </div>
                 <div class="col-md-5 picAbout hide" id="team-6">
@@ -248,8 +304,7 @@
                                 <h4>Райна Тасева</h4>
                                 <p>детски творчески работилници</p>
                             </div>
-
-                        </div>
+                       </div>
                         <div class="col-md-5">
                             {!! HTML::image('img/images.png') !!}
                             <br>
