@@ -16,7 +16,7 @@
                         <li><a>Anton Ivanov<br><span class="country-authors">България</span></a></li>
                     </ul>
                 </div>
-                <div class="col-md-5 sub-authors-move" id="sub-authors-move-return">
+                <div class="col-md-6 sub-authors-move" id="sub-authors-move-return">
                     <h2 class="title-Authors">Информация и творби</h2>
                     <hr>
                     <div id="1" class="collapse">
@@ -36,9 +36,25 @@
                         </p>
                         <br>
                         <div class="authors-pic">
-                            <div class="col-md-5">
+                             <div class="col-md-5 portfolio-item">
+                                    <a href="#portfolioModal1" class="portfolio-link" data-toggle="modal">
+                                       {!! HTML::image('img/authors/pic1autr.jpg') !!}
+                                    </a>
+                                 <br><br>
+                                 <div class="info-authors-backgcolor" id="backgcolo-info-authors">
+                                     <p class="info-authors-text-under-pic">
+                                         Duis aute irure dolor in reprehenderit
+                                     </p>
+                                     <p class="info-about-tech">
+                                         in volup
+                                     </p><br><br>
+                                 </div>
+                             </div>
+
+
+                        <!--   <div class="col-md-5">
                                 <div>
-                                    {!! HTML::image('img/authors/pic1autr.jpg') !!}
+
                                     <br><br>
                                     <div class="info-authors-backgcolor" id="backgcolo-info-authors">
                                         <p class="info-authors-text-under-pic">
@@ -49,7 +65,7 @@
                                         </p><br><br>
                                     </div>
                                 </div><br>
-                            </div>
+                            </div>-->
                             <div class="col-md-5">
                                 {!! HTML::image('img/authors/pic1autr.jpg') !!}
                                 <br><br>
@@ -69,4 +85,33 @@
             </div>
         </div>
     </div>
+      <div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog" aria-hidden="true">
+          <div class="modal-content">
+              <div class="close-modal" data-dismiss="modal">
+                  <div class="lr">
+                      <div class="rl">
+                      </div>
+                  </div>
+              </div>
+              <div class="container">
+                  <div class="row">
+                      <div class="col-lg-8 col-lg-offset-2">
+                          <div class="modal-body">
+                              <h2>Project Title</h2>
+                              <hr class="star-primary">
+                              {!! HTML::image('img/authors/pic1autr.jpg') !!}
+                              <p>
+                                  Test page
+                              </p>
+                              <ul class="list-inline item-details">
+
+                              </ul>
+                              <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+
 @endsection
