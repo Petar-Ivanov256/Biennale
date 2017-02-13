@@ -38,9 +38,9 @@
                 <h4 class="partnersName2">Главни партньори</h4><br>
                 <div class="ahover">
                     <a href="#" id="resize">{!! HTML::image('img/partnersimg/inhom.jpg','alt',array('width'=>160,'height'=>60)) !!}</a>&nbsp;&nbsp;
-                    <a href="#">{!! HTML::image('img/partnersimg/krN.jpg','alt',array('width'=>160,'height'=>60)) !!}</a><br><br>&nbsp;&nbsp;
+                    <a href="#">{!! HTML::image('img/partnersimg/KrN.png','alt',array('width'=>200,'height'=>30)) !!}</a><br><br>&nbsp;&nbsp;
                     <a href="#">{!! HTML::image('img/partnersimg/eurobulsoft_logo.png','alt',array('width'=>160,'height'=>60)) !!}</a>&nbsp&nbsp;
-                    <a href="#">{!! HTML::image('img/partnersimg/Greenpeace-logo.png','alt',array('width'=>160,'height'=>60)) !!}</a>&nbsp;&nbsp;<br><br>
+                    <a href="#">{!! HTML::image('img/partnersimg/Greenpeace.svg.png','alt',array('width'=>200,'height'=>30)) !!}</a>&nbsp;&nbsp;<br><br>
                     <a href="#">{!! HTML::image('img/partnersimg/ZZ_FOE_BG_LONG_RGB.png','alt',array('width'=>170,'height'=>50)) !!}</a>&nbsp;&nbsp;
                     <a href="#">{!! HTML::image('img/partnersimg/americanfoundation.jpg','alt',array('width'=>80,'height'=>80)) !!}</a>&nbsp;&nbsp;
 
@@ -48,10 +48,11 @@
                 <h4 class="partnersName2">Институции и галерии</h4><br>
                 <div class="ahover">
                     <a href="#">{!! HTML::image('img/partnersimg/nbu.jpg','alt',array('width'=>110,'height'=>85)) !!}</a>&nbsp;&nbsp;
-                    <a href="#">{!! HTML::image('img/partnersimg/vtu.png','alt',array('width'=>100,'height'=>100)) !!}</a>&nbsp;
-                    <a href="#">{!! HTML::image('img/partnersimg/NGPI.png','alt',array('width'=>100,'height'=>100)) !!}</a>&nbsp;
-                    <a href="#">{!! HTML::image('img/partnersimg/stolichna obshtina_logo.jpg','alt',array('width'=>100,'height'=>100)) !!}</a>&nbsp;&nbsp;
-                    <a href="#">{!! HTML::image('img/partnersimg/varna.png','alt',array('width'=>100,'height'=>100)) !!}</a>&nbsp;&nbsp;
+                    <a href="#">{!! HTML::image('img/partnersimg/vtu.png','alt',array('width'=>100,'height'=>120)) !!}</a>&nbsp;
+                    <a href="#">{!! HTML::image('img/partnersimg/rumi1.png','alt',array('width'=>120,'height'=>130)) !!}</a>&nbsp;
+                    <a href="#">{!! HTML::image('img/partnersimg/Sofia.svg.png','alt',array('width'=>100,'height'=>120)) !!}</a>&nbsp;&nbsp;
+                    <a href="#">{!! HTML::image('img/partnersimg/GIM_Sofia_Logo.jpg','alt',array('width'=>100,'height'=>120)) !!}</a>&nbsp;
+                    <a href="#">{!! HTML::image('img/partnersimg/varna.png','alt',array('width'=>100,'height'=>120)) !!}</a>&nbsp;&nbsp;
 
                 </div>
             </div>

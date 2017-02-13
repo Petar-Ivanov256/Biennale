@@ -3,7 +3,7 @@
 return [
     'alex' => 'Alexandra Veleva',
     'coordinator' => 'Chief coordinators',
-    'sofia' => 'Sofia-Chara Chatzopoulou',
+    'sofia' => 'Sofia-Hara Hadzopoulou',
     'form' => 'Contact form',
     'name' => 'Full name',
     'title' => 'Title',
