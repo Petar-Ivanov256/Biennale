@@ -711,7 +711,7 @@ body{
 }
 
 .homepageOchakvaite {
-    font-size: 60px;
+    font-size: 56px;
     font-family: "DecimaMonoX";
     color: rgb(121, 77, 159);
     font-weight: bold;
@@ -720,7 +720,7 @@ body{
     text-align: center;
 }
 .move-ochakvaite{
-    left: 500px;
+    left: 404px;
 }
 /*Contact Forms Css*/
 .contact{
@@ -810,6 +810,7 @@ body{
     line-height: 1.383;
     position: absolute;
     top: 350px;
+    padding-top: 15px;
     z-index: 10;
 }
 #SuzIstoria {

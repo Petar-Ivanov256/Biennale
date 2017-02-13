@@ -8,25 +8,31 @@
         <div class="row">
             <div class="col-md-10 move-home-left" id="change">
              <div class=" img-responsive biennalehome1" id="biennale-home-1">
-                 {!! HTML::image('img/homepageimg/hero-image-bg.jpeg') !!}
+                      @if(LaravelLocalization::getCurrentLocale() == 'en')
+                         {!! HTML::image('img/homepageimg/hero-image-en.jpeg') !!}
+                         @else
+                         {!! HTML::image('img/homepageimg/hero-image-bg.jpeg') !!}
+                         @endif
              </div>
-
                 <div class="text-under-img">
                    <p class="text-input-p">
                        {{ trans('home.text-p') }}
                    </p>
                 </div>
-
              <div class="img-responsive biennalehome2" id="biennale-home-2">
-                 {!! HTML::image('img/homepageimg/participate-bg.jpg') !!}
+                 @if(LaravelLocalization::getCurrentLocale() == 'en')
+                 {!! HTML::image('img/homepageimg/participate-en.jpg') !!}
+                     @else
+                     {!! HTML::image('img/homepageimg/participate-bg.jpg') !!}
+                     @endif
              </div>
             </div>
         </div>
     </div>
     <div class="container">
         <div class="row">
-            <div class="col-md-3 move-ochakvaite" id="change">
-                <h3 class="homepageOchakvaite" id="homepageOchakvaite-change">Очаквайте</h3>
+            <div class="col-md-5 move-ochakvaite" id="change">
+                <h3 class="homepageOchakvaite" id="homepageOchakvaite-change"> {{ trans('home.comingSoon') }}</h3>
             </div>
         </div>
     </div>
