@@ -159,7 +159,7 @@
                             </div>
                         </div>
                         <div class="col-md-5">
-                            Снимка Софи
+                            {!! HTML::image('img/images.png') !!}
                             <br>
                             <div class="textunderimg">
                                 <h4>София – Хара Хадзопулу</h4>
@@ -193,7 +193,7 @@
                             </div>
                         </div>
                         <div class="col-md-5">
-                            Снимка Калчев
+                            {!! HTML::image('img/images.png') !!}
                             <br>
                             <div class="textunderimg">
                                 <h4>Данко Калчев</h4>
@@ -242,7 +242,7 @@
                         {{-- <img src="{{ asset('/img/team/raya_todorova.jpg') }}"> --}}
 
                         <div class="col-md-5">
-                            Снимки на Райна Тасева
+                            {!! HTML::image('img/images.png') !!}
                             <br>
                             <div class="textunderimg">
                                 <h4>Райна Тасева</h4>
@@ -251,7 +251,7 @@
 
                         </div>
                         <div class="col-md-5">
-                            Снимки на Рая Сотирова
+                            {!! HTML::image('img/images.png') !!}
                             <br>
                             <div class="textunderimg">
                                 <h4>Рая Сотирова</h4>
@@ -276,7 +276,7 @@
                             </div>
                         </div>
                         <div class="col-md-5">
-                            Снимка София-Хара Хадзопулу
+                            {!! HTML::image('img/images.png') !!}
                             <br>
                             <div class="textunderimg">
                                 <h4>София-Хара Хадзопулу</h4>
@@ -313,7 +313,7 @@
                             </div>
                         </div>
                         <div class="col-md-5 art-shop-sv">
-                            Снимка помощници /творческа работилница за духано стъкло – помощник-духач/
+                            {!! HTML::image('img/images.png') !!}
                             <br>
                             <div class="textunderimg">
                                 <h4></h4>
@@ -339,7 +339,7 @@
                             </div>
                         </div>
                         <div class="col-md-5 art-shop-sv">
-                            Снимка
+                            {!! HTML::image('img/images.png') !!}
                             <br>
                             <div class="textunderimg">
                                 <h4>Дана Замечникова</h4>
@@ -361,7 +361,7 @@
                         </div>
 
                         <div class="col-md-5">
-                            Снимка
+                            {!! HTML::image('img/images.png') !!}
                             <br>
                             <div class="textunderimg">
                                 <h4>Дана Замечникова</h4>
@@ -384,7 +384,7 @@
                             </div>
                         </div>
                         <div class="col-md-5">
-                            Снимка
+                            {!! HTML::image('img/images.png') !!}
                             <br>
                             <div class="textunderimg">
                                 <h4>София-Хара Хадзопулу</h4>

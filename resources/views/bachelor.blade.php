@@ -43,15 +43,15 @@
                     </p>
                     <div class="second-p-paragraph">
                         <span class="bachelor-span">доц. д-р Константин Вълчев</span>
-                        <span class="picspan"> {!! HTML::image('img/scholarships/pic1.jpg') !!}</span><br><br>
+                        <span class="picspan"> {!! HTML::image('img/scholarships/konstantin valchev_patron.jpg') !!}</span><br><br>
                         <span class="bachelor-span">Лилия Балева</span>
-                        <span class="picspan"> {!! HTML::image('img/scholarships/pic1.jpg') !!}</span><br><br>
+                        <span class="picspan"> {!! HTML::image('img/images.png') !!}</span><br><br>
                         <span class="bachelor-span">гл. ас. д-р Владимир Димитров</span>
-                        <span class="picspan"> {!! HTML::image('img/scholarships/pic1.jpg') !!}</span><br><br>
+                        <span class="picspan"> {!! HTML::image('img/images.png') !!}</span><br><br>
                         <span class="bachelor-span">Александра Велева</span>
-                        <span class="picspan"> {!! HTML::image('img/scholarships/pic1.jpg') !!}</span><br><br>
+                        <span class="picspan"> {!! HTML::image('img/images.png') !!}</span><br><br>
                         <span class="bachelor-span">София-Хара Хадзопулу</span>
-                        <span class="picspan"> {!! HTML::image('img/scholarships/pic1.jpg') !!}</span><br><br>
+                        <span class="picspan"> {!! HTML::image('img/images.png') !!}</span><br><br>
                     </div>
                     <div class="second-p-paragraph">
                       <!--  <span class="bachelor-span">Маритин Иванов<br><span class="full-scholarship">пълна стипендия</span></span>

@@ -27,18 +27,13 @@
                             <li>b. Varna</li>
                         </ul>
                         <p class="info-autor-about text-justify">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin vel nisi pulvinar, laoreet turpis quis,
-                            venenatis turpis. Aenean egestas, nibh sed scelerisque iaculis, risus tortor lobortis arcu, non
-                            consectetur mi nibh id ex. Quisque ultricies pellentesque aliquam. Sed pretium nunc at turpis feugiat
-                            , sit amet finibus ipsum facilisis. Class aptent taciti sociosqu ad litora torquent per conubia nostra,
-                            per inceptos himenaeos. Fusce eu nisi lacinia, gravida nibh a, tristique magna. Cras sem est, lacinia
-                            et laoreet sit amet, semper id erat. Sed dapibus lorem ut pellentesque laoreet. In quis erat nisl.
+
                         </p>
                         <br>
                         <div class="authors-pic">
                              <div class="col-md-5 portfolio-item">
                                     <a href="#portfolioModal1" class="portfolio-link" data-toggle="modal">
-                                       {!! HTML::image('img/authors/pic1autr.jpg') !!}
+                                       {!! HTML::image('img/images.png') !!}
                                     </a>
                                  <br><br>
                                  <div class="info-authors-backgcolor" id="backgcolo-info-authors">
@@ -67,7 +62,7 @@
                                 </div><br>
                             </div>-->
                             <div class="col-md-5">
-                                {!! HTML::image('img/authors/pic1autr.jpg') !!}
+                                {!! HTML::image('img/images.png') !!}
                                 <br><br>
                                 <div class="info-authors-backgcolor" id="backgcolo-info-authors">
                                     <p class="info-authors-text-under-pic">
@@ -99,7 +94,7 @@
                           <div class="modal-body">
                               <h2>Project Title</h2>
                               <hr class="star-primary">
-                              {!! HTML::image('img/authors/pic1autr.jpg') !!}
+                              {!! HTML::image('img/images.png') !!}
                               <p>
                                   Test page
                               </p>
