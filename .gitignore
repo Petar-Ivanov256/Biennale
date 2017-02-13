@@ -4,7 +4,7 @@
 /.idea
 Homestead.json
 Homestead.yaml
-.env
+/.env
 
 /node_modules
 /public/storage
