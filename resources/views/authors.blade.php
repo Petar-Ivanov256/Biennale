@@ -12,8 +12,7 @@
                     <hr>
                     <ul class="authors-people" id="space-author-li">
                         <li><a href="#1" data-toggle="collapse">Alex Smith<br><span class="country-authors">Великобритания</span></a></li>
-                        <li><a>Ana Markowska<br><span class="country-authors">Полша</span></a></li>
-                        <li><a>Anton Ivanov<br><span class="country-authors">България</span></a></li>
+
                     </ul>
                 </div>
                 <div class="col-md-6 sub-authors-move" id="sub-authors-move-return">
@@ -38,10 +37,10 @@
                                  <br><br>
                                  <div class="info-authors-backgcolor" id="backgcolo-info-authors">
                                      <p class="info-authors-text-under-pic">
-                                         Duis aute irure dolor in reprehenderit
+
                                      </p>
                                      <p class="info-about-tech">
-                                         in volup
+
                                      </p><br><br>
                                  </div>
                              </div>
@@ -66,10 +65,10 @@
                                 <br><br>
                                 <div class="info-authors-backgcolor" id="backgcolo-info-authors">
                                     <p class="info-authors-text-under-pic">
-                                        Duis aute irure dolor in reprehenderit
+
                                     </p>
                                     <p class="info-about-tech">
-                                        in volup
+
                                     </p><br><br>
                                 </div>
                             </div>
