@@ -341,7 +341,7 @@
 
                         <br>
                         <div class="col-md-5">
-                            <img src="{{ asset('/img/team/alexander_tasev.jpg') }}">
+                            <img src="{{ asset('/img/team/alexander_tasev1.jpg') }}">
                             <br>
                             <div class="textunderimg">
                                 <h4>Александър Тасев</h4>
@@ -349,8 +349,8 @@
                            </div>
 
                         </div>
-                        <div class="col-md-5 art-shop-sv">
-                            <img src="{{ asset('/img/team/stefan_velev.jpg') }}">
+                        <div class="col-md-5">
+                            <img src="{{ asset('/img/team/stefan_velev1.jpg') }}">
                             <br>
                             <div class="textunderimg">
                                 <h4>Стефан Велев</h4>
@@ -359,15 +359,15 @@
                       </div>
 
                         <br>
-                        <div class="col-md-5 art-shop-sv">
-                            <img src="{{ asset('/img/team/ondrej_strnadel.jpg') }}">
+                        <div class="col-md-5">
+                            <img src="{{ asset('/img/team/ondrej_strnadel1.jpg') }}">
                             <br>
                             <div class="textunderimg">
                                 <h4>Ondrej Strnadel</h4>
                                 <p>творческа работилница за духано стъкло – майстор-духач</p>
                             </div>
                         </div>
-                        <div class="col-md-5 art-shop-sv">
+                        <div class="col-md-5">
                             {!! HTML::image('img/images.png') !!}
                             <br>
                             <div class="textunderimg">
@@ -375,7 +375,7 @@
                                 <p>творческа работилница за духано стъкло – майстор-духач</p>
                             </div>
                         </div>
-                        <div class="col-md-5 art-shop-sv">
+                        <div class="col-md-5">
                             <img src="{{ asset('/img/team/Lilia_Pangelova.jpg') }}">
                             <br>
                             <div class="textunderimg">
@@ -385,7 +385,7 @@
                         </div>
 
                         <br>
-                        <div class="col-md-5 art-shop-sv">
+                        <div class="col-md-5">
                             <img src="{{ asset('/img/team/milan_krajicek1.jpg') }}">
                             <br>
                             <div class="textunderimg">
@@ -393,7 +393,7 @@
                                 <p></p>
                             </div>
                         </div>
-                        <div class="col-md-5 art-shop-sv">
+                        <div class="col-md-5">
                             {!! HTML::image('img/images.png') !!}
                             <br>
                             <div class="textunderimg">
