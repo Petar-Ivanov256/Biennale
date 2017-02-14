@@ -8,4 +8,5 @@ return [
     'name' => 'Full name',
     'title' => 'Title',
     'send' => 'Send',
+    'success' => 'Message sent successfully!',
 ];

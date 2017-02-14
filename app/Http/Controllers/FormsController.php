@@ -17,6 +17,7 @@ use App\Technique;
 use App\Author;
 use App\Work;
 use Image;
+use App;
 
 class FormsController extends Controller
 {
@@ -30,6 +31,7 @@ class FormsController extends Controller
 
     public function sendForm(Request $request)
     {
+        App::setLocale($request->input('locale'));  // used to bypass a localization bug in the used plugin ;(
         $this->validate($request, $this->validationRules());
 
         $author = new Author();

@@ -58,8 +58,9 @@
                 <div class="col-md-7 application-form-part-one" id="change">
                     <h1 class="title-reglament">{{ trans('form.app_form') }}</h1>
                     <h3 class="appl-form-head">{{ trans('form.personal_info') }}</h3><br>
-                <form method="POST" action="{{ URL::to(App::getLocale() . '/apply') }}" class="form-horizontal" enctype="multipart/form-data">
+                <form method="POST" action="{{ URL::to('/apply') }}" class="form-horizontal" enctype="multipart/form-data">
                     {{ csrf_field() }}
+                    <input type="hidden" name="locale" value="{{ App::getLocale() }}">
                         <div class="form-group">
                             <div class="col-md-7 contentContactForm">
                                 <input type="text" class="form-control" id="name" name="name" placeholder="{{ trans('common.name') }}*" value="{{ Request::old('name') }}">

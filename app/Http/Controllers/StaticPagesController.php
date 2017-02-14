@@ -12,6 +12,7 @@ namespace App\Http\Controllers;
 use App\Mail\ContactFormEmail;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Mail;
+use App;
 
 class StaticPagesController extends Controller
 {
@@ -34,6 +35,7 @@ class StaticPagesController extends Controller
 
     public function send_contact_mail(Request $request){
 
+        App::setLocale($request->input('locale'));  // used to bypass a localization bug in the used plugin ;(
         $this->validate($request, $this->validationRules());
 
         $name = $request->input('name');
@@ -44,7 +46,7 @@ class StaticPagesController extends Controller
         $emailTo = 'glassbiennalebg@gmail.com';
         Mail::to($emailTo)->send(new ContactFormEmail($name,$email,$description,$content));
 
-        return redirect('/contact')->with('success', 'Успешно изпратихте съобщение!');
+        return redirect('/contact')->with('success', trans('contacts.success'));
     }
 
     public function scholarships(Request $request){
