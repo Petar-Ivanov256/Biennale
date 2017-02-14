@@ -142,7 +142,7 @@
                             {!! HTML::image('img/images.png') !!}
                             <br>
                             <div class="textunderimg">
-                                <h4>Ана Балева</h4>
+                                <h4>{{ trans('about.ana') }}</h4>
                                 <p></p>
                             </div>
                         </div>
@@ -150,7 +150,7 @@
                             {!! HTML::image('img/images.png') !!}
                             <br>
                             <div class="textunderimg">
-                                <h4>Тодор Георгиев</h4>
+                                <h4>{{ trans('about.todor') }}</h4>
                                 <p></p>
                             </div>
                         </div>
@@ -158,7 +158,7 @@
                             {!! HTML::image('img/images.png') !!}
                             <br>
                             <div class="textunderimg">
-                                <h4>Галин Ганчев</h4>
+                                <h4>{{ trans('about.galin') }}</h4>
                                 <p></p>
                             </div>
                         </div>
@@ -172,7 +172,7 @@
                             {!! HTML::image('img/images.png') !!}
                             <br>
                             <div class="textunderimg">
-                                <h4>Димитър Бакърджиев</h4>
+                                <h4>{{ trans('about.dimitar') }}</h4>
                                 <p></p>
                             </div>
                         </div>
@@ -181,7 +181,7 @@
                             {!! HTML::image('img/images.png') !!}
                             <br>
                             <div class="textunderimg">
-                                <h4>Петър Иванов</h4>
+                                <h4>{{ trans('about.petar') }}</h4>
                                 <p></p>
                             </div>
                         </div>
@@ -189,7 +189,7 @@
                             {!! HTML::image('img/images.png') !!}
                             <br>
                             <div class="textunderimg">
-                                <h4>Ивайло Стоянов</h4>
+                                <h4>{{ trans('about.ivo') }}</h4>
                                 <p></p>
                             </div>
                         </div>
@@ -198,7 +198,7 @@
                             {!! HTML::image('img/images.png') !!}
                             <br>
                             <div class="textunderimg">
-                                <h4> Нонка Христова</h4>
+                                <h4>{{ trans('about.nonka') }}</h4>
                                 <p>IT project manager</p>
                             </div>
                         </div>

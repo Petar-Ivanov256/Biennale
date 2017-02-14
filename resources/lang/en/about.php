@@ -32,4 +32,13 @@ return [
     'about_danko' => 'coordinator of IBG in Beloslav, Bulgaria',
     'elizar' => 'Elizar Milev',
     'about_elizar' => 'coordinator of IBG for National High School of Applied Arts, Sofia, Bulgaria',
+
+    'ana' => 'Ana Baleva',
+    'todor' => 'Todor Georgiev',
+    'galin' => 'Galin Ganchev',
+
+    'dimitar' => 'Dimitar Bakardzhiev',
+    'ivo' => 'Ivaylo Stoyanov',
+    'petar' => 'Petar Ivanov',
+    'nonka' => 'Nonka Hristova',
 ];
