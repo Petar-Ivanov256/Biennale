@@ -486,12 +486,11 @@ body{
     background-repeat: repeat;
 }
 
-.logo{
-    background-image: url('../img/logo_biennale.jpg');
+.logo img{
+   /* background-image: url('../img/logo_biennale.jpg');*/
     width:150px;
     height:65px;
     background-size: 150px 65px;
-    background-color: transparent;
 }
 
 .navbar-default{
@@ -793,7 +792,7 @@ body{
     font-family: "DecimaMonoX";
     color: rgba(215, 237, 237, 0.702);
     font-weight: bold;
-    line-height: 6;
+    /*line-height: 6;*/
     -moz-transform: matrix( 0,-14.5878554630068,14.5878554630068,0,0,0);
     -webkit-transform: matrix( 0,-14.5878554630068,14.5878554630068,0,0,0);
     -ms-transform: matrix( 0,-14.5878554630068,14.5878554630068,0,0,0);

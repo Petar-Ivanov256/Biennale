@@ -149,7 +149,7 @@
                 <div class="col-md-5 picAbout hide" id="team-2">
                     <article>
                         <div class="col-md-5">
-                            <img src="{{ asset('/img/team/alexandra veleva.jpg') }}">
+                            <img src="{{ asset('/img/team/alexandra veleva1.jpg') }}">
                             <br>
                             <div class="textunderimg">
                                 <h4>Александра Велева</h4>
@@ -204,7 +204,7 @@
                             </div>
                         </div>
                         <div class="col-md-5">
-                            <img src="{{ asset('/img/team/elizar_milev_koordinator_ngpi.jpg') }}">
+                            <img src="{{ asset('/img/team/elizar_milev_koordinator_ngpi1.jpg') }}">
                             <br>
                             <div class="textunderimg">
                                 <h4>Елизар Милев</h4>
@@ -306,7 +306,7 @@
                             </div>
                        </div>
                         <div class="col-md-5">
-                            <img src="{{ asset('/img/team/raya_todorova.JPG') }}">
+                            <img src="{{ asset('/img/team/raya_todorova1.jpg') }}">
                             <br>
                             <div class="textunderimg">
                                 <h4>Рая Сотирова</h4>
@@ -315,7 +315,7 @@
 
                         </div>
                         <div class="col-md-5">
-                            <img src="{{ asset('/img/team/veselina gekova.JPG') }}">
+                            <img src="{{ asset('/img/team/veselina gekova1.jpg') }}">
                             <br>
                             <div class="textunderimg">
                                 <h4>Веселина Гекова</h4>
@@ -323,7 +323,7 @@
                             </div>
                         </div>
                         <div class="col-md-5">
-                            <img src="{{ asset('/img/team/alexandra veleva.JPG') }}">
+                            <img src="{{ asset('/img/team/alexandra veleva1.jpg') }}">
                             <br>
                             <div class="textunderimg">
                                 <h4>Александра Велева</h4>
@@ -341,7 +341,7 @@
 
                         <br>
                         <div class="col-md-5">
-                            <img src="{{ asset('/img/team/alexander_tasev.JPG') }}">
+                            <img src="{{ asset('/img/team/alexander_tasev.jpg') }}">
                             <br>
                             <div class="textunderimg">
                                 <h4>Александър Тасев</h4>
@@ -350,7 +350,7 @@
 
                         </div>
                         <div class="col-md-5 art-shop-sv">
-                            <img src="{{ asset('/img/team/stefan_velev.JPG') }}">
+                            <img src="{{ asset('/img/team/stefan_velev.jpg') }}">
                             <br>
                             <div class="textunderimg">
                                 <h4>Стефан Велев</h4>
@@ -360,7 +360,7 @@
 
                         <br>
                         <div class="col-md-5 art-shop-sv">
-                            <img src="{{ asset('/img/team/ondrej_strnadel.JPG') }}">
+                            <img src="{{ asset('/img/team/ondrej_strnadel.jpg') }}">
                             <br>
                             <div class="textunderimg">
                                 <h4>Ondrej Strnadel</h4>
@@ -386,7 +386,7 @@
 
                         <br>
                         <div class="col-md-5 art-shop-sv">
-                            <img src="{{ asset('/img/team/milan_krajicek.jpg') }}">
+                            <img src="{{ asset('/img/team/milan_krajicek1.jpg') }}">
                             <br>
                             <div class="textunderimg">
                                 <h4>Милан Крайчек</h4>
@@ -425,14 +425,14 @@
 
                         <br>
                         <div class="col-md-5">
-                            <img src="{{ asset('/img/team/milan_krajicek.jpg') }}">
+                            <img src="{{ asset('/img/team/milan_krajicek1.jpg') }}">
                             <br>
                             <div class="textunderimg">
                                 <h4>Милан Крайчек</h4>
                             </div>
                         </div>
                         <div class="col-md-5">
-                            <img src="{{ asset('/img/team/alexandra veleva.jpg') }}">
+                            <img src="{{ asset('/img/team/alexandra veleva1.jpg') }}">
                             <br>
                             <div class="textunderimg">
                                 <h4>Александра Велева</h4>
@@ -455,7 +455,7 @@
                         </div>
                         <br>
                         <div class="col-md-5">
-                            <img src="{{ asset('/img/team/elizar_milev_koordinator_ngpi.jpg') }}">
+                            <img src="{{ asset('/img/team/elizar_milev_koordinator_ngpi1.jpg') }}">
                             <br>
                             <div class="textunderimg">
                                 <h4>Елизар Милев</h4>

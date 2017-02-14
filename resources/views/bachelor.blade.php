@@ -49,7 +49,7 @@
                         <span class="bachelor-span">гл. ас. д-р Владимир Димитров</span>
                         <span class="picspan"> {!! HTML::image('img/images.png') !!}</span><br><br>
                         <span class="bachelor-span">Александра Велева</span>
-                        <span class="picspan"> {!! HTML::image('img/images.png') !!}</span><br><br>
+                        <span class="picspan"> {!! HTML::image('img/scholarships/alexandra veleva2.jpg') !!}</span><br><br>
                         <span class="bachelor-span">София-Хара Хадзопулу</span>
                         <span class="picspan"> {!! HTML::image('img/images.png') !!}</span><br><br>
                     </div>

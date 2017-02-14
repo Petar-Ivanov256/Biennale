@@ -89,13 +89,13 @@
               </div>
               <div class="container">
                   <div class="row">
-                      <div class="col-lg-8 col-lg-offset-2">
+                      <div class="col-md-8 col-md-offset-2">
                           <div class="modal-body">
-                              <h2>Project Title</h2>
+                              <h2> </h2>
                               <hr class="star-primary">
                               {!! HTML::image('img/images.png') !!}
                               <p>
-                                  Test page
+
                               </p>
                               <ul class="list-inline item-details">
 
