@@ -19,5 +19,17 @@ return [
     'web_design' => 'Web Design',
     'workshops' => 'Workshops',
     'lecturers' => 'Lecturers',
-    'video' => 'Video'
+    'video' => 'Video',
+
+    'alex' => 'Aleksandra Veleva',
+    'about_alex_sofia' => 'chief coordinator of IBG',
+    'sofia' => 'Sofia-Hara Hadzopoulou',
+    'flora' => 'Flora Diulgerian',
+    'about_flora' => 'coordinator of IBG in Varna, Bulgaria',
+    'denica' => 'Denica Todorova',
+    'about_denica' => 'coordinator of IBG in Veliko Turnovo, Bulgaria',
+    'danko' => 'Danko Kalchev',
+    'about_danko' => 'coordinator of IBG in Beloslav, Bulgaria',
+    'elizar' => 'Elizar Milev',
+    'about_elizar' => 'coordinator of IBG for National High School of Applied Arts, Sofia, Bulgaria',
 ];

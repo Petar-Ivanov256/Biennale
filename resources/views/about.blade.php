@@ -19,105 +19,22 @@
                         <button type="button" class="aboutButtons btn-lg" data-target="#team-1">
                             {{ trans('about.art_director') }}
                         </button><br>
-                        <!-- Modal -->
-                        <div class="modal fade bs-example-modal-lg" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-                            <div class="modal-dialog modal-lg" role="document">
-                                <div class="modal-content">
-                                    <div class="modal-header">
-                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                                        <h4 class="modal-title" id="myModalLabel"> Арт Директор</h4>
-                                    </div>
-                                    <div class="modal-body">
-                                        
-                                    </div>
-                                    <div class="modal-footer">
-                                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
                         <button type="button" class="aboutButtons btn-lg" data-target="#team-2">
                             {{ trans('about.coordinators') }}
                         </button><br>
-                        <!-- Modal -->
-                        <div class="modal fade bs-example-modal-lg" id="mycoordinatorModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-                            <div class="modal-dialog modal-lg" role="document">
-                                <div class="modal-content">
-                                    <div class="modal-header">
-                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                                        <h4 class="modal-title" id="myModalLabel"> Координатори</h4>
-                                    </div>
-                                    <div class="modal-body">
-                                        ...
-                                    </div>
-                                    <div class="modal-footer">
-                                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+                        
                         <button type="button" class="aboutButtons btn-lg" data-target="#team-3">
                             {{ trans('about.jury') }}
                         </button><br>
-                        <!-- Modal -->
-                        <div class="modal fade bs-example-modal-lg" id="myJuryModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-                            <div class="modal-dialog modal-lg" role="document">
-                                <div class="modal-content">
-                                    <div class="modal-header">
-                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                                        <h4 class="modal-title" id="myModalLabel"> Жури</h4>
-                                    </div>
-                                    <div class="modal-body">
-                                        ...
-                                    </div>
-                                    <div class="modal-footer">
-                                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+                        
                         <button type="button" class="aboutButtons btn-lg" data-target="#team-4">
                             {{ trans('about.graph_design') }}
                         </button><br>
-                        <!-- Modal -->
-                        <div class="modal fade bs-example-modal-lg" id="myDesignModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-                            <div class="modal-dialog modal-lg" role="document">
-                                <div class="modal-content">
-                                    <div class="modal-header">
-                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                                        <h4 class="modal-title" id="myModalLabel">Графичен дизайн</h4>
-                                    </div>
-                                    <div class="modal-body">
-                                        ...
-                                    </div>
-                                    <div class="modal-footer">
-                                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+                        
                         <button type="button" class="aboutButtons btn-lg" data-target="#team-5">
                             {{ trans('about.web_design') }}
                         </button><br>
-                        <!-- Modal -->
-                        <div class="modal fade bs-example-modal-lg" id="myWebModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-                            <div class="modal-dialog modal-lg" role="document">
-                                <div class="modal-content">
-                                    <div class="modal-header">
-                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                                        <h4 class="modal-title" id="myModalLabel">Уеб дизайн</h4>
-                                    </div>
-                                    <div class="modal-body">
-                                        ...
-                                    </div>
-                                    <div class="modal-footer">
-                                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+                        
                         <button type="button" class="aboutButtons btn-lg" data-target="#team-6">
                             {{ trans('about.workshops') }}
                         </button><br>
@@ -152,9 +69,9 @@
                             <img src="{{ asset('/img/team/alexandra veleva1.jpg') }}">
                             <br>
                             <div class="textunderimg">
-                                <h4>Александра Велева</h4>
+                                <h4>{{ trans('about.alex') }}</h4>
                                 <p>
-                                    главен координатор на Международна биенале на стъклото
+                                    {{ trans('about.about_alex_sofia') }}
                                 </p>
                             </div>
                         </div>
@@ -162,9 +79,9 @@
                             {!! HTML::image('img/images.png') !!}
                             <br>
                             <div class="textunderimg">
-                                <h4>София – Хара Хадзопулу</h4>
+                                <h4>{{ trans('about.sofia') }}</h4>
                                 <p>
-                                    главен координатор на Международна биенале на стъклото
+                                    {{ trans('about.about_alex_sofia') }}
                                 </p>
                             </div>
                         </div>
@@ -174,10 +91,9 @@
                             <img src="{{ asset('/img/team/flora_dyulgeryan.jpg') }}">
                                 <br>
                         <div class="textunderimg">
-                                <h4>Флора Дюлгерян</h4>
+                                <h4>{{ trans('about.flora') }}</h4>
                                 <p>
-                                    координатор на Международно биенале
-                                    на стъклото за град Варна
+                                    {{ trans('about.about_flora') }}
                                 </p>
                             </div>
                         </div>
@@ -185,10 +101,9 @@
                             <img src="{{ asset('/img/team/denica_todorova.jpg') }}">
                             <br>
                             <div class="textunderimg">
-                                <h4>Деница Тодорова</h4>
+                                <h4>{{ trans('about.denica') }}</h4>
                                 <p>
-                                    координатор на Международно биенале
-                                    на стъклото за град Велико Търново
+                                    {{ trans('about.about_denica') }}
                                 </p>
                             </div>
                         </div>
@@ -196,10 +111,9 @@
                             {!! HTML::image('img/images.png') !!}
                             <br>
                             <div class="textunderimg">
-                                <h4>Данко Калчев</h4>
+                                <h4>{{ trans('about.danko') }}</h4>
                                 <p>
-                                    координатор на Международно биенале
-                                    на стъклото за град Белослав
+                                    {{ trans('about.about_danko') }}
                                 </p>
                             </div>
                         </div>
@@ -207,10 +121,9 @@
                             <img src="{{ asset('/img/team/elizar_milev_koordinator_ngpi1.jpg') }}">
                             <br>
                             <div class="textunderimg">
-                                <h4>Елизар Милев</h4>
+                                <h4>{{ trans('about.elizar') }}</h4>
                                 <p>
-                                    координатор на Международно биенале
-                                    на стъклото за НГПИ „Св. Лука“
+                                    {{ trans('about.about_elizar') }}
                                 </p>
                             </div>
                         </div>
