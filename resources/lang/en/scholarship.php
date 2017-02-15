@@ -13,6 +13,8 @@ return [
      The scholarships will be distributed to honorable students/undergraduates/graduates, chosen by an international jury. 
      The candidates should fulfill some requirements to participate in the competition for a scholarship.',
 
+    'rules_and_winners'=>'Rules and winners',
+
     'rules_btn'=>'RULES',
     'jury_btn'=>'Jury',
     'winners'=>'WINNERS',

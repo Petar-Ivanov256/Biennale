@@ -18,7 +18,7 @@
                     </p>
                 </div>
                 <div class="col-md-6 second-paragraph" id="change">
-                    <h2 class="bachelor-header">Условия и минали победители</h2><br>
+                    <h2 class="bachelor-header">{{ trans('scholarship.rules_and_winners') }}</h2><br>
                     <button class="learn-more">{{ trans('scholarship.rules_btn') }}</button>
                     <button class="learn-more">{{ trans('scholarship.jury_btn') }}</button>
                     <button class="learn-more">{{ trans('scholarship.winners') }}</button><br><br>
@@ -45,7 +45,7 @@
                         <span class="bachelor-span">{{ trans('about.art_director_name') }}</span>
                         <span class="picspan"> {!! HTML::image('img/scholarships/konstantin valchev_patron.jpg') !!}</span><br><br>
                         <span class="bachelor-span">{{ trans('scholarship.lilia_baleva') }}</span>
-                        <span class="picspan"> {!! HTML::image('img/images.png') !!}</span><br><br>
+                        <span class="picspan"> {!! HTML::image('img/scholarships/liliabaleva.jpg') !!}</span><br><br>
                         <span class="bachelor-span">{{ trans('scholarship.vladimir_dimitrov') }}</span>
                         <span class="picspan"> {!! HTML::image('img/images.png') !!}</span><br><br>
                         <span class="bachelor-span">{{ trans('about.alex') }}</span>

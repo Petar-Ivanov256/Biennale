@@ -18,7 +18,7 @@
                 </p>
             </div>
             <div class="col-md-6 second-paragraph" id="change">
-                <h2 class="bachelor-header">Условия и минали победители</h2><br>
+                <h2 class="bachelor-header">{{ trans('scholarship.rules_and_winners') }}</h2><br>
                 <button class="learn-more">{{ trans('scholarship.rules_btn') }}</button>
                 <button class="learn-more">{{ trans('scholarship.jury_btn') }}</button>
                 <button class="learn-more">{{ trans('scholarship.winners') }}</button><br><br>
@@ -47,11 +47,11 @@
                 </p>
                 <div class="second-p-paragraph">
                     <span class="bachelor-span">{{ trans('about.art_director_name') }}</span>
-                    <span class="picspan"> {!! HTML::image('img/scholarships/konstantin valchev_patron.jpg') !!}</span><br><br>
+                    <span class="picspan">{!! HTML::image('img/scholarships/konstantin valchev_patron.jpg') !!}</span><br><br>
                     <span class="bachelor-span">{{ trans('about.zdenek_lhodski') }}</span>
-                    <span class="picspan"> {!! HTML::image('img/scholarships/zdenek-lhotsky.jpg') !!}</span><br><br>
+                    <span class="picspan">{!! HTML::image('img/scholarships/zdenek-lhotsky.jpg') !!}</span><br><br>
                     <span class="bachelor-span">{{ trans('about.dana_zzamechnikova') }}</span>
-                    <span class="picspan">  {!! HTML::image('img/images.png') !!}</span><br><br>
+                    <span class="picspan">{!! HTML::image('img/scholarships/zamecnikova1.jpg') !!}</span><br><br>
                     <span class="bachelor-span">{{ trans('about.milan_krajek') }}</span>
                     <span class="picspan"> {!! HTML::image('img/scholarships/milan-krajicek.jpg') !!}</span><br><br>
                    <!-- <span class="bachelor-span">гл. ас. д-р Владимир Димитров</span>

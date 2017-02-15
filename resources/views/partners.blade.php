@@ -36,7 +36,7 @@
                     <a href="#">{!! HTML::image('img/partnersimg/eurobulsoft_logo.png','alt',array('width'=>160,'height'=>60)) !!}</a>&nbsp&nbsp;
                     <a href="#">{!! HTML::image('img/partnersimg/Greenpeace.svg.png','alt',array('width'=>200,'height'=>30)) !!}</a>&nbsp;&nbsp;<br><br>
                     <a href="#">{!! HTML::image('img/partnersimg/ZZ_FOE_BG_LONG_RGB.png','alt',array('width'=>170,'height'=>50)) !!}</a>&nbsp;&nbsp;
-                    <a href="#">{!! HTML::image('img/partnersimg/americanfoundation.jpg','alt',array('width'=>80,'height'=>80)) !!}</a>&nbsp;&nbsp;
+                    <a href="#">{!! HTML::image('img/partnersimg/AFBBG.jpg','alt',array('width'=>80,'height'=>80)) !!}</a>&nbsp;&nbsp;
 
                 </div><br>
                 <h4 class="partnersName2">{{ trans('partners.institutions_and_galleries') }}</h4><br>

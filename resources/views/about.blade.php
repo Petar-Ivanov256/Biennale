@@ -82,7 +82,7 @@
                             </div>
                         </div>
 
-                        <br><br>
+                        <br><br><br>
                         <div class="col-md-5">
                             <img src="{{ asset('/img/team/flora_dyulgeryan.jpg') }}">
                                 <br>
@@ -135,27 +135,28 @@
                     <h2>{{ trans('about.graph_design') }}</h2>
                     <article>
                         <div class="col-md-5">
-                            {!! HTML::image('img/images.png') !!}
+
                             <br>
                             <div class="textunderimg">
                                 <h4>{{ trans('about.ana') }}</h4>
-                                <p></p>
+                                <p><a href="http://www.amitystudio.com/" target="_blank">http://www.amitystudio.com</a></p>
                             </div>
                         </div>
                         <div class="col-md-5">
-                            {!! HTML::image('img/images.png') !!}
+
                             <br>
                             <div class="textunderimg">
                                 <h4>{{ trans('about.todor') }}</h4>
-                                <p></p>
+                                <p><a href="https://www.behance.net/Tozzi/" target="_blank">https://www.behance.net/Tozzi</a></p>
                             </div>
                         </div>
                         <div class="col-md-5">
-                            {!! HTML::image('img/images.png') !!}
+
                             <br>
                             <div class="textunderimg">
                                 <h4>{{ trans('about.galin') }}</h4>
-                                <p></p>
+                                <p><a href="https://www.instagram.com/gganchev/" target="_blank" >https://www.instagram.com/gganchev</a></p>
+                                <p><a href="https://dribbble.com/gganchev/" target="_blank">https://dribbble.com/gganchev</a></p>
                             </div>
                         </div>
 
@@ -207,7 +208,7 @@
                         {{-- <img src="{{ asset('/img/team/raya_todorova.jpg') }}"> --}}
 
                         <div class="col-md-5">
-                            {!! HTML::image('img/images.png') !!}
+                            <img src="{{ asset('/img/team/raynataseva.jpg') }}">
                             <br>
                             <div class="textunderimg">
                                 <h4>{{ trans('about.rayna_taseve') }}</h4>
@@ -295,7 +296,7 @@
                             </div>
                         </div>
                         <div class="col-md-5">
-                            {!! HTML::image('img/images.png') !!}
+                            <img src="{{ asset('/img/team/zamecnikova.jpg') }}">
                             <br>
                             <div class="textunderimg">
                                 <h4>{{ trans('about.dana_zzamechnikova') }}</h4>
@@ -317,7 +318,7 @@
                         </div>
 
                         <div class="col-md-5">
-                            {!! HTML::image('img/images.png') !!}
+                            <img src="{{ asset('/img/team/zamecnikova.jpg') }}">
                             <br>
                             <div class="textunderimg">
                                 <h4>{{ trans('about.dana_zzamechnikova') }}</h4>
