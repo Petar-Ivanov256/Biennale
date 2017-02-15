@@ -52,15 +52,11 @@
                 </div> --}}
                 <div class="col-md-5 picAbout hide" id="team-1">
                     <img class="center-block" src="{{ asset('/img/team/art_director_konstantin valchev_patron.jpg') }}">
-                    <h2 class="text-center art-head">Доц. д-р Константин Вълчев <br> {{--{{ trans('about.art_director') }}--}}</h2>
+                    <h2 class="text-center art-head"> {{ trans('about.art_director_name') }} <br> {{--{{ trans('about.art_director') }}--}}</h2>
                     <article class="text-justify txt-article">
-                        Като художник моите творчески търсения са инспирирани най-вече от стъклото именно защото
-                        то се различава силно от другите традиционни материали. Опитвам се да изтъкна максимално
-                        качествата и възможностите на този материал, чиято сила на въздействие се дължи изцяло на
-                        светлината. Главната ми цел е с помощта на комбинацията от различните по форма, големина и
-                        дебелина пластични обеми да концентрирам и събера светлината в определения обект, скулптура
-                        или композиция от стъклени елементи, които от своя страна да я пречупват, излъчват, поглъщат
-                        и отразяват по определен начин ...
+                        {{ trans('about.art_director_description_one') }}<br><br>
+                        {{ trans('about.art_director_description_two') }}<br><br>
+                        {{ trans('about.art_director_description_three') }}
                     </article>
                 </div>
                 <div class="col-md-5 picAbout hide" id="team-2">
@@ -132,7 +128,7 @@
                 <div class="col-md-5 picAbout hide" id="team-3">
                     <h2>{{ trans('about.jury') }}</h2>
                     <article>
-                        Очаквайте
+                        <p>{{ trans('about.jury_coming_soon') }}</p>
                     </article>
                 </div>
                 <div class="col-md-5 picAbout hide" id="team-4">
@@ -214,16 +210,16 @@
                             {!! HTML::image('img/images.png') !!}
                             <br>
                             <div class="textunderimg">
-                                <h4>Райна Тасева</h4>
-                                <p>детски творчески работилници</p>
+                                <h4>{{ trans('about.rayna_taseve') }}</h4>
+                                <p>{{ trans('about.workshop_children') }}</p>
                             </div>
                        </div>
                         <div class="col-md-5">
                             <img src="{{ asset('/img/team/raya_todorova1.jpg') }}">
                             <br>
                             <div class="textunderimg">
-                                <h4>Рая Сотирова</h4>
-                                <p>детски творчески работилници</p>
+                                <h4>{{ trans('about.raya_sotirova') }}</h4>
+                                <p>{{ trans('about.workshop_children') }}</p>
                             </div>
 
                         </div>
@@ -231,24 +227,24 @@
                             <img src="{{ asset('/img/team/veselina gekova1.jpg') }}">
                             <br>
                             <div class="textunderimg">
-                                <h4>Веселина Гекова</h4>
-                                <p>детски творчески работилници</p>
+                                <h4>{{ trans('about.veselina_gekova') }}</h4>
+                                <p>{{ trans('about.workshop_children') }}</p>
                             </div>
                         </div>
                         <div class="col-md-5">
                             <img src="{{ asset('/img/team/alexandra veleva1.jpg') }}">
                             <br>
                             <div class="textunderimg">
-                                <h4>Александра Велева</h4>
-                                <p>детски творчески работилници</p>
+                                <h4>{{ trans('about.alex') }}</h4>
+                                <p>{{ trans('about.workshop_children') }}</p>
                             </div>
                         </div>
                         <div class="col-md-5">
                             {!! HTML::image('img/images.png') !!}
                             <br>
                             <div class="textunderimg">
-                                <h4>София-Хара Хадзопулу</h4>
-                                <p>детски творчески работилници</p>
+                                <h4>{{ trans('about.sofia') }}</h4>
+                                <p>{{ trans('about.workshop_children') }}</p>
                             </div>
                         </div>
 
@@ -257,8 +253,8 @@
                             <img src="{{ asset('/img/team/alexander_tasev1.jpg') }}">
                             <br>
                             <div class="textunderimg">
-                                <h4>Александър Тасев</h4>
-                                <p>творческа работилница “Fusing and slumping</p>
+                                <h4>{{ trans('about.alexander_tasev') }}</h4>
+                                <p>{{ trans('about.workshop_fusing') }}</p>
                            </div>
 
                         </div>
@@ -266,8 +262,8 @@
                             <img src="{{ asset('/img/team/stefan_velev1.jpg') }}">
                             <br>
                             <div class="textunderimg">
-                                <h4>Стефан Велев</h4>
-                                <p>творческа работилница “Fusing and slumping</p>
+                                <h4>{{ trans('about.stefan_velev') }}</h4>
+                                <p>{{ trans('about.workshop_fusing') }}</p>
                             </div>
                       </div>
 
@@ -276,24 +272,16 @@
                             <img src="{{ asset('/img/team/ondrej_strnadel1.jpg') }}">
                             <br>
                             <div class="textunderimg">
-                                <h4>Ondrej Strnadel</h4>
-                                <p>творческа работилница за духано стъкло – майстор-духач</p>
-                            </div>
-                        </div>
-                        <div class="col-md-5">
-                            {!! HTML::image('img/images.png') !!}
-                            <br>
-                            <div class="textunderimg">
-                                <h4></h4>
-                                <p>творческа работилница за духано стъкло – майстор-духач</p>
+                                <h4>{{ trans('about.ondrej_strnadel') }}</h4>
+                                <p>{{ trans('about.ondrej_strnadel_w') }}</p>
                             </div>
                         </div>
                         <div class="col-md-5">
                             <img src="{{ asset('/img/team/Lilia_Pangelova.jpg') }}">
                             <br>
                             <div class="textunderimg">
-                                <h4>Лилия Пангелова</h4>
-                                <p>творческа работилница за духано стъкло – помощник-духач</p>
+                                <h4>{{ trans('about.lilia_pangelova') }}</h4>
+                                <p>{{ trans('about.lilia_pangelova_w') }}</p>
                             </div>
                         </div>
 
@@ -302,7 +290,7 @@
                             <img src="{{ asset('/img/team/milan_krajicek1.jpg') }}">
                             <br>
                             <div class="textunderimg">
-                                <h4>Милан Крайчек</h4>
+                                <h4>{{ trans('about.milan_krajek') }}</h4>
                                 <p></p>
                             </div>
                         </div>
@@ -310,7 +298,7 @@
                             {!! HTML::image('img/images.png') !!}
                             <br>
                             <div class="textunderimg">
-                                <h4>Дана Замечникова</h4>
+                                <h4>{{ trans('about.dana_zzamechnikova') }}</h4>
                                 <p></p>
                             </div>
                         </div>
@@ -324,7 +312,7 @@
                             <img src="{{ asset('/img/team/zdenek_lhotsky.jpg') }}">
                             <br>
                             <div class="textunderimg">
-                                <h4>Зденек Лхотски</h4>
+                                <h4>{{ trans('about.zdenek_lhodski') }}</h4>
                             </div>
                         </div>
 
@@ -332,7 +320,7 @@
                             {!! HTML::image('img/images.png') !!}
                             <br>
                             <div class="textunderimg">
-                                <h4>Дана Замечникова</h4>
+                                <h4>{{ trans('about.dana_zzamechnikova') }}</h4>
                             </div>
                         </div>
 
@@ -341,21 +329,21 @@
                             <img src="{{ asset('/img/team/milan_krajicek1.jpg') }}">
                             <br>
                             <div class="textunderimg">
-                                <h4>Милан Крайчек</h4>
+                                <h4>{{ trans('about.milan_krajek') }}</h4>
                             </div>
                         </div>
                         <div class="col-md-5">
                             <img src="{{ asset('/img/team/alexandra veleva1.jpg') }}">
                             <br>
                             <div class="textunderimg">
-                                <h4>Александра Велева</h4>
+                                <h4>{{ trans('about.alex') }}</h4>
                             </div>
                         </div>
                         <div class="col-md-5">
                             {!! HTML::image('img/images.png') !!}
                             <br>
                             <div class="textunderimg">
-                                <h4>София-Хара Хадзопулу</h4>
+                                <h4>{{ trans('about.sofia') }}</h4>
                             </div>
                         </div>
                         <br>
@@ -363,7 +351,7 @@
                             <img src="{{ asset('/img/team/denica_todorova.jpg') }}">
                             <br>
                             <div class="textunderimg">
-                                <h4>Деница Тодорова</h4>
+                                <h4>{{ trans('about.denica') }}</h4>
                             </div>
                         </div>
                         <br>
@@ -371,7 +359,7 @@
                             <img src="{{ asset('/img/team/elizar_milev_koordinator_ngpi1.jpg') }}">
                             <br>
                             <div class="textunderimg">
-                                <h4>Елизар Милев</h4>
+                                <h4>{{ trans('about.elizar') }}</h4>
                             </div>
                         </div>
 

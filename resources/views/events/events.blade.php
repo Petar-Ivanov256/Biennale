@@ -8,42 +8,42 @@
         <div class="row">
         <div class="col-md-9 event-left" id="event-back">
             <div class="col-md-2 prgdata">
-                <p>Събития</p>
-                <p>Период</p>
+                <p>{{ trans('events.event_title') }}</p>
+                <p>{{ trans('events.period') }}</p>
             </div>
             <div>
                 <div>
                 <ul class="events-menu">
-                    <li><a href="#1">Изложби</a></li>
-                    <li><a href="#2">Лекции</a></li>
-                    <li><a href="#3" data-toggle="collapse">Творчески работилници</a></li>
-                    <li><a href="#4">Конкурси</a></li>
-                    <li><a href="#4">Кампании</a></li>
-                    <li id="biennale-week">Седмица на биеналето</li>
+                    <li><a href="#1">{{ trans('events.events_menu_exhibitions') }}</a></li>
+                    <li><a href="#2">{{ trans('events.events_menu_lectures') }}</a></li>
+                    <li><a href="#3" data-toggle="collapse">{{ trans('events.events_menu_workshops') }}</a></li>
+                    <li><a href="#4">{{ trans('events.events_menu_competitions') }}</a></li>
+                    <li><a href="#4">{{ trans('events.events_menu_campaigns') }}</a></li>
+                    <li id="biennale-week">{{ trans('events.events_menu_biennale_week') }}</li>
                 </ul>
                 </div>
                 <div id="3" class="collapse">
                     <ul class="months">
-                        <li><a href="#00">Декември (2016)</a></li>
-                        <li><a href="#01">Януари</a></li>
-                        <li><a href="#02">Февруари</a></li>
-                        <li><a href="#03">Март</a></li>
-                        <li><a href="#04">Април</a></li>
-                        <li><a href="#05">Май</a></li>
-                        <li><a href="#06">Юни</a></li>
-                        <li><a href="#07">Юли</a></li>
-                        <li><a href="#08">Август</a></li>
-                        <li><a href="#09">Септември</a></li>
-                        <li><a href="#10">Октомври</a></li>
-                        <li><a href="#11">Ноември</a></li>
-                        <li><a href="#12">Декември</a></li>
+                        <li><a href="#00">{{ trans('events.months_Dec_2016') }}</a></li>
+                        <li><a href="#01">{{ trans('events.months_Jan') }}</a></li>
+                        <li><a href="#02">{{ trans('events.months_Feb') }}</a></li>
+                        <li><a href="#03">{{ trans('events.months_Mar') }}</a></li>
+                        <li><a href="#04">{{ trans('events.months_Apr') }}</a></li>
+                        <li><a href="#05">{{ trans('events.months_May') }}</a></li>
+                        <li><a href="#06">{{ trans('events.months_Jun') }}</a></li>
+                        <li><a href="#07">{{ trans('events.months_Jul') }}</a></li>
+                        <li><a href="#08">{{ trans('events.months_Aug') }}</a></li>
+                        <li><a href="#09">{{ trans('events.months_Sep') }}</a></li>
+                        <li><a href="#10">{{ trans('events.months_Oct') }}</a></li>
+                        <li><a href="#11">{{ trans('events.months_Nov') }}</a></li>
+                        <li><a href="#12">{{ trans('events.months_Dec') }}</a></li>
                     </ul>
                 </div>
             </div>
         </div>
         <!--Izlozbi-->
         <div class="col-md-9 programa" id="event-back">
-             <div id="1" class="events-p"><p>Изложби<p></div><br>
+             <div id="1" class="events-p"><p>{{ trans('events.events_menu_exhibitions') }}<p></div><br>
                 @foreach($events as $event)
                     @if (LaravelLocalization::getCurrentLocale() == 'en')
                         <div class="col-md-5" onclick="getDetails({{ $event->id }}, '{{LaravelLocalization::getCurrentLocale()}}')">
@@ -95,16 +95,16 @@
             <h2 id="event-category"></h2>
             <img src="" id="details-img">
             <div class="ptagleftprogramdetails">
-                <span class="oneprogdet">Дата</span>
+                <span class="oneprogdet">{{ trans('events.date') }}</span>
                 <span class="twoprogdet" id="details-date"></span>
-                <span class="oneprogdet">Час</span>
+                <span class="oneprogdet">{{ trans('events.hour') }}</span>
                 <span class="twoprogdet" id="details-time"></span>
-                <span class="oneprogdet">Място</span>
+                <span class="oneprogdet">{{ trans('events.location') }}</span>
                 {{--<span class="twoprogdet" id="details-location">Галерия Райко Алексиев <a href="{{url('https://www.google.bg/maps/place/Galeria+Rayko+Aleksiev/@42.6940046,23.3264532,17z/data=!3m1!4b1!4m5!3m4!1s0x40aa8573cd8ef9e7:0x65f0adc8c2fca7!8m2!3d42.6940046!4d23.3286419?hl=bg')}}" class="programapdirection">виж картата</a></span>--}}
                 <span class="twoprogdet" id="details-location"></span>
-                <span class="oneprogdet">Участници</span>
+                <span class="oneprogdet">{{ trans('events.participants') }}</span>
                 <span class="twoprogdet" id="details-artist"></span>
-                <span class="oneprogdet">Вход</span>
+                <span class="oneprogdet">{{ trans('events.entrance') }}</span>
                 <span class="twoprogdet" id="details-entrance"></span><br>
             </div>
             <div>
@@ -112,7 +112,7 @@
 
                 </p>
             </div>
-            <a href="#top" class="back-to-top"><span class="ptagleftdetailss"></span><span class="ptagleftdetailss">Обратно към всички</span></a>
+            <a href="#top" class="back-to-top"><span class="ptagleftdetailss"></span><span class="ptagleftdetailss">{{ trans('events.back_btn') }}</span></a>
         </div>
         <section>
             {{-- <div class=" col-md-6 programa" id="change">

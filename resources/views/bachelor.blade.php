@@ -19,11 +19,11 @@
                 </div>
                 <div class="col-md-6 second-paragraph" id="change">
                     <h2 class="bachelor-header">Условия и минали победители</h2><br>
-                    <button class="learn-more" id="bnt" onclick="setColor();">Правила</button>
-                    <button class="learn-more">Жури</button>
-                    <button class="learn-more">Победители</button><br><br>
+                    <button class="learn-more">{{ trans('scholarship.rules_btn') }}</button>
+                    <button class="learn-more">{{ trans('scholarship.jury_btn') }}</button>
+                    <button class="learn-more">{{ trans('scholarship.winners') }}</button><br><br>
                     <p class="second-p-paragraph text-justify" id="firstscholarpar">
-                          <span class="bachelor-header2">
+                      <!--    <span class="bachelor-header2">
                         Правила за участие в конкурс за пълна стипендия в специалност „Стъклото в изкуството и дизайна“, с прием в трети семестър по
                         договор, образователна степен <span class="bac">БАКАЛАВЪР</span>
                         в Нов български университет за периода 2017 – 2020 г.
@@ -39,18 +39,18 @@
                         По време на обучението студентът трябва да завърши пълен курс на обучение в специалността, да е активен и да взима успешно изпитите си.</span><br><br>
                     Ако спечелилият първо място, не положи успешно или не се яви на кандидат-студентски изпити, наградата се присъжда на предварително оповестена първа резерва.
                     Ако първата резерва не положи успешно или не се яви на кандидат-студентски изпити, наградата се присъжда на предварително оповестена втора резерва. При неуспешно положени
-                    кандидат-студентски изпити или неявяване на такива и от втората резерва, награда не се присъжда за съответната година и сумата остава в полза на Екипа на биеналето, който решава как да я оползотвори.
+                    кандидат-студентски изпити или неявяване на такива и от втората резерва, награда не се присъжда за съответната година и сумата остава в полза на Екипа на биеналето, който решава как да я оползотвори. -->
                     </p>
                     <div class="second-p-paragraph">
-                        <span class="bachelor-span">доц. д-р Константин Вълчев</span>
+                        <span class="bachelor-span">{{ trans('about.art_director_name') }}</span>
                         <span class="picspan"> {!! HTML::image('img/scholarships/konstantin valchev_patron.jpg') !!}</span><br><br>
-                        <span class="bachelor-span">Лилия Балева</span>
+                        <span class="bachelor-span">{{ trans('scholarship.lilia_baleva') }}</span>
                         <span class="picspan"> {!! HTML::image('img/images.png') !!}</span><br><br>
-                        <span class="bachelor-span">гл. ас. д-р Владимир Димитров</span>
+                        <span class="bachelor-span">{{ trans('scholarship.vladimir_dimitrov') }}</span>
                         <span class="picspan"> {!! HTML::image('img/images.png') !!}</span><br><br>
-                        <span class="bachelor-span">Александра Велева</span>
+                        <span class="bachelor-span">{{ trans('about.alex') }}</span>
                         <span class="picspan"> {!! HTML::image('img/scholarships/alexandra veleva2.jpg') !!}</span><br><br>
-                        <span class="bachelor-span">София-Хара Хадзопулу</span>
+                        <span class="bachelor-span">{{ trans('about.sofia') }}</span>
                         <span class="picspan"> {!! HTML::image('img/images.png') !!}</span><br><br>
                     </div>
                     <div class="second-p-paragraph">

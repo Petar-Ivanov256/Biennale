@@ -19,11 +19,11 @@
                 </div>
                 <div class="col-md-6 second-paragraph" id="change">
                     <h2 class="bachelor-header">Условия и минали победители</h2><br>
-                    <button class="learn-more">Правила</button>
-                    <button class="learn-more">Жури</button>
-                    <button class="learn-more">Победители</button><br><br>
+                    <button class="learn-more">{{ trans('scholarship.rules_btn') }}</button>
+                    <button class="learn-more">{{ trans('scholarship.jury_btn') }}</button>
+                    <button class="learn-more">{{ trans('scholarship.winners') }}</button><br><br>
                     <p class="second-p-paragraph text-justify" id="firstscholarpar">
-                        <span class="bachelor-header2">
+                      <!--  <span class="bachelor-header2">
                             Правила за участие в конкурс за пълна стипендия в специалност „Стъкло“, с продължителност от три семестъра,
                             образователна степен  <span class="bac">ДОКТОР</span> в Нов български университет за периода 2017 – 2020г
                         </span><br><br>
@@ -41,17 +41,17 @@
                         <span class="imp-span">
                             Гореспоменатите снимки и документи се изпращат на електронна поща: <a href="mailto:glassbiennalebg@gmail.com:" id="emailCordinator">glassbiennalebg@gmail.com</a> до 15.09.2017 г.,
                             след тази дата ще се състои комисията за избиране на стипендиант.
-                        </span>
+                        </span>-->
 
                     </p>
                     <div class="second-p-paragraph">
-                        <span class="bachelor-span">доц. д-р Константин Вълчев</span>
+                        <span class="bachelor-span">{{ trans('about.art_director_name') }}</span>
                         <span class="picspan"> {!! HTML::image('img/scholarships/konstantin valchev_patron.jpg') !!}</span><br><br>
-                        <span class="bachelor-span">Зденек Лхотски</span>
+                        <span class="bachelor-span">{{ trans('about.zdenek_lhodski') }}</span>
                         <span class="picspan"> {!! HTML::image('img/scholarships/zdenek-lhotsky.jpg') !!}</span><br><br>
-                        <span class="bachelor-span">Дана Замечникова</span>
+                        <span class="bachelor-span">{{ trans('about.dana_zzamechnikova') }}</span>
                         <span class="picspan">  {!! HTML::image('img/images.png') !!}</span><br><br>
-                        <span class="bachelor-span">Милан Крайчек</span>
+                        <span class="bachelor-span">{{ trans('about.milan_krajek') }}</span>
                         <span class="picspan"> {!! HTML::image('img/scholarships/milan-krajicek.jpg') !!}</span><br><br>
                     <!-- <span class="bachelor-span">гл. ас. д-р Владимир Димитров</span>
                     <span class="picspan"> {!! HTML::image('img/scholarships/pic1.jpg') !!}</span><br><br>
