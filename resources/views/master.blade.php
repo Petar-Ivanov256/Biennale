@@ -51,7 +51,7 @@
                     <span class="bachelor-span">{{ trans('about.zdenek_lhodski') }}</span>
                     <span class="picspan">{!! HTML::image('img/scholarships/zdenek-lhotsky.jpg') !!}</span><br><br>
                     <span class="bachelor-span">{{ trans('about.dana_zzamechnikova') }}</span>
-                    <span class="picspan">{!! HTML::image('img/scholarships/zamecnikova1.jpg') !!}</span><br><br>
+                    <span class="picspan">{!! HTML::image('img/scholarships/zamecnikova2.jpg') !!}</span><br><br>
                     <span class="bachelor-span">{{ trans('about.milan_krajek') }}</span>
                     <span class="picspan"> {!! HTML::image('img/scholarships/milan-krajicek.jpg') !!}</span><br><br>
                    <!-- <span class="bachelor-span">гл. ас. д-р Владимир Димитров</span>
