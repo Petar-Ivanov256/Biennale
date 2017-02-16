@@ -208,7 +208,7 @@
                         {{-- <img src="{{ asset('/img/team/raya_todorova.jpg') }}"> --}}
 
                         <div class="col-md-5">
-                            <img src="{{ asset('/img/team/raynataseva.jpg') }}">
+                            <img src="{{ asset('/img/team/raynataseva1.jpg') }}">
                             <br>
                             <div class="textunderimg">
                                 <h4>{{ trans('about.rayna_taseve') }}</h4>
