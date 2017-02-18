@@ -658,7 +658,7 @@ body{
 }
 .Bien{
     font-size: 18px;
-    font-family: "359Sans";
+    font-family: "359Sans",sans-serif;
     color: rgb(109, 110, 113);
     font-style: italic;
     line-height: 2.07;
@@ -669,38 +669,34 @@ body{
 
 .mainMenuComponents {
     font-size: 18px;
-    font-family: "359Sans";
+    font-family: "359Sans",sans-serif;
     color: #6D6E71;
 }
 #mainMenuScholer {
      font-size: 18px;
-     font-family: "359Sans";
+     font-family: "359Sans",sans-serif;
      color: #6D6E71;
  }
 
 #IconsMenuComponents a{
     font-size: 14px;
-    font-family: "359Sans";
+    font-family: "359Sans",sans-serif;
     color: #6D6E71;
 }
 
 .BG___EN {
     font-size: 16px;
-    font-family: "359Sans";
+    font-family: "359Sans",sans-serif;
     color: rgb(109, 110, 113);
     font-style: italic;
     line-height: 2.07;
-    text-align: left;
     position: absolute;
-    left: 1702px;
-    top: 58.39px;
-
 }
 
 /*Sub menu*/
 .subMenu{
     font-size: 16px;
-    font-family: "359Sans";
+    font-family: "359Sans",sans-serif;
     color: rgb(109, 110, 113);
     font-style: italic;
     position: relative;
@@ -713,12 +709,12 @@ body{
 }
 #BladeFooter a{
     font-size: 12px;
-    font-family: "359Sans";
+    font-family: "359Sans",sans-serif;
     color: rgb(109, 110, 113);
 }
 #Newsletter {
     font-size: 12px;
-    font-family: "DecimaMonoX";
+    font-family: "DecimaMonoX",sans-serif;
     color: rgb(240, 77, 63);
     font-weight: bold;
     text-transform: uppercase;
@@ -727,7 +723,7 @@ body{
 }
 #e-mail {
     font-size: 12px;
-    font-family:"359Sans";
+    font-family:"359Sans",sans-serif;
     color: rgba(109, 110, 113, 0.502);
     font-style: italic;
     border:none;
@@ -744,7 +740,7 @@ body{
 }
 #footer_sin{
     font-size: 13px;
-    font-family: "359Sans";
+    font-family: "359Sans",sans-serif;
     color: rgb(109, 110, 113);
     line-height: 2.07;
     -moz-transform: matrix( 0.99992415010354,0,0,1,0,0);
@@ -758,7 +754,7 @@ body{
 }
 .btn-submit{
     font-size: 12px;
-    font-family: "DecimaMonoX";
+    font-family: "DecimaMonoX",sans-serif;
     color: rgb(109, 110, 113);
     text-transform: uppercase;
     text-align: center;
@@ -783,7 +779,7 @@ body{
 
 .text-input-p{
     font-size: 15px;
-    font-family: "DecimaMonoX";
+    font-family: "DecimaMonoX",sans-serif;
     color: rgb(255, 255, 255);
     font-weight: bold;
     text-transform: uppercase;
@@ -829,7 +825,7 @@ body{
 
 .homepageOchakvaite {
     font-size: 56px;
-    font-family: "DecimaMonoX";
+    font-family: "DecimaMonoX",sans-serif;
     color: rgb(121, 77, 159);
     font-weight: bold;
     text-transform: uppercase;
@@ -852,7 +848,7 @@ body{
     text-decoration: none;
     background-color: transparent;
     cursor: pointer;
-    font-family: "DecimaMonoX";
+    font-family: "DecimaMonoX",sans-serif;
     color: rgb(121, 77, 159);
     text-transform: uppercase;
     display: inline-block;
@@ -875,7 +871,7 @@ body{
 
 .contentContactForm {
     font-size: 17px;
-    font-family: "359Sans";
+    font-family: "359Sans",sans-serif;
     color: rgba(109, 110, 113, 0.502);
     font-style: italic;
 }
@@ -892,7 +888,7 @@ body{
 
 .Title1{
     font-size: 28px;
-    font-family: "DecimaMonoX";
+    font-family: "DecimaMonoX",sans-serif;
     color: rgb(240, 77, 63);
     font-weight: bold;
     text-transform: uppercase;
@@ -907,7 +903,7 @@ body{
 
 .SideDate p{
     font-size: 2px;
-    font-family: "DecimaMonoX";
+    font-family: "DecimaMonoX",sans-serif;
     color: rgba(215, 237, 237, 0.702);
     font-weight: bold;
     /*line-height: 6;*/
@@ -926,7 +922,7 @@ body{
 
 #purvoMezdunarodno {
     font-size: 15px;
-    font-family: "359Sans";
+    font-family: "359Sans",sans-serif;
     color: rgba(109, 110, 113, 0.502);
     font-style: italic;
     line-height: 1.383;
@@ -936,7 +932,7 @@ body{
 }
 #SuzIstoria {
     font-size: 15px;
-    font-family: "DecimaMonoX";
+    font-family: "DecimaMonoX",sans-serif;
     color: rgb(240, 77, 63);
     font-weight: bold;
     text-transform: uppercase;
@@ -948,7 +944,7 @@ body{
 
 #cordinator {
     font-size: 15px;
-    font-family: "359Sans";
+    font-family: "359Sans",sans-serif;
     color: rgb(240, 77, 63);
     font-style: italic;
     text-align: left;
@@ -956,7 +952,7 @@ body{
 }
 #emailCordinator {
     font-size: 16px;
-    font-family: "359Sans";
+    font-family: "359Sans",sans-serif;
     color: rgb(240, 77, 63);
     text-align: right;
 
@@ -964,7 +960,7 @@ body{
 
 #nameForContact_A{
     font-size: 16px;
-    font-family: "DecimaMonoX";
+    font-family: "DecimaMonoX",sans-serif;
     color: rgb(121, 77, 159);
     font-weight: bold;
     text-transform: uppercase;
@@ -975,7 +971,7 @@ body{
 
 #nameForContact_S{
      font-size: 16px;
-     font-family: "DecimaMonoX";
+     font-family: "DecimaMonoX",sans-serif;
      color: rgb(121, 77, 159);
      font-weight: bold;
      text-transform: uppercase;
@@ -994,7 +990,7 @@ body{
  }
 .telefonCordinator {
     font-size: 15px;
-    font-family: "359Sans";
+    font-family: "359Sans",sans-serif;
     color: rgb(240, 77, 63);
     position: relative;
 
@@ -1004,7 +1000,7 @@ body{
 }
 #contactText{
     font-size: 10px;
-    font-family: "DecimaMonoX";
+    font-family: "DecimaMonoX",sans-serif;
     color: rgb(121, 77, 159);
     font-style: italic;
 }
@@ -1012,14 +1008,14 @@ body{
 
 .textAbout{
     font-size: 15px;
-    font-family: "359Sans";
+    font-family: "359Sans",sans-serif;
     color: rgb(121, 77, 159);
     font-style: italic;
 
 }
 .name1{
     font-size: 19px;
-    font-family: "DecimaMonoX";
+    font-family: "DecimaMonoX",sans-serif;
     color: rgb(240, 77, 63);
     font-weight: bold;
     text-transform: uppercase;
@@ -1037,12 +1033,12 @@ body{
 }
 .txt-article{
     font-size: 17px;
-    font-family: "359Sans";
+    font-family: "359Sans",sans-serif;
     color: rgb(109, 110, 113);
 }
 
 .art-head {
-    font-family: "359Sans";
+    font-family: "359Sans",sans-serif;
     color: rgb(109, 110, 113);
 }
 .shrink-pic{
@@ -1059,7 +1055,7 @@ body{
     background-color: transparent;
     cursor: pointer;
     font-size: 15px;
-    font-family: "DecimaMonoX";
+    font-family: "DecimaMonoX",sans-serif;
     color: rgba(109, 110, 113, 0.502);
     font-weight: bold;
     text-transform: uppercase;
@@ -1073,7 +1069,7 @@ body{
 }
 .partnersName1{
     font-size: 30px;
-    font-family: "DecimaMonoX";
+    font-family: "DecimaMonoX",sans-serif;
     color: rgb(240, 77, 63);
     font-weight: bold;
     text-transform: uppercase;
@@ -1081,7 +1077,7 @@ body{
 }
 .partnersName{
     font-size: 30px;
-    font-family: "DecimaMonoX";
+    font-family: "DecimaMonoX",sans-serif;
     color: rgb(240, 77, 63);
     font-weight: bold;
     text-transform: uppercase;
@@ -1089,7 +1085,7 @@ body{
 }
 .gen_partner{
     font-size: 15px;
-    font-family: "DecimaMonoX";
+    font-family: "DecimaMonoX",sans-serif;
     color: rgb(240, 77, 63);
     font-weight: bold;
     text-transform: uppercase;
@@ -1098,7 +1094,7 @@ body{
     left: 150px;
 }
 .p1{
-    font-family: "359Sans";
+    font-family: "359Sans",sans-serif;
 }
 .emailAdress{
     color: rgb(240, 77, 63);
@@ -1108,7 +1104,7 @@ body{
 }
 .partnersName2{
     font-size: 20px;
-    font-family: "359Sans";
+    font-family: "359Sans",sans-serif;
     color: rgb(121, 77, 159);
     font-weight: bold;
     text-transform: uppercase;
@@ -1123,7 +1119,7 @@ body{
     display: inline;
     list-style-type: none;
     padding-right: 20px;
-    font-family: "DecimaMonoX";
+    font-family: "DecimaMonoX",sans-serif;
     font-weight: bold;
     text-transform: uppercase;
 }
@@ -1135,7 +1131,7 @@ body{
 }
 .prgdata{
     font-size: 17px;
-    font-family: "DecimaMonoX";
+    font-family: "DecimaMonoX",sans-serif;
     color: rgb(121, 77, 159);
     font-weight: bold;
     text-transform: uppercase;
@@ -1146,7 +1142,7 @@ body{
 }
 .months li{
     font-size: 14px;
-    font-family: "359Sans";
+    font-family: "359Sans",sans-serif;
     text-transform: uppercase;
     display: inline;
     list-style-type: none;
@@ -1160,7 +1156,7 @@ body{
 
 .events-menu li{
     font-size: 15px;
-    font-family: "359Sans";
+    font-family: "359Sans",sans-serif;
     text-transform: uppercase;
     position: relative;
     display: inline;
@@ -1174,7 +1170,7 @@ body{
 .events-p p{
     font-size: 15px;
     left: 15px;
-    font-family: "359Sans";
+    font-family: "359Sans",sans-serif;
     text-transform: uppercase;
     position: relative;
     display: inline;
@@ -1185,7 +1181,7 @@ body{
 
 #biennale-week {
     font-size: 15px;
-    font-family: "359Sans";
+    font-family: "359Sans",sans-serif;
     color: rgb(121, 77, 159);
     font-style: italic;
     text-transform: uppercase;
@@ -1230,14 +1226,14 @@ body{
 }
 #right-alignaddress{
     text-align: right;
-    font-family: "359Sans";
+    font-family: "359Sans",sans-serif;
     color: rgb(255, 255, 255);
     font-style: italic;
     padding-right: 5px;
 
 }
 #right-alignhour{
-    font-family: "DecimaMonoX";
+    font-family: "DecimaMonoX",sans-serif;
     color: rgb(255, 255, 255);
     text-transform: uppercase;
     font-weight: bold;
@@ -1245,13 +1241,13 @@ body{
     padding-right: 5px;
 }
 #left-aligncity{
-    font-family: "359Sans";
+    font-family: "359Sans",sans-serif;
     color: rgb(255, 255, 255);
     font-style: italic;
     padding-left: 5px;
 }
 #left-aligndate{
-    font-family: "DecimaMonoX";
+    font-family: "DecimaMonoX",sans-serif;
     color: rgb(255, 255, 255);
     font-weight: bold;
     text-transform: uppercase;
@@ -1261,23 +1257,23 @@ body{
     /*left: 200px;*/
 }
 .textunderimg h4{
-    font-family: "DecimaMonoX";
+    font-family: "DecimaMonoX",sans-serif;
     font-weight: bold;
     color: rgb(109, 110, 113);
 }
 .textunderimg p{
-    font-family: "359Sans";
+    font-family: "359Sans",sans-serif;
     color: rgb(109, 110, 113);
 }
 .subtextunderimg p{
-    font-family: "359Sans";
+    font-family: "359Sans",sans-serif;
     color: rgb(109, 110, 113);
 }
 .subtextunderimg p{
     width: 210px;
 }
 .subtextunderimg h4{
-    font-family: "DecimaMonoX";
+    font-family: "DecimaMonoX",sans-serif;
     font-weight: bold;
     color: rgb(109, 110, 113);
 }
@@ -1292,26 +1288,26 @@ body{
 
 }
 .transform{
-    font-family: "DecimaMonoX";
+    font-family: "DecimaMonoX",sans-serif;
     font-size: 20px;
     font-weight: bold;
     color: #794D9F;
 }
 .programadetails h2{
     font-size: 30px;
-    font-family: "DecimaMonoX";
+    font-family: "DecimaMonoX",sans-serif;
     color: rgb(195, 227, 227);
     font-weight: bold;
     text-transform: uppercase;
 }
 .programadet{
     font-size: 30px;
-    font-family: "359Sans";
+    font-family: "359Sans",sans-serif;
     color: rgb(109, 110, 113);
 }
 .back-to-top{
     font-size: 20px;
-    font-family: "DecimaMonoX";
+    font-family: "DecimaMonoX",sans-serif;
     color: rgba(109, 110, 113, 0.302);
     font-weight: bold;
     text-transform: uppercase;
@@ -1351,13 +1347,13 @@ body{
 
 .progdettxt {
     font-size: 17px;
-    font-family: "359Sans";
+    font-family: "359Sans",sans-serif;
     color: rgb(109, 110, 113);
 }
 
 .oneprogdet{
     font-size: 20px;
-    font-family: "DecimaMonoX";
+    font-family: "DecimaMonoX",sans-serif;
     color: rgba(109, 110, 113, 0.302);
     font-weight: bold;
     text-transform: uppercase;
@@ -1366,14 +1362,14 @@ body{
 }
 .twoprogdet{
     font-size: 15px;
-    font-family: "359Sans";
+    font-family: "359Sans",sans-serif;
     color: rgb(109, 110, 113);
     font-style: italic;
     line-height: 1.2;
 }
 .programapdirection {
     font-size: 13px;
-    font-family: "359 Sans";
+    font-family: "359 Sans",sans-serif;
     color: rgba(121, 77, 159, 0.502);
     font-style: italic;
     font-weight: bold;
@@ -1396,7 +1392,7 @@ body{
 
 .bachelor-header {
     font-size: 30px;
-    font-family: "DecimaMonoX";
+    font-family: "DecimaMonoX",sans-serif;
     color: rgb(240, 77, 63);
     font-weight: bold;
     text-transform: uppercase;
@@ -1406,7 +1402,7 @@ body{
 
 .bachelor-header2{
     font-size: 18px;
-    font-family: "359Sans";
+    font-family: "359Sans",sans-serif;
     color: rgb(121, 77, 159);
     font-style: italic;
     position: relative;
@@ -1414,7 +1410,7 @@ body{
 }
 .first-p-paragraph{
     font-size: 15px;
-    font-family: "359Sans";
+    font-family: "359Sans",sans-serif;
     color: rgb(109, 110, 113);
     position: relative;
 }
@@ -1427,7 +1423,7 @@ body{
     font-size: 20px;
     width: 170px;
     background-color: transparent;
-    font-family: "DecimaMonoX";
+    font-family: "DecimaMonoX",sans-serif;
     color: rgb(121, 77, 159);
     text-transform: uppercase;
     text-align: center;
@@ -1439,7 +1435,7 @@ body{
 
 .second-p-paragraph {
     font-size: 15px;
-    font-family: "359Sans";
+    font-family: "359Sans",sans-serif;
     color: rgb(109, 110, 113);
     position: relative;
 }
@@ -1450,14 +1446,14 @@ body{
 
 .imp-span{
     font-size: 17px;
-    font-family: "359Sans";
+    font-family: "359Sans",sans-serif;
     color: rgb(109, 110, 113);
     font-style: italic;
     position: relative;
 }
 .bac{
     font-size: 18px;
-    font-family: "359Sans";
+    font-family: "359Sans",sans-serif;
     color: rgb(121, 77, 159);
     font-weight: bold;
 }
@@ -1494,13 +1490,13 @@ body{
 }
 .help-block{
     color: rgb(240, 77, 63);
-    font-family: "359Sans";
+    font-family: "359Sans",sans-serif;
     font-style: italic;
     font-size: 13px;
 }
 .title-reglament{
     font-size: 26px;
-    font-family: "DecimaMonoX";
+    font-family: "DecimaMonoX",sans-serif;
     color: rgb(240, 77, 63);
     font-weight: bold;
     text-transform: uppercase;
@@ -1509,7 +1505,7 @@ body{
 }
 .sub-title{
     font-size: 17px;
-    font-family: "359Sans";
+    font-family: "359Sans",sans-serif;
     color: rgb(121, 77, 159);
     font-style: italic;
     position: relative;
@@ -1518,18 +1514,18 @@ body{
 
 .contentContactForm_S{
     font-size: 15px;
-    font-family: "359Sans";
+    font-family: "359Sans",sans-serif;
     color: rgba(109, 110, 113, 0.94);
 }
 
 .text-p {
     font-size: 16px;
-    font-family: "359Sans";
+    font-family: "359Sans",sans-serif;
     color: rgb(109, 110, 113);
 }
 .a-drop-down{
     font-size: 17px;
-    font-family: "DecimaMonoX";
+    font-family: "DecimaMonoX",sans-serif;
     color: rgba(109, 110, 113, 0.502);
     font-weight: bold;
     text-transform: uppercase;
@@ -1537,7 +1533,7 @@ body{
 
 .appl-form-head{
     font-size: 17px;
-    font-family: "359Sans";
+    font-family: "359Sans",sans-serif;
     color:#794D9F;
 }
 .columns-application-from{
@@ -1546,12 +1542,12 @@ body{
     columns: 2;
     list-style-type: none;
     width: 430px;
-    font-family: "359Sans";
+    font-family: "359Sans",sans-serif;
 
 }
 .sub-title-technique{
     font-size: 20px;
-    font-family: "359Sans";
+    font-family: "359Sans",sans-serif;
     color: #F04D3F;
     font-style: italic;
     position: relative;
@@ -1612,7 +1608,7 @@ input[type="checkbox"]{
 
 .inputfile-6 + label {
     font-size: 15px;
-    font-family: "359Sans";
+    font-family: "359Sans",sans-serif;
     color: rgba(109, 110, 113, 0.502);
     font-style: italic;
     position: relative;
@@ -1652,7 +1648,7 @@ input[type="checkbox"]{
     background-color: #794D9F;
     display: inline-block;
     font-size: 15px;
-    font-family: "DecimaMonoX";
+    font-family: "DecimaMonoX",sans-serif;
     text-transform: uppercase;
     text-align: center;
     position:relative;
@@ -1672,13 +1668,13 @@ input[type="checkbox"]{
 }
 .content-app {
     font-size: 17px;
-    font-family: "359Sans";
+    font-family: "359Sans",sans-serif;
     color: rgb(109, 110, 113);
     font-style: italic;
 }
 .max-Mb {
     font-size: 15px;
-    font-family: "359Sans";
+    font-family: "359Sans",sans-serif;
     color: rgba(109, 110, 113, 0.502);
 }
 /*Authors CSS*/
@@ -1691,7 +1687,7 @@ input[type="checkbox"]{
 .title-Authors{
 
     font-size: 25px;
-    font-family: "DecimaMonoX";
+    font-family: "DecimaMonoX",sans-serif;
     color: rgb(240, 77, 63);
     font-weight: bold;
     text-transform: uppercase;
@@ -1701,7 +1697,7 @@ input[type="checkbox"]{
 
 .span-authors-data{
     font-size: 25px;
-    font-family: "DecimaMonoX";
+    font-family: "DecimaMonoX",sans-serif;
     color: #C3E3E3;
     font-weight: bold;
     text-transform: uppercase;
@@ -1712,7 +1708,7 @@ input[type="checkbox"]{
 .authors-people{
     font-size: 14px;
     list-style-type: none;
-    font-family: "359Sans";
+    font-family: "359Sans",sans-serif;
     font-weight: bold;
     position: relative;
     padding-bottom: 150px;
@@ -1730,7 +1726,7 @@ input[type="checkbox"]{
 }
 .country-authors{
     font-size: 12px;
-    font-family: "359Sans";
+    font-family: "359Sans",sans-serif;
     color: rgba(121, 77, 159, 0.502);
     font-style: italic;
     position: relative;
@@ -1738,14 +1734,14 @@ input[type="checkbox"]{
 }
 .info-name{
     font-size: 25px;
-    font-family: "359Sans";
+    font-family: "359Sans",sans-serif;
     color: rgb(121, 77, 159);
     position: relative;
     z-index: 61;
 }
 .info-about-person{
     font-size: 17px;
-    font-family: "359Sans";
+    font-family: "359Sans",sans-serif;
     color: rgb(240, 77, 63);
     list-style-type: none;
     padding-left: 1px;
@@ -1755,7 +1751,7 @@ input[type="checkbox"]{
 }
 .info-autor-about{
     font-size: 17px;
-    font-family: "359Sans";
+    font-family: "359Sans",sans-serif;
     color: rgb(109, 110, 113);
     line-height: 1.2;
     position: relative;
@@ -1763,7 +1759,7 @@ input[type="checkbox"]{
 }
 .info-authors-text-under-pic{
     font-size: 15px;
-    font-family: "359Sans";
+    font-family: "359Sans",sans-serif;
     color: rgb(109, 110, 113);
     line-height: 1.2;
     position: relative;
@@ -1771,7 +1767,7 @@ input[type="checkbox"]{
 }
 .info-about-tech{
     font-size: 15px;
-    font-family: "359Sans";
+    font-family: "359Sans",sans-serif;
     color: rgb(109, 110, 113);
     position: absolute;
     z-index: 73;
@@ -1832,7 +1828,7 @@ input[type="checkbox"]{
 }
 .a-manage-collapse a{
     font-size: 20px;
-    font-family: "DecimaMonoX";
+    font-family: "DecimaMonoX",sans-serif;
     color: rgba(109, 110, 113, 0.502);
     font-weight: bold;
     text-transform: uppercase;
@@ -1861,7 +1857,7 @@ input[type="checkbox"]{
     width: 225px;
     top: 28px;;
     background-color: transparent;
-    font-family: "DecimaMonoX";
+    font-family: "DecimaMonoX",sans-serif;
     color: rgb(121, 77, 159);
     text-transform: uppercase;
     text-align: center;
@@ -1872,7 +1868,7 @@ input[type="checkbox"]{
 }
 .paragraph-archive-header{
     font-size: 17px;
-    font-family: "359Sans";
+    font-family: "359Sans",sans-serif;
     color: rgb(121, 77, 159);
     font-style: italic;
     line-height: 1.2;
@@ -1880,7 +1876,7 @@ input[type="checkbox"]{
 }
 .header-archive {
     font-size: 27px;
-    font-family: "DecimaMonoX";
+    font-family: "DecimaMonoX",sans-serif;
     color: rgb(240, 77, 63);
     font-weight: bold;
     text-transform: uppercase;
