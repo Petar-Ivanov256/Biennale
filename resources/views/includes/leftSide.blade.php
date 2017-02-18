@@ -4,7 +4,7 @@
     </div>
 </div>
 <div  class="container">
-    <div class="col-sm-1">
+    <div class="col-sm-1 side_left_history">
         <p id="SuzIstoria">{{ trans('leftSideBar.createHistory') }}</p>
         <p id="purvoMezdunarodno">{{ trans('leftSideBar.theFirst') }}</p>
     </div>

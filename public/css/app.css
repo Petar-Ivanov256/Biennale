@@ -915,10 +915,15 @@ body{
     -webkit-transform: matrix( 0,-14.5878554630068,14.5878554630068,0,0,0);
     -ms-transform: matrix( 0,-14.5878554630068,14.5878554630068,0,0,0);
      left:30px;
-    width: 27px;
-    margin-top: 25px;
+    width: 17px;
+    top: 107px;
+    margin-bottom: 0;
     position: relative;
 }
+.side_left_history{
+    top: 280px;
+}
+
 #purvoMezdunarodno {
     font-size: 15px;
     font-family: "359Sans";
@@ -926,7 +931,6 @@ body{
     font-style: italic;
     line-height: 1.383;
     position: absolute;
-    top: 350px;
     padding-top: 15px;
     z-index: 10;
 }
@@ -938,7 +942,6 @@ body{
     text-transform: uppercase;
     line-height: 1.276;
     position: relative;
-    top: 300px;
     z-index: 9;
 }
 
