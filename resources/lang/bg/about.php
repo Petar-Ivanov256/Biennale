@@ -71,7 +71,7 @@ return [
     'stefan_velev'=>'Стефан Велев',
     'workshop_fusing'=>'творческа работилница “Fusing and slumping"',
 
-    'ondrej_strnadel'=>'Ondrej Strnadel',
+    'ondrej_strnadel'=>'Ондрей Стрнадел',
     'ondrej_strnadel_w'=>'творческа работилница за духано стъкло – майстор-духач',
     'lilia_pangelova'=>'Лилия Пангелова',
     'lilia_pangelova_w'=>'творческа работилница за духано стъкло – помощник-духач',
