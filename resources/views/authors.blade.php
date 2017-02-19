@@ -14,17 +14,17 @@
                       {{-- @foreach ($authors as $author)
                         <li><a href="#" data-toggle="collapse"><br>{{ $author->name }}<br><span class="country-authors">{{ $author->country->title_en }}</span></a></li>
                       @endforeach --}}
-                        <li class="authors-list" data-toggle="author-1"><a href="#1"><br>{{ trans('about.dana_zzamechnikova') }}<br><span class="country-authors">{{ trans('about.Cz') }}</span></a></li>
-                        <li class="authors-list" data-toggle="author-2"><a href="#2"><br>{{ trans('about.konstantin_kalchev') }}<br><span class="country-authors">{{ trans('about.Bul') }}</span></a></li>
-                        <li class="authors-list" data-toggle="author-3"><a href="#3"><br>{{ trans('about.milan_krajek') }}<br><span class="country-authors">{{ trans('about.Cz') }}</span></a></li>
-                        <li class="authors-list" data-toggle="author-4"><a href="#4"><br>{{ trans('about.ondrej_strnadel') }}<br><span class="country-authors">{{ trans('about.Cz') }}</span></a></li>
-                        <li class="authors-list" data-toggle="author-5"><a href="#5"><br>{{ trans('about.zdenek_lhodski') }}<br><span class="country-authors">{{ trans('about.Cz') }}</span></a></li>
+                        <li><a href="#1" data-toggle="collapse"><br>{{ trans('about.dana_zzamechnikova') }}<br><span class="country-authors">{{ trans('about.Cz') }}</span></a></li>
+                        <li><a href="#2" data-toggle="collapse"><br>{{ trans('about.konstantin_kalchev') }}<br><span class="country-authors">{{ trans('about.Bul') }}</span></a></li>
+                        <li><a href="#3" data-toggle="collapse"><br>{{ trans('about.milan_krajek') }}<br><span class="country-authors">{{ trans('about.Cz') }}</span></a></li>
+                        <li><a href="#4" data-toggle="collapse"><br>{{ trans('about.ondrej_strnadel') }}<br><span class="country-authors">{{ trans('about.Cz') }}</span></a></li>
+                        <li><a href="#5" data-toggle="collapse"><br>{{ trans('about.zdenek_lhodski') }}<br><span class="country-authors">{{ trans('about.Cz') }}</span></a></li>
                     </ul>
                 </div>
                 <div class="col-md-6 sub-authors-move" id="sub-authors-move-return">
                     <h2 class="title-Authors">{{ trans('authors.information_and_art_pieces') }}</h2>
                     <hr>
-                    <div id="author-1" class="author-details">
+                    <div id="1" class="collapse">
                         <h3 class="info-name">{{ trans('about.dana_zzamechnikova') }}</h3>
                         <ul class="info-about-person">
                             <li>{{ trans('about.Cz') }}</li>
@@ -68,7 +68,7 @@
                 </div>
 
                     <!-- id 2-->
-                    <div id="author-2" class="author-details">
+                    <div id="2" class="collapse">
                         <h3 class="info-name">{{ trans('about.konstantin_kalchev') }}</h3>
                         <ul class="info-about-person">
                             <li>{{ trans('about.Bul') }}</li>
@@ -114,7 +114,7 @@
                    <!----->
                     
                     <!--Milan-->
-                    <div id="author-3" class="author-details">
+                    <div id="3" class="collapse">
                         <h3 class="info-name">{{ trans('about.milan_krajek') }}</h3>
                         <ul class="info-about-person">
                             <li>{{ trans('about.Cz') }}</li>
@@ -157,7 +157,7 @@
                        </div>
                     </div>
                     <!--Ondrei id=4-->
-                    <div id="author-4" class="author-details">
+                    <div id="4" class="collapse">
                         <h3 class="info-name">{{ trans('about.ondrej_strnadel') }}</h3>
                         <ul class="info-about-person">
                             <li>{{ trans('about.Cz') }}</li>
@@ -218,7 +218,7 @@
                     <!--->
 
                     <!--Sdenek-->
-                    <div id="author-5" class="author-details">
+                    <div id="5" class="collapse">
                         <h3 class="info-name">{{ trans('about.zdenek_lhodski') }}</h3>
                         <ul class="info-about-person">
                             <li>{{ trans('about.Cz') }}</li>
@@ -516,7 +516,7 @@
                       <div class="modal-body">
                           <h2></h2>
                           <hr class="star-primary">
-                          {!! HTML::image('img/authors/Ihotsky1.jpg') !!}
+                          {!! HTML::image('img/authors/ihotsky1.jpg') !!}
                           <p>
 
                           </p>
@@ -545,7 +545,7 @@
                           <div class="modal-body">
                               <h2></h2>
                               <hr class="star-primary">
-                              {!! HTML::image('img/authors/Ihotsky2.jpg') !!}
+                              {!! HTML::image('img/authors/ihotsky2.jpg') !!}
                               <p>
 
                               </p>
@@ -560,17 +560,4 @@
           </div>
       </div>
       </div>
-@endsection
-
-@section('foot')
-
-<script type="text/javascript">
-  $('.author-details').hide();
-  $('.authors-list').click(function (e) {
-    let authorId = $(this).attr('data-toggle');
-    $('.author-details').hide();
-    $('#' + authorId).show();
-  });
-</script>
-
 @endsection
