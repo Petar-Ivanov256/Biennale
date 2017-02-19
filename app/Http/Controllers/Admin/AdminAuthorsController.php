@@ -8,13 +8,15 @@ use Storage;
 use App\Http\Controllers\Controller;
 use Image;
 use App\Work;
+use App\Country;
 
 class AdminAuthorsController extends Controller
 {
     public function add(Request $request)
 	{
         $works = Work::all()->sortBy('englishTitle');
-		return view('authors.create', ['works' => $works]);
+        $countries = Country::all()->sortBy('title_en');
+		return view('authors.create', ['works' => $works, 'countries' => $countries]);
 	}
 
     public function create(Request $request)
@@ -23,7 +25,8 @@ class AdminAuthorsController extends Controller
         
     	$author = new Author();
     	$author->name = $request->input('name');
-    	$author->country = $request->input('country');
+    	$author->country()->associate(Country::find($request->input('country')));
+        $author->gender = $request->input('gender');
     	$author->info = $request->input('info');
         $author->info_en = $request->input('info_en');
         $author->email = $request->input('email');
@@ -33,9 +36,11 @@ class AdminAuthorsController extends Controller
 
         $author->save();
 
-        $worksIds = $request->input('works');
-        foreach ($worksIds as $id) {
-            $author->works()->attach($id);
+        if ($request->input('works')) {
+            $worksIds = $request->input('works');
+            foreach ($worksIds as $id) {
+                $author->works()->attach($id);
+            }
         }
 
         return redirect('/admin/authors');
@@ -57,7 +62,8 @@ class AdminAuthorsController extends Controller
     {
     	$author = Author::find($id);
         $works = Work::all()->sortBy('englishTitle');
-    	return view('authors.edit', [ 'author' => $author, 'works' => $works ]);
+        $countries = Country::all()->sortBy('title_en');
+    	return view('authors.edit', [ 'author' => $author, 'works' => $works, 'countries' => $countries ]);
     }
 
     public function update(Request $request, $id)
@@ -66,7 +72,8 @@ class AdminAuthorsController extends Controller
 
     	$author = Author::find($id);
     	$author->name = $request->input('name');
-    	$author->country = $request->input('country');
+    	$author->country()->associate(Country::find($request->input('country')));
+        $author->gender = $request->input('gender');
     	$author->info = $request->input('info');
         $author->info_en = $request->input('info_en');
         $author->email = $request->input('email');
@@ -77,12 +84,14 @@ class AdminAuthorsController extends Controller
             $author->photo = $img;
         }
 
-        $worksIds = $request->input('works');
-        $author->works()->detach();
-        foreach ($worksIds as $id) {
-            $author->works()->attach($id);
+        if ($request->input('works')) {
+            $worksIds = $request->input('works');
+            $author->works()->detach();
+            foreach ($worksIds as $id) {
+                $author->works()->attach($id);
+            }
         }
-
+        
     	$author->save();
 
     	return redirect('/admin/authors');
@@ -113,7 +122,6 @@ class AdminAuthorsController extends Controller
     		'info' => 'required',
             'email' => 'required|max:100|email|unique:authors',
             'photo' => 'required|image|max:4096',
-            'works' => 'required'
     	];
     }
 
@@ -125,7 +133,6 @@ class AdminAuthorsController extends Controller
             'info' => 'required',
             'email' => 'required|max:100|email',
             'photo' => 'image|max:4096',
-            'works' => 'required'
         ];
     }
 }

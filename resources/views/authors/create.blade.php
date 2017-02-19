@@ -26,10 +26,26 @@
 	    <div class="form-group">
 	      <label for="country" class="col-lg-2 control-label">Държава</label>
 	      <div class="col-lg-6">
-	        <input type="text" class="form-control" id="country" name="country" value="{{ Request::old('country') }}" >
+	        <select class="form-control" id="country" name="country">
+                @foreach ($countries as $country)
+                    <option value="{{ $country->id }}" {{ old('country') == $country->id ? "selected" : "" }}>{{ $country->title_en }}</option>
+                @endforeach
+            </select>
 	        @if ($errors->has('country'))
                 <span class="help-block">
                     <strong>{{ $errors->first('country') }}</strong>
+                </span>
+            @endif
+	      </div>
+	    </div>
+	    <div class="form-group">
+	      <label for="gender" class="col-lg-2 control-label">Пол</label>
+	      <div class="col-lg-6">
+	        <input id="male" type="radio" name="gender" value="0" {{ old('gender') == 0 ? "checked" : "" }}><label for="male">Мъж</label>
+	        <input id="female" type="radio" name="gender" value="1" {{ old('gender') == 1 ? "checked" : "" }}><label for="female">Жена</label>
+	        @if ($errors->has('gender'))
+                <span class="help-block">
+                    <strong>{{ $errors->first('gender') }}</strong>
                 </span>
             @endif
 	      </div>

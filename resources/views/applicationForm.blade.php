@@ -73,7 +73,12 @@
                         </div>
                         <div class="form-group">
                             <div class="col-md-7 contentContactForm">
-                                <input type="text" class="form-control" id="country" name="country" placeholder="{{ trans('common.country') }}*" value="{{ Request::old('country') }}">
+                                {{-- <input type="text" class="form-control" id="country" name="country" placeholder="{{ trans('common.country') }}*" value="{{ Request::old('country') }}"> --}}
+                                <select class="form-control" id="country" name="country">
+                                    @foreach ($countries as $country)
+                                        <option value="{{ $country->id }}">{{ $country->title_en }}</option>
+                                    @endforeach
+                                </select>
                                 @if ($errors->has('country'))
                                     <span class="help-block">
                                         <strong>{{ $errors->first('country') }}</strong>
@@ -103,9 +108,9 @@
                         </div>
                     <div class="contentContactForm_S">
                         <label for="male" class="radio-inline">
-                            <input type="radio" name="optradio">{{ trans('form.s_male') }}</label>
+                            <input id="male" type="radio" name="gender" value="0" {{ old('gender') == 0 ? "checked" : "" }}>{{ trans('form.s_male') }}</label>
                         <label for="female" class="radio-inline">
-                            <input type="radio" name="optradio">{{ trans('form.s_female') }}</label>
+                            <input id="female" type="radio" name="gender" value="1" {{ old('gender') == 1 ? "checked" : "" }}>{{ trans('form.s_female') }}</label>
                     </div>
                         <h3 class="appl-form-head">{{ trans('form.info_art_p') }}</h3><br>
                         <div class="form-group">

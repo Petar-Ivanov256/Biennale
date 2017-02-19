@@ -16,6 +16,7 @@ use Illuminate\Support\Facades\Mail;
 use App\Technique;
 use App\Author;
 use App\Work;
+use App\Country;
 use Image;
 use App;
 
@@ -25,8 +26,9 @@ class FormsController extends Controller
     {
 
         $techniques = Technique::all();
+        $countries = Country::all()->sortBy('title_en');
 
-        return view('applicationForm', ['techniques' => $techniques]);
+        return view('applicationForm', ['techniques' => $techniques, 'countries' => $countries]);
     }
 
     public function sendForm(Request $request)
@@ -38,9 +40,10 @@ class FormsController extends Controller
         $work = new Work();
 
         $author->name = $request->input('name');
-        $author->country = $request->input('country');
+        $author->country()->associate(Country::find($request->input('country')));
         $author->email = $request->input('email');
         $author->phoneNumber = $request->input('phoneNumber');
+        $author->gender = $request->input('gender');
 
         $author->save();
 

@@ -12,7 +12,6 @@ class CreateAuthorsTable extends Migration
             $table->increments('id');
 
             $table->string('name');
-            $table->string('country');
             $table->string('email');
             $table->string('phoneNumber')->nullable();
             $table->string('info', 2000)->nullable();
@@ -21,6 +20,7 @@ class CreateAuthorsTable extends Migration
             $table->timestamps();
 
             $table->string('info_en', 2000)->nullable();
+            $table->integer('gender');  // 0 - male; 1 - female
         });
 
         DB::statement("ALTER TABLE `authors` CHANGE COLUMN `photo` `photo` MEDIUMBLOB NULL AFTER `info`");
