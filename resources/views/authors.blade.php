@@ -516,7 +516,7 @@
                       <div class="modal-body">
                           <h2></h2>
                           <hr class="star-primary">
-                          {!! HTML::image('img/authors/Ihotsky1.jpg') !!}
+                          {!! HTML::image('img/authors/ihotsky1.jpg') !!}
                           <p>
 
                           </p>
@@ -545,7 +545,7 @@
                           <div class="modal-body">
                               <h2></h2>
                               <hr class="star-primary">
-                              {!! HTML::image('img/authors/Ihotsky2.jpg') !!}
+                              {!! HTML::image('img/authors/ihotsky2.jpg') !!}
                               <p>
 
                               </p>
