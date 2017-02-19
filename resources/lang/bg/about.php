@@ -80,4 +80,10 @@ return [
     'dana_zzamechnikova'=>'Дана Замечникова',
 
     'zdenek_lhodski'=>'Зденек Лхотски',
+
+    'konstantin_kalchev'=>'Константин Вълчев',
+    'Bul'=>"България",
+    'Cz'=>'Чешка Република',
+    'male'=>'мъж',
+    'female'=>'жена',
 ];

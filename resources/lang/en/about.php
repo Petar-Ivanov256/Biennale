@@ -81,4 +81,9 @@ return [
 
     'zdenek_lhodski'=>'Zdeněk Lhotský',
 
+    'konstantin_kalchev'=>'Konstantin Valchev',
+    'Bul'=>"Bulgaria",
+    'Cz'=>'Czech Republic',
+    'male'=>"male",
+    'female'=>'female',
 ];
