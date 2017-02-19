@@ -10,4 +10,9 @@ class Author extends Model
     {
         return $this->belongsToMany('App\Work');
     }
+
+    public function country()
+    {
+        return $this->belongsTo('App\Country');
+    }
 }
