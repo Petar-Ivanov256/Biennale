@@ -21,6 +21,7 @@ class CreateAuthorsTable extends Migration
 
             $table->string('info_en', 2000)->nullable();
             $table->integer('gender');  // 0 - male; 1 - female
+            $table->string('name_en')->nullable();
         });
 
         DB::statement("ALTER TABLE `authors` CHANGE COLUMN `photo` `photo` MEDIUMBLOB NULL AFTER `info`");

@@ -13,6 +13,7 @@ use App\Mail\ContactFormEmail;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Mail;
 use App;
+use App\Author;
 
 class StaticPagesController extends Controller
 {
@@ -65,7 +66,8 @@ class StaticPagesController extends Controller
     }
 
     public function authors(Request $request){
-        return view('authors');
+        $authors = Author::all()->sortBy('name');
+        return view('authors', ['authors' => $authors]);
     }
 
     public function partners(Request $request){

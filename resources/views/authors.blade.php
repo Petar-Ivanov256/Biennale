@@ -11,6 +11,9 @@
                     <h2 class="title-Authors">{{ trans('authors.artists') }} <span class="span-authors-data">2017</span></h2>
                     <hr>
                     <ul class="authors-people" id="space-author-li">
+                      {{-- @foreach ($authors as $author)
+                        <li><a href="#" data-toggle="collapse"><br>{{ $author->name }}<br><span class="country-authors">{{ $author->country->title_en }}</span></a></li>
+                      @endforeach --}}
                         <li><a href="#1" data-toggle="collapse"><br>{{ trans('about.dana_zzamechnikova') }}<br><span class="country-authors">{{ trans('about.Cz') }}</span></a></li>
                         <li><a href="#2" data-toggle="collapse"><br>{{ trans('about.konstantin_kalchev') }}<br><span class="country-authors">{{ trans('about.Bul') }}</span></a></li>
                         <li><a href="#3" data-toggle="collapse"><br>{{ trans('about.milan_krajek') }}<br><span class="country-authors">{{ trans('about.Cz') }}</span></a></li>

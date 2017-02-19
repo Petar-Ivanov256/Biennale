@@ -24,6 +24,17 @@
 	      </div>
 	    </div>
 	    <div class="form-group">
+	      <label for="name_en" class="col-lg-2 control-label">Име на английски</label>
+	      <div class="col-lg-6">
+	        <input type="text" class="form-control" id="name_en" name="name_en" value="{{ $author->name_en }}">
+	        @if ($errors->has('name_en'))
+                <span class="help-block">
+                    <strong>{{ $errors->first('name_en') }}</strong>
+                </span>
+            @endif
+	      </div>
+	    </div>
+	    <div class="form-group">
 	      <label for="country" class="col-lg-2 control-label">Държава</label>
 	      <div class="col-lg-6">
 	      	<select class="form-control" id="country" name="country">

@@ -73,7 +73,6 @@
                         </div>
                         <div class="form-group">
                             <div class="col-md-7 contentContactForm">
-                                {{-- <input type="text" class="form-control" id="country" name="country" placeholder="{{ trans('common.country') }}*" value="{{ Request::old('country') }}"> --}}
                                 <select class="form-control" id="country" name="country">
                                     @foreach ($countries as $country)
                                         <option value="{{ $country->id }}">{{ $country->title_en }}</option>

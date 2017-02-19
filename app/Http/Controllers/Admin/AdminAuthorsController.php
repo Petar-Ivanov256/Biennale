@@ -25,6 +25,7 @@ class AdminAuthorsController extends Controller
         
     	$author = new Author();
     	$author->name = $request->input('name');
+        $author->name_en = $request->input('name_en');
     	$author->country()->associate(Country::find($request->input('country')));
         $author->gender = $request->input('gender');
     	$author->info = $request->input('info');
@@ -72,6 +73,7 @@ class AdminAuthorsController extends Controller
 
     	$author = Author::find($id);
     	$author->name = $request->input('name');
+        $author->name_en = $request->input('name_en');
     	$author->country()->associate(Country::find($request->input('country')));
         $author->gender = $request->input('gender');
     	$author->info = $request->input('info');
