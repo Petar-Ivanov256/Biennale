@@ -47,7 +47,11 @@
                     <a href="#">{!! HTML::image('img/partnersimg/Sofia.svg.png','alt',array('width'=>100,'height'=>120)) !!}</a>&nbsp;&nbsp;
                     <a href="#">{!! HTML::image('img/partnersimg/GIM_Sofia_Logo.jpg','alt',array('width'=>100,'height'=>120)) !!}</a>&nbsp;
                     <a href="#">{!! HTML::image('img/partnersimg/varna.png','alt',array('width'=>100,'height'=>120)) !!}</a>&nbsp;&nbsp;
-
+                </div>
+                <br>
+                <h4 class="partnersName2">{{ trans('partners.media_partners') }}</h4><br>
+                <div class="ahover">
+                    <a href="#">{!! HTML::image('img/partnersimg/znanie_logo.jpg','alt',array('width'=>100,'height'=>20)) !!}</a>&nbsp;&nbsp;
                 </div>
             </div>
             </section>

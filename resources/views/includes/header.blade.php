@@ -7,7 +7,13 @@
                 <span class="icon-bar"></span>
             </button>
         </div>
-            <div class="logo col-sm-2"><a href="{{ URL::to('/')}}">{!! HTML::image('img/logo_biennale.jpg') !!}</a></div>
+            <div class="logo col-sm-2">
+                @if(LaravelLocalization::getCurrentLocale() == 'en')
+                    <a href="{{ URL::to('/')}}">{!! HTML::image('img/logo-glass-en.png') !!}</a>
+                @else
+                    <a href="{{ URL::to('/')}}">{!! HTML::image('img/logo-glass-bg.png') !!}</a>
+                @endif
+            </div>
         <div class="collapse navbar-collapse col-md-12" id="targetNav">
             <ul class="nav navbar-nav myNavbar" id="navBar" >
                 <li class="dropdown"><a  class="Bien" href="{{ URL::to('/')}}">{{ trans('header.biennale') }}</a>

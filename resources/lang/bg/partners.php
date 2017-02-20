@@ -18,5 +18,6 @@ return[
     'general_sponsor'=>'ГЕНЕРАЛЕН СПОНСОР',
     'main_partners'=>'ГЛАВНИ ПАРТНЬОРИ',
     'institutions_and_galleries'=>'ИНСТИТУЦИИ И ГАЛЕРИИ',
+    'media_partners'=>'медийни партньори',
 
 ];

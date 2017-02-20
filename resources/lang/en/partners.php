@@ -16,6 +16,7 @@ return[
     'general_sponsor'=>'GENERAL SPONSOR',
     'main_partners'=>'MAIN PARTNERS',
     'institutions_and_galleries'=>'INSTITUTIONS AND GALLERIES',
+    'media_partners'=>'media partners',
 
 
 ];
