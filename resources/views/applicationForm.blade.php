@@ -18,7 +18,7 @@
                         <div id="REALIZED-ART-PIECE" class="collapse">
                             <p class="text-p text-justify">
                                 {{ trans('form.art_piece_content1') }}<br><br>
-                                {{ trans('form.art_piece_content2') }} <span class="color-red">01.04.2017 {{ trans('common.year_abr') }}</span>
+                                {{ trans('form.art_piece_content2') }} <span class="color-red">01.06.2017 {{ trans('common.year_abr') }}</span>
 
                             </p>
                             <hr>
@@ -32,7 +32,7 @@
                             <p class="text-p text-justify">
                                 {{ trans('form.project_content1') }} <a href="mailto:glassbiennalebg@gmail.com:" id="emailCordinator">glassbiennalebg@gmail.com</a>.
                                 {{ trans('form.project_content2') }}<br><br>
-                                {{ trans('form.project_content3') }} - <span class="color-red">01.03.2017 {{ trans('common.year_abr') }}</span><br><br>
+                                {{ trans('form.project_content3') }} - <span class="color-red">01.06.2017 {{ trans('common.year_abr') }}</span><br><br>
                                 {{ trans('form.project_content4') }} - <span class="color-red" >01.07.2017 {{ trans('common.year_abr') }}</span><br><br>
 
                             </p>

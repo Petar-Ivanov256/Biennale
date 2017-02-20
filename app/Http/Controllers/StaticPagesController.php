@@ -66,7 +66,13 @@ class StaticPagesController extends Controller
     }
 
     public function authors(Request $request){
-        $authors = Author::all()->sortBy('name');
+        $authors = Author::where('isVisible', 1)->get()->sortBy('name');
+        if (App::getLocale() == 'bg') {
+            $authors = $authors->sortBy('name');
+        } else {
+            $authors = $authors->sortBy('name_en');
+        }
+
         return view('authors', ['authors' => $authors]);
     }
 
