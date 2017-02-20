@@ -72,9 +72,9 @@
                             </div>
                         </div>
                         <div class="col-md-5">
-                            {!! HTML::image('img/images.png') !!}
+                            <img src="{{ asset('/img/team/sofia1.jpg') }}">
                             <br>
-                            <div class="textunderimg">
+                            <div class="textunderimg" id="sofi_pic_alin">
                                 <h4>{{ trans('about.sofia') }}</h4>
                                 <p>
                                     {{ trans('about.about_alex_sofia') }}
@@ -82,7 +82,7 @@
                             </div>
                         </div>
 
-                        <br><br><br>
+
                         <div class="col-md-5">
                             <img src="{{ asset('/img/team/flora_dyulgeryan.jpg') }}">
                                 <br>
@@ -103,6 +103,7 @@
                                 </p>
                             </div>
                         </div>
+
                         <div class="col-md-5">
                             <img src="{{ asset('/img/team/danko1.jpg') }}">
                             <br>
@@ -113,6 +114,7 @@
                                 </p>
                             </div>
                         </div>
+
                         <div class="col-md-5">
                             <img src="{{ asset('/img/team/elizar_milev_koordinator_ngpi1.jpg') }}">
                             <br>
@@ -241,7 +243,7 @@
                             </div>
                         </div>
                         <div class="col-md-5">
-                            {!! HTML::image('img/images.png') !!}
+                            <img src="{{ asset('/img/team/sofia1.jpg') }}">
                             <br>
                             <div class="textunderimg">
                                 <h4>{{ trans('about.sofia') }}</h4>
@@ -250,7 +252,7 @@
                         </div>
 
                         <br>
-                        <div class="col-md-5">
+                        <div class="col-md-5" id="a_tasev">
                             <img src="{{ asset('/img/team/alexander_tasev1.jpg') }}">
                             <br>
                             <div class="textunderimg">
@@ -310,13 +312,20 @@
                     <h2>{{ trans('about.lecturers') }}</h2>
                     <article>
                         <div class="col-md-5">
-                            <img src="{{ asset('/img/team/zdenek_lhotsky.jpg') }}">
+                            <img src="{{ asset('/img/team/alexandra veleva1.jpg') }}">
                             <br>
                             <div class="textunderimg">
-                                <h4>{{ trans('about.zdenek_lhodski') }}</h4>
+                                <h4>{{ trans('about.alex') }}</h4>
                             </div>
                         </div>
-
+                        <div class="col-md-5">
+                            <img src="{{ asset('/img/team/sofia1.jpg') }}">
+                            <br>
+                            <div class="textunderimg" id="sofi_lec">
+                                <h4>{{ trans('about.sofia') }}</h4>
+                            </div>
+                        </div>
+                        <br>
                         <div class="col-md-5">
                             <img src="{{ asset('/img/team/zamecnikova.jpg') }}">
                             <br>
@@ -330,40 +339,33 @@
                             <img src="{{ asset('/img/team/milan_krajicek1.jpg') }}">
                             <br>
                             <div class="textunderimg">
-                                <h4>{{ trans('about.milan_krajek') }}</h4>
+                                <h4 id="milan_k_lek">{{ trans('about.milan_krajek') }}</h4>
                             </div>
                         </div>
+
                         <div class="col-md-5">
-                            <img src="{{ asset('/img/team/alexandra veleva1.jpg') }}">
-                            <br>
-                            <div class="textunderimg">
-                                <h4>{{ trans('about.alex') }}</h4>
-                            </div>
-                        </div>
-                        <div class="col-md-5">
-                            {!! HTML::image('img/images.png') !!}
-                            <br>
-                            <div class="textunderimg">
-                                <h4>{{ trans('about.sofia') }}</h4>
-                            </div>
-                        </div>
-                        <br>
-                        <div class="col-md-5">
-                            <img src="{{ asset('/img/team/denica_todorova.jpg') }}">
+                            <img src="{{ asset('/img/team/denica_todorova2.jpg') }}">
                             <br>
                             <div class="textunderimg">
                                 <h4>{{ trans('about.denica') }}</h4>
                             </div>
                         </div>
                         <br>
-                        <div class="col-md-5">
+                        <div class="col-md-5" id="elizar_lec">
                             <img src="{{ asset('/img/team/elizar_milev_koordinator_ngpi1.jpg') }}">
                             <br>
                             <div class="textunderimg">
                                 <h4>{{ trans('about.elizar') }}</h4>
                             </div>
                         </div>
-
+                        <br>
+                        <div class="col-md-5">
+                            <img src="{{ asset('/img/team/zdenek_lhotsky.jpg') }}">
+                            <br>
+                            <div class="textunderimg">
+                                <h4>{{ trans('about.zdenek_lhodski') }}</h4>
+                            </div>
+                        </div>
                     </article>
                 </div>
             </section>

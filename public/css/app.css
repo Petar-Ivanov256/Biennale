@@ -1042,7 +1042,7 @@ body{
     color: rgb(109, 110, 113);
 }
 .shrink-pic{
-    width: 197px;
+   padding-bottom: 8px;
 }
 .art-shop-sv{
     width: 218px;
@@ -1062,6 +1062,21 @@ body{
     text-align: left;
     position: relative;
     padding-left: 1px;
+}
+#sofi_pic_alin{
+padding: 0 0 5px 0;
+}
+#a_tasev{
+    padding-bottom: 6px;
+}
+#sofi_lec{
+    padding-bottom: 2px;
+}
+#milan_k_lek{
+    padding-bottom: 20px;
+}
+#elizar_lec{
+    padding-bottom: 5px;
 }
 /*Partners CSS*/
 .firsttxt{
