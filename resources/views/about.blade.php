@@ -104,7 +104,7 @@
                             </div>
                         </div>
                         <div class="col-md-5">
-                            {!! HTML::image('img/images.png') !!}
+                            <img src="{{ asset('/img/team/danko1.jpg') }}">
                             <br>
                             <div class="textunderimg">
                                 <h4>{{ trans('about.danko') }}</h4>

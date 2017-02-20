@@ -128,7 +128,7 @@
                         <div class="authors-pic">
                             <div class="col-md-5 portfolio-item">
                                 <a href="#portfolioModal5" class="portfolio-link" data-toggle="modal">
-                                    {!! HTML::image('img/images.png') !!}
+                                    {!! HTML::image('img/authors/mk_104.jpg') !!}
                                 </a>
                                 <br><br>
                                 <div class="info-authors-backgcolor" id="backgcolo-info-authors">
@@ -398,7 +398,7 @@
                           <div class="modal-body">
                               <h2></h2>
                               <hr class="star-primary">
-                              {!! HTML::image('img/images.png') !!}
+                              {!! HTML::image('img/authors/mk_104.jpg') !!}
                               <p>
 
                               </p>

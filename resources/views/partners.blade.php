@@ -31,7 +31,7 @@
                 </div><br>
                 <h4 class="partnersName2">{{ trans('partners.main_partners') }}</h4><br>
                 <div class="ahover">
-                    <a href="#" id="resize">{!! HTML::image('img/partnersimg/inhom.jpg','alt',array('width'=>160,'height'=>60)) !!}</a>&nbsp;&nbsp;
+                    <a href="#" id="resize">{!! HTML::image('img/partnersimg/inhom1.jpg','alt',array('width'=>190,'height'=>60)) !!}</a>&nbsp;&nbsp;
                     <a href="#">{!! HTML::image('img/partnersimg/KrN.png','alt',array('width'=>200,'height'=>30)) !!}</a><br><br>&nbsp;&nbsp;
                     <a href="#">{!! HTML::image('img/partnersimg/eurobulsoft_logo.png','alt',array('width'=>160,'height'=>60)) !!}</a>&nbsp&nbsp;
                     <a href="#">{!! HTML::image('img/partnersimg/Greenpeace.svg.png','alt',array('width'=>200,'height'=>30)) !!}</a>&nbsp;&nbsp;<br><br>
