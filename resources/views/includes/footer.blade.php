@@ -11,14 +11,9 @@
                        {{-- <li>
                            <a  href="{{ URL::to('/program')}}">{{ trans('footer.program') }}</a>
                        </li> --}}
-                       <li>
-                           <a  href="{{ URL::to('/terms')}}">{{ trans('footer.regulations') }}</a>
-                       </li>
+
                        <li>
                            <a href="{{ URL::to('/apply-for-attendance')}}">{{ trans('footer.form') }}</a>
-                       </li>
-                       <li>
-                           <a  href="{{ URL::to('/vision')}}">{{ trans('footer.vision') }}</a>
                        </li>
                    </ul>
                </div>
@@ -41,16 +36,13 @@
                <div class="col-md-1">
                    <ul>
                        <li>
-                           <a href="#">{{ trans('footer.exhibitions') }}</a>
+                           <a href="{{ URL::to('/events#1')}}">{{ trans('footer.exhibitions') }}</a>
                        </li>
                        <li>
-                           <a href="#">{{ trans('footer.workshops') }}</a>
+                           <a href="{{ URL::to('/events#2')}}">{{ trans('footer.lectures') }}</a>
                        </li>
                        <li>
-                           <a href="#">{{ trans('footer.lectures') }}</a>
-                       </li>
-                       <li>
-                           <a href="#">{{ trans('footer.gallery') }}</a>
+                           <a href="{{ URL::to('/events#4')}}">{{ trans('footer.comp') }}</a>
                        </li>
                    </ul>
                </div>

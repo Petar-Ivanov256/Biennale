@@ -20,4 +20,5 @@ return [
     'bulletin' => 'Monthly bulletin',
     'subscribe' => 'Subscribe',
     'sponsor' => 'General sponsor',
+    'comp' => 'Competitions',
 ];
