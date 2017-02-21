@@ -9,13 +9,21 @@ use App\Http\Controllers\Controller;
 use Image;
 use App\Work;
 use App\Country;
+use App;
 
 class AdminAuthorsController extends Controller
 {
     public function add(Request $request)
 	{
         $works = Work::all()->sortBy('englishTitle');
-        $countries = Country::all()->sortBy('title_en');
+        $countries = Country::all();
+
+        if (App::getLocale() == 'bg') {
+            $countries = $countries->sortBy('title');
+        } else {
+            $countries = $countries->sortBy('title_en');
+        }
+
 		return view('authors.create', ['works' => $works, 'countries' => $countries]);
 	}
 
@@ -63,7 +71,14 @@ class AdminAuthorsController extends Controller
     {
     	$author = Author::find($id);
         $works = Work::all()->sortBy('englishTitle');
-        $countries = Country::all()->sortBy('title_en');
+        $countries = Country::all();
+
+        if (App::getLocale() == 'bg') {
+            $countries = $countries->sortBy('title');
+        } else {
+            $countries = $countries->sortBy('title_en');
+        }
+
     	return view('authors.edit', [ 'author' => $author, 'works' => $works, 'countries' => $countries ]);
     }
 

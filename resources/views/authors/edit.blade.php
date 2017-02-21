@@ -40,7 +40,7 @@
 		      <div class="col-lg-6">
 		      	<select class="form-control" id="country" name="country">
 		            @foreach ($countries as $country)
-		                <option value="{{ $country->id }}" {{ $author->country_id == $country->id ? "selected" : "" }}>{{ $country->title_en }}</option>
+		                <option value="{{ $country->id }}" {{ $author->country_id == $country->id ? "selected" : "" }}>{{ App::getLocale() == 'bg' ? $country->title : $country->title_en }}</option>
 		            @endforeach
 		        </select>
 		        @if ($errors->has('country'))

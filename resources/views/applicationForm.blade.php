@@ -75,7 +75,7 @@
                             <div class="col-md-7 contentContactForm">
                                 <select class="form-control" id="country" name="country">
                                     @foreach ($countries as $country)
-                                        <option value="{{ $country->id }}">{{ $country->title_en }}</option>
+                                        <option value="{{ $country->id }}">{{ App::getLocale() == 'bg' ? $country->title : $country->title_en }}</option>
                                     @endforeach
                                 </select>
                                 @if ($errors->has('country'))

@@ -26,7 +26,13 @@ class FormsController extends Controller
     {
 
         $techniques = Technique::all();
-        $countries = Country::all()->sortBy('title_en');
+        $countries = Country::all();
+
+        if (App::getLocale() == 'bg') {
+            $countries = $countries->sortBy('title');
+        } else {
+            $countries = $countries->sortBy('title_en');
+        }
 
         return view('applicationForm', ['techniques' => $techniques, 'countries' => $countries]);
     }
