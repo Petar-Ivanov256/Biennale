@@ -38,11 +38,6 @@ class CreateEventsTable extends Migration {
             $table->binary("photo8")->nullable();
             $table->binary("photo9")->nullable();
             $table->binary("photo10")->nullable();
-            $table->binary("photo11")->nullable();
-            $table->binary("photo12")->nullable();
-            $table->binary("photo13")->nullable();
-            $table->binary("photo14")->nullable();
-            $table->binary("photo15")->nullable();
             $table->string('latitude')->nullable();
             $table->string('longitude')->nullable();
             $table->timestamps();
@@ -58,11 +53,6 @@ class CreateEventsTable extends Migration {
         DB::statement("ALTER TABLE `events` CHANGE COLUMN `photo8` `photo8` MEDIUMBLOB NULL AFTER `photo7`");
         DB::statement("ALTER TABLE `events` CHANGE COLUMN `photo9` `photo9` MEDIUMBLOB NULL AFTER `photo8`");
         DB::statement("ALTER TABLE `events` CHANGE COLUMN `photo10` `photo10` MEDIUMBLOB NULL AFTER `photo9`");
-        DB::statement("ALTER TABLE `events` CHANGE COLUMN `photo11` `photo11` MEDIUMBLOB NULL AFTER `photo10`");
-        DB::statement("ALTER TABLE `events` CHANGE COLUMN `photo12` `photo12` MEDIUMBLOB NULL AFTER `photo11`");
-        DB::statement("ALTER TABLE `events` CHANGE COLUMN `photo13` `photo13` MEDIUMBLOB NULL AFTER `photo12`");
-        DB::statement("ALTER TABLE `events` CHANGE COLUMN `photo14` `photo14` MEDIUMBLOB NULL AFTER `photo13`");
-        DB::statement("ALTER TABLE `events` CHANGE COLUMN `photo15` `photo15` MEDIUMBLOB NULL AFTER `photo14`");
 
     }
 

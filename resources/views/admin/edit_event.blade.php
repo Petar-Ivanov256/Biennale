@@ -153,12 +153,111 @@
                     </div>
                 </div>
                 <div class="form-group">
-                    <label for="pic" class="col-lg-2 control-label">Снимка</label>
+                    <label for="pic1" class="col-lg-2 control-label">Снимка 1</label>
                     <div class="col-lg-6">
-                        <input id="pic" type="file" name="pic" class="form-control">
-                        @if ($errors->has('pic'))
+                        <input id="pic1" type="file" name="pic1" class="form-control">
+                        @if ($errors->has('pic1'))
                             <span class="help-block">
-                                <strong>{{ $errors->first('pic') }}</strong>
+                                <strong>{{ $errors->first('pic1') }}</strong>
+                            </span>
+                        @endif
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="pic2" class="col-lg-2 control-label">Снимка 2</label>
+                    <div class="col-lg-6">
+                        <input id="pic2" type="file" name="pic2" class="form-control">
+                        @if ($errors->has('pic2'))
+                            <span class="help-block">
+                                <strong>{{ $errors->first('pic2') }}</strong>
+                            </span>
+                        @endif
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="pic3" class="col-lg-2 control-label">Снимка 3</label>
+                    <div class="col-lg-6">
+                        <input id="pic3" type="file" name="pic3" class="form-control">
+                        @if ($errors->has('pic3'))
+                            <span class="help-block">
+                                <strong>{{ $errors->first('pic3') }}</strong>
+                            </span>
+                        @endif
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="pic4" class="col-lg-2 control-label">Снимка 4</label>
+                    <div class="col-lg-6">
+                        <input id="pic4" type="file" name="pic4" class="form-control">
+                        @if ($errors->has('pic4'))
+                            <span class="help-block">
+                                <strong>{{ $errors->first('pic4') }}</strong>
+                            </span>
+                        @endif
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="pic5" class="col-lg-2 control-label">Снимка 5</label>
+                    <div class="col-lg-6">
+                        <input id="pic5" type="file" name="pic5" class="form-control">
+                        @if ($errors->has('pic5'))
+                            <span class="help-block">
+                                <strong>{{ $errors->first('pic5') }}</strong>
+                            </span>
+                        @endif
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="pic6" class="col-lg-2 control-label">Снимка 6</label>
+                    <div class="col-lg-6">
+                        <input id="pic6" type="file" name="pic6" class="form-control">
+                        @if ($errors->has('pic6'))
+                            <span class="help-block">
+                                <strong>{{ $errors->first('pic6') }}</strong>
+                            </span>
+                        @endif
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="pic7" class="col-lg-2 control-label">Снимка 7</label>
+                    <div class="col-lg-6">
+                        <input id="pic7" type="file" name="pic7" class="form-control">
+                        @if ($errors->has('pic7'))
+                            <span class="help-block">
+                                <strong>{{ $errors->first('pic7') }}</strong>
+                            </span>
+                        @endif
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="pic8" class="col-lg-2 control-label">Снимка 8</label>
+                    <div class="col-lg-6">
+                        <input id="pic8" type="file" name="pic8" class="form-control">
+                        @if ($errors->has('pic8'))
+                            <span class="help-block">
+                                <strong>{{ $errors->first('pic8') }}</strong>
+                            </span>
+                        @endif
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="pic9" class="col-lg-2 control-label">Снимка 9</label>
+                    <div class="col-lg-6">
+                        <input id="pic9" type="file" name="pic9" class="form-control">
+                        @if ($errors->has('pic9'))
+                            <span class="help-block">
+                                <strong>{{ $errors->first('pic9') }}</strong>
+                            </span>
+                        @endif
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="pic10" class="col-lg-2 control-label">Снимка 10</label>
+                    <div class="col-lg-6">
+                        <input id="pic10" type="file" name="pic10" class="form-control">
+                        @if ($errors->has('pic10'))
+                            <span class="help-block">
+                                <strong>{{ $errors->first('pic10') }}</strong>
                             </span>
                         @endif
                     </div>
