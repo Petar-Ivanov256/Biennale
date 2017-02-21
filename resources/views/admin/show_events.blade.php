@@ -10,7 +10,7 @@
                 <form class="form-horizontal"  action="{{ URL::to('/admin/editEvent/{id}') }}" method="GET">
                     <h3>{{$event->title}}</h3>
                     {{--Here we should resize the img. Should be discussed if we need to doit with CSS or frem the backend--}}
-                    <img width="200px" src="{{$event->photo}}">
+                    <img width="200px" src="{{$event->photo1}}">
                     <fieldset>
                         <input type="hidden" name="id" value="{{$event->id}}" />
                         <div class="form-group">
