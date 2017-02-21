@@ -26,7 +26,7 @@ return [
     'dimensions' => 'Dimensions (h/w/l)',
     'install_guide' => 'Installation Guidelines',
     'year_realization' => 'Year of Realization',
-    'sinopsis' => 'Sinopsis',
+    'sinopsis' => 'Synopsis',
     'pic1' => 'Photo of art piece 1',
     'pic2' => 'Photo of art piece 2',
     'agreement1' => 'I agree my art piece to be installed in the exhibition area',

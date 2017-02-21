@@ -1063,15 +1063,17 @@ body{
     position: relative;
     padding-left: 1px;
 }
-#sofi_pic_alin{
-padding: 0 0 25px 0;
-}
+
+/*#sofi_pic_alin{*/
+/*padding: 0 0 25px 0;*/
+/*}*/
+
 #a_tasev{
     padding-bottom: 26px;
 }
-#sofi_lec{
-    padding-bottom: 5px;
-}
+/*#sofi_lec{*/
+    /*padding-bottom: 5px;*/
+/*}*/
 #milan_k_lek{
     padding-bottom: 25px;
 }
