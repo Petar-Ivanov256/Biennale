@@ -23,26 +23,7 @@
                     <button class="learn-more">{{ trans('scholarship.jury_btn') }}</button>
                     <button class="learn-more">{{ trans('scholarship.winners') }}</button><br><br>
                     <p class="second-p-paragraph text-justify" id="firstscholarpar">
-                      <!--  <span class="bachelor-header2">
-                            Правила за участие в конкурс за пълна стипендия в специалност „Стъкло“, с продължителност от три семестъра,
-                            образователна степен  <span class="bac">ДОКТОР</span> в Нов български университет за периода 2017 – 2020г
-                        </span><br><br>
-                        <span class="numb-colour">1.</span> Творбата да бъде дипломен магистърски проект, защитен успешно.<br><br>
-                        <span class="numb-colour">2.</span> Кандидатът да е положил успешно приемните изпити в НБУ и да е предварително приет като
-                        редовен докторант в областта на стъклото в Нов български университет.<br><br>
-                        <span class="numb-colour">3.</span> Творбата да е представена от фотографии с характеристики: 300 DPI минимум,
-                        над 3000 пиксела по широката страна, препоръчително на бял фон.<br><br>
-                        <span class="numb-colour">4.</span> Да са описани размери, техника и име на автора.<br><br>
-                        <span class="numb-colour">5.</span> Да е описана концепция/синопсис или техника на осъществяване на процеса
-                        по изработката в свободен текст от 200 - 300 думи, в pdf файл.<br><br>
-                        <span class="numb-colour">6.</span> Да се представи творческа автобиография (на български и английски език).<br><br>
-                        <span class="numb-colour">7.</span> Да се представи мотивационно писмо (на български и английски език).<br><br>
-                        <span class="numb-colour">8.</span> Да се представи портфолио в дигитален формат /един PDF файл/.<br><br>
-                        <span class="imp-span">
-                            Гореспоменатите снимки и документи се изпращат на електронна поща: <a href="mailto:glassbiennalebg@gmail.com:" id="emailCordinator">glassbiennalebg@gmail.com</a> до 15.09.2017 г.,
-                            след тази дата ще се състои комисията за избиране на стипендиант.
-                        </span>-->
-
+                        {!! trans('scholarship.phd_rules') !!}
                     </p>
                     <div class="second-p-paragraph">
                         <span class="bachelor-span">{{ trans('about.art_director_name') }}</span>

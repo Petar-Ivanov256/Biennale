@@ -22,4 +22,7 @@ return [
     'lilia_baleva'=>'Lilia Baleva',
     'vladimir_dimitrov'=>'Chief Ass. Prof. Vladimir Dimitrov, PhD',
 
+    'bac_rules' => '',
+    'master_rules' => '',
+    'phd_rules' => '',
 ];
