@@ -4,29 +4,32 @@
 @endsection
 
 @section('content')
-    
-	<table class="table table-striped table-hover">
-		@foreach ($authors as $author)
-			<tr>
-				<td>{{ $author->name }}</td>
-				<td><img src="{{ $author->photo }}" width="50" height="50"></td>
-				<td>
-					<a href="#" class="visibility-btn" data-id="{{ $author->id }}" data-visibility="{{ $author->isVisible }}" >
-						{{ $author->isVisible ? 'Скрий' : 'Покажи' }}
-					</a>
-				</td>
-				<td><a href="{{ URL::to('/admin/authors/edit/' . $author->id) }}">Редактиране</a></td>
-				<td>
-					<form method="POST" action="{{ URL::to('/admin/authors/delete/' . $author->id) }}">
-						<input type="hidden" id="token" name="_token" value="{{{ csrf_token() }}}" />
-						<button type="submit">Изтриване</button>
-					</form>
-				</td>
-			</tr>
-		@endforeach
-	</table>
+<div class="container">
+	<div  class="col-md-12" style="margin-left: 250px">
+		<table class="table table-striped table-hover">
+			@foreach ($authors as $author)
+				<tr>
+					<td>{{ $author->name }}</td>
+					<td><img src="{{ $author->photo }}" width="50" height="50"></td>
+					<td>
+						<a href="#" class="visibility-btn" data-id="{{ $author->id }}" data-visibility="{{ $author->isVisible }}" >
+							{{ $author->isVisible ? 'Скрий' : 'Покажи' }}
+						</a>
+					</td>
+					<td><a href="{{ URL::to('/admin/authors/edit/' . $author->id) }}">Редактиране</a></td>
+					<td>
+						<form method="POST" action="{{ URL::to('/admin/authors/delete/' . $author->id) }}">
+							<input type="hidden" id="token" name="_token" value="{{{ csrf_token() }}}" />
+							<button type="submit">Изтриване</button>
+						</form>
+					</td>
+				</tr>
+			@endforeach
+		</table>
 
-	<a href="{{ URL::to('/admin/authors/add') }}">Нов автор</a>
+		<a class="btn btn-primary" href="{{ URL::to('/admin/authors/add') }}">Нов автор</a>
+	</div>
+</div>
 
 @endsection
 

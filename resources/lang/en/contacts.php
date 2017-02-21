@@ -9,4 +9,5 @@ return [
     'title' => 'Title',
     'send' => 'Send',
     'success' => 'Message sent successfully!',
+    'message' => 'Message',
 ];

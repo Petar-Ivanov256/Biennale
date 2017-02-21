@@ -54,9 +54,7 @@
                             </div>
                             <div class="form-group contentContactForm">
                                 <div class="col-md-7">
-                                    <textarea class="form-control" id="message" name="message" cols="25" rows="5" placeholder="Съобщение*">
-                                        {{ Request::old('message') }}
-                                    </textarea>
+                                    <textarea class="form-control" id="message" name="message" cols="25" rows="5" placeholder="{{ trans('contacts.message') }}*">{{ Request::old('message') }}</textarea>
                                     @if ($errors->has('message'))
                                         <span class="help-block">
                                             <strong>{{ $errors->first('message') }}</strong>

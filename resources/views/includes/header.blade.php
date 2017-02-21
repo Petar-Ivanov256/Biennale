@@ -16,7 +16,7 @@
             </div>
         <div class="collapse navbar-collapse col-md-12" id="targetNav">
             <ul class="nav navbar-nav myNavbar" id="navBar" >
-                <li class="dropdown"><a  class="Bien" href="{{ URL::to('/')}}">{{ trans('header.biennale') }}</a>
+                <li class="dropdown"><a  class="Bien" href="#">{{ trans('header.biennale') }}</a>
                     <ul class="dropdown-menu" id="dropdown-content">
                         {{-- <li>
                             <a class="Program subMenu" href="{{ URL::to('/program')}}">{{ trans('header.program') }}</a>
