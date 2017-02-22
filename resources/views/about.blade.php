@@ -135,6 +135,13 @@
                     <h2>{{ trans('about.graph_design') }}</h2>
                     <article>
                         <div class="col-md-5">
+                            <br>
+                            <div class="textunderimg">
+                                <h4>{{ trans('about.todor') }}</h4>
+                                <p><a href="https://www.behance.net/Tozzi/" target="_blank">https://www.behance.net/Tozzi</a></p>
+                            </div>
+                        </div>
+                        <div class="col-md-5">
 
                             <br>
                             <div class="textunderimg">
@@ -143,15 +150,6 @@
                                 <p><a href="https://dribbble.com/gganchev/" target="_blank">https://dribbble.com/gganchev</a></p>
                             </div>
                         </div>
-
-                        <div class="col-md-5">
-                            <br>
-                            <div class="textunderimg">
-                                <h4>{{ trans('about.todor') }}</h4>
-                                <p><a href="https://www.behance.net/Tozzi/" target="_blank">https://www.behance.net/Tozzi</a></p>
-                            </div>
-                        </div>
-
                     </article>
                 </div>
                 <div class="col-md-5 picAbout hide" id="team-5">
