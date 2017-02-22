@@ -13,9 +13,9 @@ class UserAdminSeeder extends Seeder
     public function run()
     {
         $user = new User();
-        $user->name = 'Gosho';
-        $user->email = 'gosho@admin.com';
-        $user->password = bcrypt('123456');
+        $user->name = 'Alex-Sofi';
+        $user->email = 'glassbiennalebg@gmail.com';
+        $user->password = bcrypt('a_biennale_s');
         $user->role_id = Role::where('title', 'admin')->first()->id;
         $user->save();
 
