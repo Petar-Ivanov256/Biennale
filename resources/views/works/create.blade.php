@@ -39,7 +39,7 @@
                       @foreach($techniques as $technique)
 
                           <li class="app-form-technique">
-                            <input type="checkbox" name="technique[]" class="rad" id="button-{{ $technique->id }}" value="{{$technique->id}}" />
+                            <input type="checkbox" name="technique[]" class="rad" id="button-{{ $technique->id }}" value="{{$technique->id}}" {{ old('technique') != null ? in_array($technique->id, old('technique')) ? "checked" : "" : "" }} />
                             <label for="button-{{ $technique->id }}">{{$technique->name}}</label>
                           </li>
 
