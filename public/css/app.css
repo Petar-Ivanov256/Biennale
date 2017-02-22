@@ -1997,3 +1997,27 @@ input[type="checkbox"]{
 #portfolio * {
     z-index: 2;
 }
+
+
+.image-link {
+    cursor: -webkit-zoom-in;
+    cursor: -moz-zoom-in;
+    cursor: zoom-in;
+}
+
+/* aligns caption to center */
+.mfp-title {
+    text-align: center;
+    padding: 6px 0;
+}
+.gallery-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+}
+.gal-img{
+    margin: 5px 5px 0 0;
+    width: 125px;
+
+}

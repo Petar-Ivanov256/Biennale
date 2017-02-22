@@ -205,24 +205,36 @@ class AdminEventsController extends Controller
         return redirect('/admin/showEvents');
     }
 
-    private function validationRules()
+    private function validateEvent()
     {
         return [
             'start' => 'required',
-
-            'place' => 'required|max:100',
-            'phoneNumber' => 'required|max:100',
-            'participants' => 'required|max:100',
-            'participants_en' => 'required|max:100',
-            'entrance' => 'required|max:100',
-            'entrance_en' => 'required|max:100',
-            'installationGuide' => 'required|max:300',
-            'year' => 'required|numeric|min:1900|max:2017',
-            'synopsis' => 'required|max:100',
-            'file-7' => 'required|image|max:4096',
-            'file-8' => 'required|image|max:4096',
-            'technique' => 'required',
+            'end' => 'required',
+            'place' => 'required',
+            'title' => 'required',
+            'description' => 'required',
+            //'pic' => 'required',
+            'title_en' => 'required',
+            'description_en' => 'required',
+            'lat' => 'required',
+            'lng' => 'required'
         ];
+//        return [
+//            'start' => 'required',
+//
+//            'place' => 'required|max:100',
+//            'phoneNumber' => 'required|max:100',
+//            'participants' => 'required|max:100',
+//            'participants_en' => 'required|max:100',
+//            'entrance' => 'required|max:100',
+//            'entrance_en' => 'required|max:100',
+//            'installationGuide' => 'required|max:300',
+//            'year' => 'required|numeric|min:1900|max:2017',
+//            'synopsis' => 'required|max:100',
+//            'file-7' => 'required|image|max:4096',
+//            'file-8' => 'required|image|max:4096',
+//            'technique' => 'required',
+//        ];
 
 //        $event = new Events();
 //        $event->start = $request->input('start');

@@ -5,9 +5,7 @@
 
 @section('head')
 
-<link rel="stylesheet" type="text/css" href="{{ asset('/photoswipe/css/photoswipe.css') }}">
-<link rel="stylesheet" type="text/css" href="{{ asset('/photoswipe/css/default-skin.css') }}">
-<link rel="stylesheet" type="text/css" href="{{ asset('/photoswipe/css/style.css') }}">
+<link rel="stylesheet" type="text/css" href="{{ asset('/css/magnific-popup.css') }}">
 
 @endsection
 
@@ -56,11 +54,11 @@
                     @if (LaravelLocalization::getCurrentLocale() == 'en')
                         <div class="col-md-5" onclick="getDetails({{ $event->id }}, '{{LaravelLocalization::getCurrentLocale()}}')">
                             <a href="#details" class="abackcolor">
-                                <img src="{{$event->photo}}">
+                                <img src="{{$event->photo1}}">
                                 {{--{!! HTML::image('img/eventsimg/pic1.jpg') !!}--}}
                                 <br>
-                                <span class="ptagleft" id="left-aligndate"> {{date('d.m', strtotime($event->start))}}-{{date('d.m', strtotime($event->start))}}</span>
-                                <span class="ptagleft" id="right-alignhour">{{date('H:i', strtotime($event->end))}}-{{date('H:i', strtotime($event->end))}}</span>
+                                <span class="ptagleft" id="left-aligndate"> {{date('d.m', strtotime($event->start))}}-{{date('d.m', strtotime($event->end))}}</span>
+                                <span class="ptagleft" id="right-alignhour">{{date('H:i', strtotime($event->start))}}-{{date('H:i', strtotime($event->end))}}</span>
                                 <span class="ptagleft" id="left-aligncity">{{$event->place_en}}</span>
                                 <span class="ptagleft" id="right-alignaddress">{{$event->participants_en}}</span>
                             </a>
@@ -75,7 +73,7 @@
                     @else
                         <div class="col-md-5" onclick="getDetails({{ $event->id }}, '{{LaravelLocalization::getCurrentLocale()}}')">
                             <a href="#details" class="abackcolor">
-                                <img src="{{$event->photo}}">
+                                <img src="{{$event->photo1}}">
                                 {{--{!! HTML::image('img/eventsimg/pic1.jpg') !!}--}}
                                 <br>
                                 <span class="ptagleft" id="left-aligndate"> {{date('d.m', strtotime($event->start))}}-{{date('d.m', strtotime($event->start))}}</span>
@@ -102,6 +100,7 @@
         <div class="col-md-5 programadetails" id="details">
             <h2 id="event-category"></h2>
             <img src="" id="details-img">
+            <div class="gallery-container" id="gallery-container"></div>
             <div class="ptagleftprogramdetails">
                 <span class="oneprogdet">{{ trans('events.date') }}</span>
                 <span class="twoprogdet" id="details-date"></span>
@@ -122,184 +121,9 @@
             </div>
             <a href="#top" class="back-to-top"><span class="ptagleftdetailss"></span><span class="ptagleftdetailss">{{ trans('events.back_btn') }}</span></a>
         </div>
-        <section>
-            {{-- <div class=" col-md-6 programa" id="change">
-                <header>
-                    <h2 class="programadet">Други изложби</h2>
-                </header>
-                <div class="col-md-5">
-                    <a href="#" class="abackcolor">
-                        {!! HTML::image('img/eventsimg/pic9.jpg') !!}
-                        <br>
-                        <span class="ptagleftdetails" id="left-aligndate">27.09-29.09</span>
-                        <span class="ptagleft"  id="right-alignhour">София</span>
-                    </a>
-                    <br>
-                    <div class="textunderimg">
-                        <h4>Querat voluptatem</h4>
-                        <p>
-                            Duis aute irure dolor in reprehenderit in volup
-                        </p>
-                    </div>
-                </div>
-                <div class="col-md-5">
-                    <a href="#">
-                        {!! HTML::image('img/eventsimg/pic9.jpg') !!}
-                        <br>
-                        <span class="ptagleftdetails" id="left-aligndate">27.09-29.09</span>
-                        <span class="ptagleft"  id="right-alignhour">София</span>
-                    </a>
-                    <br>
-                    <div class="textunderimg">
-                        <h4>Querat voluptatem</h4>
-                        <p>
-                            Duis aute irure dolor in reprehenderit in volup
-                        </p>
-                    </div>
-                </div>
-                <div class="col-md-5">
-                    <a href="#">
-                        {!! HTML::image('img/eventsimg/pic9.jpg') !!}
-                        <br>
-                        <span class="ptagleftdetails" id="left-aligndate">27.09-29.09</span>
-                        <span class="ptagleft"  id="right-alignhour">София</span>
-                    </a>
-                    <br>
-                    <div class="textunderimg">
-                        <h4>Querat voluptatem</h4>
-                        <p>
-                            Duis aute irure dolor in reprehenderit in volup
-                        </p>
-                    </div>
-                </div>
-                <div class="col-md-5">
-                    <a href="#">
-                        {!! HTML::image('img/eventsimg/pic9.jpg') !!}
-                        <br>
-                        <span class="ptagleftdetails" id="left-aligndate">27.09-29.09</span>
-                        <span class="ptagleft"  id="right-alignhour">София</span>
-                    </a>
-                    <br>
-                    <div class="textunderimg">
-                        <h4>Querat voluptatem</h4>
-                        <p>
-                            Duis aute irure dolor in reprehenderit in volup
-                        </p>
-                    </div>
-                </div>
-            </div> --}}
-        </section>
     </div>
 </div>
 
-{{-- Magic gallery --}}
-{{-- <div>
-    <h2>First gallery:</h2>
-
-  <div class="my-gallery" itemscope itemtype="http://schema.org/ImageGallery">
-
-    <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
-      <a href="https://farm3.staticflickr.com/2567/5697107145_a4c2eaa0cd_o.jpg" itemprop="contentUrl" data-size="1024x1024">
-          <img src="https://farm3.staticflickr.com/2567/5697107145_3c27ff3cd1_m.jpg" itemprop="thumbnail" alt="Image description" />
-      </a>
-      <figcaption itemprop="caption description">Image caption  1</figcaption>
-                                          
-    </figure>
-
-    <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
-      <a href="https://farm2.staticflickr.com/1043/5186867718_06b2e9e551_b.jpg" itemprop="contentUrl" data-size="964x1024">
-          <img src="https://farm2.staticflickr.com/1043/5186867718_06b2e9e551_m.jpg" itemprop="thumbnail" alt="Image description" />
-      </a>
-      <figcaption itemprop="caption description">Image caption 2</figcaption>
-    </figure>
-
-    <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
-      <a href="https://farm7.staticflickr.com/6175/6176698785_7dee72237e_b.jpg" itemprop="contentUrl" data-size="1024x683">
-          <img src="https://farm7.staticflickr.com/6175/6176698785_7dee72237e_m.jpg" itemprop="thumbnail" alt="Image description" />
-      </a>
-      <figcaption itemprop="caption description">Image caption 3</figcaption>
-    </figure>
-
-    <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
-      <a href="https://farm6.staticflickr.com/5023/5578283926_822e5e5791_b.jpg" itemprop="contentUrl" data-size="1024x768">
-          <img src="https://farm6.staticflickr.com/5023/5578283926_822e5e5791_m.jpg" itemprop="thumbnail" alt="Image description" />
-      </a>
-      <figcaption itemprop="caption description">Image caption 4</figcaption>
-    </figure>
-
-
-  </div>
-
-<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
-
-    <!-- Background of PhotoSwipe. 
-         It's a separate element, as animating opacity is faster than rgba(). -->
-    <div class="pswp__bg"></div>
-
-    Slides wrapper with overflow:hidden.
-    <div class="pswp__scroll-wrap">
-
-        <!-- Container that holds slides. PhotoSwipe keeps only 3 slides in DOM to save memory. -->
-        <!-- don't modify these 3 pswp__item elements, data is added later on. -->
-        <div class="pswp__container">
-            <div class="pswp__item"></div>
-            <div class="pswp__item"></div>
-            <div class="pswp__item"></div>
-        </div>
-
-        <!-- Default (PhotoSwipeUI_Default) interface on top of sliding area. Can be changed. -->
-        <div class="pswp__ui pswp__ui--hidden">
-
-            <div class="pswp__top-bar">
-
-                <!--  Controls are self-explanatory. Order can be changed. -->
-
-                <div class="pswp__counter"></div>
-
-                <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
-
-                <button class="pswp__button pswp__button--share" title="Share"></button>
-
-                <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
-
-                <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
-
-                <!-- Preloader demo http://codepen.io/dimsemenov/pen/yyBWoR -->
-                <!-- element will get class pswp__preloader--active when preloader is running -->
-                <div class="pswp__preloader">
-                    <div class="pswp__preloader__icn">
-                      <div class="pswp__preloader__cut">
-                        <div class="pswp__preloader__donut"></div>
-                      </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
-                <div class="pswp__share-tooltip"></div> 
-            </div>
-
-            <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
-            </button>
-
-            <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
-            </button>
-
-            <div class="pswp__caption">
-                <div class="pswp__caption__center"></div>
-            </div>
-
-          </div>
-
-        </div>
-
-</div>
-
-</div> --}}
-
-<script type="text/javascript" src="{{ asset('/photoswipe/js/photoswipe.min.js') }}"></script>
-<script type="text/javascript" src="{{ asset('/photoswipe/js/photoswipe-ui-default.min.js') }}"></script>
-<script type="text/javascript" src="{{ asset('/photoswipe/js/index.js') }}"></script>
 
 @endsection
 
@@ -307,7 +131,7 @@
 
 <script type="text/javascript">
 
-$(document).ready(getDetails(1,'{{LaravelLocalization::getCurrentLocale()}}'));
+    $(document).ready(getDetails(1,'{{LaravelLocalization::getCurrentLocale()}}'));
 
 function getDetails(id, locale) {
     let url = '{{ url('/events/getDetails') }}';
@@ -326,7 +150,52 @@ function getDetails(id, locale) {
             $('#details-location').text(event.event.place_en);
             $('#details-artist').text(event.event.participants_en);
             $('#details-entrance').text(event.event.entrance_en);
-            $('#details-img').attr('src', event.event.photo);
+            $('#details-img').attr('src', event.event.photo1);
+            if(event.event.photo2 != null){
+                $('#gallery-container').append('<a class="gallery" id="photo2" href=""><img class="gal-img" id="img2" src=""/></a>');
+                $('#photo2').attr('href', event.event.photo2);
+                $('#img2').attr('src', event.event.photo2);
+            }
+            if(event.event.photo3 != null){
+                $('#gallery-container').append('<a class="gallery" id="photo3" href=""><img class="gal-img" id="img3" src=""/></a>');
+                $('#photo3').attr('href', event.event.photo3);
+                $('#img3').attr('src', event.event.photo3);
+            }
+            if(event.event.photo4 != null){
+                $('#gallery-container').append('<a class="gallery" id="photo4" href=""><img class="gal-img" id="img4" src=""/></a>');
+                $('#photo4').attr('href', event.event.photo4);
+                $('#img4').attr('src', event.event.photo4);
+            }
+            if(event.event.photo5 != null){
+                $('#gallery-container').append('<a class="gallery" id="photo5" href=""><img class="gal-img" id="img5" src=""/></a>');
+                $('#photo5').attr('href', event.event.photo5);
+                $('#img5').attr('src', event.event.photo5);
+            }
+            if(event.event.photo6 != null){
+                $('#gallery-container').append('<a class="gallery" id="photo6" href=""><img class="gal-img" id="img6" src=""/></a>');
+                $('#photo6').attr('href', event.event.photo6);
+                $('#img6').attr('src', event.event.photo6);
+            }
+            if(event.event.photo7 != null){
+                $('#gallery-container').append('<a class="gallery" id="photo7" href=""><img class="gal-img" id="img7" src=""/></a>');
+                $('#photo7').attr('href', event.event.photo7);
+                $('#img7').attr('src', event.event.photo7);
+            }
+            if(event.event.photo8 != null){
+                $('#gallery-container').append('<a class="gallery" id="photo8" href=""><img class="gal-img" id="img8" src=""/></a>');
+                $('#photo8').attr('href', event.event.photo8);
+                $('#img8').attr('src', event.event.photo8);
+            }
+            if(event.event.photo9 != null){
+                $('#gallery-container').append('<a class="gallery" id="photo9" href=""><img class="gal-img" id="img9" src=""/></a>');
+                $('#photo9').attr('href', event.event.photo9);
+                $('#img9').attr('src', event.event.photo9);
+            }
+            if(event.event.photo10 != null){
+                $('#gallery-container').append('<a class="gallery" id="photo10" href=""><img class="gal-img" id="img10" src=""/></a>');
+                $('#photo10').attr('href', event.event.photo10);
+                $('#img10').attr('src', event.event.photo10);
+            }
             $('#event-description').html(event.event.description_en);
         });
     }
@@ -343,12 +212,76 @@ function getDetails(id, locale) {
             $('#details-location').text(event.event.place);
             $('#details-artist').text(event.event.participants);
             $('#details-entrance').text(event.event.entrance);
-            $('#details-img').attr('src', event.event.photo);
+            $('#details-img').attr('src', event.event.photo1);
+            if(event.event.photo2 != null){
+                $('#gallery-container').append('<a class="gallery" id="photo2" href=""><img class="gal-img" id="img2" src=""/></a>');
+                $('#photo2').attr('href', event.event.photo2);
+                $('#img2').attr('src', event.event.photo2);
+            }
+            if(event.event.photo3 != null){
+                $('#gallery-container').append('<a class="gallery" id="photo3" href=""><img class="gal-img" id="img3" src=""/></a>');
+                $('#photo3').attr('href', event.event.photo3);
+                $('#img3').attr('src', event.event.photo3);
+            }
+            if(event.event.photo4 != null){
+                $('#gallery-container').append('<a class="gallery" id="photo4" href=""><img class="gal-img" id="img4" src=""/></a>');
+                $('#photo4').attr('href', event.event.photo4);
+                $('#img4').attr('src', event.event.photo4);
+            }
+            if(event.event.photo5 != null){
+                $('#gallery-container').append('<a class="gallery" id="photo5" href=""><img class="gal-img" id="img5" src=""/></a>');
+                $('#photo5').attr('href', event.event.photo5);
+                $('#img5').attr('src', event.event.photo5);
+            }
+            if(event.event.photo6 != null){
+                $('#gallery-container').append('<a class="gallery" id="photo6" href=""><img class="gal-img" id="img6" src=""/></a>');
+                $('#photo6').attr('href', event.event.photo6);
+                $('#img6').attr('src', event.event.photo6);
+            }
+            if(event.event.photo7 != null){
+                $('#gallery-container').append('<a class="gallery" id="photo7" href=""><img class="gal-img" id="img7" src=""/></a>');
+                $('#photo7').attr('href', event.event.photo7);
+                $('#img7').attr('src', event.event.photo7);
+            }
+            if(event.event.photo8 != null){
+                $('#gallery-container').append('<a class="gallery" id="photo8" href=""><img class="gal-img" id="img8" src=""/></a>');
+                $('#photo8').attr('href', event.event.photo8);
+                $('#img8').attr('src', event.event.photo8);
+            }
+            if(event.event.photo9 != null){
+                $('#gallery-container').append('<a class="gallery" id="photo9" href=""><img class="gal-img" id="img9" src=""/></a>');
+                $('#photo9').attr('href', event.event.photo9);
+                $('#img9').attr('src', event.event.photo9);
+            }
+            if(event.event.photo10 != null){
+                $('#gallery-container').append('<a class="gallery" id="photo10" href=""><img class="gal-img" id="img10" src=""/></a>');
+                $('#photo10').attr('href', event.event.photo10);
+                $('#img10').attr('src', event.event.photo10);
+            }
             $('#event-description').html(event.event.description);
         });
     }
 }
 
+</script>
+
+<script src="{{ asset('/js/jquery.magnific-popup.min.js') }}"></script>
+<script type="text/javascript">
+
+    $('.gallery-container').each(function() { // the containers for all your galleries
+        $(this).magnificPopup({
+            delegate: 'a', // the selector for gallery item
+            type: 'image',
+            closeBtnInside: true,
+            mainClass: 'mfp-with-zoom mfp-img-mobile',
+            image: {
+            verticalFit: true,
+            },
+            gallery: {
+                enabled:true
+            }
+        });
+    });
 </script>
 
 @endsection
