@@ -27,6 +27,7 @@
     
     @include('includes.scripts')
     @yield('foot')
-
+    
+    <script type="text/javascript" src="{{ asset('/js/google-analytics.js') }}"></script>
 </body>
 </html>
