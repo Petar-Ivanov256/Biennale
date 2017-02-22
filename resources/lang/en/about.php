@@ -79,9 +79,9 @@ return [
     'lilia_pangelova_w'=>'assistant glassblower',
 
     'milan_krajek'=>'Milan Krajicek',
-    'dana_zzamechnikova'=>'Dana Zámečníková ',
+    'dana_zzamechnikova'=>'Dana Zamecnikova ',
 
-    'zdenek_lhodski'=>'Zdeněk Lhotský',
+    'zdenek_lhodski'=>'Zdenek Lhotsky',
 
     'konstantin_kalchev'=>'Konstantin Valchev',
     'Bul'=>"Bulgaria",

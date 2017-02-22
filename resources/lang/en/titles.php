@@ -8,7 +8,7 @@ return [
     'bachelor' => 'Bachelor scholarships',
     'masters' => 'Masters scholarships',
     'phd' => 'Phd scholarships',
-    'authors' => 'Authors',
+    'authors' => 'Artists',
     'events' => 'Events',
     'partners' => 'Partners',
     'archive' => 'Archive',

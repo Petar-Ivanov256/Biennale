@@ -16,7 +16,7 @@
                       @foreach ($authors as $author)
                         <li class="authors-list" data-toggle="{{ 'author-' . $author->id }}">
                           <a href="#1">
-                            <br>{{ App::getLocale() == 'bg' ? $author->name : $author->name_en }}<br><span class="country-authors">{{ $author->country->title_en }}</span></a>
+                            <br>{{ App::getLocale() == 'bg' ? $author->name : $author->name_en }}<br><span class="country-authors">{{ App::getLocale() == 'bg' ? $author->country->title : $author->country->title_en }}</span></a>
                         </li>
                       @endforeach
 
@@ -37,7 +37,7 @@
                       <div id="{{ 'author-' . $author->id }}" class="author-details hide">
                         <h3 class="info-name">{{ App::getLocale() == 'bg' ? $author->name : $author->name_en }}</h3>
                         <ul class="info-about-person">
-                            <li>{{ $author->country->title_en }}</li>
+                            <li>{{ App::getLocale() == 'bg' ? $author->country->title : $author->country->title_en }}</li>
                             <li>{{ $author->gender == 1 ? trans('about.female') : trans('about.male') }}</li>
                             <li>{{ App::getLocale() == 'bg' ? $author->info : $author->info_en }}</li>
                         </ul>
@@ -52,28 +52,28 @@
                                        <img src="{{ $author->works()->first()->photo1 }}">
                                     </a>
                                  <br><br>
-                                 <div class="info-authors-backgcolor" id="backgcolo-info-authors">
+                                 {{-- <div class="info-authors-backgcolor" id="backgcolo-info-authors">
                                      <p class="info-authors-text-under-pic">
 
                                      </p>
                                      <p class="info-about-tech">
 
                                      </p><br><br>
-                                 </div>
+                                 </div> --}}
                              </div>
                             <div class="col-md-5 portfolio-item">
                                 <a href="{{ '#portfolioModal2-' . $author->id }}" class="portfolio-link" data-toggle="modal">
                                     <img src="{{ $author->works()->first()->photo2 }}">
                                 </a>
                                 <br><br>
-                                <div class="info-authors-backgcolor" id="backgcolo-info-authors">
+                                {{-- <div class="info-authors-backgcolor" id="backgcolo-info-authors">
                                     <p class="info-authors-text-under-pic">
 
                                     </p>
                                     <p class="info-about-tech">
 
                                     </p><br><br>
-                                </div>
+                                </div> --}}
                             </div>
                     </div>
 
@@ -158,28 +158,28 @@
                                        {!! HTML::image('img/authors/dana zamecnikova1.jpg') !!}
                                     </a>
                                  <br><br>
-                                 <div class="info-authors-backgcolor" id="backgcolo-info-authors">
+                                 {{-- <div class="info-authors-backgcolor" id="backgcolo-info-authors">
                                      <p class="info-authors-text-under-pic">
 
                                      </p>
                                      <p class="info-about-tech">
 
                                      </p><br><br>
-                                 </div>
+                                 </div> --}}
                              </div>
                             <div class="col-md-5 portfolio-item">
                                 <a href="#portfolioModal2" class="portfolio-link" data-toggle="modal">
                                     {!! HTML::image('img/authors/dana zamecnikova2.jpg') !!}
                                 </a>
                                 <br><br>
-                                <div class="info-authors-backgcolor" id="backgcolo-info-authors">
+                                {{-- <div class="info-authors-backgcolor" id="backgcolo-info-authors">
                                     <p class="info-authors-text-under-pic">
 
                                     </p>
                                     <p class="info-about-tech">
 
                                     </p><br><br>
-                                </div>
+                                </div> --}}
                             </div>
                     </div>
                 </div>
@@ -202,28 +202,28 @@
                                     {!! HTML::image('img/authors/valchev.jpg') !!}
                                 </a>
                                 <br><br>
-                                <div class="info-authors-backgcolor" id="backgcolo-info-authors">
+                                {{-- <div class="info-authors-backgcolor" id="backgcolo-info-authors">
                                     <p class="info-authors-text-under-pic">
 
                                     </p>
                                     <p class="info-about-tech">
 
                                     </p><br><br>
-                                </div>
+                                </div> --}}
                             </div>
                             <div class="col-md-5 portfolio-item">
                                 <a href="#portfolioModal4" class="portfolio-link" data-toggle="modal">
                                     {!! HTML::image('img/authors/valchev 2.jpg') !!}
                                 </a>
                                 <br><br>
-                                <div class="info-authors-backgcolor" id="backgcolo-info-authors">
+                                {{-- <div class="info-authors-backgcolor" id="backgcolo-info-authors">
                                     <p class="info-authors-text-under-pic">
 
                                     </p>
                                     <p class="info-about-tech">
 
                                     </p><br><br>
-                                </div>
+                                </div> --}}
                             </div>
                         </div>
                     </div>
@@ -248,28 +248,28 @@
                                     {!! HTML::image('img/authors/mk_104.jpg') !!}
                                 </a>
                                 <br><br>
-                                <div class="info-authors-backgcolor" id="backgcolo-info-authors">
+                                {{-- <div class="info-authors-backgcolor" id="backgcolo-info-authors">
                                     <p class="info-authors-text-under-pic">
 
                                     </p>
                                     <p class="info-about-tech">
 
                                     </p><br><br>
-                                </div>
+                                </div> --}}
                             </div>
                             <div class="col-md-5 portfolio-item">
-                                <a href="#portfolioModal6" class="portfolio-link" data-toggle="modal">
+                                {{-- <a href="#portfolioModal6" class="portfolio-link" data-toggle="modal">
                                     {!! HTML::image('img/images.png') !!}
-                                </a>
+                                </a> --}}
                                 <br><br>
-                                <div class="info-authors-backgcolor" id="backgcolo-info-authors">
+                                {{-- <div class="info-authors-backgcolor" id="backgcolo-info-authors">
                                     <p class="info-authors-text-under-pic">
 
                                     </p>
                                     <p class="info-about-tech">
 
                                     </p><br><br>
-                                </div>
+                                </div> --}}
                             </div>
                        </div>
                     </div>
@@ -291,28 +291,28 @@
                                     {!! HTML::image('img/authors/ondrej1.jpg') !!}
                                 </a>
                                 <br><br>
-                                <div class="info-authors-backgcolor" id="backgcolo-info-authors">
+                                {{-- <div class="info-authors-backgcolor" id="backgcolo-info-authors">
                                     <p class="info-authors-text-under-pic">
 
                                     </p>
                                     <p class="info-about-tech">
 
                                     </p><br><br>
-                                </div>
+                                </div> --}}
                             </div>
                             <div class="col-md-5 portfolio-item">
                                 <a href="#portfolioModal8" class="portfolio-link" data-toggle="modal">
                                     {!! HTML::image('img/authors/ondrej2.jpg') !!}
                                 </a>
                                 <br><br>
-                                <div class="info-authors-backgcolor" id="backgcolo-info-authors">
+                                {{-- <div class="info-authors-backgcolor" id="backgcolo-info-authors">
                                     <p class="info-authors-text-under-pic">
 
                                     </p>
                                     <p class="info-about-tech">
 
                                     </p><br><br>
-                                </div>
+                                </div> --}}
                             </div>
 
 
@@ -352,28 +352,28 @@
                                     {!! HTML::image('img/authors/ihotsky1.jpg') !!}
                                 </a>
                                 <br><br>
-                                <div class="info-authors-backgcolor" id="backgcolo-info-authors">
+                                {{-- <div class="info-authors-backgcolor" id="backgcolo-info-authors">
                                     <p class="info-authors-text-under-pic">
 
                                     </p>
                                     <p class="info-about-tech">
 
                                     </p><br><br>
-                                </div>
+                                </div> --}}
                             </div>
                             <div class="col-md-5 portfolio-item">
                                 <a href="#portfolioModal10" class="portfolio-link" data-toggle="modal">
                                     {!! HTML::image('img/authors/ihotsky2.jpg') !!}
                                 </a>
                                 <br><br>
-                                <div class="info-authors-backgcolor" id="backgcolo-info-authors">
+                                {{-- <div class="info-authors-backgcolor" id="backgcolo-info-authors">
                                     <p class="info-authors-text-under-pic">
 
                                     </p>
                                     <p class="info-about-tech">
 
                                     </p><br><br>
-                                </div>
+                                </div> --}}
                             </div>
                         </div>
                     </div>
