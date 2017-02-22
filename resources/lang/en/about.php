@@ -88,4 +88,6 @@ return [
     'Cz'=>'Czech Republic',
     'male'=>"male",
     'female'=>'female',
+
+    'web_dev_team' => 'From left to right - Ivaylo Stoyanov, Petar Ivanov, Dimitar Bakardzhiev',
 ];

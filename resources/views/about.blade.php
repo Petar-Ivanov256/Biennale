@@ -167,12 +167,25 @@
                     </article>
                     <h2>{{ trans('about.web_dev') }}</h2>
                     <article>
+                        <div class="col-md-12">
+                            <figure>
+                                <img src="{{ asset('/img/team/web_dev_team.png') }}">
+                                <figcaption class="text-center">{{ trans('about.web_dev_team') }}</figcaption>
+                            </figure>
+                        </div>
                         <div class="col-md-5">
                             {{--{!! HTML::image('img/images.png') !!}--}}
                             <br>
                             <div class="textunderimg">
                                 <h4>{{ trans('about.dimitar') }}</h4>
-                                <p></p>
+                                <p>
+                                    <a href="https://www.facebook.com/dimitar.bakardzhiev.9" target="_blank" class="btn btn-social-icon btn-facebook">
+                                        <span class="fa fa-facebook"></span>
+                                    </a>
+                                    <a href="https://github.com/DimitarBakardzhiev" target="_blank" class="btn btn-social-icon btn-github">
+                                        <span class="fa fa-github"></span>
+                                    </a>
+                                </p>
                             </div>
                         </div>
                         <br>
