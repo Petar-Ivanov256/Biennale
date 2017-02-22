@@ -34,7 +34,7 @@
                     {{-- Lists author details --}}
                     @foreach ($authors as $author)
                       
-                      <div id="{{ 'author-' . $author->id }}" class="author-details">
+                      <div id="{{ 'author-' . $author->id }}" class="author-details hide">
                         <h3 class="info-name">{{ App::getLocale() == 'bg' ? $author->name : $author->name_en }}</h3>
                         <ul class="info-about-person">
                             <li>{{ $author->country->title_en }}</li>
@@ -141,7 +141,7 @@
 
                     @endforeach
 
-                    <div id="author-1" class="author-details">
+                    <div id="author-1" class="author-details hide">
                         <h3 class="info-name">{{ trans('about.dana_zzamechnikova') }}</h3>
                         <ul class="info-about-person">
                             <li>{{ trans('about.Cz') }}</li>
@@ -185,7 +185,7 @@
                 </div>
 
                     <!-- id 2-->
-                    <div id="author-2" class="author-details">
+                    <div id="author-2" class="author-details hide">
                         <h3 class="info-name">{{ trans('about.konstantin_kalchev') }}</h3>
                         <ul class="info-about-person">
                             <li>{{ trans('about.Bul') }}</li>
@@ -231,7 +231,7 @@
                    <!----->
                     
                     <!--Milan-->
-                    <div id="author-3" class="author-details">
+                    <div id="author-3" class="author-details hide">
                         <h3 class="info-name">{{ trans('about.milan_krajek') }}</h3>
                         <ul class="info-about-person">
                             <li>{{ trans('about.Cz') }}</li>
@@ -274,7 +274,7 @@
                        </div>
                     </div>
                     <!--Ondrei id=4-->
-                    <div id="author-4" class="author-details">
+                    <div id="author-4" class="author-details hide">
                         <h3 class="info-name">{{ trans('about.ondrej_strnadel') }}</h3>
                         <ul class="info-about-person">
                             <li>{{ trans('about.Cz') }}</li>
@@ -335,7 +335,7 @@
                     <!--->
 
                     <!--Sdenek-->
-                    <div id="author-5" class="author-details">
+                    <div id="author-5" class="author-details hide">
                         <h3 class="info-name">{{ trans('about.zdenek_lhodski') }}</h3>
                         <ul class="info-about-person">
                             <li>{{ trans('about.Cz') }}</li>
@@ -681,13 +681,6 @@
 
 @section('foot')
 
-<script type="text/javascript">
-	$('.author-details').hide();
-	$('.authors-list').click(function (e) {
-		 let authorId = $(this).attr('data-toggle');
-		 $('.author-details').hide();
-		 $('#' + authorId).show();
-	});
-</script>
+<script type="text/javascript" src="{{ asset('/js/authors_toggle.js') }}"></script>
 
 @endsection
