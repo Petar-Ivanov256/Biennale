@@ -48,7 +48,7 @@
             </div>
         </div>
         <!--Izlozbi-->
-        <div class="col-md-9 programa" id="event-back">
+        <div class="col-md-11 programa" id="event-back">
              <div id="1" class="events-p"><p>{{ trans('events.events_menu_exhibitions') }}<p></div><br>
                 @foreach($events as $event)
                     @if (LaravelLocalization::getCurrentLocale() == 'en')
