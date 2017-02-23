@@ -93,7 +93,7 @@
                 <div class="form-group">
                     <label for="place_en" class="col-lg-2 control-label">Вход_en</label>
                     <div class="col-lg-6">
-                        <input type="text" class="form-control" id="entranc_en" name="entranc_en" placeholder="Вход_en" value="{{ $event->entrance_en }}">
+                        <input type="text" class="form-control" id="entrance_en" name="entrance_en" placeholder="Вход_en" value="{{ $event->entrance_en }}">
                         @if ($errors->has('entrance_en'))
                             <span class="help-block">
                                 <strong>{{ $errors->first('entrance_en') }}</strong>
