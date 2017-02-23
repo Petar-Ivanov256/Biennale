@@ -40,6 +40,7 @@ class CreateEventsTable extends Migration {
             $table->binary("photo10")->nullable();
             $table->string('latitude')->nullable();
             $table->string('longitude')->nullable();
+            $table->integer('order_num')->nullable()->default(0);
             $table->timestamps();
         });
 

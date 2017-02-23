@@ -16,7 +16,7 @@ class EventsController extends Controller
 {
     public function show_events(Request $request) {
 
-        $events = Events::all();
+        $events = Events::all()->sortBy('order_num');
     	return view('events.events', ['events' => $events]);
     }
 

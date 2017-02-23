@@ -82,10 +82,21 @@
                 <div class="form-group">
                     <label for="place_en" class="col-lg-2 control-label">Вход_en</label>
                     <div class="col-lg-6">
-                        <input type="text" class="form-control" id="entranc_en" name="entranc_en" placeholder="Вход_en" value="{{ Request::old('entrance_en') }}">
+                        <input type="text" class="form-control" id="entranc_en" name="entranc_en" placeholder="Вход_en" value="{{ $event->entrance_en }}">
                         @if ($errors->has('entrance_en'))
                             <span class="help-block">
                                 <strong>{{ $errors->first('entrance_en') }}</strong>
+                            </span>
+                        @endif
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="title" class="col-lg-2 control-label">Поредност</label>
+                    <div class="col-lg-6">
+                        <input type="text" class="form-control" id="order_num" name="order_num" placeholder="Поредност" value="{{ $event->order_num }}" autofocus>
+                        @if ($errors->has('order_num'))
+                            <span class="help-block">
+                                <strong>{{ $errors->first('order_num') }}</strong>
                             </span>
                         @endif
                     </div>

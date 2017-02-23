@@ -91,6 +91,17 @@
                     </div>
                 </div>
                 <div class="form-group">
+                    <label for="title" class="col-lg-2 control-label">Поредност</label>
+                    <div class="col-lg-6">
+                        <input type="text" class="form-control" id="order_num" name="order_num" placeholder="Поредност" value="{{ Request::old('order_num') }}" autofocus>
+                        @if ($errors->has('order_num'))
+                            <span class="help-block">
+                                <strong>{{ $errors->first('order_num') }}</strong>
+                            </span>
+                        @endif
+                    </div>
+                </div>
+                <div class="form-group">
                     <label for="start" class="col-lg-2 control-label">Начало</label>
                     <div class="col-lg-6">
                         <div class='input-group date' id='datetimepicker1'>
