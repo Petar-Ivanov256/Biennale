@@ -165,12 +165,12 @@
                     </article>
                     <h2>{{ trans('about.web_dev') }}</h2>
                     <article>
-                        <div class="col-md-12">
-                            <figure>
-                                <img src="{{ asset('/img/team/web_dev_team.png') }}">
-                                <figcaption class="text-center">{{ trans('about.web_dev_team') }}</figcaption>
-                            </figure>
-                        </div>
+                        {{--<div class="col-md-12">--}}
+                            {{--<figure>--}}
+                                {{--<img src="{{ asset('/img/team/web_dev_team.png') }}">--}}
+                                {{--<figcaption class="text-center">{{ trans('about.web_dev_team') }}</figcaption>--}}
+                            {{--</figure>--}}
+                        {{--</div>--}}
                         <div class="col-md-5">
                             {{--{!! HTML::image('img/images.png') !!}--}}
                             <br>
