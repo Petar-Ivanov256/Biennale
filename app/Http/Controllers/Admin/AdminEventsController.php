@@ -209,15 +209,22 @@ class AdminEventsController extends Controller
     {
         return [
             'start' => 'required',
-            'end' => 'required',
             'place' => 'required',
+            'place_en' => 'required',
             'title' => 'required',
-            'description' => 'required',
-            //'pic' => 'required',
             'title_en' => 'required',
+            'description' => 'required',
             'description_en' => 'required',
-            'lat' => 'required',
-            'lng' => 'required'
+            'pic1' => 'required|image|max:2096',
+            'pic2' => 'image|max:2096',
+            'pic3' => 'image|max:2096',
+            'pic4' => 'image|max:2096',
+            'pic5' => 'image|max:2096',
+            'pic6' => 'image|max:2096',
+            'pic7' => 'image|max:2096',
+            'pic8' => 'image|max:2096',
+            'pic9' => 'image|max:2096',
+            'pic10' => 'image|max:2096',
         ];
 //        return [
 //            'start' => 'required',
