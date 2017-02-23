@@ -85,7 +85,7 @@ class AdminEventsController extends Controller
         $event->start = $request->input('start');
         $event->end = $request->input('end');
         $event->place = $request->input('place');
-        $event->place = $request->input('place_en');
+        $event->place_en = $request->input('place_en');
         $event->participants = $request->input('participants');
         $event->participants_en = $request->input('participants_en');
         $event->entrance = $request->input('entrance');
@@ -180,7 +180,7 @@ class AdminEventsController extends Controller
         $event->start = $request->input('start');
         $event->end = $request->input('end');
         $event->place = $request->input('place');
-        $event->place = $request->input('place_en');
+        $event->place_en = $request->input('place_en');
         $event->participants = $request->input('participants');
         $event->participants_en = $request->input('participants_en');
         $event->entrance = $request->input('entrance');
