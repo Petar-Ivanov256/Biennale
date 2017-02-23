@@ -106,11 +106,14 @@ class AdminEventsController extends Controller
         $event->description_en = $request->input('description_en');
         $event->latitude = $request->input('lat');
         $event->longitude = $request->input('lng');
-        
-        $event->save();
-
         $chosenCategory = Category::find($request->input('category'));
-        $chosenCategory->events()->save($event);
+        $event->category()->associate($chosenCategory);
+        $event->save();
+//
+//        $event->save();
+//
+//        $chosenCategory = Category::find($request->input('category'));
+//        $chosenCategory->events()->save($event);
 
         return redirect('/admin/showEvents');
     }
