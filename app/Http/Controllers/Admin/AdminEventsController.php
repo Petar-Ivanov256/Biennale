@@ -34,7 +34,7 @@ class AdminEventsController extends Controller
 
     public function add_event(Request $request)
     {
-        $this->validate($request, $this->validateEvent());
+        $this->validate($request, $this->validateEventCreate());
 
         $img1 = null;
         $img2 = null;
@@ -130,7 +130,7 @@ class AdminEventsController extends Controller
 
     public function edit_event_save(Request $request)
     {
-        $this->validate($request, $this->validateEvent());
+        $this->validate($request, $this->validateEventEdit());
         $id = $request->input('id');
 
         $event = Events::find($id);
@@ -210,7 +210,7 @@ class AdminEventsController extends Controller
         return redirect('/admin/showEvents');
     }
 
-    private function validateEvent()
+    private function validateEventCreate()
     {
         return [
             'start' => 'required',
@@ -231,46 +231,33 @@ class AdminEventsController extends Controller
             'pic9' => 'image|max:2096',
             'pic10' => 'image|max:2096',
         ];
-//        return [
-//            'start' => 'required',
-//
-//            'place' => 'required|max:100',
-//            'phoneNumber' => 'required|max:100',
-//            'participants' => 'required|max:100',
-//            'participants_en' => 'required|max:100',
-//            'entrance' => 'required|max:100',
-//            'entrance_en' => 'required|max:100',
-//            'installationGuide' => 'required|max:300',
-//            'year' => 'required|numeric|min:1900|max:2017',
-//            'synopsis' => 'required|max:100',
-//            'file-7' => 'required|image|max:4096',
-//            'file-8' => 'required|image|max:4096',
-//            'technique' => 'required',
-//        ];
 
-//        $event = new Events();
-//        $event->start = $request->input('start');
-//        $event->end = $request->input('end');
-//        $event->place = $request->input('place');
-//        $event->participants = $request->input('participants');
-//        $event->participants_en = $request->input('participants_en');
-//        $event->entrance = $request->input('entrance');
-//        $event->title = $request->input('title');
-//        $event->description = $request->input('description');
-//        $event->photo1 = $img1;
-//        $event->photo2 = $img2;
-//        $event->photo3 = $img3;
-//        $event->photo4 = $img4;
-//        $event->photo5 = $img5;
-//        $event->photo6 = $img6;
-//        $event->photo7 = $img7;
-//        $event->photo8 = $img8;
-//        $event->photo9 = $img9;
-//        $event->photo10 = $img10;
-//        $event->title_en = $request->input('title_en');
-//        $event->description_en = $request->input('description_en');
-//        $event->latitude = $request->input('lat');
-//        $event->longitude = $request->input('lng');
+
+    }
+
+    private function validateEventEdit()
+    {
+        return [
+            'start' => 'required',
+            'place' => 'required',
+            'place_en' => 'required',
+            'title' => 'required',
+            'title_en' => 'required',
+            'description' => 'required',
+            'description_en' => 'required',
+            'pic1' => 'image|max:2096',
+            'pic2' => 'image|max:2096',
+            'pic3' => 'image|max:2096',
+            'pic4' => 'image|max:2096',
+            'pic5' => 'image|max:2096',
+            'pic6' => 'image|max:2096',
+            'pic7' => 'image|max:2096',
+            'pic8' => 'image|max:2096',
+            'pic9' => 'image|max:2096',
+            'pic10' => 'image|max:2096',
+        ];
+
 
     }
 }
+
