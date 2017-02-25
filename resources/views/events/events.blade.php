@@ -52,7 +52,7 @@
              <div id="1" class="events-p"><p>{{ trans('events.events_menu_exhibitions') }}<p></div><br>
                 @foreach($events as $event)
                     @if (LaravelLocalization::getCurrentLocale() == 'en')
-                        <div class="col-md-5" onclick="getDetails({{ $event->id }}, '{{LaravelLocalization::getCurrentLocale()}}')">
+                        <div class="col-md-4" onclick="getDetails({{ $event->id }}, '{{LaravelLocalization::getCurrentLocale()}}')">
                             <a href="#details" class="abackcolor">
                                 <img src="{{$event->photo1}}">
                                 {{--{!! HTML::image('img/eventsimg/pic1.jpg') !!}--}}
@@ -71,7 +71,7 @@
                             </div>
                         </div>
                     @else
-                        <div class="col-md-5" onclick="getDetails({{ $event->id }}, '{{LaravelLocalization::getCurrentLocale()}}')">
+                        <div class="col-md-4" onclick="getDetails({{ $event->id }}, '{{LaravelLocalization::getCurrentLocale()}}')">
                             <a href="#details" class="abackcolor">
                                 <img src="{{$event->photo1}}">
                                 {{--{!! HTML::image('img/eventsimg/pic1.jpg') !!}--}}
