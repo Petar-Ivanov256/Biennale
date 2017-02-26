@@ -4,7 +4,7 @@ return[
  'period'=>'Период',
 
     'events_menu_exhibitions'=>'Изложби',
-    'events_menu_lectures'=>'лекции',
+    'events_menu_lectures'=>'Лекции',
     'events_menu_workshops'=>'Творчески работилници',
     'events_menu_competitions'=>'Конкурси',
     'events_menu_campaigns'=>'Кампании',

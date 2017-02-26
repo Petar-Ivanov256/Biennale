@@ -21,11 +21,11 @@
                 <div>
                 <ul class="events-menu">
                     <li><a onclick="getAllCat()">{{ trans('events.all') }}</a></li>
-                    <li><a onclick="getCategory('Exhibition')">{{ trans('events.events_menu_exhibitions') }}</a></li>
-                    <li><a onclick="getCategory('Lecture')">{{ trans('events.events_menu_lectures') }}</a></li>
-                    <li><a onclick="getCategory('Workshop')" data-toggle="collapse">{{ trans('events.events_menu_workshops') }}</a></li>
-                    <li><a onclick="getCategory('Contest')">{{ trans('events.events_menu_competitions') }}</a></li>
-                    <li><a onclick="getCategory('Campaign')">{{ trans('events.events_menu_campaigns') }}</a></li>
+                    <li><a onclick="getCategory('Exhibition', 'Изложби')">{{ trans('events.events_menu_exhibitions') }}</a></li>
+                    <li><a onclick="getCategory('Lecture','Лекции')">{{ trans('events.events_menu_lectures') }}</a></li>
+                    <li><a onclick="getCategory('Workshop','Творчески работилници')" data-toggle="collapse">{{ trans('events.events_menu_workshops') }}</a></li>
+                    <li><a onclick="getCategory('Contest','Конкурси')">{{ trans('events.events_menu_competitions') }}</a></li>
+                    <li><a onclick="getCategory('Campaign','Кампании')">{{ trans('events.events_menu_campaigns') }}</a></li>
                     <li id="biennale-week">{{ trans('events.events_menu_biennale_week') }}</li>
                 </ul>
                 </div>
@@ -50,7 +50,7 @@
         </div>
         <!--Izlozbi-->
         <div class="col-md-11 programa" id="event-back">
-             <div id="show_cat" class="events-p"><p>{{ trans('events.events_menu_exhibitions') }}<p></div><br>
+             <div class="events-p"><p id="show_cat" >{{ trans('events.all') }}<p></div><br>
             <div class="filter-events">
                 @foreach($events as $event)
                     @if (LaravelLocalization::getCurrentLocale() == 'en')
@@ -138,8 +138,14 @@
 
 
 <script type="text/javascript">
-    function getCategory(element) {
-        element = '.'+element;
+    function getCategory(category, category_bg) {
+        let element = '.'+category;
+        if('{{LaravelLocalization::getCurrentLocale()}}' == 'en'){
+            $('#show_cat').text(category);
+        }else{
+            $('#show_cat').text(category_bg);
+        }
+
         $('.all').show()
         if($('.filter-events > :not('+element+')').is(":visible")) {
             $('.filter-events > :not(' + element + ')').hide()
@@ -147,6 +153,11 @@
     }
 
     function getAllCat() {
+        if('{{LaravelLocalization::getCurrentLocale()}}' == 'en'){
+            $('#show_cat').text('All');
+        }else{
+            $('#show_cat').text('Всички');
+        }
         $('.all').show()
     }
 </script>    
