@@ -31,4 +31,5 @@ return[
     'participants'=>'participants',
     'entrance'=>'entrance',
     'back_btn'=>'back',
+    'all' => 'All',
 ];

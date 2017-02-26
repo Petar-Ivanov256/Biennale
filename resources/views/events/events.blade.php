@@ -20,11 +20,12 @@
             <div>
                 <div>
                 <ul class="events-menu">
-                    <li><a href="#1">{{ trans('events.events_menu_exhibitions') }}</a></li>
-                    <li><a href="#2">{{ trans('events.events_menu_lectures') }}</a></li>
-                    <li><a href="#3" data-toggle="collapse">{{ trans('events.events_menu_workshops') }}</a></li>
-                    <li><a href="#4">{{ trans('events.events_menu_competitions') }}</a></li>
-                    <li><a href="#4">{{ trans('events.events_menu_campaigns') }}</a></li>
+                    <li><a onclick="getAllCat()">{{ trans('events.all') }}</a></li>
+                    <li><a onclick="getCategory('Exhibition')">{{ trans('events.events_menu_exhibitions') }}</a></li>
+                    <li><a onclick="getCategory('Lecture')">{{ trans('events.events_menu_lectures') }}</a></li>
+                    <li><a onclick="getCategory('Workshop')" data-toggle="collapse">{{ trans('events.events_menu_workshops') }}</a></li>
+                    <li><a onclick="getCategory('Contest')">{{ trans('events.events_menu_competitions') }}</a></li>
+                    <li><a onclick="getCategory('Campaign')">{{ trans('events.events_menu_campaigns') }}</a></li>
                     <li id="biennale-week">{{ trans('events.events_menu_biennale_week') }}</li>
                 </ul>
                 </div>
@@ -49,10 +50,11 @@
         </div>
         <!--Izlozbi-->
         <div class="col-md-11 programa" id="event-back">
-             <div id="1" class="events-p"><p>{{ trans('events.events_menu_exhibitions') }}<p></div><br>
+             <div id="show_cat" class="events-p"><p>{{ trans('events.events_menu_exhibitions') }}<p></div><br>
+            <div class="filter-events">
                 @foreach($events as $event)
                     @if (LaravelLocalization::getCurrentLocale() == 'en')
-                        <div class="col-md-4" onclick="getDetails({{ $event->id }}, '{{LaravelLocalization::getCurrentLocale()}}')">
+                        <div class="col-md-4 {{$event->category->title_en}} all" onclick="getDetails({{ $event->id }}, '{{LaravelLocalization::getCurrentLocale()}}')">
                             <a href="#details" class="abackcolor">
                                 <img src="{{$event->photo1}}">
                                 {{--{!! HTML::image('img/eventsimg/pic1.jpg') !!}--}}
@@ -71,7 +73,7 @@
                             </div>
                         </div>
                     @else
-                        <div class="col-md-4" onclick="getDetails({{ $event->id }}, '{{LaravelLocalization::getCurrentLocale()}}')">
+                        <div class="col-md-4 {{$event->category->title_en}} all" onclick="getDetails({{ $event->id }}, '{{LaravelLocalization::getCurrentLocale()}}')">
                             <a href="#details" class="abackcolor">
                                 <img src="{{$event->photo1}}">
                                 {{--{!! HTML::image('img/eventsimg/pic1.jpg') !!}--}}
@@ -90,7 +92,8 @@
                             </div>
                         </div>
                     @endif
-            @endforeach
+                @endforeach
+            </div>
         </div>
     </div>
  </div>
@@ -133,6 +136,20 @@
 
 @section('foot')
 
+
+<script type="text/javascript">
+    function getCategory(element) {
+        element = '.'+element;
+        $('.all').show()
+        if($('.filter-events > :not('+element+')').is(":visible")) {
+            $('.filter-events > :not(' + element + ')').hide()
+        }
+    }
+
+    function getAllCat() {
+        $('.all').show()
+    }
+</script>    
 <script type="text/javascript">
 
     $(document).ready(getDetails(1,'{{LaravelLocalization::getCurrentLocale()}}'));

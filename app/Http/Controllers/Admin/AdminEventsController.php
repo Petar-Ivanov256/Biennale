@@ -92,6 +92,7 @@ class AdminEventsController extends Controller
         $event->entrance_en = $request->input('entrance_en');
         $event->title = $request->input('title');
         $event->description = $request->input('description');
+        $event->order_num = $request->input('order_num');
         $event->photo1 = $img1;
         $event->photo2 = $img2;
         $event->photo3 = $img3;
@@ -194,6 +195,7 @@ class AdminEventsController extends Controller
         $event->description_en = $request->input('description_en');
         $event->latitude = $request->input('lat');
         $event->longitude = $request->input('lng');
+        $event->order_num = $request->input('order_num');
         $chosenCategory = Category::find($request->input('category'));
         $event->category()->associate($chosenCategory);
         $event->save();
