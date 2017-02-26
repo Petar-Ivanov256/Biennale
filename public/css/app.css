@@ -1135,6 +1135,15 @@ body{
     float: left;
     left: 200px;
 }
+.textunderimg-about h4{
+    font-family: "DecimaMonoX",sans-serif;
+    font-weight: bold;
+    color: rgb(109, 110, 113);
+}
+.textunderimg-about p{
+    font-family: "359Sans",sans-serif;
+    color: rgb(109, 110, 113);
+}
 /*Program Css*/
 .lihorizontal li {
     display: inline;
