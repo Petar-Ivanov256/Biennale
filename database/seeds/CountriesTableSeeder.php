@@ -103,7 +103,7 @@ class CountriesTableSeeder extends Seeder
 			(89, NULL, NULL, 'Кирибати', 'Kiribati'),
 			(90, NULL, NULL, 'Кувейт', 'Kuwait'),
 			(91, NULL, NULL, 'Киргизстан', 'Kyrgyzstan'),
-			(92, NULL, NULL, 'Лаоската народнодемократична република', 'Lao People’s Democratic Republic'),
+			(92, NULL, NULL, 'Лаоска народнодемократична република', 'Lao People’s Democratic Republic'),
 			(93, NULL, NULL, 'Латвия', 'Latvia'),
 			(94, NULL, NULL, 'Ливан', 'Lebanon'),
 			(95, NULL, NULL, 'Лесото', 'Lesotho'),
@@ -145,7 +145,7 @@ class CountriesTableSeeder extends Seeder
 			(131, NULL, NULL, 'Папуа-Нова Гвинея', 'Papua New Guinea'),
 			(132, NULL, NULL, 'Парагвай', 'Paraguay'),
 			(133, NULL, NULL, 'Перу', 'Peru'),
-			(134, NULL, NULL, 'Филипините', 'Philippines'),
+			(134, NULL, NULL, 'Филипини', 'Philippines'),
 			(135, NULL, NULL, 'Полша', 'Poland'),
 			(136, NULL, NULL, 'Португалия', 'Portugal'),
 			(137, NULL, NULL, 'Катар', 'Qatar'),
@@ -200,10 +200,11 @@ class CountriesTableSeeder extends Seeder
 			(186, NULL, NULL, 'Уругвай', 'Uruguay'),
 			(187, NULL, NULL, 'Узбекистан', 'Uzbekistan'),
 			(188, NULL, NULL, 'Вануату', 'Vanuatu'),
-			(189, NULL, NULL, 'Венецуела, Боливарска република', 'Venezuela, Bolivarian Republic of'),
+			(189, NULL, NULL, 'Венецуела', 'Venezuela'),
 			(190, NULL, NULL, 'Виетнам', 'Viet Nam'),
 			(191, NULL, NULL, 'Йемен', 'Yemen'),
 			(192, NULL, NULL, 'Замбия', 'Zambia'),
-			(193, NULL, NULL, 'Зимбабве', 'Zimbabwe');");
+			(193, NULL, NULL, 'Зимбабве', 'Zimbabwe'),
+			(194, NULL, NULL, 'Тайван', 'Taiwan');");
     }
 }
