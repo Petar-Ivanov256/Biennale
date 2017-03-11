@@ -1067,22 +1067,20 @@ body{
     position: relative;
     padding-left: 1px;
 }
-
-/*#sofi_pic_alin{*/
-/*padding: 0 0 25px 0;*/
-/*}*/
-
-#a_tasev{
-    padding-bottom: 26px;
+#dana_lek{
+    padding-bottom: 19px;
 }
-/*#sofi_lec{*/
-    /*padding-bottom: 5px;*/
-/*}*/
-#milan_k_lek{
-    padding-bottom: 25px;
+#dana_workshop{
+    padding-bottom: 50px;
 }
-#elizar_lec{
-    padding-bottom: 8px;
+#milan_workshop{
+    padding-bottom: 70px;
+}
+#rayna_workshop{
+    padding-bottom: 49px;
+}
+#atasev_workshop{
+    padding-bottom: 20px;
 }
 /*Partners CSS*/
 .firsttxt{

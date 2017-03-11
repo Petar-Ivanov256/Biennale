@@ -82,6 +82,7 @@ return [
     'dana_zzamechnikova'=>'Dana Zamecnikova ',
 
     'zdenek_lhodski'=>'Zdenek Lhotsky',
+    'nathalie_angles'=>'Nathalie Angles',
 
     'konstantin_kalchev'=>'Konstantin Valchev',
     'Bul'=>"Bulgaria",
