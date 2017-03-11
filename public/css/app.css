@@ -2023,7 +2023,7 @@ input[type="checkbox"]{
     padding: 6px 0;
 }
 .gallery-container{
-    display: flex;
+    display: block;
     flex-direction: row;
     justify-content: flex-start;
     flex-wrap: wrap;
