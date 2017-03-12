@@ -127,16 +127,16 @@
                 </div>
                 <div class="col-md-5 picAbout hide" id="team-3">
                     <h2>{{ trans('about.jury') }}</h2>
-                    <article>
-                        <div class="col-md-5">
-                            <img src="{{ asset('/img/team/nathalie.jpg') }}">
-                            <br>
-                            <div class="textunderimg-about">
-                                <h4>{{ trans('about.nathalie_angles') }}</h4>
-                                <p></p>
-                            </div>
-                        </div>
-                    </article>
+                    {{--<article>--}}
+                        {{--<div class="col-md-5">--}}
+                            {{--<img src="{{ asset('/img/team/nathalie.jpg') }}">--}}
+                            {{--<br>--}}
+                            {{--<div class="textunderimg-about">--}}
+                                {{--<h4>{{ trans('about.nathalie_angles') }}</h4>--}}
+                                {{--<p></p>--}}
+                            {{--</div>--}}
+                        {{--</div>--}}
+                    {{--</article>--}}
                 </div>
                 <div class="col-md-5 picAbout hide" id="team-4">
                     <h2>{{ trans('about.graph_design') }}</h2>
