@@ -163,7 +163,7 @@
 </script>    
 <script type="text/javascript">
 
-    $(document).ready(getDetails(1,'{{LaravelLocalization::getCurrentLocale()}}'));
+    $(document).ready(getDetails(5,'{{LaravelLocalization::getCurrentLocale()}}'));
 
 function getDetails(id, locale) {
     let url = '{{ url('/events/getDetails') }}';
