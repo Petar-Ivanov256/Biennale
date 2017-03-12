@@ -232,6 +232,7 @@ class AdminEventsController extends Controller
             'pic8' => 'image|max:2096',
             'pic9' => 'image|max:2096',
             'pic10' => 'image|max:2096',
+            'order_num' => 'required|numeric',
         ];
 
 
@@ -257,6 +258,7 @@ class AdminEventsController extends Controller
             'pic8' => 'image|max:2096',
             'pic9' => 'image|max:2096',
             'pic10' => 'image|max:2096',
+            'order_num' => 'required|numeric',
         ];
 
 
