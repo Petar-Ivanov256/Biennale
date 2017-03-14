@@ -48,6 +48,7 @@
                     <a href="#">{!! HTML::image('img/partnersimg/GIM_Sofia_Logo.jpg','alt',array('width'=>100,'height'=>120)) !!}</a>&nbsp;
                     <a href="#">{!! HTML::image('img/partnersimg/varna.png','alt',array('width'=>100,'height'=>120)) !!}</a>&nbsp;&nbsp;
                     <a href="#">{!! HTML::image('img/partnersimg/CinemaCosmos_logo_bg.jpg','alt',array('width'=>100,'height'=>60)) !!}</a>&nbsp;&nbsp;
+                    <a href="#">{!! HTML::image('img/partnersimg/uniart.jpg','alt',array('width'=>110,'height'=>115)) !!}</a>
                 </div>
                 <br>
                 <h4 class="partnersName2">{{ trans('partners.media_partners') }}</h4><br>

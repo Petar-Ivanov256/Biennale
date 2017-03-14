@@ -103,7 +103,7 @@
                         </div>
 
                         <div class="col-md-5">
-                            <img src="{{ asset('/img/team/danko1.jpg') }}">
+                            <img src="{{ asset('/img/team/danko.jpg') }}">
                             <br>
                             <div class="textunderimg-about">
                                 <h4>{{ trans('about.danko') }}</h4>
@@ -285,8 +285,8 @@
                             </div>
                         </div>
                         <br>
-                        <div class="col-md-5" id="rayna_workshop">
-                            <img src="{{ asset('/img/team/raynataseva1.jpg') }}">
+                        <div class="col-md-5"id="rayna_workshop">
+                            <img src="{{ asset('/img/team/raynataseva.jpg') }}">
                             <br>
                             <div class="textunderimg-about">
                                 <h4>{{ trans('about.rayna_taseve') }}</h4>
