@@ -1174,6 +1174,12 @@ body{
     font-family: "359Sans",sans-serif;
     color: rgb(109, 110, 113);
 }
+.size_img_partners_s img{
+    margin: 10px 20px 10px 20px;
+}
+.size_img_partners_f img{
+    margin: 10px 10px 10px 10px;
+}
 /*Program Css*/
 .lihorizontal li {
     display: inline;

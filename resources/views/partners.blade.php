@@ -30,26 +30,26 @@
                     <p class="gen_partner">Tianaderrah Foundation</p>&nbsp;
                 </div><br>
                 <h4 class="partnersName2">{{ trans('partners.main_partners') }}</h4><br>
-                <div class="ahover">
+                <div class="ahover size_img_partners_f">
                     <a href="#" id="resize">{!! HTML::image('img/partnersimg/inhom1.jpg','alt',array('width'=>190,'height'=>60)) !!}</a>&nbsp;&nbsp;
                     <a href="#">{!! HTML::image('img/partnersimg/KrN.png','alt',array('width'=>200,'height'=>30)) !!}</a><br><br>&nbsp;&nbsp;
                     <a href="#">{!! HTML::image('img/partnersimg/eurobulsoft_logo.png','alt',array('width'=>160,'height'=>60)) !!}</a>&nbsp&nbsp;
                     <a href="#">{!! HTML::image('img/partnersimg/Greenpeace.svg.png','alt',array('width'=>200,'height'=>30)) !!}</a>&nbsp;&nbsp;<br><br>
                     <a href="#">{!! HTML::image('img/partnersimg/ZZ_FOE_BG_LONG_RGB.png','alt',array('width'=>170,'height'=>50)) !!}</a>&nbsp;&nbsp;
-                    <a href="#">{!! HTML::image('img/partnersimg/AFBBG.jpg','alt',array('width'=>80,'height'=>80)) !!}</a>&nbsp;&nbsp;
+                    <a href="#">{!! HTML::image('img/partnersimg/AFBBG2.png','alt',array('width'=>80,'height'=>80)) !!}</a>&nbsp;&nbsp;
 
                 </div><br>
                 <h4 class="partnersName2">{{ trans('partners.institutions_and_galleries') }}</h4><br>
-                <div class="ahover">
+                <div class="ahover size_img_partners_s">
                     <a href="#">{!! HTML::image('img/partnersimg/nbu.jpg','alt',array('width'=>110,'height'=>85)) !!}</a>&nbsp;&nbsp;
                     <a href="#">{!! HTML::image('img/partnersimg/vtu.png','alt',array('width'=>100,'height'=>120)) !!}</a>&nbsp;
                     <a href="#">{!! HTML::image('img/partnersimg/rumi1.png','alt',array('width'=>120,'height'=>130)) !!}</a>&nbsp;
                     <a href="#">{!! HTML::image('img/partnersimg/Sofia.svg.png','alt',array('width'=>100,'height'=>120)) !!}</a>&nbsp;&nbsp;
-                    <a href="#">{!! HTML::image('img/partnersimg/GIM_Sofia_Logo.jpg','alt',array('width'=>100,'height'=>120)) !!}</a>&nbsp;
-                    <a href="#">{!! HTML::image('img/partnersimg/varna.png','alt',array('width'=>100,'height'=>120)) !!}</a>&nbsp;&nbsp;
+                    <a href="#">{!! HTML::image('img/partnersimg/GIM_Sofia_Logo.jpg','alt',array('width'=>100,'height'=>100)) !!}</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <a href="#">{!! HTML::image('img/partnersimg/varna.png','alt',array('width'=>90,'height'=>120)) !!}</a>&nbsp;&nbsp;
                     <a href="#">{!! HTML::image('img/partnersimg/CinemaCosmos_logo_bg.jpg','alt',array('width'=>100,'height'=>60)) !!}</a>&nbsp;&nbsp;
-                    <a href="#">{!! HTML::image('img/partnersimg/uniart.jpg','alt',array('width'=>110,'height'=>115)) !!}</a>
-                    <a href="#">{!! HTML::image('img/partnersimg/chervenatochka.jpg','alt',array('width'=>115,'height'=>40)) !!}</a>
+                    <a href="#">{!! HTML::image('img/partnersimg/uniart1.jpg','alt',array('width'=>100,'height'=>120)) !!}</a>&nbsp;&nbsp;
+                    <a href="#">{!! HTML::image('img/partnersimg/chervenatochka.jpg','alt',array('width'=>115,'height'=>40)) !!}</a>&nbsp;&nbsp;
                 </div>
                 <br>
                 <h4 class="partnersName2">{{ trans('partners.media_partners') }}</h4><br>
