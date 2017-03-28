@@ -30,7 +30,7 @@ class AdminAuthorsController extends Controller
     public function create(Request $request)
     {
     	$this->validate($request, $this->createValidationRules());
-        
+
     	$author = new Author();
     	$author->name = $request->input('name');
         $author->name_en = $request->input('name_en');
@@ -64,7 +64,7 @@ class AdminAuthorsController extends Controller
     public function show($id)
     {
     	$author = Author::find($id);
-    	return base64_encode(file_get_contents('C:\Users\Dimitar\Desktop\asd.jpg'));  //$author;//view('TODO', [ 'author' => $author ]);
+    	return view('authors.details', ['author' => $author]);
     }
 
     public function edit(Request $request, $id)
@@ -94,7 +94,7 @@ class AdminAuthorsController extends Controller
     	$author->info = $request->input('info');
         $author->info_en = $request->input('info_en');
         $author->email = $request->input('email');
-    	
+
         if ($request->hasFile('photo')) {
 
             $img = Image::make($request->file('photo')->getRealPath())->encode('data-url');
@@ -108,7 +108,7 @@ class AdminAuthorsController extends Controller
                 $author->works()->attach($id);
             }
         }
-        
+
     	$author->save();
 
     	return redirect('/admin/authors');

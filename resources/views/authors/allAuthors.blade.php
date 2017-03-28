@@ -9,7 +9,7 @@
 		<table class="table table-striped table-hover">
 			@foreach ($authors as $author)
 				<tr>
-					<td>{{ $author->name }}</td>
+					<td><a href="{{ url('/authors/' . $author->id) }}">{{ $author->name }}</a></td>
 					<td><img src="{{ $author->photo }}" width="50" height="50"></td>
 					<td>
 						<a href="#" class="visibility-btn" data-id="{{ $author->id }}" data-visibility="{{ $author->isVisible }}" >
@@ -37,7 +37,7 @@
 	<script type="text/javascript">
 		let token = '{{ csrf_token() }}';
 		let url = '{{ url('/admin/authors/toggleVisibility') }}';
-		
+
 		function toggleVisibility(){
 			let element = $(this);
 			let authorId = element.attr('data-id');
@@ -45,7 +45,7 @@
             $.ajax({
                type: 'PUT',
                url: url + "/" + authorId,
-               data: { 
+               data: {
                	_token: token
                },
                success: function(data) {
