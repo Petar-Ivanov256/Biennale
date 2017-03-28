@@ -14,11 +14,11 @@
     </tr>
     <tr>
       <td>Име на английски</td>
-      <td>{{ $author->name_en ?? 'не е въведено' }}</td>
+      <td>{{ $author->name_en ? $author->name_en : 'не е въведено' }}</td>
     </tr>
     <tr>
       <td>Държава</td>
-      <td>{{ $author->country->title ?? 'не е въведено' }}</td>
+      <td>{{ $author->country->title }}</td>
     </tr>
     <tr>
       <td>Пол</td>
@@ -26,19 +26,19 @@
     </tr>
     <tr>
       <td>Email</td>
-      <td>{{ $author->email ?? 'не е въведено' }}</td>
+      <td>{{ $author->email }}</td>
     </tr>
     <tr>
       <td>Телефон</td>
-      <td>{{ $author->name_en ?? 'не е въведено' }}</td>
+      <td>{{ $author->phoneNumber ? $author->phoneNumber : 'не е въведено' }}</td>
     </tr>
     <tr>
       <td>Информация за автора</td>
-      <td>{{ $author->info ?? 'не е въведено' }}</td>
+      <td>{{ $author->info ? $author->info : 'не е въведено' }}</td>
     </tr>
     <tr>
       <td>Информация на английски</td>
-      <td>{{ $author->info_en ?? 'не е въведено' }}</td>
+      <td>{{ $author->info_en ? $author->info_en : 'не е въведено' }}</td>
     </tr>
     <tr>
       <td>Снимка на автора</td>
@@ -55,31 +55,31 @@
       <table class="table table-striped table-hover">
         <tr>
           <td>Заглавие</td>
-          <td>{{ $work->title ?? 'не е въведено' }}</td>
+          <td>{{ $work->title }}</td>
         </tr>
         <tr>
           <td>Заглавие на английски</td>
-          <td>{{ $work->englishTitle ?? 'не е въведено' }}</td>
+          <td>{{ $work->englishTitle }}</td>
         </tr>
         <tr>
           <td>Размери</td>
-          <td>{{ $work->dimensions ?? 'не е въведено' }}</td>
+          <td>{{ $work->dimensions }}</td>
         </tr>
         <tr>
           <td>Насоки за поставяне</td>
-          <td>{{ $work->installationGuide ?? 'не е въведено' }}</td>
+          <td>{{ $work->installationGuide }}</td>
         </tr>
         <tr>
           <td>Година</td>
-          <td>{{ $work->year ?? 'не е въведено' }}</td>
+          <td>{{ $work->year }}</td>
         </tr>
         <tr>
           <td>Синопсис</td>
-          <td>{{ $work->synopsis ?? 'не е въведено' }}</td>
+          <td>{{ $work->synopsis }}</td>
         </tr>
         <tr>
           <td>Синопсис на английски</td>
-          <td>{{ $work->synopsis_en ?? 'не е въведено' }}</td>
+          <td>{{ $work->synopsis_en ? $work->synopsis_en : 'не е въведено' }}</td>
         </tr>
         <tr>
           <td>Снимка 1</td>
