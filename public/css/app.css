@@ -1203,6 +1203,10 @@ body{
     text-transform: uppercase;
 }
 /*Event Css*/
+.event_program_details img{
+    max-width: 100%;
+    position: relative;
+}
 .move-left-events{
     left: 150px;
 }
@@ -1348,12 +1352,11 @@ body{
 .textunderimg p{
 
 }
-.programadetails img{
+/*.programadetails img{
     max-width: 100%;
     height: auto;
     position: relative;
-
-}
+}*/
 .transform{
     font-family: "DecimaMonoX",sans-serif;
     font-size: 20px;
@@ -2068,6 +2071,6 @@ input[type="checkbox"]{
 }
 .gal-img{
     margin: 5px 5px 0 0;
-    width: 125px;
-
+    width: 117px;
+    height: 84px;
 }
