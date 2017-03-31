@@ -126,7 +126,7 @@
                    </article>
                 </div>
                 <div class="col-md-5 picAbout hide" id="team-3">
-                    <h2>{{ trans('about.jury') }}</h2>
+                    <h2 class="name1">{{ trans('about.jury') }}</h2>
                     {{--<article>--}}
                         {{--<div class="col-md-5">--}}
                             {{--<img src="{{ asset('/img/team/nathalie.jpg') }}">--}}
@@ -139,7 +139,7 @@
                     {{--</article>--}}
                 </div>
                 <div class="col-md-5 picAbout hide" id="team-4">
-                    <h2>{{ trans('about.graph_design') }}</h2>
+                    <h2 class="name1" >{{ trans('about.graph_design') }}</h2>
                     <article>
                         <div class="col-md-5">
                             <br>
@@ -160,7 +160,7 @@
                     </article>
                 </div>
                 <div class="col-md-5 picAbout hide" id="team-5">
-                    <h2>{{ trans('about.web_design') }}</h2>
+                    <h2 class="name1">{{ trans('about.web_design') }}</h2>
                     <article>
                         <div class="col-md-12">
                             <br>
@@ -170,7 +170,7 @@
                             </div>
                         </div>
                     </article>
-                    <h2>{{ trans('about.web_dev') }}</h2>
+                    <h2 class="name1">{{ trans('about.web_dev') }}</h2>
                     <article>
                         {{--<div class="col-md-12">--}}
                             {{--<figure>--}}
@@ -223,7 +223,7 @@
                     </article>
                 </div>
                 <div class="col-md-5 picAbout hide" id="team-6">
-                    <h2>{{ trans('about.workshops') }}</h2>
+                    <h2 class="name1">{{ trans('about.workshops') }}</h2>
                     <article>
                         {{-- <img src="{{ asset('/img/team/raya_todorova.jpg') }}"> --}}
                         <div class="col-md-5">
@@ -322,7 +322,7 @@
                     </article>
                 </div>
                 <div class="col-md-5 picAbout hide" id="team-7">
-                    <h2>{{ trans('about.lecturers') }}</h2>
+                    <h2 class="name1">{{ trans('about.lecturers') }}</h2>
                     <article>
                         <div class="col-md-5">
                             <img src="{{ asset('/img/team/alexandra veleva.jpg') }}">
