@@ -1352,11 +1352,11 @@ body{
 .textunderimg p{
 
 }
-.programadetails img{
+/*.programadetails img{
     max-width: 100%;
     height: auto;
     position: relative;
-}
+}*/
 .transform{
     font-family: "DecimaMonoX",sans-serif;
     font-size: 20px;
