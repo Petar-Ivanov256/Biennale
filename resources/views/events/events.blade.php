@@ -55,6 +55,7 @@
                 @foreach($events as $event)
                     @if (LaravelLocalization::getCurrentLocale() == 'en')
                         <div class="col-md-4 {{$event->category->title_en}} all" onclick="getDetails({{ $event->id }}, '{{LaravelLocalization::getCurrentLocale()}}')">
+                            <div style="display: none" class="event-id">{{$event->id}}</div>
                             <a href="#details" class="abackcolor">
                                 <img src="{{$event->photo1}}">
                                 {{--{!! HTML::image('img/eventsimg/pic1.jpg') !!}--}}
@@ -74,6 +75,7 @@
                         </div>
                     @else
                         <div class="col-md-4 {{$event->category->title_en}} all" onclick="getDetails({{ $event->id }}, '{{LaravelLocalization::getCurrentLocale()}}')">
+                            <div style="display: none" class="event-id">{{$event->id}}</div>
                             <a href="#details" class="abackcolor">
                                 <img src="{{$event->photo1}}">
                                 {{--{!! HTML::image('img/eventsimg/pic1.jpg') !!}--}}
@@ -162,8 +164,7 @@
     }
 </script>    
 <script type="text/javascript">
-
-    $(document).ready(getDetails(5,'{{LaravelLocalization::getCurrentLocale()}}'));
+    $(document).ready(getDetails($('.event-id').first().text(),'{{LaravelLocalization::getCurrentLocale()}}'));
 
 function getDetails(id, locale) {
     let url = '{{ url('/events/getDetails') }}';
@@ -174,8 +175,8 @@ function getDetails(id, locale) {
             method: "GET",
             url: url
         }).done(function(event) {
-            console.log(event);
-            console.log(event.event.start);
+//            console.log(event);
+//            console.log(event.event.start);
             $('#event-category').text(event.category.title_en);
             $('#details-date').text(event.event.start);
             $('#details-time').text(event.event.start + ' - ' + event.event.end);
@@ -255,8 +256,8 @@ function getDetails(id, locale) {
             method: "GET",
             url: url
         }).done(function(event) {
-            console.log(event);
-            console.log(event.event.start);
+//            console.log(event);
+//            console.log(event.event.start);
             $('#event-category').text(event.category.title);
             $('#details-date').text(event.event.start);
             $('#details-time').text(event.event.start + ' - ' + event.event.end);
