@@ -1207,6 +1207,11 @@ body{
     max-width: 100%;
     position: relative;
 }
+.all{
+    height: 470px;
+    margin-bottom: 30px;
+    padding-bottom: 15px;
+}
 .move-left-events{
     left: 150px;
 }
