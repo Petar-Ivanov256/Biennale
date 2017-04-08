@@ -9,9 +9,9 @@
             <div class="col-md-10 move-home-left" id="change">
              <div class=" img-responsive biennalehome1" id="biennale-home-1">
                       @if(LaravelLocalization::getCurrentLocale() == 'en')
-                         {!! HTML::image('img/homepageimg/hero-image-en.jpg') !!}
+                         {!! HTML::image('img/homepageimg/hero-image-en-2.jpeg') !!}
                          @else
-                         {!! HTML::image('img/homepageimg/hero-image-bg.jpeg') !!}
+                         {!! HTML::image('img/homepageimg/hero-image-bg-2.jpeg') !!}
                          @endif
              </div>
                 <div class="text-under-img">
