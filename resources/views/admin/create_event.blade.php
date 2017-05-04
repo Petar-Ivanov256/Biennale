@@ -317,7 +317,12 @@
                         @endif
                     </div>
                 </div>
-
+                <div class="form-group">
+                  <label for="isVisible" class="col-lg-2 control-label">Видимо</label>
+                  <div class="col-lg-6">
+                    <input id="isVisible" type="checkbox" name="isVisible" {{ old('isVisible') ? "checked" : "" }}>
+                  </div>
+                </div>
                 <div class="form-group">
                     <div class="col-lg-10 col-lg-offset-2">
                         <button type="reset" class="btn btn-default">Cancel</button>
@@ -358,7 +363,7 @@
             google.maps.event.addListener(map, "click", function(event) {
                 let lat = event.latLng.lat();
                 let lng = event.latLng.lng();
-                
+
                 marker.setPosition({ lat: lat, lng: lng });
                 marker.setMap(map);
 

@@ -107,6 +107,13 @@ class AdminEventsController extends Controller
         $event->description_en = $request->input('description_en');
         $event->latitude = $request->input('lat');
         $event->longitude = $request->input('lng');
+
+        if ($request->input('isVisible') == "on") {
+          $event->isVisible = true;
+        } else if($request->input('isVisible') == NULL) {
+          $event->isVisible = false;
+        }
+
         $chosenCategory = Category::find($request->input('category'));
         $event->category()->associate($chosenCategory);
         $event->save();
@@ -196,6 +203,13 @@ class AdminEventsController extends Controller
         $event->latitude = $request->input('lat');
         $event->longitude = $request->input('lng');
         $event->order_num = $request->input('order_num');
+
+        if ($request->input('isVisible') == "on") {
+          $event->isVisible = true;
+        } else if($request->input('isVisible') == NULL) {
+          $event->isVisible = false;
+        }
+
         $chosenCategory = Category::find($request->input('category'));
         $event->category()->associate($chosenCategory);
         $event->save();
@@ -264,4 +278,3 @@ class AdminEventsController extends Controller
 
     }
 }
-
