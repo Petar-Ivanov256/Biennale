@@ -27,13 +27,13 @@
                 </p>
                 <div class="second-p-paragraph">
                     <span class="bachelor-span">{{ trans('about.art_director_name') }}</span>
-                    <span class="picspan">{!! HTML::image('img/scholarships/konstantin_valchev_patron.jpg') !!}</span><br><br>
+                    <span class="picspan">{!! HTML::image('img/scholarships/valchev.jpg') !!}</span><br><br>
                     <span class="bachelor-span">{{ trans('about.zdenek_lhodski') }}</span>
-                    <span class="picspan">{!! HTML::image('img/scholarships/zdenek-lhotsky1.jpg') !!}</span><br><br>
+                    <span class="picspan">{!! HTML::image('img/scholarships/zdenek.jpg') !!}</span><br><br>
                     <span class="bachelor-span">{{ trans('about.dana_zzamechnikova') }}</span>
-                    <span class="picspan">{!! HTML::image('img/scholarships/zamecnikova2.jpg') !!}</span><br><br>
+                    <span class="picspan">{!! HTML::image('img/scholarships/zamecnikova12.jpg') !!}</span><br><br>
                     <span class="bachelor-span">{{ trans('about.milan_krajek') }}</span>
-                    <span class="picspan"> {!! HTML::image('img/scholarships/milan-krajicek.jpg') !!}</span><br><br>
+                    <span class="picspan"> {!! HTML::image('img/scholarships/milan12.jpg') !!}</span><br><br>
                    <!-- <span class="bachelor-span">гл. ас. д-р Владимир Димитров</span>
                     <span class="picspan"> {!! HTML::image('img/scholarships/pic1.jpg') !!}</span><br><br>
                     <span class="bachelor-span">д-р Анжела Данева</span>

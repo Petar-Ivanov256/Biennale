@@ -27,15 +27,15 @@
                     </p>
                     <div class="second-p-paragraph">
                         <span class="bachelor-span">{{ trans('about.art_director_name') }}</span>
-                        <span class="picspan"> {!! HTML::image('img/scholarships/konstantin_valchev_patron.jpg') !!}</span><br><br>
+                        <span class="picspan"> {!! HTML::image('img/scholarships/valchev.jpg') !!}</span><br><br>
                         <span class="bachelor-span">{{ trans('scholarship.lilia_baleva') }}</span>
-                        <span class="picspan"> {!! HTML::image('img/scholarships/liliabaleva1.jpg') !!}</span><br><br>
+                        <span class="picspan"> {!! HTML::image('img/scholarships/lilia1.jpg') !!}</span><br><br>
                         <span class="bachelor-span">{{ trans('scholarship.vladimir_dimitrov') }}</span>
-                        <span class="picspan"> {!! HTML::image('img/scholarships/vlad_dimitrov1.jpg') !!}</span><br><br>
+                        <span class="picspan"> {!! HTML::image('img/scholarships/vlad.jpg') !!}</span><br><br>
                         <span class="bachelor-span">{{ trans('about.alex') }}</span>
-                        <span class="picspan"> {!! HTML::image('img/scholarships/alexandra_veleva.jpg') !!}</span><br><br>
+                        <span class="picspan"> {!! HTML::image('img/scholarships/alexandra1.jpg') !!}</span><br><br>
                         <span class="bachelor-span">{{ trans('about.sofia') }}</span>
-                        <span class="picspan"> {!! HTML::image('img/scholarships/sofia.jpg') !!}</span><br><br>
+                        <span class="picspan"> {!! HTML::image('img/scholarships/sofia12.jpg') !!}</span><br><br>
                     </div>
                     <div class="second-p-paragraph">
                       <!--  <span class="bachelor-span">Маритин Иванов<br><span class="full-scholarship">пълна стипендия</span></span>
