@@ -178,7 +178,7 @@
                                 {{--<figcaption class="text-center">{{ trans('about.web_dev_team') }}</figcaption>--}}
                             {{--</figure>--}}
                         {{--</div>--}}
-                        <div class="col-md-5">
+                        <div class="col-md-5 height-web-divel">
                             {{--{!! HTML::image('img/images.png') !!}--}}
                             <br>
                             <div class="textunderimg-about">
@@ -195,7 +195,7 @@
                         </div>
                         <br>
 
-                        <div class="col-md-5">
+                        <div class="col-md-5 height-web-divel">
                             {{--{!! HTML::image('img/images.png') !!}--}}
                             <br>
                             <div class="textunderimg-about">
@@ -204,7 +204,7 @@
                             </div>
                         </div>
                         <br>
-                        <div class="col-md-5">
+                        <div class="col-md-5 height-web-divel">
                             {{--{!! HTML::image('img/images.png') !!}--}}
                             <br>
                             <div class="textunderimg-about">
@@ -212,7 +212,7 @@
                                 <p>IT project manager</p>
                             </div>
                         </div>
-                        <div class="col-md-5">
+                        <div class="col-md-5 height-web-divel">
                             {{--{!! HTML::image('img/images.png') !!}--}}
                             <br>
                             <div class="textunderimg-about">

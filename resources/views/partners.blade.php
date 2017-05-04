@@ -37,6 +37,7 @@
                     <a href="http://www.eurobulsoft.com/" target="_blank">{!! HTML::image('img/partnersimg/eurobulsoft_logo.png','alt',array('width'=>160,'height'=>60)) !!}</a>&nbsp&nbsp;
                     <a href="http://www.greenpeace.org/bulgaria/bg/" target="_blank">{!! HTML::image('img/partnersimg/Greenpeace.svg.png','alt',array('width'=>200,'height'=>30)) !!}</a>&nbsp;&nbsp;<br><br>
                     <a href="http://www.zazemiata.org/v1/" target="_blank">{!! HTML::image('img/partnersimg/ZZ_FOE_BG_LONG_RGB.png','alt',array('width'=>170,'height'=>50)) !!}</a>&nbsp;&nbsp;
+                    <a href="http://www.ecopack.bg/en/" target="_blank">{!! HTML::image('img/partnersimg/ekopac.png','alt',array('width'=>170,'height'=>50)) !!}</a>&nbsp;&nbsp;
                     <a href="http://afbulgaria.org/" target="_blank">{!! HTML::image('img/partnersimg/AFBBG2.png','alt',array('width'=>80,'height'=>80)) !!}</a>&nbsp;&nbsp;
 
                 </div><br>
