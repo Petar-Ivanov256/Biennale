@@ -194,6 +194,11 @@
                                 <strong>{{ $errors->first('pic1') }}</strong>
                             </span>
                         @endif
+                        @if ($event->photo1)
+                          <img src="{{ $event->photo1 }}" max=50 height=50>
+                        @else
+                          <div class="">Не е въведена снимка 1</div>
+                        @endif
                     </div>
                 </div>
                 <div class="form-group">
@@ -204,6 +209,11 @@
                             <span class="help-block">
                                 <strong>{{ $errors->first('pic2') }}</strong>
                             </span>
+                        @endif
+                        @if ($event->photo2)
+                          <img src="{{ $event->photo2 }}" max=50 height=50>
+                        @else
+                          <div class="">Не е въведена снимка 2</div>
                         @endif
                     </div>
                 </div>
@@ -216,6 +226,11 @@
                                 <strong>{{ $errors->first('pic3') }}</strong>
                             </span>
                         @endif
+                        @if ($event->photo3)
+                          <img src="{{ $event->photo3 }}" max=50 height=50>
+                        @else
+                          <div class="">Не е въведена снимка 3</div>
+                        @endif
                     </div>
                 </div>
                 <div class="form-group">
@@ -226,6 +241,11 @@
                             <span class="help-block">
                                 <strong>{{ $errors->first('pic4') }}</strong>
                             </span>
+                        @endif
+                        @if ($event->photo4)
+                          <img src="{{ $event->photo4 }}" max=50 height=50>
+                        @else
+                          <div class="">Не е въведена снимка 4</div>
                         @endif
                     </div>
                 </div>
@@ -238,6 +258,11 @@
                                 <strong>{{ $errors->first('pic5') }}</strong>
                             </span>
                         @endif
+                        @if ($event->photo5)
+                          <img src="{{ $event->photo5 }}" max=50 height=50>
+                        @else
+                          <div class="">Не е въведена снимка 5</div>
+                        @endif
                     </div>
                 </div>
                 <div class="form-group">
@@ -248,6 +273,11 @@
                             <span class="help-block">
                                 <strong>{{ $errors->first('pic6') }}</strong>
                             </span>
+                        @endif
+                        @if ($event->photo6)
+                          <img src="{{ $event->photo6 }}" max=50 height=50>
+                        @else
+                          <div class="">Не е въведена снимка 6</div>
                         @endif
                     </div>
                 </div>
@@ -260,6 +290,11 @@
                                 <strong>{{ $errors->first('pic7') }}</strong>
                             </span>
                         @endif
+                        @if ($event->photo7)
+                          <img src="{{ $event->photo7 }}" max=50 height=50>
+                        @else
+                          <div class="">Не е въведена снимка 7</div>
+                        @endif
                     </div>
                 </div>
                 <div class="form-group">
@@ -270,6 +305,11 @@
                             <span class="help-block">
                                 <strong>{{ $errors->first('pic8') }}</strong>
                             </span>
+                        @endif
+                        @if ($event->photo8)
+                          <img src="{{ $event->photo8 }}" max=50 height=50>
+                        @else
+                          <div class="">Не е въведена снимка 8</div>
                         @endif
                     </div>
                 </div>
@@ -282,6 +322,11 @@
                                 <strong>{{ $errors->first('pic9') }}</strong>
                             </span>
                         @endif
+                        @if ($event->photo9)
+                          <img src="{{ $event->photo9 }}" max=50 height=50>
+                        @else
+                          <div class="">Не е въведена снимка 9</div>
+                        @endif
                     </div>
                 </div>
                 <div class="form-group">
@@ -292,6 +337,11 @@
                             <span class="help-block">
                                 <strong>{{ $errors->first('pic10') }}</strong>
                             </span>
+                        @endif
+                        @if ($event->photo10)
+                          <img src="{{ $event->photo10 }}" max=50 height=50>
+                        @else
+                          <div class="">Не е въведена снимка 10</div>
                         @endif
                     </div>
                 </div>
