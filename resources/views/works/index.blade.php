@@ -5,7 +5,7 @@
 
 @section('content')
 <div class="container">
-    <div  class="col-md-12" style="margin-left: 250px">
+    <div  class="col-md-12 admin-css" id="admin-back">
         <table class="table table-striped table-hover">
         	@foreach ($works as $work)
         		<tr>

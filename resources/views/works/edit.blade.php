@@ -5,7 +5,7 @@
 
 @section('content')
 <div class="container">
-    <div  class="col-md-12" style="margin-left: 250px">
+    <div  class="col-md-12 wadmin-css" id="admin-back">
         <form class="form-horizontal" method="POST" action="{{ url('/admin/works/edit/' . $work->id) }}" enctype="multipart/form-data">
           <fieldset>
           	{{ csrf_field() }}

@@ -5,7 +5,8 @@
 
 @section('content')
     <div class="container">
-        <div  class="col-md-12" style="margin-left: 250px">
+        <div  class="col-md-12 admin-css" id="admin-back">
+            <a href="{{ URL::to('/admin/createEvent') }}"class="btn btn-primary">Създай събитие</a>
             @foreach($events as $event)
                 <form class="form-horizontal"  action="{{ URL::to('/admin/editEvent/{id}') }}" method="GET">
                     <h3>{{$event->title}}</h3>
@@ -35,7 +36,7 @@
 
             @endforeach
 
-            <a href="{{ URL::to('/admin/createEvent') }}"class="btn btn-primary">Създай събитие</a>
+
         </div>
     </div>
 @endsection

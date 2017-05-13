@@ -8,7 +8,7 @@
 @endsection
 
 @section('content')
-    <div class="col-md-12" style="margin-left: 250px">
+    <div class="col-md-12 admin-css" id="admin-back">
         <form class="form-horizontal"  action="{{ URL::to('/admin/editEvent') }}" method="POST" enctype="multipart/form-data">
             <input type="hidden" name="id" value="{{$event->id}}" />
             <input type="hidden" name="_token" value="{{{ csrf_token() }}}" />

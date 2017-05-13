@@ -5,13 +5,13 @@
 
 @section('content')
 <div class="container">
-    <div  class="col-md-12" style="margin-left: 250px">
+    <div  class="col-md-10 admin-css" id="admin-back">
         <form class="form-horizontal" method="POST" action="{{ url('/admin/works/add') }}" enctype="multipart/form-data">
           <fieldset>
           	{{ csrf_field() }}
             <div class="form-group">
               <label for="title" class="col-lg-2 control-label">Заглавие*</label>
-              <div class="col-lg-10">
+              <div class="col-md-10">
                 <input type="text" class="form-control" id="title" name="title" value="{{ Request::old('title') }}" autofocus>
                 @if ($errors->has('title'))
                     <span class="help-block">

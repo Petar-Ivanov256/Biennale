@@ -5,7 +5,7 @@
 
 @section('content')
 <div class="container">
-	<div  class="col-md-12" style="margin-left: 250px">
+	<div  class="col-md-12 admin-css" id="admin-back">
 		<form class="form-horizontal col-md-6" method="POST" action="{{ url('/admin/category/edit') . '/' . $category->id }}">
 			<fieldset>
 				{{ csrf_field() }}

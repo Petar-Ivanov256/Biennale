@@ -164,6 +164,9 @@
         left: 1px;
 
     }
+    #admin-back{
+        left: 1px;
+    }
 }
 
 @media only screen and (max-width: 375px) {
@@ -285,6 +288,9 @@
     #details {
         left: 1px;
     }
+    #admin-back{
+        left: 1px;
+    }
 }
 
 @media only screen and (max-width: 412px) {
@@ -404,6 +410,9 @@
     }
 
     #details {
+        left: 1px;
+    }
+    #admin-back{
         left: 1px;
     }
 }
@@ -531,6 +540,9 @@
     #details {
         left: 1px;
     }
+    #admin-back{
+        left: 1px;
+    }
 }
 
 @media only screen and  (max-width: 414px) {
@@ -652,6 +664,9 @@
     #details {
         left: 1px;
     }
+    #admin-back{
+        left: 1px;
+    }
 }
 
 /* Small Devices, Tablets */
@@ -742,6 +757,9 @@
         margin-top: 905px;
     }
     #details{
+        left: 1px;
+    }
+    #admin-back{
         left: 1px;
     }
 }*/
@@ -2390,3 +2408,13 @@ input[type="checkbox"] {
         background: none;
     }
 }
+/*admmin css*/
+.admin-css{
+    left: 150px;
+    margin-bottom: 250px;
+}
+.wadmin-css{
+    left: 150px;
+    margin-bottom: 350px;
+}
+

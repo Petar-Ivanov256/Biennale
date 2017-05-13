@@ -9,7 +9,7 @@
 
 @section('content')
 <div class="container">
-	<div  class="col-md-12" style="margin-left: 250px">
+	<div  class="col-md-10 admin-css" id="admin-back">
 		<form class="form-horizontal" method="POST" enctype="multipart/form-data">
 		  <input type="hidden" name="_token" value="{{{ csrf_token() }}}" />
 		  <fieldset>
