@@ -9,7 +9,7 @@ $(document).ready(function() {
 });
 $(".learn-more").on('click', function(){
     $(".learn-more").removeClass("setColor");
-    $(this).toggleClass("setColor");
+    $(this).addClass("setColor");
 });
 
 
