@@ -7,8 +7,9 @@ $(document).ready(function() {
         $p.hide().eq(i).show()
     })
 });
-$(".learn-more").one('click', function(){
-    $(this).addClass("setColor");
+$(".learn-more").on('click', function(){
+    $(".learn-more").removeClass("setColor");
+    $(this).toggleClass("setColor");
 });
 
 

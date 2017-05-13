@@ -1741,6 +1741,7 @@ body {
 }
 
 .learn-more {
+    margin-bottom: 5px;
     font-size: 20px;
     width: 170px;
     background-color: transparent;
