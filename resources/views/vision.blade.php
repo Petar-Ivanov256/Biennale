@@ -4,5 +4,5 @@
 @endsection
 
 @section('content')
-    Ква е тая визия
+
 @endsection
