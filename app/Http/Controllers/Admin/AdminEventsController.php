@@ -22,7 +22,7 @@ class AdminEventsController extends Controller
 {
     public function show_events(Request $request)
     {
-        $events = Events::all();
+        $events = Events::orderBy('order_num')->get();
         return view('admin.show_events', ['events' => $events]);
     }
 

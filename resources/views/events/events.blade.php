@@ -80,8 +80,8 @@
                                 <img src="{{$event->photo1}}">
                                 {{--{!! HTML::image('img/eventsimg/pic1.jpg') !!}--}}
                                 <br>
-                                <span class="ptagleft" id="left-aligndate"> {{date('d.m', strtotime($event->start))}}-{{date('d.m', strtotime($event->start))}}</span>
-                                <span class="ptagleft" id="right-alignhour">{{date('H:i', strtotime($event->end))}}-{{date('H:i', strtotime($event->end))}}</span>
+                                <span class="ptagleft" id="left-aligndate"> {{date('d.m', strtotime($event->start))}}-{{date('d.m', strtotime($event->end))}}</span>
+                                <span class="ptagleft" id="right-alignhour">{{date('H:i', strtotime($event->start))}}-{{date('H:i', strtotime($event->end))}}</span>
                                 <span class="ptagleft" id="left-aligncity">{{$event->place}}</span>
                                 <span class="ptagleft" id="right-alignaddress">{{$event->participants}}</span>
                             </a>
