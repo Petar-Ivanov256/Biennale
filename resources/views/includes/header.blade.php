@@ -74,7 +74,7 @@
 
                 {{--<li><a href="#"><i class="fa fa-search" aria-hidden="true"></i></a></li>--}}
                 <li><a href={{url('https://www.facebook.com/InternationalBiennaleGlassBulgaria/')}} target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
-                <li><a href={{url('https://www.instagram.com/glassbiennale_ibg/?hl=en')}} target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+                <li><a href={{url('https://www.instagram.com/glassbiennalebgbg/?hl=en')}} target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
                <!-- <li><a href={{url('https://www.pinterest.com/')}}><i class="fa fa-pinterest" aria-hidden="true"></i></a></li>-->
                 <li><a href={{url('https://twitter.com/GlassBiennaleBG')}} target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
             </ul>

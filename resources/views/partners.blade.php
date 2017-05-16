@@ -52,6 +52,7 @@
                     <a href="https://culturalcosmos.com/" target="_blank">{!! HTML::image('img/partnersimg/CinemaCosmos_logo_bg.jpg','alt',array('width'=>100,'height'=>60)) !!}</a>&nbsp;&nbsp;
                     <a href="http://www.uniart.bg/" target="_blank">{!! HTML::image('img/partnersimg/uniart1.jpg','alt',array('width'=>100,'height'=>120)) !!}</a>&nbsp;&nbsp;
                     <a href="http://www.chervenatatochka.bg/en/" target="_blank">{!! HTML::image('img/partnersimg/chervenatochka.jpg','alt',array('width'=>115,'height'=>40)) !!}</a>&nbsp;&nbsp;
+                    <a href="http://sofia.czechcentres.cz/" target="_blank">{!! HTML::image('img/partnersimg/czcenter.jpg','alt',array('width'=>150,'height'=>40)) !!}</a>&nbsp;&nbsp;
                 </div>
                 <br>
                 <h4 class="partnersName2">{{ trans('partners.media_partners') }}</h4><br>
