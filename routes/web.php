@@ -25,7 +25,7 @@ Route::group(
     /** ADD ALL LOCALIZED ROUTES INSIDE THIS GROUP **/
         Route::get('/', 'HomeController@home');
         Route::get('/about', 'StaticPagesController@about');
-        Route::get('/vision', 'StaticPagesController@vision');
+        /*Route::get('/vision', 'StaticPagesController@vision');*/
         Route::get('/contact', 'StaticPagesController@contact');
         
         Route::get('/scholarships', 'StaticPagesController@scholarships');
@@ -34,7 +34,7 @@ Route::group(
         Route::get('/phd', 'StaticPagesController@phd');
         Route::get('/authors', 'StaticPagesController@authors');
         Route::get('/partners', 'StaticPagesController@partners');
-        Route::get('/terms', 'StaticPagesController@terms');
+        /*Route::get('/terms', 'StaticPagesController@terms');*/
 
         Route::get('/archive', 'ArchiveController@archive');
 
