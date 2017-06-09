@@ -6,6 +6,7 @@ function getDetailsInner(id, locale,url) {
     //let url = '{{ url('/events/getDetails') }}';
     url += '/' + id;
     $('#inner-gallery').empty();
+    $('#details-img').hide();
     if(locale == 'en'){
         $.ajax({
             method: "GET",
@@ -23,6 +24,7 @@ function getDetailsInner(id, locale,url) {
             $('#details-artist').text(event.event.participants_en);
             $('#details-entrance').text(event.event.entrance_en);
             $('#details-img').attr('src', event.event.photo1);
+            $('#details-img').show();
             $('#img-ref').attr('href', event.event.photo1);
             if(event.event.photo2 != null){
                 if (!$('#img2').length){
