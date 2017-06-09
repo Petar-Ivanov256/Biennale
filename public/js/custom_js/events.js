@@ -16,7 +16,10 @@ function getDetailsInner(id, locale,url) {
             $('#event-category').text(event.category.title_en);
             $('#details-date').text(event.event.start);
             $('#details-time').text(event.event.start + ' - ' + event.event.end);
-            $('#details-location').text(event.event.place_en);
+            $('#details-location').html(
+                //http://maps.google.com/maps?&z=10&q=36.26577+-92.54324&ll=36.26577+-92.54324
+                '<a href="http://maps.google.com/maps?&z=15&q=' + event.event.latitude +'+' + event.event.longitude + 
+                '&ll=' + event.event.latitude +'+' + event.event.longitude + '" target="_blank">' + event.event.place_en + '</a>');
             $('#details-artist').text(event.event.participants_en);
             $('#details-entrance').text(event.event.entrance_en);
             $('#details-img').attr('src', event.event.photo1);
@@ -97,7 +100,9 @@ function getDetailsInner(id, locale,url) {
             $('#event-category').text(event.category.title);
             $('#details-date').text(event.event.start);
             $('#details-time').text(event.event.start + ' - ' + event.event.end);
-            $('#details-location').text(event.event.place);
+            $('#details-location').html(
+                '<a href="http://maps.google.com/maps/maps?&z=15&q=' + event.event.latitude +'+' + event.event.longitude + 
+                '&ll=' + event.event.latitude +'+' + event.event.longitude + '" target="_blank">' + event.event.place + '</a>');
             $('#details-artist').text(event.event.participants);
             $('#details-entrance').text(event.event.entrance);
             $('#details-img').attr('src', event.event.photo1);

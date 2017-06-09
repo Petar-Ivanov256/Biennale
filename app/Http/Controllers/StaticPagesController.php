@@ -17,18 +17,18 @@ use App\Author;
 
 class StaticPagesController extends Controller
 {
-    public function terms(Request $request){
+   /* public function terms(Request $request){
         return view('terms');
-    }
+    }*/
 
     public function about(Request $request){
 
         return view('about');
     }
 
-    public function vision(Request $request){
+    /*public function vision(Request $request){
         return view('vision');
-    }
+    }*/
 
     public function contact(Request $request){
         return view('contact');

@@ -27,8 +27,8 @@ return [
     'install_guide' => 'Installation Guidelines',
     'year_realization' => 'Year of Realization',
     'sinopsis' => 'Synopsis',
-    'pic1' => 'Photo of art piece 1',
-    'pic2' => 'Photo of art piece 2',
+    'pic1' => 'Photo 1 of art piece',
+    'pic2' => 'Photo 2 of art piece',
     'agreement1' => 'I agree my art piece to be installed in the exhibition area',
     'agreement2' => 'by the especially selected team, responsible for the arrangement of the International Biennale of Glass, Bulgaria 2017.',
     'successMsg' => 'Your application request has been sent successfully.'
