@@ -36,7 +36,7 @@ Route::group(
         Route::get('/partners', 'StaticPagesController@partners');
         /*Route::get('/terms', 'StaticPagesController@terms');*/
 
-        Route::get('/archive', 'ArchiveController@archive');
+        /*Route::get('/archive', 'ArchiveController@archive');*/
 
         Route::get('/events', 'EventsController@show_events');
         Route::get('/events/getDetails/{id}', 'EventsController@getById');

@@ -13,7 +13,7 @@ use Illuminate\Http\Request;
 
 class ArchiveController extends Controller
 {
-    public function archive(Request $request){
+    /*public function archive(Request $request){
         return view('archive');
-    }
+    }*/
 }
