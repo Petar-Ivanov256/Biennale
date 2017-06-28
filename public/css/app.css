@@ -1312,7 +1312,7 @@ body {
 }
 
 #milan_workshop {
-    padding-bottom: 70px;
+    padding-bottom: 47px;
 }
 
 #rayna_workshop {
@@ -1322,7 +1322,12 @@ body {
 #atasev_workshop {
     padding-bottom: 20px;
 }
-
+#rayatod_workshop{
+    padding-bottom: 20px;
+}
+#ondrej_workshop{
+    padding-bottom: 17px;
+}
 .height-web-divel {
     height: 102px;
 }

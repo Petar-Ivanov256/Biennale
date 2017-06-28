@@ -259,14 +259,6 @@
                                 <p></p>
                             </div>
                         </div>
-                        <div class="col-md-5">
-                            <img src="{{ asset('/img/team/Lilia_Pangelova.jpg') }}">
-                            <br>
-                            <div class="textunderimg-about">
-                                <h4>{{ trans('about.lilia_pangelova') }}</h4>
-                                <p>{{ trans('about.lilia_pangelova_w') }}</p>
-                            </div>
-                        </div>
                         <div class="col-md-5" id="milan_workshop">
                             <img src="{{ asset('/img/team/milan_krajicek1.jpg') }}">
                             <br>
@@ -276,7 +268,7 @@
                             </div>
                         </div>
                         <br>
-                        <div class="col-md-5">
+                        <div class="col-md-5" id="ondrej_workshop">
                             <img src="{{ asset('/img/team/ondrej_strnadel1.jpg') }}">
                             <br>
                             <div class="textunderimg-about">
@@ -293,7 +285,7 @@
                                 <p>{{ trans('about.workshop_children') }}</p>
                             </div>
                        </div>
-                        <div class="col-md-5">
+                        <div class="col-md-5" id="rayatod_workshop">
                             <img src="{{ asset('/img/team/raya_todorova1.jpg') }}">
                             <br>
                             <div class="textunderimg-about">
