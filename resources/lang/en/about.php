@@ -2,7 +2,7 @@
 
 return [
     'vision' => 'Our vision',
-    'vision_content' => 'International Biennale of Glass is one-of-a-kind event in Bulgaria, which combines the various manifestations of glass in the world of art, education, science, ecology, industry, and is 
+    'vision_content' => 'International Biennale of Glass is an event, which combines the various manifestations of glass in the world of art, education, science, ecology, industry, and is 
                          related to responsible lifestyle practices. The biennale week takes place in several cities in the months of September-October each two years. The year of the biennale is dedicated 
                          to events concerning various manifestations of glass as a medium of expression, production and consumption. The program within the period 
                          of one year – the year of the biennale, includes workshops for children, lectures, demonstrations, exhibitions, installations, campaigns etc.',
