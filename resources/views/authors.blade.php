@@ -20,11 +20,11 @@
                         </li>
                       @endforeach
 
-                        <li class="authors-list" data-toggle="author-1"><a href="#1"><br>{{ trans('about.dana_zzamechnikova') }}<br><span class="country-authors">{{ trans('about.Cz') }}</span></a></li>
-                        <li class="authors-list" data-toggle="author-2"><a href="#2"><br>{{ trans('about.konstantin_kalchev') }}<br><span class="country-authors">{{ trans('about.Bul') }}</span></a></li>
-                        <li class="authors-list" data-toggle="author-3"><a href="#3"><br>{{ trans('about.milan_krajek') }}<br><span class="country-authors">{{ trans('about.Cz') }}</span></a></li>
-                        <li class="authors-list" data-toggle="author-4"><a href="#4"><br>{{ trans('about.ondrej_strnadel') }}<br><span class="country-authors">{{ trans('about.Cz') }}</span></a></li>
-                        <li class="authors-list" data-toggle="author-5"><a href="#5"><br>{{ trans('about.zdenek_lhodski') }}<br><span class="country-authors">{{ trans('about.Cz') }}</span></a></li>
+                        <li class="authors-list" data-toggle="author-a"><a href="#1"><br>{{ trans('about.dana_zzamechnikova') }}<br><span class="country-authors">{{ trans('about.Cz') }}</span></a></li>
+                        <li class="authors-list" data-toggle="author-b"><a href="#2"><br>{{ trans('about.konstantin_kalchev') }}<br><span class="country-authors">{{ trans('about.Bul') }}</span></a></li>
+                        <li class="authors-list" data-toggle="author-c"><a href="#3"><br>{{ trans('about.milan_krajek') }}<br><span class="country-authors">{{ trans('about.Cz') }}</span></a></li>
+                        <li class="authors-list" data-toggle="author-d"><a href="#4"><br>{{ trans('about.ondrej_strnadel') }}<br><span class="country-authors">{{ trans('about.Cz') }}</span></a></li>
+                        <li class="authors-list" data-toggle="author-e"><a href="#5"><br>{{ trans('about.zdenek_lhodski') }}<br><span class="country-authors">{{ trans('about.Cz') }}</span></a></li>
                     </ul>
                 </div>
                 <div class="col-md-6 sub-authors-move" id="sub-authors-move-return">
@@ -33,7 +33,7 @@
 
                     {{-- Lists author details --}}
                     @foreach ($authors as $author)
-                      
+
                       <div id="{{ 'author-' . $author->id }}" class="author-details hide">
                         <h3 class="info-name">{{ App::getLocale() == 'bg' ? $author->name : $author->name_en }}</h3>
                         <ul class="info-about-person">
@@ -136,12 +136,12 @@
                         </div>
                     </div>
                         @endif
-                        
+
                 </div>
 
                     @endforeach
 
-                    <div id="author-1" class="author-details hide">
+                    <div id="author-a" class="author-details hide">
                         <h3 class="info-name">{{ trans('about.dana_zzamechnikova') }}</h3>
                         <ul class="info-about-person">
                             <li>{{ trans('about.Cz') }}</li>
@@ -185,7 +185,7 @@
                 </div>
 
                     <!-- id 2-->
-                    <div id="author-2" class="author-details hide">
+                    <div id="author-b" class="author-details hide">
                         <h3 class="info-name">{{ trans('about.konstantin_kalchev') }}</h3>
                         <ul class="info-about-person">
                             <li>{{ trans('about.Bul') }}</li>
@@ -229,9 +229,9 @@
                     </div>
 
                    <!----->
-                    
+
                     <!--Milan-->
-                    <div id="author-3" class="author-details hide">
+                    <div id="author-c" class="author-details hide">
                         <h3 class="info-name">{{ trans('about.milan_krajek') }}</h3>
                         <ul class="info-about-person">
                             <li>{{ trans('about.Cz') }}</li>
@@ -274,7 +274,7 @@
                        </div>
                     </div>
                     <!--Ondrei id=4-->
-                    <div id="author-4" class="author-details hide">
+                    <div id="author-d" class="author-details hide">
                         <h3 class="info-name">{{ trans('about.ondrej_strnadel') }}</h3>
                         <ul class="info-about-person">
                             <li>{{ trans('about.Cz') }}</li>
@@ -335,7 +335,7 @@
                     <!--->
 
                     <!--Sdenek-->
-                    <div id="author-5" class="author-details hide">
+                    <div id="author-e" class="author-details hide">
                         <h3 class="info-name">{{ trans('about.zdenek_lhodski') }}</h3>
                         <ul class="info-about-person">
                             <li>{{ trans('about.Cz') }}</li>
