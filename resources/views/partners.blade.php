@@ -34,10 +34,11 @@
                     <a href="http://www.nbu.bg/en" target="_blank">{!! HTML::image('img/partnersimg/nbu.png','alt',array('width'=>110,'height'=>85)) !!}</a>&nbsp;&nbsp;
                     <a href="http://afbulgaria.org/" target="_blank">{!! HTML::image('img/partnersimg/AFBBG3.png','alt',array('width'=>80,'height'=>80)) !!}</a>&nbsp;&nbsp;
                     <a href="http://momkasglass.com/bg/" target="_blank">{!! HTML::image('img/partnersimg/Momka.png','alt',array('width'=>70,'height'=>70)) !!}</a>&nbsp;&nbsp;
+                    <a href="http://www.mzv.cz/sofia/bg/index.html" target="_blank">{!! HTML::image('img/partnersimg/lg_m.jpg','alt',array('width'=>227,'height'=>48)) !!}</a>&nbsp;&nbsp;
                     <a href="http://inhomglass.com/" target="_blank" id="resize">{!! HTML::image('img/partnersimg/inhom1.png','alt',array('width'=>170,'height'=>52)) !!}</a>&nbsp;&nbsp;
-                    <a href="http://www.kristian-neiko.com/" target="_blank">{!! HTML::image('img/partnersimg/KrN.png','alt',array('width'=>152,'height'=>30)) !!}</a><br><br>&nbsp;&nbsp;
-                    <a href="http://www.eurobulsoft.com/" target="_blank">{!! HTML::image('img/partnersimg/eurobulsoft_logo.png','alt',array('width'=>160,'height'=>60)) !!}</a>&nbsp&nbsp;
-                    <a href="http://www.greenpeace.org/bulgaria/bg/" target="_blank">{!! HTML::image('img/partnersimg/Greenpeace.svg.png','alt',array('width'=>200,'height'=>30)) !!}</a>&nbsp;&nbsp;<br><br>
+                    <a href="http://www.kristian-neiko.com/" target="_blank">{!! HTML::image('img/partnersimg/KrN.png','alt',array('width'=>200,'height'=>30)) !!}</a>&nbsp;&nbsp;
+                    <a href="http://www.eurobulsoft.com/" target="_blank">{!! HTML::image('img/partnersimg/eurobulsoft_logo.png','alt',array('width'=>190,'height'=>60)) !!}</a>&nbsp;&nbsp;
+                    <a href="http://www.greenpeace.org/bulgaria/bg/" target="_blank">{!! HTML::image('img/partnersimg/Greenpeace.svg.png','alt',array('width'=>200,'height'=>30)) !!}</a>&nbsp;&nbsp;
                     <a href="http://www.zazemiata.org/v1/" target="_blank">{!! HTML::image('img/partnersimg/ZZ_FOE_BG_LONG_RGB.png','alt',array('width'=>170,'height'=>50)) !!}</a>&nbsp;&nbsp;
                     <a href="http://www.ecopack.bg/en/" target="_blank">{!! HTML::image('img/partnersimg/ekopac.png','alt',array('width'=>170,'height'=>50)) !!}</a>&nbsp;&nbsp;
                 </div><br>
