@@ -69,6 +69,13 @@
                     <p></p>
                 </div>
             </div>
+            <div class="item">
+                {!! HTML::image('img/homepageimg/portrait_4.jpg') !!}
+                <div class="carousel-caption">
+                    <h3></h3>
+                    <p></p>
+                </div>
+            </div>
         </div>
         <!-- Left and right controls -->
         <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
