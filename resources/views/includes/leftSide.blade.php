@@ -1,6 +1,6 @@
 <div class="container">
     <div class="col-sm-2 SideDate">
-        <p>27.09-04.10</p>
+        <p>27.09-03.10</p>
     </div>
 </div>
 <div  class="container">
