@@ -55,6 +55,7 @@
                     <a href="http://sofia.czechcentres.cz/" target="_blank">{!! HTML::image('img/partnersimg/czcenter.png','alt',array('width'=>130,'height'=>40)) !!}</a>&nbsp;&nbsp;
                     <a href="http://rgfoundation.blogspot.bg/" target="_blank">{!! HTML::image('img/partnersimg/logoR.png','alt',array('width'=>170,'height'=>45)) !!}</a>&nbsp;&nbsp;
                     <a href="http://galeriemeridian.cz/" target="_blank" class="gen_partner">{!! HTML::image('img/partnersimg/gmer.png','alt',array('width'=>145,'height'=>45)) !!}</a>&nbsp;&nbsp;
+                    <a href="https://www.nationalartgallerybg.org/" target="_blank" class="gen_partner">{!! HTML::image('img/partnersimg/NHG_logo3.png','alt',array('width'=>195,'height'=>80)) !!}</a>&nbsp;&nbsp;
                 </div>
                 <br>
                 <h4 class="partnersName2">{{ trans('partners.media_partners') }}</h4><br>
