@@ -38,7 +38,7 @@
                         <span class="picspan"> {!! HTML::image('img/scholarships/sofia12.jpg') !!}</span><br><br>
                     </div>
                     <div class="second-p-paragraph">
-                        <span class="bachelor-span"> {{ trans('scholarship.ralica_vaceva') }}<br><span class="full-scholarship"></span></span>
+                        <span class="bachelor-span"> {{ trans('scholarship.ralica_vaceva') }}<br><span class="full-scholarship">{{ trans('scholarship.fullscholarship') }}</span></span>
                         <span class="picspan"> {!! HTML::image('img/scholarships/ralica.jpg') !!}</span><br><br>
                         <br><br><br><br><br>
                         <p class="text-justify">
