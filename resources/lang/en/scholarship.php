@@ -25,4 +25,7 @@ return [
     'bac_rules' => '',
     'master_rules' => '',
     'phd_rules' => '',
+    'bachlor_txt'=>'We are pleased to annouce that Ralitsa Vatseva was selected by the jury for Bachelor scholarship. Congratulations! ',
+    'ralica_vaceva'=>'Ralitsa Vatseva',
+    'fullscholarshio'=>'full scholarship'
 ];

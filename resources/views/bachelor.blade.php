@@ -38,18 +38,12 @@
                         <span class="picspan"> {!! HTML::image('img/scholarships/sofia12.jpg') !!}</span><br><br>
                     </div>
                     <div class="second-p-paragraph">
-                      <!--  <span class="bachelor-span">Маритин Иванов<br><span class="full-scholarship">пълна стипендия</span></span>
-                        <span class="picspan"> {!! HTML::image('img/scholarships/pic1.jpg') !!}</span><br><br>
-                        <span class="bachelor-span">Виктор Николов</span>
-                        <span class="picspan"> {!! HTML::image('img/scholarships/pic2.jpg') !!}</span><br><br>
+                        <span class="bachelor-span"> {{ trans('scholarship.ralica_vaceva') }}<br><span class="full-scholarship"></span></span>
+                        <span class="picspan"> {!! HTML::image('img/scholarships/ralica.jpg') !!}</span><br><br>
                         <br><br><br><br><br>
                         <p class="text-justify">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam cursus nisl in maximus elementum. Maecenas a augue convallis, dapibus orci in, dapibus nibh.
-                            Donec efficitur arcu at augue laoreet dictum. In quis dolor velit. Etiam viverra sit amet mauris quis porttitor. Aenean blandit ante sed dui rhoncus, ac
-                            tincidunt nisi tempor. In nec tortor a ipsum pharetra fringilla. Mauris viverra scelerisque risus at vehicula. Proin at consectetur tellus. Praesent nunc
-                            sapien, porttitor vitae maximus in, cursus et nunc. Etiam blandit, eros vehicula tempus lobortis, elit purus scelerisque est, auctor volutpat augue arcu
-                            sed nisi.
-                        </p>-->
+                            {{ trans('scholarship.bachlor_txt') }}<br><br>
+                        </p>
                     </div>
 
                 </div>
